@@ -1,0 +1,76 @@
+.Notifications-container {
+    width: 1129px;
+    min-height: 600px;
+    background: #fff;
+    display: block;
+    padding: 0px 80px;
+}
+
+.Notification_box {
+    width: 900px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 1px 2px #96999f;
+    border: 3px solid #e7e7e7;
+}
+
+.Notification_span {
+    font-size: 28px;
+    font-family: "Roboto",Arial, sans-serif, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: royalblue;
+}
+
+.Notifications_listing {
+    width: 100%;
+    padding: 25px 0px;
+    display: block;
+}
+
+.Notification_listed {
+    width: 100%;
+    /* height: 400px; */
+    padding: 20px 30px;
+    border: 2px solid #e7e7e7;
+    box-shadow: 0 1px 2px 2px #e7e7e7;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.Notification-title_section {
+    width: 100%;
+    height: 60px;
+    padding: 0px 5px 5px 5px;
+}
+
+.Notification-title_span {
+    font-size: 19px;
+    font-family: "Roboto",Arial, sans-serif, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #74767c;
+}
+
+.Notification_listed-mid_section {
+    display: flex;
+    padding-top: 20px;
+}
+
+.Notification_images {
+    width: 	450px;
+    height: 300px;
+    background-color: aqua;
+}
+
+.Notification_info {
+    width: 450px;
+    display: block;
+    padding: 20px 25px;
+}
+
+.Notification_info_span {
+    font-size: 16px;
+    font-family: "Roboto",Arial, sans-serif, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #74767c;
+    margin-bottom: 10px;
+}

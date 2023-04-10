@@ -1,0 +1,780 @@
+.ProductTabs {
+    width: 100%;
+    padding: 5px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 3px; */
+    font-family:  "Roboto",Arial, sans-serif, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: orange;
+    /* background: #1380e7; */
+}
+
+.No_Location_Set {
+    width: 730px;
+    z-index: 2;
+    margin-top: 40px;
+    border-radius: 7px;
+    margin-left: 210px;
+    height: 400px;
+    background: #fff;
+    box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16);
+    border: 2px solid #03C04A;
+    padding: 15px 15px 0px 40px;
+}
+
+.No_Location_Note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.No_Location_Text {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Important_Location_Note {
+    font-weight: 700;
+    font-size: 32px;
+    color: #1380e7;
+}
+
+.Important_Location_Text_span {
+    font-weight: 800;
+    font-size: 23px;
+    color: #333;
+}
+
+.Set_Fulfilments_Button {
+    display: flex;
+    padding-top: 20px;
+    padding-right: 30px;
+    justify-content: right;
+    align-items: center;
+}
+
+.Category-selected_button {
+    padding: 5px 10px;
+    width: 200px;
+    height: 60px;
+    background: #03C04A;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.active-ProductTabs {
+    border-bottom: 2px solid #00BFFF;
+}
+
+.AllTabs {
+    display: none;
+}
+
+.Submit-upload-button_box {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Submit-upload-button {
+    width: 400px;
+    height: 45px;
+    display: flex;
+    border: 3px solid #1380e7;
+    align-items: center;
+    justify-content: center;
+    background: #1380e7;
+    font-family:  "Roboto",Arial, sans-serif, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.Submit-upload-button_clicked {
+    width: 350px;
+    height: 45px;
+    display: flex;
+    border: 3px solid #03C04A;
+    align-items: center;
+    justify-content: center;
+    background: #03C04A;
+    font-family:  "Roboto",Arial, sans-serif, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.Electronics-select_list {
+    position: absolute;
+    margin-top: 2px;
+    /* z-index: 10; */
+    margin-left: -12px;
+    min-height: 430px;
+    padding: 5px 10px 0px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    background-color: #fff;
+}
+
+.Appliance-select_list {
+    position: absolute;
+    margin-top: 2px;
+    /* z-index: 10; */
+    margin-left: -168px;
+    min-height: 430px;
+    padding: 5px 10px 0px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    background-color: #fff;
+}
+
+.Furniture-select_list {
+    position: absolute;
+    margin-top: 2px;
+    /* z-index: 10; */
+    margin-left: -324px;
+    min-height: 430px;
+    padding: 5px 10px 0px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    background-color: #fff;
+}
+
+.Pending_one-select_list {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -480px;
+    min-height: 430px;
+    padding: 5px 10px 0px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    background-color: #fff;
+}
+
+.Pending_two-select_list {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -636px;
+    min-height: 430px;
+    padding: 5px 10px 0px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    background-color: #fff;
+}
+
+.Pending_three-select_list {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -792px;
+    min-height: 430px;
+    padding: 5px 10px 0px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    background-color: #fff;
+}
+
+.Pending_four-select_list {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -948px;
+    min-height: 430px;
+    padding: 5px 10px 0px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    background-color: #fff;
+}
+
+.Electronics-select_list-hide {
+    display: none;
+}
+
+.Electronics_dropdown-selects {
+    width: 250px;
+    margin-right: 20px;
+    /* height: 330px; */
+}
+
+.Electronics_dropdown-selects-hide {
+    display: none;
+}
+
+.SelectCategory-li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    padding: 6px 0px 6px 3px;
+}
+
+.active-SelectCategory-li {
+    background-color: #00BFFF;
+    color: #fff;
+}
+
+.Category-select_button {
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    height: 17px;
+    align-items: center;
+    justify-content: center;
+    /* height: 22px; */
+    background: #03C04A;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.Dropzone-style {
+    width: 100%;
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.Click-to-Add-Image {
+    width: 400px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    border: 2px solid orange;
+    justify-content: center;
+    outline: none;
+}
+
+.Dropped_Image_left_margin {
+    padding-left: 15px;
+}
+
+.Dropped-Image_box {
+    margin-left: 5px;
+    overflow-x: scroll;
+    padding: 15px 15px 15px 0px;
+    display: flex;
+    margin-top: 10px;
+    width: 1100px;
+    border-radius: 10px;
+    border: 1px solid #c5cbd5;
+    height: 385px;
+}
+
+.Dropped-Image_style {
+    cursor: pointer;
+    width: 400px;
+    padding: 5px;
+    outline: none;
+    border-radius: 10px;
+    position: relative;
+    height: 315px;
+    border: 1px solid orange;
+}
+
+.Image-remove_button {
+    /* position: absolute; */
+    margin-top: 7px;
+    outline: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 344px; */
+    border: none;
+    border-radius: 5px;
+}
+
+.Image_remove-button {
+    cursor: pointer;
+    width: 150px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    border: none;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    border-radius: 5px;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bolder;
+    background: #1380e7;
+    outline: none;
+}
+
+.Details_Content_box {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px;
+}
+
+.Details-Title_Text_style {
+    width: 25%;
+    padding: 15px 10px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Details-Title_Text_style_printer {
+    width: 48%;
+    padding: 5px 0px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Details-Title_Text_style_printer_right {
+    width: 55%;
+    padding: 5px 0px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Details-Title_Text_twenty {
+    width: 20%;
+    padding: 15px 10px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.Price-Title_Text_style_upload {
+    width: 40%;
+    padding: 15px 10px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Details-Title_Text_mid_style {
+    width: 28%;
+    padding: 5px 0px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Details-Title_Text_right_style {
+    width: 20%;
+    padding: 5px 0px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Details-Title_Text_Dronemid_style {
+    width: 30%;
+    padding: 5px 0px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Details-Title_Text_Brand_style {
+    width: 30%;
+    padding: 15px 10px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Details-Title_Text_Droneright_style {
+    width: 25%;
+    padding: 5px 0px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Details-Input_style {
+    height: 30px;
+    width: 450px;
+    font-size: 15px;
+    color: #656481;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 2px solid #656481;
+}
+
+.Details-Input_style_monitor_min {
+    height: 30px;
+    width: 230px;
+    font-size: 15px;
+    color: #656481;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 2px solid #656481;
+}
+
+.Details-Input_style_PowerSupply {
+    height: 30px;
+    width: 180px;
+    font-size: 15px;
+    color: #656481;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 2px solid #656481;
+}
+
+.Details-Input_style_printer_min {
+    height: 30px;
+    width: 240px;
+    font-size: 15px;
+    color: #656481;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 2px solid #656481;
+}
+
+.Details-Input-mid_style {
+    height: 30px;
+    width: 150px;
+    font-size: 13px;
+    color: #656481;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 2px solid #656481;
+}
+
+.Details-left-Title_Text_style {
+    width: 60%;
+    padding: 5px;
+    color: #74767c;
+    font-weight: bolder;
+}
+
+.Details-right-Title_Text_style {
+    width: 35%;
+    padding: 5px;
+    color: #74767c;
+    font-weight: bolder;
+}
+
+.WarrentyBox {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #74767c;
+    font-weight: 600;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid #c5cbd5;
+}
+
+.WarrentySelect {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #74767c;
+    font-weight: 600;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid orange;
+
+}
+
+.Select_brand-options_box {
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+.Select_Phone_brand-options_box {
+    display: flex;
+    padding: 10px 0px 0px 20px;
+    justify-content: space-between;
+}
+
+.Select_Charger_brand-options_box {
+    display: flex;
+    padding: 10px 0px 0px 0px;
+    justify-content: space-between;
+}
+
+
+.Select_Brand_options_listed {
+    display: flex;
+    padding-right: 130px;
+}
+
+.Select_Brand_options_listed_refrigertors {
+    display: flex;
+    padding-right: 40px;
+}
+
+.Select_Brand_options_listed_printers {
+    display: flex;
+    padding-right: 15px;
+}
+
+.Select_Brand_options_listed_fryers {
+    display: flex;
+    padding-right: 245px;
+}
+
+.Select_Laptop_Brand_options_listed {
+    display: flex;
+    /* padding-right: 130px; */
+}
+
+.Select_tv_options_listed {
+    display: flex;
+    padding-right: 130px;
+}
+
+.Select_brand_option_selected_style {
+    width: 95px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.Select_brand_option_selected_style_last {
+    width: 95px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.Select_brand_tv_option_selected_style {
+    width: 97px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.Select_tv_option_selected_style {
+    width: 185px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.Select_headphone_option_selected_style {
+    width: 135px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 22px;
+    display: flex;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.Select_smart_tv_option_selected_style {
+    width: 215px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.Select_phone_brand_option_selected_style {
+    width: 95px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.active-Ram_option_selected_style {
+    border: 2px solid orange;
+}
+
+.Other_brand_listed {
+    display: flex;
+    width: 100%;
+}
+
+.Other_brand_listed_hide {
+    display: none;
+}
+
+.Input_midwidth_Style {
+    width: 280px;
+    height: 30px;
+    font-size: 15px;
+    color: #656481;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 2px solid #656481;
+}
+
+.Input_fullwidth_Style {
+    width: 630px;
+    height: 30px;
+    font-size: 15px;
+    color: #656481;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 2px solid #656481;
+}
+
+.Input_four_hundred_Style {
+    width: 400px;
+    height: 30px;
+    font-size: 15px;
+    color: #656481;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 2px solid #656481;
+}
+
+.Input_two_hundred_Style {
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    color: #656481;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 2px solid #656481;
+}
+
+.Description_box_upload {
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.Product_Images_box_upload {
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 60px;
+    border-top: 2px solid #e7e7e7;
+    margin-bottom: 30px;
+}
+
+.Prices_box_upload {
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 60px;
+    border-top: 2px solid #e7e7e7;
+    margin-bottom: 30px;
+}
+
+.Prices_box_container_upload {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Prices_Input_box_upload {
+    width: 530px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid orange;
+}
+
+.Prices_OR_text {
+    list-style: none;
+    width: 50px;
+    padding-left: 80px;
+    margin: 5px 0px;
+    font-weight: 700;
+    color: #656481;
+}
+
+.Prices_Input_box_upload_right {
+    width: 530px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid orange;
+}

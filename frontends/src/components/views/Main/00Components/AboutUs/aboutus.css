@@ -1,0 +1,44 @@
+.About_container {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutUs_box {
+    width: 900px;
+    min-height: 500px;
+    padding: 13px 20px;
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+.About_us_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.About_us_title_span {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    color: #070606;
+}
+
+.About_us_purpose_span {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    color: #333;
+}
+
+.Purpose_span {
+    font-family:  "helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #040c28;
+}

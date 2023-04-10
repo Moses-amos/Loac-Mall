@@ -1,0 +1,8 @@
+.Welcome_box {
+    width: 900px;
+    /* min-height: 550px; */
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid orange;
+}

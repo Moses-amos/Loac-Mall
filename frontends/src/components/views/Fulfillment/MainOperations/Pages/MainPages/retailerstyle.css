@@ -1,0 +1,718 @@
+.fetched-container {
+    padding: 20px 0px 60px 0px;
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    width: 100%;
+    /* padding-left: 70px; */
+}
+
+/* .fetched_Item {
+    width: 335px;
+    height: 450px;
+    border: 1px solid rgb(208, 198, 198);
+    border-left: none;
+    border-top: none;
+} */
+
+.Retailer_Upload_box {
+    width: 1145px;
+    display: block;
+    z-index: 2;
+    background: #fff;
+    padding: 0px 15px 70px 15px;
+    border-top: none;
+}
+
+.fetched_Item {
+    width: 325px;
+    height: 450px;
+    /* border: 1px solid rgb(208, 198, 198); */
+    /* border: 1px solid rgb(224, 230, 239); */
+    background: #fff;
+    border-left: none;
+    border-top: none;
+    /* box-shadow: 0 1px 2px 1px #00000026; */
+    /* border-radius: 5px; */
+    border: 1px solid #c5cbd5;
+}
+
+.Overview_Demonstration {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.Overview_Demonstration_Title {
+    font-weight: 700;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-size: 23px;
+    color: #070606;
+}
+
+.Empty_Overview {
+    position: absolute;
+    width: 1020px;
+    height: 450px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.Overview_page_options_listing {
+    width: 140px;
+    height: 100%;
+    padding-top: 20px;
+    display: block;
+    border-left: 2px solid #e3e4e5;
+}
+
+.listing_title_example {
+    font-size: 16px;
+    cursor: default;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif, Helvetica, Arial;
+    color: #1380e7;
+}
+
+.Cart-listing_titles_box-retailer {
+    width: 1020px;
+    height: 190px;
+    padding: 10px;
+    display: flex;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    /* box-shadow: 0 1px 2px 2px #e7e7e7; */
+    /* border: 1px solid orange;
+    border-bottom: 2px solid orange; */
+    box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.35);
+    border: 2px solid orange;
+}
+
+.Overview_price_quantity_discount_box {
+    width: 100%;
+    height: 45px;
+    border-top: 2px solid #e7e7e7;
+    padding: 13px 10px 0px 0px;
+    display: block;
+}
+
+.Cart-listing_title-retailer {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: "Open Sans", sans-serif, Helvetica, Arial;
+    font-weight: 600;
+    color: #007aff;
+    overflow: hidden;
+    height: 70px;
+}
+
+.Overview-item_price-quantity_right_span {
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif, Helvetica, Arial;
+    font-weight: 700;
+    color: #001e73;
+}
+
+.Cart-description_listing-retailer {
+    width: 870px;
+    height: 100%;
+    font-size: 14px;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    color: #74767c;
+    display: flex;
+    padding-left: 10px;
+}
+
+.fetched_image{
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 55%;
+}
+
+.fetched-Item:nth-child(3n) {
+    border-right: none;
+}
+
+.fetched-Item:nth-child(1n) {
+    border-left: none;
+}
+
+
+.All-royal-purchases_box {
+    width: 1144px;
+    background: #fff;
+    z-index: 2;
+    display: block;
+    padding: 0px 20px 60px 20px;
+}
+
+.Retailer_other_Sidebar {
+    position: fixed;
+}
+
+.purchased-Item {
+    width: 354px;
+    height: 130px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.35);
+    /* box-shadow: 0 1px 2px 1px #c7c6c6; */
+    border: 2px solid orange;
+    /* border: 1px solid rgb(208, 198, 198); */
+}
+
+.purchased-Item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+
+.purchased-Details {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: normal;
+    padding: 10px;
+}
+
+.purchased-Details_title_p {
+    font-size: 14px;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    color: #00BFFF;
+}
+
+.purchased-Details_date_span {
+    font-size: 13px;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 800;
+    color: orange;
+}
+
+.Royal-purchases_title {
+    width: 500px;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 2px 1px #e7e7e7;
+    border: 2px solid #e7e7e7;
+}
+
+.branch-Item-delivery_options_left {
+    width: 60%;
+    font-size: 14px;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 800;
+    color: orange;
+}
+
+.Royal-computers_upload_box {
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 15px;
+    box-shadow: 0 1px 2px 1px #e7e7e7;
+    border: 2px solid #e7e7e7;
+}
+
+.branch-Item-delivery_options_right {
+    width: 40%;
+    font-size: 14px;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 800;
+    color: #74767c;
+}
+
+.branch-Item {
+    width: 500px;
+    height: 300px;
+    margin-right: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid orange;
+    box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+.branch-Item_title_p {
+    font-size: 15px;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #00BFFF;
+}
+
+
+.branch-Details {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: block;
+}
+
+.BranchTabs {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    background: royalblue;
+    outline: none;
+    height: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    border: none;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.active-BranchTabs {
+    background: #00BFFF;
+}
+
+.BranchTabsLocation {
+    cursor: pointer;
+    padding: 12px 35px;
+    background: #03C04A;
+    width: 100%;
+    outline: none;
+    height: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    border: none;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.BranchTabsLocation:hover {
+    color: #fff;
+}
+
+.active-BranchSelect {
+    background: #03C04A;
+}
+
+.active-BranchAll {
+    width: 100%;
+    padding: 10px 0px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Branches {
+    display: none;
+}
+
+.AddNotify-hide {
+    display: none;
+}
+
+.AddNotify-show {
+    margin-top: -100px;
+    width: 965px;
+    position: absolute;
+    padding: 10px 70px;
+    border: 1px solid red;
+    display: block;
+    background: white;
+}
+
+.Retailer_Sidebar-conatiner {
+    width: 205px;
+    /* position: fixed; */
+    min-width: 205px;
+    margin-top: -1px;
+    min-height: 700px;
+    background: #00BFFF;
+    padding: 13px 10px 0px 12px;
+    border-bottom-right-radius: 5px;
+}
+
+.Branch_Sidebar-conatiner {
+    width: 205px;
+    position: fixed;
+    min-width: 205px;
+    margin-top: -1px;
+    min-height: 700px;
+    background: #00BFFF;
+    padding: 13px 10px 0px 12px;
+    border-bottom-right-radius: 5px;
+}
+
+.Retailer_sidebar_box {
+    background: #00BFFF;
+    position: fixed;
+}
+
+.Branch_sidebar_box {
+    background: #00BFFF;
+}
+
+.Retailer_fullfilment_box {
+    width: 1100px;
+    background: #fff;
+    z-index: 2;
+    display: block;
+    padding: 0px 0px 20px 60px;
+}
+
+.sidebar-box {
+    display: block;
+    /* top: 140px; */
+    padding-top: 20px;
+}
+
+.CLient-sidebar-titles {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    color: #656481;
+}
+
+.CLient-sidebar-header {
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    border-top: 2px solid #e7e7e7;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.Retailer-sidebar-titles {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.Retailer_Branch_Locations {
+    width: 100%;
+    /* border-radius: 2px; */
+    border-bottom: 2px solid #fff;
+    /* margin-bottom: 10px; */
+}
+
+.Retailer_Branch_Locations_Select {
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 11px;
+    cursor: pointer;
+    background-color: #00BFFF;
+    box-shadow: 0 0px 0px 2px #e7e7e7 ;
+    /* border: 2px solid #fff; */
+}
+
+.Retailer_Branch_Locations_span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.Retailer_Branch_Locations_Select_span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* outline: none;
+    border: none; */
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 17px;
+    /* text-decoration: none; */
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.Retailer_Branch_Locations_Select:hover {
+    background: orange;
+}
+
+.Retailer_Branch_Locations_Add {
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 11px;
+    cursor: pointer;
+    box-shadow: 0 0px 0px 2px #e7e7e7 ;
+    background: orange;
+}
+
+.Retailer-sidebar-header {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    padding-left: 5px;
+    align-items: center;
+}
+
+.Retailer-sidebar-header_hover {
+    box-shadow: 0 0px 0px 2px #e7e7e7 ;
+}
+
+.Retailer-sidebar-header_hover-add {
+    border: 2px solid #e7e7e7;
+    border-radius: 5px;
+    width: 100%;
+    background: #03C04A;
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 20px 0px;
+}
+
+.usersCount {
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    color: #0865c2;
+}
+
+.Branch_Location-list {
+    width: 100%;
+    height: 60px;
+    background: #0865c2;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 2px 1px #cccaca;
+}
+
+.Branch_Location-list_span {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.Branch_Location-list_users {
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #74767c;
+}
+
+.Branch_Location-append_link {
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    color: #00BFFF;
+}
+
+.Branch_Location-list_user_append {
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #74767c;
+}
+
+
+.Branch_Location-list_branches {
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #74767c;
+}
+
+.Dropzone_show {
+    width: 300px;
+}
+
+.Dropzone_hide {
+    display: none;
+}
+
+.Uploaded-image_show {
+    display: block;
+    width: 158px;
+    height: 66px;
+    z-index: 3;
+}
+
+.Uploaded-image_hide {
+    display: none;
+}
+
+.Retailer-settings_header {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-family: "Roboto", Arial, sans-serif, Helvetica, sans-serif;
+    background: royalblue;
+    display: flex;
+    font-weight: 700;
+    border-radius: 7px;
+    font-size: 25px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.Overview_Edit_button {
+    width: 75px;
+    height: 30px;
+    font-size: 14px;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #03C04A;
+}
+
+.Overview_Edit_button_example {
+    width: 75px;
+    height: 30px;
+    font-size: 14px;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #03C04A;
+}
+
+.Overview_Delete_button {
+    width: 75px;
+    height: 30px;
+    font-size: 14px;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    /* margin-bottom: 10px; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.Overview_Delete_button_example {
+    width: 75px;
+    height: 30px;
+    font-size: 14px;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    display: flex;
+    cursor: default;
+    /* margin-bottom: 10px; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.Edit_discount_error {
+    padding: 0px 10px;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    height: 20px;
+    background: #e3e4e5;
+}
+
+.Show_deleteBox {
+    position: absolute;
+    width: 300px;
+    border-radius: 10px;
+    height: 100px;
+    margin-top: -100px;
+    display: block;
+    margin-left: -410px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #c5cbd5;
+    box-shadow: 0px 2px 5px #74767c;
+}
+
+.Delete_box_message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Delete_box_options {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 40px 0px 40px;
+    align-items: center;
+}
+
+.Are_you_sure_message {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    color: #070606;
+}
+
+.Hide_deleteBox {
+    display: none;
+}
+
+.Delete_Item_button {
+    width: 60px;
+    height: 25px;
+    display: flex;
+    font-weight: 600;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    color: #070606;
+    justify-content: center;
+    border-radius: 3px;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #74767c;
+}
+
+.Cancel_Item_delete_button {
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 3px;
+    font-weight: 600;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    color: #070606;
+    justify-content: center;
+    align-items: center;
+    background: #c5cbd5;
+    outline: none;
+    border: none;
+}

@@ -1,0 +1,58 @@
+.ProfileTab_button {
+    width: 420px;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Roboto", Arial, sans-serif, Helvetica, sans-serif;
+    display: flex;
+    font-weight: 800;
+    background: #fff;
+    font-size: 25px;
+    color: #656481;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #1380e7;
+}
+
+.ProfileTab_button-active {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: -10px;
+    font-family: "Roboto", Arial, sans-serif, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 800;
+    background: #1380e7;
+
+}
+
+.ShowProfile_box {
+    width: 100%;
+    display: block;
+}
+
+.ShowProfile_box-hide {
+    display: none;
+}
+
+
+.UserLocations-active_select_Tabs {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    background: #03C04A;
+    width: 100%;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Roboto", Arial, sans-serif, Helvetica, sans-serif;
+    font-weight: 800;
+    border: none;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+

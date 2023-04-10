@@ -1,0 +1,121 @@
+.Royal-footer {
+    width: 1349px;
+    height: 170px;
+    background-color: #fc690e;
+    display: flex;
+    padding: 20px 40px 0px 40px;
+}
+
+.Footer_Box {
+    width: 100%;
+    padding-top: 20px;
+    /* height: 100%; */
+    display: block;
+    /* border: 1px solid red; */
+    border-top: 2px solid #fff;
+}
+
+.About-Terms {
+    padding-top: 15px;
+}
+
+.About-Terms-span {
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+    color: #fff;
+}
+
+.About-Terms-p {
+    width: 780px;
+    padding-top: 5px;
+    color: #fff;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.In_store {
+    color: #fff;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.Rights {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.Rights-span_about {
+    color: #fff;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.Rights-span_about:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.Rights-span {
+    color: #fff;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.Storelocations {
+    width: 500px;
+    border-top: 2px solid white;
+    padding: 20px;
+    display: block;
+}
+
+.Layer-branches {
+    display: flex;
+}
+
+.Branches-box {
+    color: #fff;
+    width: 250px;
+    height: 130px;
+    line-height: 15px;
+    padding: 0px 20px 0px 40px;
+}
+
+.Branches_h3 {
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    /* font-size: 25px; */
+    color: #fff;
+}
+
+.Branches_span_p_top {
+    color: #fff;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.Branches_span_p_bottom {
+    color: #fff;
+    font-family: "helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+}  
+
+.Span_p{
+    margin-top: -5px;
+}

@@ -1,0 +1,28 @@
+.CLient-sidebar_container {
+    width: 210px;
+    padding: 80px 20px 20px 20px;
+    border-bottom-right-radius: 5px;
+    height: 100%;
+    box-shadow: 0 1px 2px 2px #c8c6c6;
+}
+
+.CLient-sidebar {
+    display: block;
+}
+
+.CLient-sidebar-header-User {
+    width: 100%;
+    display: flex;
+    border-top: 2px solid #e7e7e7;
+    align-items: center;
+}
+
+.CLient-sidebar-titles-User {
+    width: 100%;
+    height: 100%;
+    font-size: 19px;
+    text-decoration: none;
+    font-family: "Roboto",Arial, sans-serif, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #656481;
+}

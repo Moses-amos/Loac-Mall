@@ -91,7 +91,7 @@ return (
                                         onMouseOver={()=>{SecondCategory(0);SelectedOneCategory(0);ThirdCategory(0); BottomSecondCategory(0); BottomFirstCategory(0); FirstCategory(1); BottomThirdCategory(0);
                                            FourthCategory(0); BottomFourthCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}
                                         >
-                                          <a href='/desktops-laptops' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/desktops-laptops' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Desktops & Laptops</span></div>
@@ -745,7 +745,7 @@ return (
           <ul className='Electronics_dropdown-selects_menu'>
                                     <li className={toggleSecondCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{SecondCategory(1); FirstCategory(0); BottomSecondCategory(0); BottomFirstCategory(0);ThirdCategory(0);SelectedOneCategory(0); BottomThirdCategory(0); FourthCategory(0); BottomFourthCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}>
-                                          <a href='/cellular-phones' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/cellular-phones' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Cell Phones & Tablets</span></div>
@@ -959,7 +959,7 @@ return (
                                     <li className={toggleBottomSecondCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{SecondCategory(0);SelectedOneCategory(0); FirstCategory(0); BottomFirstCategory(0); BottomSecondCategory(1); BottomThirdCategory(0); ThirdCategory(0); FourthCategory(0); BottomFourthCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}
                                         >
-                                          <a href='/home-theater' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/home-theater' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Tv's & Home Theater</span></div>
@@ -1022,7 +1022,7 @@ return (
         <ul className='Electronics_dropdown-selects_menu'>
                                     <li className={toggleThirdCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{ThirdCategory(1); FirstCategory(0); BottomSecondCategory(0);SecondCategory(0); BottomFirstCategory(0); BottomThirdCategory(0); FourthCategory(0); BottomFourthCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}>
-                                          <a href='/cameras-other' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/cameras-other' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Cameras & Other</span></div>
@@ -1205,7 +1205,7 @@ return (
                                     <li className={toggleBottomThirdCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{SecondCategory(0);SelectedOneCategory(0); FirstCategory(0); BottomFirstCategory(0); BottomSecondCategory(0); BottomFourthCategory(0);BottomThirdCategory(1); ThirdCategory(0); FourthCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}
                                         >
-                                          <a href='/headphones' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/headphones' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Headphones & Earbuds</span></div>
@@ -1264,7 +1264,7 @@ return (
         <ul className='Electronics_dropdown-selects_menu'>
                                     <li className={toggleFourthCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{FourthCategory(1);ThirdCategory(0); FirstCategory(0);BottomFourthCategory(0); BottomSecondCategory(0);SecondCategory(0); BottomFirstCategory(0); BottomThirdCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}>
-                                          <a href='/audio-systems' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/audio-systems' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Audio Systems</span></div>
@@ -1332,7 +1332,7 @@ return (
                                     <li className={toggleBottomFourthCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{FourthCategory(0);SecondCategory(0);SelectedOneCategory(0); FirstCategory(0); BottomFirstCategory(0); BottomSecondCategory(0); BottomThirdCategory(0);BottomFourthCategory(1); ThirdCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}
                                         >
-                                          <a href='/game-consoles' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/game-consoles' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Game Consoles</span></div>
@@ -1391,7 +1391,7 @@ return (
         <ul className='Electronics_dropdown-selects_menu_last'>
                                     <li className={toggleFifthCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{FifthCategory(1);FourthCategory(0);ThirdCategory(0); FirstCategory(0);BottomFourthCategory(0); BottomSecondCategory(0);SecondCategory(0); BottomFirstCategory(0); BottomThirdCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}>
-                                          <a href='/wearable-tech' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/wearable-tech' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Wearable Technology</span></div>
@@ -1468,7 +1468,7 @@ return (
                                     <li className={toggleBottomSixthCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{BottomSixthCategory(1);FourthCategory(0);SecondCategory(0);SelectedOneCategory(0); FirstCategory(0); BottomFirstCategory(0); BottomSecondCategory(0); BottomThirdCategory(0);BottomFourthCategory(0); ThirdCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSevenCategory(0)}}
                                         >
-                                          <a href='/auto-electronics' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/auto-electronics' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Auto Electronics</span></div>
@@ -1490,7 +1490,7 @@ return (
                                     <li className={toggleBottomSevenCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{BottomSevenCategory(1);FourthCategory(0);SecondCategory(0);SelectedOneCategory(0); FirstCategory(0); BottomFirstCategory(0); BottomSecondCategory(0); BottomThirdCategory(0);BottomFourthCategory(0); ThirdCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0)}}
                                         >
-                                          <a href='/home-systems' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/home-systems' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Smart Home</span></div>
@@ -1528,7 +1528,7 @@ return (
                                         onMouseOver={()=>{SecondCategory(0);SelectedOneCategory(0); BottomSecondCategory(0); BottomFirstCategory(0); FirstCategory(1); BottomThirdCategory(0);
                                            FourthCategory(0); BottomFourthCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}
                                         >
-                                          <a href='/appliances' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/appliances' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Major kitchen Appliance</span></div>
@@ -1654,7 +1654,7 @@ return (
         <ul className='Electronics_dropdown-selects_menu'>
                                     <li className={toggleSecondCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{SecondCategory(1); FirstCategory(0); BottomSecondCategory(0); BottomFirstCategory(0);ThirdCategory(0);SelectedOneCategory(0); BottomThirdCategory(0); FourthCategory(0); BottomFourthCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}>
-                                          <a href='/kitchen-appliances' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/kitchen-appliances' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Small Kitchen Appliances</span></div>
@@ -2114,7 +2114,7 @@ return (
                                     <li className={toggleThirdCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{ThirdCategory(1); FirstCategory(0); BottomSecondCategory(0);SecondCategory(0); BottomFirstCategory(0);
                                          BottomThirdCategory(0); FourthCategory(0); BottomFourthCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}>
-                                          <a href='/ambiance-devices' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/ambiance-devices' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Heating , Cooling , Air</span></div>
@@ -2253,7 +2253,7 @@ return (
                                     <li className={toggleBottomFourthCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{FourthCategory(0);SecondCategory(0);SelectedOneCategory(0); FirstCategory(0); BottomFirstCategory(0); BottomSecondCategory(0); BottomThirdCategory(0);BottomFourthCategory(1); ThirdCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}
                                         >
-                                          <a href='/hair-devices' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/hair-devices' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Hair Appliances</span></div>
@@ -2339,7 +2339,7 @@ return (
         <ul className='Electronics_dropdown-selects_menu'>
                                     <li className={toggleFourthCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{FourthCategory(1);ThirdCategory(0); FirstCategory(0);BottomFourthCategory(0); BottomSecondCategory(0);SecondCategory(0); BottomFirstCategory(0); BottomThirdCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}>
-                                          <a href='/indoor-appliances' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/indoor-appliances' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Indoor Appliances</span></div>
@@ -2389,7 +2389,7 @@ return (
         <ul className='Electronics_dropdown-selects_menu_last'>
                                     <li className={toggleFifthCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{FifthCategory(1);FourthCategory(0);ThirdCategory(0); FirstCategory(0);BottomFourthCategory(0); BottomSecondCategory(0);SecondCategory(0); BottomFirstCategory(0); BottomThirdCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}>
-                                          <a href='/power-tools' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/power-tools' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Power Tools</span></div>
@@ -6495,7 +6495,7 @@ return (
                                         onMouseOver={()=>{SecondCategory(0);SelectedOneCategory(0); BottomSecondCategory(0); BottomFirstCategory(0); FirstCategory(1); BottomThirdCategory(0);
                                            FourthCategory(0); BottomFourthCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}
                                         >
-                                          <a href='/power-tools' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/power-tools' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Power Tools</span></div>
@@ -6563,7 +6563,7 @@ return (
                                     <li className={toggleBottomFirstCategory=== 1? "active-SelectCategory_li-menu SelectCategory_li-menu" : "SelectCategory_li-menu"}
                                         onMouseOver={()=>{SecondCategory(0);SelectedOneCategory(0);ThirdCategory(0); BottomThirdCategory(0); FirstCategory(0); BottomSecondCategory(0); BottomFirstCategory(1); FourthCategory(0); BottomFourthCategory(0); FifthCategory(0); BottomFifthCategory(0); BottomSixthCategory(0); BottomSevenCategory(0)}}
                                         >
-                                          <a href='/outdoor-tools' style={{ width: '100%', height: '100%'}}>
+                                          <a href='/outdoor-tools' className='Main_Category_Header'>
                                             <div style={{ paddingLeft: '5px'}}>        
                                         <span style={{ fontSize: '15px', fontWeight: '700',
                                         color: '#212121'}}>Garden & Backyard Tools</span></div>

@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;900&display=swap');
+
+.Retailer_Overview_container {
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    display: flex;
+}
+
+.Retailer_Overview_page_left {
+    width: 36%;
+    display: block;
+    padding-right: 30px;
+}
+
+.Retailer_Overview_Top {
+    width: 100%;
+    top: 85px;
+    position: sticky;
+    display: block;
+}
+
+.Retailer_Overview_top {
+    min-width: 1300px;
+    display: flex;
+    padding: 0px 40px;
+}
+
+.Listed_Items_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-family: 'Saira', sans-serif;    
+    position: relative;
+    background: #026c90;
+}
+
+.Retail_preview_box {
+    display: block;
+}
+
+.Retail_preview_box_hide {
+    display: none;
+}
+
+.Retailer_best_deals_container {
+    display: block;
+    max-width: 100%;
+    font-family: 'Saira', sans-serif;    
+    min-height: 750px;
+}
+
+.Retailer_Settings_container {
+    display: flex;
+    background: #ebeaef;
+    font-family: 'Saira', sans-serif;    
+    padding: 20px 0px 40px 50px;
+    min-height: 650px;
+}
+
+.Profile_details_page_box {
+    width: 100%;
+    min-height: 500px;
+    padding: 15px 30px 0px 30px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.1);
+}
+
+.Store_locations_details_page_box {
+    width: 100%;
+    min-height: 480px;
+    padding-bottom: 40px;
+    padding: 15px 30px 0px 30px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.1);
+}
+
+.Brand_account_image_box {
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Brand_account_title_box {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Brand_account_detail_box {
+    list-style: none;
+    width: 100%;
+    display: block;
+    margin-top: 15px;
+    padding: 10px 0px;
+}
+
+.Brand_account_detail_box_hide {
+    display: none;
+}
+
+.Brand_account_title_left_box {
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Saira', sans-serif;    
+}
+
+.Brand_account_title_right_box {
+    width: 65px;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Saira', sans-serif;    
+    transition: all 0.2s ease-in-out;
+    background: #c25be9;
+}
+
+.Brand_logo_edit {
+    margin-right: 33px;
+}
+
+.Brand_account_title_right_box:hover {
+    background: rgb(170, 2, 170);
+}
+
+.Brand_account_title_right_cancel_box {
+    width: 65px;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: 'Saira', sans-serif;    
+    transition: all 0.2s ease-in-out;
+    background: red;
+
+}
+
+.Brand_account_title_right_cancel_box:hover {
+    background: #93939a;
+}
+
+.Brand_account_information_save {
+    cursor: pointer;
+    width: 70px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-weight: 500;
+    outline: none;
+    font-family: 'Saira', sans-serif;    
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+    background: orange;
+}
+
+.Brand_account_information_save:hover {
+    background-color: rgb(220, 98, 5);
+}
+
+.Retailer_fulfilment_main_container {
+    width: 100%;
+    display: flex;
+    font-family: 'Saira', sans-serif;    
+}
+
+.Retailer_store_locations_main {
+    padding: 20px 0px 30px 50px;
+    min-height: 650px;
+    background: #ebeaef;
+    display: flex;
+    font-family: 'Saira', sans-serif;    
+    
+}
+
+.Retailer_preview_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Retailer_preview_button {
+    width: 100px;
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    font-family: 'Saira', sans-serif;    
+    border-radius: 7px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background: #0071dc;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.Retailer_preview_button:hover {
+    background: #1890ff;
+}
+
+.Fulfilment_page_title {
+    width: 100%;
+    padding: 7px 0px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    background: #000;
+    justify-content: center;
+    font-family: 'Saira', sans-serif;    
+}
+
+.Seller_landingPage_main_box {
+    display: block;
+    background: #f7f3f6;
+    font-family: 'Saira', sans-serif;    
+
+}
+
+.Overview_price_quantity_box {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+/* .Overview_edit_delete_box {
+    width: 30%;
+    height: 100%;
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+} */
+
+.Overview_edit_delete_box {
+    width: 100%;
+    height: 100%;
+    /* margin-top: 13px; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.Overview_search_bar_box {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 30px;
+    display: flex;
+    border: 1px solid #c4c3c3;
+    border-radius: 15px;
+    padding: 6px 0px 5px 0px;
+}
+
+.Overview_search_bar {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #5a596a;
+    background-color: #fff;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Saira', sans-serif;    
+    border: none;
+    font-weight: 500;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: none;
+    border-right: none;
+    outline: none;
+}
+
+.Overview_search_bar_button_box {
+    min-width: 40px;
+    padding: 7px;
+}
+
+.Overview_search_bar_button {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: orange;
+    /* background-color: #fc690e; */
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Saira', sans-serif;    
+    color: #333;
+}
+
+.Overview_search_bar_close_button {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #026c90;
+    /* background-color: #fc690e; */
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Saira', sans-serif;    
+    color: #333;
+}
+
+.Overview_Account_setup_information {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #c4c3c3;
+    border-radius: 7px;
+}
+
+.Overview_Account_details_box {
+    width: 100%;
+    display: block;
+    margin-bottom: 18px;
+}
+
+.Overview_Account_title_box {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Saira', sans-serif;    
+    color: #333;
+}
+
+.Overview_Account_subject_box {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Saira', sans-serif;    
+    color: #5a596a;
+}
+
+
+.Overview_Account_information_button {
+    width: 110px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    background: orange;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+}
+
+.Overview_Account_information_button:hover {
+    background: #fe8903;
+}
+
+.Overview_item_image_box {
+    width: 300px;
+    /* width: 30%; */
+    border-radius: 7px;
+    height: 250px;
+}
+
+.Overview_configure_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 800px) {
+
+.Retailer_Overview_container {
+    width: 100%;
+    background: #fff;
+    padding: 25px 15px;
+    display: block;
+}
+
+.Overview_item_image_box {
+    width: 170px;
+    height: 200px;
+}
+
+/* .Overview_price_quantity_box {
+    width: 100%;
+    display: block;
+} */
+
+.Overview_edit_delete_box {
+    width: 100%;
+    height: 100%;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Retailer_Overview_page_left {
+    width: 100%;
+    display: block;
+    padding-right: 0px;
+}
+
+.Overview_configure_buttons {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+}

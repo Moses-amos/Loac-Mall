@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+.Navbar-home_main {
+    position: sticky;
+    /* width: 1349px; */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    top: 0px;
+    background: orange;
+    z-index: 5;
+}
+
+.Navbar_mobile_box {
+    display: none;
+}
+
+.Navbar_mobile_logo_box {
+    display: none;
+}
+
+.Navbar-logo-user_main {
+    width: 260px;
+    height: 60px;
+    padding: 10px 0px 10px 0px;
+}
+
+.Navbar-image_main {
+    width: 260px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0px 0px 0px 20px;
+}
+
+.Navbar-search_main {
+    width: 500px;
+    height: 100%;
+}
+
+.Searchbar_placeholder {
+    width: 500px;
+}
+
+@media (max-width: 1250px) {
+    .Navbar-search_main {
+      width: 500px;
+
+    }
+
+    .Searchbar_placeholder {
+        width: 500px;
+    }
+
+   }
+
+.Navbar-right_main {
+    width: 300px;
+    height: 100%;
+    right: 0;
+    /* background-color: yellow; */
+}
+
+@media (max-width: 1150px) {
+    .Navbar-search_main {
+        display: none;
+  
+      }
+    /* .Searchbar_placeholder {
+        width: 300px;
+      } */
+   }
+
+.Navbar-login_Signup_user {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 7px 50px 7px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Navbar-login_Signup_box {
+    width: 50%;
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #e7e7e7;
+}
+
+.Navbar-login_Signup_span {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.Navbar-selects-nav {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.Cart-user {
+    width: 55px;
+    padding-top: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px 5px 16px 5px; */
+}
+
+.Cart-link {
+    color: #667777;
+}
+
+.Cart-Icon {
+    font-size: 28px;
+    margin-bottom: 3px;
+}
+
+.Cart-Box {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cart-Box_Hover {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 3px 5px; */
+}
+
+.Notification {
+    width: 55px;
+    margin-left: -2px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px 5px 16px 5px; */
+}
+
+.Notification-link {
+    color: #667777;
+}
+
+.Notification-Box {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 5px 10px; */
+
+}
+
+.Notification-Box_Hover {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: -10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.User-account-nav {
+    /* width: 300px; */
+    /* height: 50px; */
+    padding: 10px 10px 0px 10px;
+    margin-left: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+.User-account-nav_main {
+    /* width: 300px; */
+    /* height: 50px; */
+    padding: 10px 10px 0px 10px;
+    margin-left: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+.Account-User-user {
+    width: 120px;
+    position: relative;
+    padding-top: 5px;
+    /* padding-left: 5px; */
+    /* display: flex; */
+    /* border: 2px solid #fff; */
+}
+
+.Account-span-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 39px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 7px;
+    border: 2px solid #fff;
+}
+
+.Account-span-user {
+    display: flex;
+    width: 100%;
+    height: 39px;
+    padding: 5px 0px 5px 15px;
+    border-radius: 7px;
+    border: 2px solid #fff;
+}
+
+.Account-span_title {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.Account-svg-user {
+    padding: 2px 2px 0px 2px ;
+}
+
+.Dropdown-account-Nav {
+    width: 230px;
+    position: absolute;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35) ;
+    padding: 5px;
+    /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35) ; */
+    margin-left: -90px;
+    margin-top: 7px;
+    /* position: relative; */
+    border-radius: 7px;
+    background-color: #fff;
+
+}
+
+.Dropdown-account-hide {
+    display: none;
+}
+
+.Dropdown-close {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: red; */
+    position: fixed;
+}
+
+.Dropdown-content {
+    width: 100%;
+    /* position: fixed; */
+    height: 100%;
+    /* padding: 10px; */
+}
+
+.Dropdown-ul {
+    width: 100%;
+    height: 100%;
+    /* z-index: 999; */
+    /* position: absolute; */
+    display: block;
+    /* padding: 0pc 15px; */
+}
+
+.Dropdown-li-user {
+    list-style: none;
+    width: 100%;
+    height: 35px;
+    /* display: flex; */
+    /* border-bottom: 1px solid gray; */
+    /* background-color: red; */
+}
+
+.Dropdown-li-user:hover {
+    background-color: #e7e7e7;
+}
+
+  /* .Dropdown-li_hover {
+  list-style: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border-bottom: 1px solid gray; 
+}*/
+
+.Dropdown-a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.Dropdown-a-user {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+}
+
+.Route-span-user {
+    width: 80%;
+    height: 100%;
+    padding: 5px 0px;
+    /* border: 1px solid red; */
+}
+
+.Route-span-style {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #656481;
+}
+
+.Route-span-account-user {
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.Route-myAccount-user {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.myAccount {
+    margin-bottom: 5px;
+}
+
+.Route-icon-user {
+    width: 20%;
+    height: 100%;
+    padding: 5px 0px;
+    /* background-color: blue; */
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+@media (max-width: 700px) {
+    .Navbar-search_main {
+        display: none;
+    }
+
+    .Navbar-logo-user_main {
+        width: 60%;
+    }
+
+    .Navbar-right_main {
+        /* padding-left: 50px; */
+        /* width: 40%; */
+        width: 30%;
+    }
+
+    .Navbar-selects-nav {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .User-account-nav_main {
+        display: none;
+    }
+
+    .User-account-nav {
+        display: none;
+    }
+
+}

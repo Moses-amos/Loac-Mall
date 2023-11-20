@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;900&display=swap');
+
+.Town_location-show {
+    width: 85px;
+    height: 23px;
+    min-width: 83px;
+    outline: none;
+    margin-bottom: 5px;
+    border: none;
+    margin-right: 5px;
+    cursor: text;
+    font-family: 'Saira', sans-serif;    
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: orange;
+}
+
+.Town_location-present {
+    width: 85px;
+    height: 23px;
+    min-width: 83px;
+    outline: none;
+    margin-right: 5px;
+    border: none;
+    cursor: text;
+    color: #fff;
+    margin-bottom: 5px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #03C04A;
+}

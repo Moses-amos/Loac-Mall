@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;900&display=swap');
+
+.Plans_container-wrapper {
+    min-height: 500px;
+    padding: 15px 70px 50px 70px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    /* padding-bottom: 100px; */
+}
+
+.Free_Account_box_wrapper {
+    padding: 50px 60px 0px 60px;
+    position: relative;
+    min-height: 400px;
+    z-index: 2;
+    /* padding-bottom: 100px; */
+}
+
+.Manage_Billing_Box {
+    padding: 25px 20px;
+    position: relative;
+    min-height: 650px;
+    z-index: 2;
+}
+
+.Plans_container {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Seller_Account_box {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid #03ce6c;
+    padding: 10px 20px;
+    margin: 10px 0px 10px 0px;
+}
+
+.Seller_Account_plans_text {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    color: #333;
+    /* color: rgb(229, 151, 7); */
+    font-family: 'Saira', sans-serif;    
+}
+
+
+.Plans_box {
+    width: 100%;
+    background: #fff;
+    padding: 10px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.Free_Account_box {
+    width: 100%;
+    background: #fff;
+}
+
+.Free_Account_Header_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Free_Account_Header_span {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+}
+
+.Plans_Header_box {
+    width: 100%;
+}
+
+.Plans_Header_span {
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Saira', sans-serif;    
+    /* font-family: 'Open Sans', sans-serif; */
+    color: #fff;
+    /* font-style: italic; */
+    /* text-decoration: underline; */
+}
+
+.Plans_listed_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Free_Account_Message_box {
+    width: 100%;
+    display: block;
+    padding-top: 30px;
+}
+
+.Plan_offered_box {
+    width: 35%;
+    min-width: 250px;
+    min-height: 390px;
+    padding: 20px 20px 0px 20px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #c5cbd5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 5px 0 rgba(213,217,217,.5); */
+    /* box-shadow: 0 1px 2px 1px #e7e7e7; */
+}
+
+.Subscription_offered_box {
+    width: 100%;
+    min-width: 250px;
+    /* margin-right: 50px; */
+    min-height: 390px;
+    padding: 15px 30px 30px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background: #fff;
+}
+
+.Account_important_notice_box {
+    width: 100%;
+    height: 350px;
+    padding: 0px 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background: #026c90;
+}
+
+.Account_important_open_wrapper {
+    width: 100%;
+    display: block;
+}
+
+.Free_Account_Message_box {
+    width: 100%;
+}
+
+.Compatible_size_continue {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+}
+
+.Plan_top_box {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.Plan_top_box_header_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background: #026c90;
+}
+
+.Plan_top_header {
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+}
+
+.Plan_include_box {
+    padding-top: 15px;
+    width: 100%;
+}
+
+.Free_account_conditions_box {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.Plan_price_standard_box {
+    padding-top: 30px;
+}
+
+.Plan_price_verify_box {
+    padding-top: 10px;
+}
+
+.Plan_include_text_box {
+    /* padding-top: 5px; */
+    display: block;
+}
+
+.Verify_plan_price {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Verify_benefit_box {
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: center;
+}
+
+.Active_subscription_Free {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Active_subscription_Standard {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.Active_subscription_Verify {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.Active_subscription_Free_box {
+    width: 80px;
+    height: 23px;
+    margin-top: 10px;
+    background-color: #03ce6c;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Active_subscription_Standard_box {
+    width: 80px;
+    height: 23px;
+    margin-top: 58px;
+    background-color: #03ce6c;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Active_subscription_Verify_box {
+    width: 80px;
+    height: 23px;
+    margin-top: 40px;
+    background-color: #03ce6c;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Verify_benefit_text {
+    font-size: 14px;
+    font-weight: 700;
+    color: #03ce6c;
+    /* color: rgb(229, 151, 7); */
+    font-family: 'Saira', sans-serif;    
+}
+
+.Plan_include_text {
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #3E3D53;
+    /* color: #3e4e5b; */
+    font-family: 'Saira', sans-serif;    
+}
+
+.Free_account_plan_text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+}
+
+.Plan_include_span {
+    font-size: 15px;
+    color: #2f1c6a;
+    font-family: 'Saira', sans-serif;    
+    font-size: 700;
+}
+
+.Verify_plan_currency {
+    font-size: 13px;
+    padding: 7px 5px 0px 0px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #001e73;
+}
+
+.Verify_plan_amount {
+    font-size: 21px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #001e73;
+}
+
+.Plan_price_free_box {
+    width: 100%;
+    height: 50px;
+}
+
+.Plan_choice_box {
+    width: 100%;
+    display: flex;
+    padding: 20px 50px;
+    justify-content: center;
+}
+
+.Continue_to_page {
+    display: block;
+}
+
+.Mobile_size_page {
+    display: none;
+}
+
+.Continue_to_account_button {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    outline: none;
+    background-color: #03C04A;
+}
+
+.Continue_to_account_button:hover {
+    background-color: orange;
+}
+
+.Plan_choice_button {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: #1dcd61;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.Plan_choice_button:hover {
+    background-color: #03C04A;
+}
+
+.Plan_choice_paid_button {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: orange;
+    transition: all 0.2s ease-in-out;
+}
+
+.Plan_choice_paid_button:hover {
+    background-color: #fe8903;
+}
+
+.Background_plans {
+    width: 100%;
+    height: 100%;
+}
+
+.Show_verify_request {
+    width: 400px;
+    height: 420px;
+    padding: 20px;
+    position: absolute;
+    display: block;
+}
+
+.Hid_verify_request {
+    display: none;
+}
+
+.Verification_close_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 750px) {
+
+    .Plans_container-wrapper {
+        min-height: 500px;
+        padding: 20px 0px 50px 0px;
+        position: relative;
+        z-index: 2;
+        background: #fff;
+        /* padding-bottom: 100px; */
+    }
+
+    .Plans_box {
+        width: 100%;
+        background: #fff;
+        padding: 10px 10px 20px 10px;
+        border-radius: 10px;
+    }
+
+    .Plans_container {
+        width: 100%;
+        min-height: 300px;
+        padding: 10px 5px;
+        display: flex;
+        padding-top: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Plans_listed_box {
+        width: 100%;
+        display: block;
+    }
+
+    .Free_Account_box_wrapper {
+        padding: 50px 5px 0px 5px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .Plan_offered_box {
+        width: 100%;
+        min-width: 250px;
+        min-height: 390px;
+        padding: 15px 15px 0px 15px;
+        border-radius: 20px;
+        /* border: 1px solid # ; */
+        margin-bottom: 30px;
+        background: #fff;
+    }
+
+    .Plan_offered_box:nth-child(2n) {
+        width: 100%;
+        min-width: 250px;
+        min-height: 390px;
+        padding: 15px 15px 0px 15px;
+        border-radius: 20px;
+        /* border: 1px solid # ; */
+        margin-bottom: 0px;
+        background: #fff;
+    }
+
+
+    
+
+
+}
+
+@media (max-width: 700px) {
+
+    .Account_important_notice_box {
+        width: 100%;
+        height: 350px;
+        padding: 0px 15px;
+        border-radius: 20px;
+        background: #026c90;
+    }
+
+    .Continue_to_account_button {
+        width: 150px;
+        height: 40px;
+        display: flex;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 500;
+        font-family: 'Saira', sans-serif;    
+        justify-content: center;
+        align-items: center;
+        border: none;
+        outline: none;
+        background-color: red;
+    }
+
+    .Plan_choice_box {
+        width: 100%;
+        display: flex;
+        padding: 20px 20px;
+        justify-content: center;
+    }
+
+    .Continue_to_page {
+        display: none;
+    }
+    
+    .Mobile_size_page {
+        display: block;
+    }
+
+    .Plans_Header_span {
+        font-size: 27px;
+        font-weight: 700;
+        font-family: 'Saira', sans-serif;    
+        color: #fff;
+    }
+
+
+    .Seller_Account_box {
+        width: 100%;
+        background: #fff;
+        border-radius: 10px;
+        /* box-shadow: 0px 3px 6px #fff; */
+        padding: 10px 20px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    /* .Plan_offered_box {
+        width: 100%;
+        min-width: 250px;
+        min-height: 390px;
+        padding: 15px 15px 0px 15px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        background: #fff;
+    } */
+    
+    .Subscription_offered_box {
+        width: 100%;
+        min-width: 250px;
+        /* margin-right: 50px; */
+        min-height: 390px;
+        padding: 15px 15px 30px 15px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        background: #fff;
+    }
+    
+}

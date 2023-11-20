@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;900&display=swap');
+
+.TrackOrder-container_main {
+    width: 100%;
+    padding: 0px 30px 60px 30px;
+    min-height: 450px;
+    font-family: 'Saira', sans-serif;    
+    display: block;
+    /* background: #f4f5f7; */
+    background: #fff;
+}
+
+.Trackorder_page_header {
+    width: 100%;
+    border-radius: 5px;
+    background: #c25be9;
+    margin-top: 10px;
+    padding: 0px 0px 3px 0px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.Trackorder_page_layout {
+    display: flex;
+}
+
+.Track_order_listings_container {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    padding: 13px 13px 30px 13px;
+    border-radius: 15px;
+    justify-content: space-around;
+}
+
+.TrackOrder-container {
+    width: 1129px;
+    padding: 0px 30px 60px 30px;
+    min-height: 600px;
+    display: block;
+    /* background: #f4f5f7; */
+    background: #fff;
+}
+
+.TrackOrder-item_box {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: #fff;
+    display: block;
+    padding: 20px;
+    border: 2px solid orange;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.TrackOrder_item_box_main {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #fff;
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.TrackOrder-item_top_section {
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+.TrackOrder_item_top_section_box {
+    width: 100%;
+    height: 190px;
+    display: flex;
+}
+
+.TrackOrder-item_image_box_main {
+    min-width: 190px;
+    height: 180px;
+    background: #fff;
+}
+
+.TrackOrder_item_image_box_wrap {
+    min-width: 190px;
+    height: 180px;
+    background: #fff;
+}
+
+.TrackOrder-item_image_box {
+    width: 250px;
+    height: 100%;
+    background: #fff;
+}
+
+.TrackOrder-item_title_box {
+    width: 460px;
+    height: 100%;
+    padding: 0px 15px;
+    display: block;
+    border-right: 2px solid #e7e7e7;
+}
+
+.TrackOrder-item_title_box_main {
+    /* width: ; */
+    height: 100%;
+    padding: 0px 0px 0px 15px;
+    display: block;
+}
+
+.TrackOrder-item_title {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    line-height: 1.3;
+    padding-bottom: 5px;
+}
+
+.TrackOrder-item_title_client {
+    width: 100%;
+    height: 47%;
+    overflow: hidden;
+    line-height: 1.3;
+    padding-bottom: 5px;
+}
+
+.TrackOrder-item_title_client_main {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    line-height: 1.3;
+    padding-bottom: 7px;
+}
+
+.TrackOrder-item_price-quantity_client {
+    width: 100%;
+    height: 25%;
+    padding: 0px 20px;
+    display: flex;
+}
+
+.TrackOrder-item_price-quantity_client_main {
+    width: 100%;
+    height: 100%;
+    /* padding: 0px 20px; */
+    display: flex;
+    align-items: center;
+}
+
+
+.Track_Order-item_price_quantity_box_main {
+    width: 100%;
+    padding: 15px 0px 0px 0px;
+    display: block;
+    /* border-top: 1px solid #e7e7e7; */
+}
+
+.TrackOrder_item_price_quantity_title_branch_main {
+    font-size: 18px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #333;
+}
+
+.TrackOrder-item_price-quantity_right_span_branch_main {
+    font-size: 18px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #656481;
+}
+
+.TrackOrder-item_title_span {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Saira', sans-serif;    
+    color: #007aff;
+}
+
+.TrackOrder_item_title_span_client {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Saira', sans-serif;    
+    color: #333;
+}
+
+.TrackOrder-item_price-quantity {
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+}
+
+.Track-Order-item_price-quantity_box {
+    width: 50%;
+    padding: 20px 20px 0px 20px;
+    display: flex;
+}
+
+.Track-Order-item_price-quantity_box_client {
+    width: 50%;
+    padding: 20px 0px 0px 10px;
+    display: flex;
+    /* border-top: 1px solid #e7e7e7; */
+}
+
+.Track-Order-item_price-quantity_box_quantity_client {
+    width: 50%;
+    padding: 20px 0px 0px 50px;
+    display: flex;
+    /* border-top: 1px solid #e7e7e7; */
+}
+
+.TrackOrder-item_price-quantity_title {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif, Helvetica, Arial;
+    font-weight: 700;
+    color: #001e73;
+}
+
+.Track_Item_Retailer {
+    position: absolute;
+    width: 92px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 1px #c5cbd5;
+    margin-top: -12px;
+    margin-left: 193px;
+    height: 42px;
+}
+
+.Track_Item_Retailer_main {
+    width: 92px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 1px #c5cbd5;
+    height: 42px;
+}
+
+.TrackOrder-item_price-quantity_right {
+    padding-left: 20px;
+    padding-top: 1px;
+}
+
+.TrackOrder-item_price-quantity_right_main {
+    padding: 15px 0px 10px 0px;
+}
+
+.Track_order_delivery_box {
+    height: 150px;
+    position: relative;
+}
+
+.TrackOrder-item_price-quantity_right_span {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif, Helvetica, Arial;
+    font-weight: 700;
+    color: #001e73;
+}
+
+.Track-Order-item_delivery_box {
+    width: 190px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 18px;
+    padding-left: 20px;
+}
+
+.TrackOrder-item_delivery_address {
+    width: 100%;
+    padding-top: 10px;
+    display: block;
+}
+
+.TrackOrder-item_delivery_address_span {
+    font-size: 18px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #333;
+}
+
+.Track-Order-item_delivery_address_p {
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: orange;
+}
+
+.TrackOrder-item_status_box {
+    width: 100%;
+    padding: 5px 5px 0px 5px;
+    display: block;
+    margin-top: 5px;
+}
+
+.TrackOrder-item_status_box_main {
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+    display: block;
+}
+
+.TrackOrder_item_status_box_top {
+    width: 100%;
+    padding: 5px 0px 0px 0px;
+    display: block;
+}
+
+.TrackOrder-item_status_types {
+    display: flex;
+}
+
+.TrackOrder-item_status_types_right {
+    padding-left: 15px;
+    display: flex;
+}
+
+
+.TrackOrder-item_status_span {
+    font-size: 16px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #656481;
+}
+
+.TrackOrder_item_status_text {
+    font-size: 16px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #656481;
+}
+
+
+.TrackOrder-item_delivery_stages_box_User {
+    width: 100%;
+    height: 31px;
+    display: flex;
+    padding: 0px 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.TrackOrder-item_delivery_stages_box_User_main {
+    width: 100%;
+    /* height: 31px; */
+    display: flex;
+    padding: 15px 0px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.TrackOrder-item_delivery_stages_box_Cart_main {
+    width: 100%;
+    /* height: 31px; */
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Track Order redisign */
+.Tracking_item_Empty_stages_types-span {
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    color: orange;
+}
+
+
+.Tracking_item_delivery_stages_types-span {
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    color: #00BFFF;
+}
+
+.Tracking_item_delivery_stages_types-span_confirmed {
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    color: red;
+}
+
+.Tracking_item_delivery_stages_types-span_shipped {
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    color: #03C04A;
+}
+
+/* Track Order redisign */
+
+
+
+.TrackOrder-item_Empty_stages_types-span {
+    font-size: 16px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: orange;
+}
+
+
+.TrackOrder-item_delivery_stages_types-span {
+    font-size: 16px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #00BFFF;
+}
+
+.TrackOrder-item_delivery_stages_types-span_confirmed {
+    font-size: 16px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: red;
+}
+
+.TrackOrder-item_delivery_stages_types-span_shipped {
+    font-size: 16px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #03C04A;
+}
+
+.TrackOrder-item_delivery_client-confirm {
+    display: flex;
+    padding-left: 450px;
+}
+
+.TrackOrder-item_delivery_client-confirm_yes {
+    padding-left: 20px;
+}
+
+.item_delivery_client-question_box {
+    display: block;
+
+}
+
+.item_delivery_client-question {
+    font-size: 16px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #74767c;
+}
+
+.item_delivery_client-question_hover-hidden {
+    display: none;
+} */
+
+.delivery-client-confirm_yes_button {
+    width: 30px;
+    margin-top: 2px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:  2px solid #c2bfbf;
+    background: #fff;
+}
+
+
+.TrackOrder-item_delivery_stages_User {
+    width: 220px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #e7e7e7;
+    justify-content: center;
+}
+
+.TrackOrder_item_delivery_stages_User_main {
+    width: 145px;
+    height: 31px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+}
+
+.TrackOrder-item_delivery_confirmed_User {
+    width: 220px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #00BFFF;
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.TrackOrder-item_delivery_confirmed_User_main {
+    width: 130px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    background: #00BFFF;
+    border-radius: 10px;
+    justify-content: center;    
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.TrackOrder-item_delivery_shipped_User {
+    width: 220px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: red;
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.TrackOrder-item_delivery_shipped_User_main {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: red;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+
+.TrackOrder-item_delivery_delivered_User {
+    width: 220px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #03C04A;
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.TrackOrder-item_delivery_delivered_User_main {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #03C04A;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.TrackOrder-item_delivery_stages-active_User {
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #fff;
+}
+
+.TrackOrder-item_delivery_stages-active_User_main {
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #fff;
+}
+
+.TrackOrder-item_delivery_stages_span_User {
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #c2bfbf;
+}
+
+.TrackOrder-item_delivery_stages_span_User_main {
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    color: #333;
+}
+
+.Track_order_Address_box {
+    width: 100%;
+}
+
+.Track_order_Address_text_box {
+    height: 77px;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.Track_order_bottom_box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Track_order_cancel_buttom_box {
+    padding-top: 7px;
+}
+
+.Track_order_cancel_buttom {
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+    background: #c25be9;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+    /* border: 1px solid lightgray; */
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.Track_order_cancel_buttom:hover {
+    background: #03C04A;
+}
+
+/* .TrackOrder-item_delivery_stages_User_main:nth-child(3n) {
+    width: 145px;
+    height: 31px;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #e7e7e7;
+    justify-content: center;
+} */
+
+
+@media (max-width: 700px) {
+
+    .TrackOrder-container_main {
+        width: 100%;
+        padding: 0px 15px 60px 15px;
+        min-height: 450px;
+        font-family: 'Saira', sans-serif;    
+        display: block;
+        /* background: #f4f5f7; */
+        background: #fff;
+    }
+
+    .Trackorder_page_layout {
+        display: block;
+    }
+    
+
+    .Track_order_listings_container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        padding: 0px 0px 30px 0px;
+        justify-content: space-around;
+        border: none;
+        background-color: #fff;
+    }
+
+    .TrackOrder_item_box_main {
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 10px;
+        background: #fff;
+        display: block;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+    
+    }
+}

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;900&display=swap');
+
+.Wishlist_Main_container {
+    font-family: 'Saira', sans-serif;    
+    min-height: 450px;
+    padding: 0px 0px 60px 0px;
+
+    background: #fff;
+}
+
+.Wishlist_page_layout {
+    display: flex;
+    padding: 0px 30px;
+}
+
+.Wishlist_Title_box {
+    padding: 0px 30px;
+}
+
+.Wishlist_page_header {
+    width: 100%;
+    background: #c25be9;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0px 0px 3px 0px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.Wishlist_page_container {
+    width: 60%;
+    padding: 20px 13px;
+    border-radius: 15px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    font-family: 'Saira', sans-serif;    
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Wishlist_item_box {
+    width: 360px;
+    height: 230px;
+    display: block;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+}
+
+.Wishlist_item_title {
+    width: 100%;
+    height: 38px;
+    line-height: 1.3;
+    overflow: hidden;
+}
+
+.Wishlist-item_title_span {
+    font-size: 16px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #333;
+}
+
+.Wishlist-item_title_span:hover {
+    color: #00BFFF
+}
+
+.Wishlist-item-bottom_section {
+    display: flex;
+    width: 100%;
+}
+
+.Wishlist_item_image {
+    width: 190px;
+    padding: 5px 0px;
+    height: 170px;
+}
+
+.Wishlist_item_options {
+    /* width: 120px; */
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 175px;
+    /* padding-top: 35px; */
+}
+
+.Wishlist_options_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+}
+
+.Wishlist_addtocart_button {
+    width: 80px;
+    height: 25px;
+    font-size: 13px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #00BFFF;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.Wishlistlisting_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Wishlist_remove_button {
+    width: 80px;
+    height: 25px;
+    font-size: 13px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: red;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.Wishlist_price_bottom {
+    padding-top: 30px;
+    margin-left: 10px;
+    word-spacing: normal;
+}
+
+.Wishlist_price_bottom_box {
+    margin-left: 15px;
+    word-spacing: normal;
+}
+
+.Wishlist_price_bottom_span {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Saira', sans-serif;    
+    color: #656481;
+    /* 001e73 */
+}
+
+@media (max-width: 700px) {
+    .Wishlist_page_container {
+        width: 100%;
+        padding: 30px 10px 60px 10px;
+        min-height: 570px;
+        border: none;
+        border-radius: 15px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        /* background: #f4f5f7; */
+    }
+
+    .Wishlist_page_layout {
+        display: block;
+        padding: 0px 15px;
+    }
+
+    .Wishlist_Title_box {
+        padding: 0px 15px;
+    }
+    
+    .Wishlist_item_box {
+        width: 100%;
+        height: 230px;
+        display: block;
+        padding: 10px 10px 0px 10px;
+        margin-bottom: 15px;
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+    }
+
+}

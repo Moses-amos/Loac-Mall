@@ -1,0 +1,51 @@
+.Mobile_Nav_container {
+    display: none;
+}
+
+
+@media (max-width: 640px) {
+    .Mobile_Nav_container {
+        position: relative;
+        width: 100%;
+        min-height: 60px;
+        background: orange;
+        display: block;
+        top: 0px;
+        z-index: 5;
+    }
+
+    .Mobile_Nav_flex {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Mobile_Nav_left {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .Mobile_Nav_center {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Mobile_Nav_right {
+        width: 20%;
+        height: 100%;
+        padding-top: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

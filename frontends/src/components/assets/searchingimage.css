@@ -1,0 +1,11 @@
+.Searching_image_resize {
+    width: 270px;
+    height: 180px;
+}
+
+@media (max-width: 640px) {
+    .Searching_image_resize {
+        width: 140px;
+        height: 180px;
+    }
+}

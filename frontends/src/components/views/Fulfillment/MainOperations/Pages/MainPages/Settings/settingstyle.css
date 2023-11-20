@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;900&display=swap');
+
+.Retailer_manage_container {
+    width: 230px;
+    font-family: 'Saira', sans-serif;    
+    padding: 0px 20px 20px 20px;
+    border-bottom-right-radius: 5px;
+    height: 100%;
+    box-shadow: 0 1px 2px 2px #c8c6c6;
+}
+
+.CLient-sidebar {
+    display: block;
+}
+
+.Retailer_settings_back {
+    width: 80px;
+    height: 35px;
+    background: #00BFFF;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.Retailer_settings_back:hover {
+    background: #0192c3;
+}
+
+.CLient-sidebar-header-User {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #e7e7e7;
+    align-items: center;
+}
+
+.CLient-sidebar-titles-User {
+    width: 100%;
+    height: 100%;
+    font-size: 20.8px;
+    text-decoration: none;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    color: #656481;
+}
+
+ul {
+    padding-inline-start: 0px;
+}

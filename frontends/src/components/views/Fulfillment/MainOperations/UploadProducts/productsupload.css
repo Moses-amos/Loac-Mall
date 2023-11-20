@@ -1,0 +1,1129 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@900&family=Saira:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;900&display=swap');
+
+.Products_upload_main_box {
+    width: 100%;
+    display: flex;
+    font-family: 'Saira', sans-serif;    
+}
+
+.ProductTabs {
+    width: 100%;
+    padding: 5px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 3px; */
+    font-weight: 700;
+    font-family: 'Saira', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 14px;
+    /* font-weight: 500; */
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+    /* box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16); */
+    background-color: orange;
+    /* background: #1380e7; */
+}
+
+.Important_Location_Note_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Product_title_box {
+    margin-top: 7px;
+}
+
+.No_Location_Set {
+    width: 80%;
+    z-index: 2;
+    margin-top: 100px;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background: #03C04A;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+}
+
+.Upload_Success_Location_Set {
+    width: 730px;
+    z-index: 2;
+    margin-top: 70px;
+    border-radius: 7px;
+    margin-left: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    background: #fff;
+    box-shadow:  0px 3px 6px rgba(0, 0, 0, 0.16);
+    border: 2px solid #03C04A;
+}
+
+.No_Location_Note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Retailer_Upload_box {
+    width: 100%;
+    display: block;
+    z-index: 2;
+    background: #fff;
+    padding: 0px 30px 70px 30px;
+    border-top: none;
+}
+
+.Product_Title_input_box {
+    /* width: 935px; */
+    width: 850px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 40px;
+    font-family: 'Saira', sans-serif;    
+    color: #070606;
+    outline: 1px solid #c4c3c3;
+    border: none;
+    border-radius: 1px;
+    padding-left: 10px;
+}
+
+.SelectCategory_Container_Upload {
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+.SelectCategory_Box_Upload {
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+}
+
+.SelectCategory_Title_Upload {
+    font-size: 40px;
+    /* font-weight: 700; */
+    font-weight: 900;
+    text-transform: uppercase;
+    font-stretch: 100%;
+    font-optical-sizing: auto;
+    font-feature-settings: normal;
+    font-style: normal;
+    font-family: 'Saira Extra Condensed', sans-serif;
+        /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    color: #333;
+}
+
+.Select_Category_Box_wrapper {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.No_Location_Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Important_Location_Note {
+    font-weight: 800;
+    font-size: 35px;
+    font-family: 'Saira', sans-serif;    
+
+    /* text-decoration: underline; */
+    /* font-style: italic; */
+    color: #fff;
+}
+
+.Important_Location_Note_Uploaded {
+    font-weight: 800;
+    font-size: 32px;
+    font-family: 'Saira', sans-serif;    
+    font-style: italic;
+    color: #03C04A;
+}
+
+.Important_Location_Text_span {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Saira', sans-serif;    
+    color: #fff;
+}
+
+.Set_Fulfilments_Button {
+    display: flex;
+    padding-top: 20px;
+    font-family: 'Saira', sans-serif;    
+    justify-content: center;
+    align-items: center;
+}
+
+.Category-selected_button {
+    padding: 5px 10px;
+    width: 200px;
+    height: 60px;
+    background: #03C04A;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.active-CategoryTabs {
+    border: 2px solid #fff;
+    background: #00BFFF;
+}
+
+.active-ProductTabs {
+    border: 2px solid #00BFFF;
+}
+
+.AllTabs {
+    display: none;
+}
+
+.Submit-upload-button_box {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Edit-upload-button_box {
+    width: 170px;
+    position: absolute;
+    display: flex;
+    margin-left: 500px;
+    z-index: 3;
+    margin-top: -5px;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.Edit-upload-button_clicked {
+    width: 170px;
+    height: 45px;
+    display: flex;
+    border: 3px solid #03C04A;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background: #03C04A;
+    font-family: 'Saira', sans-serif;    
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.Edit-upload-button {
+    width: 400px;
+    height: 45px;
+    display: flex;
+    border: 3px solid #1380e7;
+    align-items: center;
+    justify-content: center;
+    background: #1380e7;
+    font-family: 'Saira', sans-serif;    
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.Submit-upload-button {
+    width: 400px;
+    height: 45px;
+    display: flex;
+    border: 3px solid #1380e7;
+    align-items: center;
+    justify-content: center;
+    background: #1380e7;
+    font-family: 'Saira', sans-serif;    
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.Submit-upload-button_clicked {
+    width: 400px;
+    height: 45px;
+    display: flex;
+    border: 3px solid #03C04A;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background: #03C04A;
+    font-family: 'Saira', sans-serif;    
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.Electronics-select_list {
+    position: absolute;
+    margin-top: 5px;
+    /* z-index: 10; */
+    margin-left: -245px;
+    /* margin-left: -20px; */
+    min-height: 507px;
+    padding: 5px 18px 0px 17px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5); */
+    background-color: #fff;
+}
+
+.Appliance-select_list {
+    position: absolute;
+    margin-top: 5px;
+    /* z-index: 10; */
+    /* margin-left: -176px; */
+    margin-left: -401px;
+    min-height: 507px;
+    padding: 5px 18px 0px 17px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+    background-color: #fff;
+}
+
+.Furniture-select_list {
+    position: absolute;
+    margin-top: 5px;
+    /* z-index: 10; */
+    margin-left: -557px;
+    min-height: 507px;
+    padding: 5px 18px 0px 17px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+    background-color: #fff;
+}
+
+.Clothing-select_list {
+    position: absolute;
+    margin-top: 5px;
+    /* z-index: 10; */
+    margin-left: -713px;
+    min-height: 507px;
+    padding: 5px 18px 0px 17px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+    background-color: #fff;
+}
+
+.Pending_one-select_list {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -488px;
+    min-height: 507px;
+    padding: 5px 18px 0px 17px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+    background-color: #fff;
+}
+
+.Pending_two-select_list {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -636px;
+    min-height: 483px;
+    padding: 5px 18px 0px 17px;
+    border-radius: 5px;
+        box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+    background-color: #fff;
+}
+
+.Pending_three-select_list {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -800px;
+    min-height: 507px;
+    padding: 5px 18px 0px 17px;
+    border-radius: 5px;
+        box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+    background-color: #fff;
+}
+
+.Pending_four-select_list {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -956px;
+    min-height: 507px;
+    padding: 5px 18px 0px 17px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+    background-color: #fff;
+}
+
+.Electronics-select_list-hide {
+    display: none;
+}
+
+.Electronics_dropdown-selects {
+    width: 250px;
+    margin-right: 20px;
+    /* height: 330px; */
+}
+
+.Electronics_dropdown-selects-hide {
+    display: none;
+}
+
+.SelectCategory-li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: 'Saira', sans-serif;    
+    font-size: 14px;
+    color: #656481;
+    font-weight: 600;
+    padding: 6px 0px 6px 3px;
+}
+
+.active-SelectCategory-li {
+    background-color: #00BFFF;
+    color: #fff;
+}
+
+.Category-select_button {
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    height: 17px;
+    align-items: center;
+    justify-content: center;
+    /* height: 22px; */
+    font-family: 'Saira', sans-serif;    
+    background: #03C04A;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.Dropzone-style {
+    width: 360px;
+    /* cursor: pointer; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.Click-to-Add-Image {
+    width: 340px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    border-radius: 10px;
+    background: #00BFFF;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    /* border: 2px solid orange; */
+    justify-content: center;
+    outline: none;
+}
+
+.Click-to-Add-Image:hover {
+    background: #1380e7;
+}
+
+.Dropped_Image_left_margin {
+    padding-left: 0px;
+}
+
+.Dropped-Image_box {
+    /* margin-left: 5px;
+    overflow-x: scroll;
+    padding: 15px 15px 15px 0px; */
+    display: flex;
+    margin-top: 10px;
+    width: 360px;
+    border-radius: 11px;
+    border: 1px solid #c5cbd5;
+    height: 315px;
+}
+
+.Dropped-Image_style {
+    cursor: pointer;
+    width: 358px;
+    /* padding: 1px; */
+    outline: none;
+    border-radius: 10px;
+    position: relative;
+    height: 313px;
+}
+
+.Image-remove_button {
+    /* position: absolute; */
+    margin-top: 10px;
+    outline: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 344px; */
+    border: none;
+    border-radius: 5px;
+}
+
+.Image_remove-button {
+    cursor: pointer;
+    width: 170px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    border: none;
+    font-family: 'Saira', sans-serif;    
+    border-radius: 5px;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    background: #1380e7;
+    outline: none;
+}
+
+.Details_Content_box {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px;
+}
+
+.Details-Title_Text_style {
+    width: 25%;
+    padding: 15px 10px;
+    color: #333;
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+}
+
+.Details-Input_Box_style {
+    width: 75%;
+    display: flex;
+}
+
+.Details-Title_Text_style_printer {
+    width: 48%;
+    padding: 5px 0px;
+    color: #333;
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+}
+
+.Details-Title_Text_style_printer_right {
+    width: 55%;
+    padding: 5px 0px;
+    color: #333;
+    font-family: 'Saira', sans-serif;    
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Details-Title_Text_twenty {
+    width: 25%;
+    padding: 15px 10px;
+    color: #333;
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+}
+
+.Details-Box_Text_twenty {
+    width: 75%;
+    display: flex;
+}
+
+
+.Price-Title_Text_style_upload {
+    width: 40%;
+    padding: 15px 10px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Saira', sans-serif;    
+}
+
+.Details-Title_Text_mid_style {
+    width: 28%;
+    padding: 5px 0px;
+    color: #333;
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+}
+
+.Details-Title_clothe_sizes {
+    width: 23%;
+    padding: 5px 0px;
+    color: #333;
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+}
+
+.Details-Title_Text_right_style {
+    width: 20%;
+    padding: 5px 0px;
+    color: #333;
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+}
+
+.Details-Title_Text_Dronemid_style {
+    width: 30%;
+    padding: 5px 0px;
+    color: #333;
+    font-family: 'Saira', sans-serif;    
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Details-Title_Text_Brand_style {
+    width: 25%;
+    padding: 15px 10px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Saira', sans-serif;    
+}
+
+.Details-Box_Text_Brand_style {
+    width: 75%;
+    display: flex;
+}
+
+.Details-Title_Text_Droneright_style {
+    width: 25%;
+    padding: 5px 0px;
+    color: #333;
+    font-family: 'Saira', sans-serif;    
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Details-Input_style {
+    height: 30px;
+    width: 450px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Saira', sans-serif;    
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 1px solid #c4c3c3;
+}
+
+.Details-Input_style_monitor_min {
+    height: 30px;
+    width: 230px;
+    font-size: 15px;
+    color: #333;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 1px solid #c4c3c3;
+}
+
+.Details-Input_style_PowerSupply {
+    height: 30px;
+    width: 180px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Saira', sans-serif;    
+    padding-left: 5px;
+    outline: 1px solid #c4c3c3;
+}
+
+.Details-Input_style_printer_min {
+    height: 30px;
+    width: 240px;
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 1px solid #c4c3c3;
+}
+
+.Details-Input-mid_style {
+    height: 30px;
+    width: 150px;
+    font-size: 13px;
+    color: #333;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Saira', sans-serif;    
+    padding-left: 5px;
+    outline: 1px solid #c4c3c3;
+}
+
+.Details-left-Title_Text_style {
+    width: 60%;
+    padding: 5px;
+    font-family: 'Saira', sans-serif;    
+    color: #74767c;
+    font-weight: 700;
+}
+
+.Details-right-Title_Text_style {
+    width: 35%;
+    padding: 5px;
+    font-family: 'Saira', sans-serif;    
+    color: #74767c;
+    font-weight: 700;
+}
+
+.WarrentyBox {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #333;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 600;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid #656481;
+}
+
+.WarrentySelect {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Saira', sans-serif;    
+    color: #fff;
+    font-weight: 600;
+    height: 25px;
+    cursor: pointer;
+    background: orange;
+}
+
+.Delivery_Status_Box {
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    font-family: 'Saira', sans-serif;    
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid #656481;
+}
+
+.Delivery_Status {
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 600;
+    height: 25px;
+    cursor: pointer;
+    background: orange;
+}
+
+.Select_brand-options_box {
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+.Select_Phone_brand-options_box {
+    display: flex;
+    padding: 10px 0px 0px 20px;
+    justify-content: space-between;
+}
+
+.Select_Charger_brand-options_box {
+    display: flex;
+    padding: 10px 0px 0px 0px;
+    justify-content: space-between;
+}
+
+
+.Select_Brand_options_listed {
+    display: flex;
+    padding-right: 130px;
+}
+
+.Select_Brand_options_listed_refrigertors {
+    display: flex;
+    padding-right: 40px;
+}
+
+.Select_Brand_options_listed_printers {
+    display: flex;
+    padding-right: 15px;
+}
+
+.Select_Brand_options_listed_fryers {
+    display: flex;
+    padding-right: 245px;
+}
+
+.Select_Laptop_Brand_options_listed {
+    display: flex;
+    /* padding-right: 130px; */
+}
+
+.Select_tv_options_listed {
+    display: flex;
+    padding-right: 130px;
+}
+
+.Select_brand_option_selected_style {
+    width: 95px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    font-weight: 500;
+    font-family: 'Saira', sans-serif;    
+    border-radius: 3px;
+    border: 1px solid #656481;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.Select_brand_option_selected_style_last {
+    width: 95px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #656481;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.Select_brand_tv_option_selected_style {
+    width: 97px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    font-weight: 500;
+    border-radius: 5px;
+    font-family: 'Saira', sans-serif;    
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.Select_tv_option_selected_style {
+    width: 185px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    font-weight: 500;
+    font-family: 'Saira', sans-serif;    
+    border-radius: 5px;
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.Select_headphone_option_selected_style {
+    width: 135px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 22px;
+    display: flex;
+    font-weight: 500;
+    border-radius: 5px;
+    font-family: 'Saira', sans-serif;    
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.Select_smart_tv_option_selected_style {
+    width: 215px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    font-weight: 500;
+    border-radius: 5px;
+    font-family: 'Saira', sans-serif;    
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.Select_phone_brand_option_selected_style {
+    width: 95px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #c5cbd5;
+    justify-content: center;
+    color: #656481;
+    align-items: center;
+}
+
+.active-Ram_option_selected_style {
+    border: none;
+    background: orange;
+    /* font-weight: 500; */
+
+}
+
+.Other_brand_listed {
+    display: flex;
+    width: 100%;
+}
+
+.Other_brand_listed_hide {
+    display: none;
+}
+
+.Input_midwidth_Style {
+    width: 280px;
+    height: 30px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Saira', sans-serif;    
+    padding-left: 5px;
+    outline: 1px solid #c4c3c3;
+}
+
+.Input_fullwidth_Style {
+    width: 630px;
+    height: 30px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Saira', sans-serif;    
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 1px solid #c4c3c3;
+}
+
+.Input_four_hundred_Style {
+    width: 400px;
+    height: 30px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Saira', sans-serif;    
+    padding-left: 5px;
+    outline: 1px solid #c4c3c3;
+}
+
+.Input_two_hundred_Style {
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    font-family: 'Saira', sans-serif;    
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding-left: 5px;
+    outline: 1px solid #c4c3c3;
+}
+
+.Description_box_upload {
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.Product_Images_box_upload {
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 60px;
+    border-top: 2px solid #e7e7e7;
+    margin-bottom: 30px;
+}
+
+.Prices_box_upload {
+    width: 100%;
+    margin-top: 80px;
+    padding-top: 60px;
+    border-top: 2px solid #e7e7e7;
+    margin-bottom: 30px;
+}
+
+.Prices_box_container_upload {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Prices_Input_box_upload {
+    width: 530px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #c4c3c3;
+}
+
+.Prices_OR_text {
+    list-style: none;
+    width: 50px;
+    padding-left: 80px;
+    margin: 5px 0px;
+    font-weight: 700;
+    color: #656481;
+}
+
+.Prices_Input_box_upload_right {
+    width: 530px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #c4c3c3;
+}
+
+.Select_Discount_Box {
+    width: 200px;
+    height: 33px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: royalblue;
+    transition: all 0.2s ease-in-out;
+    /* border: 2px solid #656481; */
+    border-radius: 3px;
+}
+
+.Select_Discount_Box:hover {
+    background: #339afb;
+}
+
+.Select_Discount_span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.Unidentified_Category_box {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.Unidentified_button_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Unidentified_box_span {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #3E3D53;
+    /* color: #595964; */
+}
+
+.Unidentified_box_text {
+    padding: 2px 0px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+
+.Unidentified_button_box_style {
+    /* min-width: 110px;
+    max-width: 110px; */
+    width: 180px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    font-family: 'Saira', sans-serif;
+    cursor: pointer;
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5); */
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    font-size: 15px;
+    border-radius: 5px;
+    /* padding: px 10px; */
+    background: #1380e7;
+}
+
+.Unidentified_button_box_style:hover {
+    background: #03C04A;
+}

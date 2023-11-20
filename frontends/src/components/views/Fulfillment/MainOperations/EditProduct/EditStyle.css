@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+.Clicked-Item-name {
+    width: 100%;
+    height: 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: rgb(33, 33, 33);
+    padding-left: 10px;
+}
+
+.Info_Edited_detail_box {
+    width: 710px;
+    display: block;
+    margin-left: 20px;
+    border-radius: 10px; 
+    border: 1px solid #001e73;
+    padding: 15px; 
+    box-shadow: 0 0px 0px 1px #001e73;
+}
+
+.Dropzone_Edit_show {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.SideImageTabs {
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.Edit_image_main {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    width: 590px;
+}
+
+.active-SideImageTabs {
+    border: 1px solid green;
+}
+
+.active-imageTab1 {
+    width: 100%;
+    height: 100%;
+}
+
+.active-imageTab2 {
+    width: 100%;
+    height: 100%;
+}
+
+.active-imageTab3 {
+    width: 100%;
+    height: 100%;
+}
+
+.active-imageTab4 {
+    width: 100%;
+    height: 100%;
+}
+
+.imageTab1 {
+    display: none;
+}
+
+.imageTab2 {
+    display: none;
+}
+
+.imageTab3 {
+    display: none;
+}
+
+.imageTab4 {
+    display: none;
+}
+
+.Item-price-info {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    width: 50%;
+    height: 100%;
+    line-height: 29px;
+    font-weight: 700;
+    color: rgb(29, 37, 44);
+    text-size-adjust: 100%;
+    border: 1px solid #e7e7e7;
+    padding-top: 10px;
+}
+
+.Item-warrenty-info {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    width: 50%;
+    height: 100%;
+    font-weight: 500;
+    line-height: 17px;
+    text-size-adjust: 100%;
+    color: rgb(4, 12, 19);
+    border: 1px solid #e7e7e7;
+} 
+
+.moreSpecs-show {
+    width: 440px;
+    padding: 5px 10px;
+    background-color: #e7e7e7;
+    /* height: 300px; */
+    margin-left: -320px;
+    display: flex;
+}
+
+.moreSpecs {
+    display: none;
+}
+
+.Edit_Details_text {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.Edit_Details_text_style {
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: #070606;
+}
+
+.Edit_Details_Title {
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.Edit_Details_or_box {
+    position: absolute;
+    margin-left: 60px;
+    margin-top: -20px;
+}
+
+.Edit_Details_or {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.Was_Price_zero {
+    position: absolute;
+    margin-left: 560px;
+}
+
+.Was_Price_zero_button {
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    border: none;
+    color: #fff;
+    display: flex;
+    outline: none;
+    font-weight: 500;
+    background: #03C04A;
+}
+
+.Warrenty_select_button_style {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    outline: none;
+    font-weight: 500;
+    background: #00BFFF;
+}
+
+.active_Warrenty_select_button_style {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    display: flex;
+    outline: none;
+    font-weight: 500;
+    background: orange;
+}
+
+.Delivery_select_button_style {
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    outline: none;
+    font-weight: 500;
+    background: #1380e7;
+}
+
+.active_Delivery_select_button_style {
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    outline: none;
+    font-weight: 500;
+    background: orange;
+}
+
+
+.Edit_Image_delete_box {
+    width: 210px;
+    outline: none;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 17px;
+    border: none;
+    /* height: ; */
+}
+
+.Edit_Image_delete_button {
+    width: 210px;
+    height: 25px;
+    z-index: 4;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: #fff;
+    display: flex;
+    outline: none;
+    font-weight: 500;
+    background: #1380e7;
+}
+
+.Edit_Image_change_saved_button {
+    width: 210px;
+    height: 25px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: #fff;
+    display: flex;
+    outline: none;
+    z-index: 4;
+    font-weight: 500;
+    background: orange;
+}
+
+.Edit_Image_space_box {
+    width: 487px;
+    height: 43px;
+    /* background-color: red; */
+    position: absolute;
+    cursor: default;
+    /* margin-left: 210px; */
+}
+
+.Edit_Image_save_box {
+    width: 210px;
+    position: absolute;
+    outline: none;
+    z-index: 4;
+    display: flex;
+    margin-left: 273px;
+    margin-top: 18px;
+    border: none;
+    /* height: ; */
+}
+
+
+.Edit_Image_save_button {
+    width: 210px;
+    height: 25px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: #fff;
+    display: flex;
+    outline: none;
+    z-index: 4;
+    font-weight: 500;
+    background: #03C04A;
+}
+
+.Edit_Image_save_clicked_button {
+    width: 210px;
+    height: 25px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: #fff;
+    display: flex;
+    outline: none;
+    z-index: 4;
+    font-weight: 500;
+    background: orange;
+}
+
+
+.Show_Picture {
+    display: block;
+}
+
+.Hide_Product_Image {
+    display: none;
+}
+
+.Edit_Image_change_box {
+    position: absolute;
+    width: 500px;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    z-index: 4;
+    /* height: ; */
+}
+
+.Edit_Image_change_button {
+    width: 200px;
+    height: 25px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: #fff;
+    display: flex;
+    outline: none;
+    font-weight: 500;
+    z-index: 4;
+    background: #1380e7;
+}
+
+.Edit_Image_change_edit_box {
+    position: absolute;
+    width: 250px;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    /* height: ; */
+}
+
+.Edit_Image_No_edit_box {
+    position: absolute;
+    width: 250px;
+    cursor: default;
+    display: flex;
+    margin-left: 250px;
+    justify-content: center;
+    margin-top: 18px;
+    /* height: ; */
+}
+
+.Edit_Image_change_edit_button {
+    width: 200px;
+    height: 25px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: #fff;
+    display: flex;
+    z-index: 4;
+    outline: none;
+    font-weight: 500;
+    background: orange;
+}
+
+.Edit_Image_No_edit_button {
+    width: 200px;
+    height: 25px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: #fff;
+    display: flex;
+    z-index: 4;
+    outline: none;
+    font-weight: 500;
+    background: #03C04A;
+}

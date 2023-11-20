@@ -1,0 +1,53 @@
+/* .Page-option_selects_toggle_many {
+    width: 150px;
+    height: 150px;
+}
+
+.image_page_selected_many {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    box-shadow: 0px 1px 3px #fff; 
+}
+
+.Page_select-option_many {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #89cff0;
+    padding: 10px 40px;
+    border-radius: 5px;
+    height: 170px;
+}
+
+.active-image_page_selected_many {
+    border: 2px solid royalblue;
+}
+
+.Memory_option-style_view {
+    width: 80px;
+    height: 30px;
+    background: #c25be9;
+    font-weight: 600;
+    color: #000;
+    outline: none;
+    border: none;
+    border: 1px solid orange;
+    outline: none;
+    border-radius: 4px;
+} */
+
+.active-image_page_selected {
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+.image_page_selected_some_motherboard {
+    width: 250px;
+    /* padding: 5px; */
+    height: 150px;
+    cursor: pointer;
+    position: relative;
+}

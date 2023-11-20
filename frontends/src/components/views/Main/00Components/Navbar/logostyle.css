@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@800&display=swap');
+
+/* Logo */
+.Logo_name_box {
+    height: 43px;
+    display: flex;
+    margin-left: 5px;
+    /* align-items: baseline; */
+}
+
+.Company_name_h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 30px;
+    font-stretch: 100%;
+    font-weight: 800;
+    /* text-transform: uppercase; */
+    color: #333;
+}

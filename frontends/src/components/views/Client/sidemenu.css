@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;900&display=swap');
+
+.Client_page_sidebar_box {
+    width: 40%;
+    height: 450px;
+    padding-bottom: 30px;
+    font-family: 'Saira', sans-serif;    
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.Cliet_sidebar_left_box_ {
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    /* margin-left: 30px; */
+    margin-top: 7px;
+    background: #fff;
+    border: 1px solid #c4c3c3;
+
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.Client_preview_toggle {
+    display: block;
+    width: 100%;
+}
+
+.Client_preview_toggle_hide {
+    display: none;
+}
+
+.Client_preview_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Client_preview_button {
+    width: 100px;
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    font-family: 'Saira', sans-serif;    
+    border-radius: 7px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background: #0071dc;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
+
+}
+
+.Client_preview_button:hover {
+    background: #1890ff;
+}
+
+._Client_User_page_sidebar {
+    display: block;
+    padding: 30px 20px 0px 20px;
+}
+
+.CLient_sidebar_header_User {
+    width: 100%;
+    display: flex;
+    padding-left: 20px;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 10px;
+}
+
+.CLient_sidebar_header_User:hover {
+    background: #f1f0f0;
+}
+
+.Cliet_sidebar_text_active {
+    width: 280px;
+    min-width: 170px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+._Client_sidebar_li_height_svg {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+
+.CLient_sidebar_titles_User {
+    width: 100%;
+    height: 100%;
+    font-size: 20.8px;
+    text-decoration: none;
+    font-family: 'Saira', sans-serif;    
+    font-weight: 700;
+    /* color: #333; */
+    color: #656481;
+}
+
+.Overview_padding_left {
+    padding-left: 13px;
+}
+
+.Request_padding_left {
+    padding-left: 15px;
+}
+
+.CLient_sidebar_titles_User:hover {
+    color: #1890ff;
+}
+
+@media (max-width: 700px) {
+    .CLient_sidebar_header_User {
+        width: 80px;
+        padding: 0px 5px;
+        display: flex;
+        padding-left: 0px;
+        /* justify-content: center; */
+        align-items: center;
+        border-radius: 0px;
+    }
+
+    .CLient_sidebar_header_User:hover {
+        background: #fff;
+    }
+
+    .Client_page_sidebar_box {
+        width: 100%;
+        height: 40px;
+        padding-bottom: 0px;
+        margin-top: 30px;
+    }
+
+    .Cliet_sidebar_left_box_ {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        /* margin-left: 0px; */
+        background: #fff;
+        border: none;
+    }
+
+    ._Client_User_page_sidebar {
+        display: flex;
+        justify-content: right;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .Cliet_sidebar_text_active {
+        width: 52px;
+        min-width: 52px;
+        height: 40px;
+        display: flex;
+        border-width: 1px solid green;
+        align-items: center;
+    }
+
+    .CLient_sidebar_titles_User {
+        width: 0%;
+        height: 100%;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: 'Saira', sans-serif;    
+        font-weight: 600;
+        color: #333;
+    }
+
+    .Request_padding_left {
+        padding-left: 13px;
+    }
+
+    .Overview_padding_left {
+        padding-left: 0px;
+    }
+    
+    .CLient_sidebar_titles_User:hover {
+        color: #333;
+    }
+
+    .Cliet_sidebar_text_active:hover {
+        text-decoration: underline;
+    }
+
+    ._Client_sidebar_li_height_svg {
+        display: none;
+       
+    }
+}

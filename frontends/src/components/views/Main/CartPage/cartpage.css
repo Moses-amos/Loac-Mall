@@ -235,7 +235,7 @@
 .Cart-title_center {
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Saira', sans-serif;    
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20.8px;
     color: #fff;
     display: flex;
@@ -1156,7 +1156,7 @@
 
 .Place_order_title_span {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: #333;
     /* color: #5a596a; */
     font-family: 'Saira', sans-serif;    
@@ -1313,7 +1313,7 @@
 
     .Cart-title_center_total {
         font-family: 'Saira', sans-serif;    
-        font-weight: 700;
+        font-weight: 600;
         color: #fff;
         font-size: 20.8px;
         display: flex;

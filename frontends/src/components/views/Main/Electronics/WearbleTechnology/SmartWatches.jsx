@@ -392,7 +392,6 @@ function SmartWatches(props) {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -409,7 +408,7 @@ function SmartWatches(props) {
       <span className='Category_selectTabs_span'>Smart Watches</span>
     </div>
 
-    <div className='Select_tabs_slider'>
+    <div className='Select_tabs_slider_longer'>
     <Carousel className='Carosal_style_images' 
     responsive={responsive}
     partialVisible={true}
@@ -419,12 +418,12 @@ function SmartWatches(props) {
     deviceType={props.deviceType}
     >
 
-  <div className={SelectTabs ===1 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+  <div className={SelectTabs ===1 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(1)}}
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/61ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Smart Watches</span>
@@ -432,25 +431,25 @@ function SmartWatches(props) {
     
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className={SelectTabs ===2 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(2); GetAppleWatches()}}
   ><div>
     <img 
     src='https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202309_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1693611639254'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Apple</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className={SelectTabs ===3 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(3); GetSamsungWatches()}}
   ><div>
     <img 
     src='https://www.elgiganten.se/image/dv_web_D1800010021089916/492754/samsung-galaxy-watch5-44mm-bt-silver.jpg'
     // src='https://www.swisswatchexpo.com/images/custom-catalog-content/header/tag-heuer.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Galaxy</span>
@@ -458,23 +457,23 @@ function SmartWatches(props) {
     
    </div>
 
-   <div className={SelectTabs ===4 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className={SelectTabs ===4 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(4); GetHuaweiWatches()}}
   ><div>
     <img src="https://cdn1.smartprix.com/rx-izSDy5a8R-w420-h420/huawei-watch-gt-3-se.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Huawei</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===5 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className={SelectTabs ===5 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(5); GetGarminWatches()}}
   ><div>
     <img 
-    src='https://m.media-amazon.com/images/I/71aTpnUJu0L._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    src='https://i.imgur.com/QcNvTkq.png'
+   className="Image_Large_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Garmin</span>
@@ -482,36 +481,36 @@ function SmartWatches(props) {
    </div>
 
 
-   <div className={SelectTabs ===6 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className={SelectTabs ===6 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(6); GetReflexActiveWatches()}}
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/71MvYY4g+BL._AC_CR0%2C0%2C0%2C0_SX352_SY330_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Reflex Active</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===7 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className={SelectTabs ===7 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(7); GetFitbitWatches()}}
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/61L5Jko2QqL._AC_UF1000,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Fitbit Trackers</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===8 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className={SelectTabs ===8 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(8)}}
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/71e83m82p1L._AC_UF1000,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>More Brands</span>

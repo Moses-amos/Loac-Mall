@@ -357,14 +357,14 @@
     display: flex;
     align-items: center;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     font-family: 'Saira', sans-serif;    
     color: #5a596a;
 }
 
 
 .Overview_Account_information_button {
-    width: 110px;
+    width: 60px;
     height: 30px;
     cursor: pointer;
     display: flex;

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Axios from 'axios'
 import TextareaAutosize from 'react-textarea-autosize';
+import '../EditStyle.css'
+import '../../UploadProducts/productsupload.css'
 import '../../../../Main/ClickedDetails/ClickedPc/clickedpc.css'
 import ImageOne from './ImagesUpload/ImageOne';
 import ImageTwo from './ImagesUpload/ImageTwo';
@@ -168,7 +170,7 @@ const UpdateProduct = () => {
                         }
 
   return (
-    <div style={{ display: 'block', width: '590px'}}>
+    <div className='Edit_image_main'>
 <div className='Images-detail_box'>
 <div className='Images_box-left'>
     <div className='Side_image'>
@@ -494,12 +496,12 @@ const UpdateProduct = () => {
     <div style={{ padding: '10px', marginTop: '40px'}}>
     <div style={{ width: '100%', paddingTop: '20px', borderTop: '1px solid #3e4e5b'}}>
         <div style={{ paddingRight: '30px', display: 'flex'}}>
-            <span style={{ color: '#222', fontSize: '20px', fontWeight: '700'}}>Product Description</span>
+            <span style={{ color: '#333', fontSize: '20px', fontWeight: '600'}}>Product Description</span>
         </div>
     </div>
     <div className='Info-productdetail_description'>
-    <TextareaAutosize minRows={2} style={{ width: '570px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bold', border: 'none', borderRadius: '2px', padding: '10px 20px'}} onChange={onSpecificationChange}
+    <TextareaAutosize minRows={2} style={{ width: '570px', fontSize: '16px', outline: '1px solid #c4c3c3',
+            fontWeight: '500', border: 'none', lineHeight: '1.9', borderRadius: '2px', padding: '15px'}} onChange={onSpecificationChange}
           placeholder={Product.description} value={SpecificationValue} />
 
     </div>

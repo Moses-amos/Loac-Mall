@@ -53,7 +53,7 @@ function ImageUploadFive(props) {
                         {console.log('getInputProps',{ ...getInputProps() })} */}
                         <input {...getInputProps()} />
                         {/* <Icon type="plus" style={{ fontSize: '3rem' }} /> */}
-                        <span style={{ fontWeight: '600', fontSize: '15px', color: '#fff'}}>Add Main Image</span>
+                        <span style={{ fontWeight: '600', fontSize: '15px', color: '#fff'}}>Add Image 5</span>
                         </div>
                     </div>
                 )}

@@ -4,10 +4,9 @@ import Auth from '../../../../../hoc/auth';
 
 import ScrollToTop from '../../../../assets/ScrollToTop';
 
-
 const MobileNav = lazy(() => import('../Navbar/MobileNav'));
 const Navbar = lazy(() => import('./Navbar/Navbar'));
-// const SellerPlans = lazy(() => import('./SellerPlans'));
+const ProductsUpload = lazy(() => import('./DemoUploads/ProductsUpload'));
 const StoreCriteria = lazy(() => import('./StoreCriteria'));
 
 const Footer = lazy(() => import('../Footer/Footer'));
@@ -20,8 +19,8 @@ function SellerAccountRoutes() {
         <MobileNav />
         <Navbar />
         <Switch> 
+        <Route exact path="/demo/upload" component={Auth(ProductsUpload, null)} />
         <Route exact path="/account-plans" component={Auth(StoreCriteria, null)} />
-        {/* <Route exact path="/retailer-criteria" component={Auth(StoreCriteria, null)} /> */}
         </Switch>
         <Footer />
     </Router>

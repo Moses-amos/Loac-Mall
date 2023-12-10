@@ -15,7 +15,7 @@
 
 .Popular_product_categories {
     width: 100%;
-    padding: 65px 0px 5px 15px;
+    padding: 70px 0px 5px 15px;
     display: flex;
     /* justify-content: center; */
 }
@@ -110,7 +110,6 @@
 .Home_ad_left_box {
     width: 100%;
     height: 100%;
-    margin-right: 10px;
 }
 
 .Home_ad_right_box {
@@ -230,7 +229,7 @@
 
 .Home_images_top_boxes {
     width: 100%;
-    padding: 30px 30px 40px 30px;
+    padding: 10px 25px 40px 25px;
     display: flex;
     justify-content: space-between;
 
@@ -294,7 +293,7 @@
     justify-content: center;
     align-items: center;
     /* font-family: 'Open Sans', sans-serif; */
-    font-size: 23px;
+    font-size: 22px;
     font-family: 'Saira', sans-serif;    
     font-weight: 700;
     color: #fff;
@@ -326,7 +325,7 @@
 
     .Home_images_top_boxes {
         width: 100%;
-        padding: 30px 15px 40px 15px;
+        padding: 10px 15px 40px 15px;
         display: flex;
         justify-content: space-between;
     
@@ -343,7 +342,7 @@
 
     .Home_images_bottom_boxes {
         width: 100%;
-        padding: 20px 15px 50px 15px;
+        padding: 30px 15px 50px 15px;
         display: flex;
         justify-content: space-between;
     }
@@ -389,12 +388,6 @@
         font-family: 'Saira', sans-serif;    
         /* font-family: 'Oswald', sans-serif; */
     }
-
-    .Home_ad_left_box {
-        width: 100%;
-        height: 100%;
-        margin-right: 0px;
-    }
     
     .Home_ad_right_box {
         display: none;
@@ -439,6 +432,19 @@
         height: 170px;
         margin: 0px 5px 30px 5px;
         border-radius: 7px;
+    }
+
+    .home_front_image_title_span {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* font-family: 'Open Sans', sans-serif; */
+        font-size: 18px;
+        font-family: 'Saira', sans-serif;    
+        font-weight: 700;
+        color: #fff;
     }
 
 

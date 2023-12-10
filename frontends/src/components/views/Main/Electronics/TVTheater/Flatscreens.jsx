@@ -1984,7 +1984,6 @@ function Flatscreens(props) {
 
   return (
     <div style={{ display: 'block', background: "#c7e9f9"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -2006,7 +2005,7 @@ function Flatscreens(props) {
   onClick={()=> {BrandCategory(0); ToggleSelectTabs(1); ScreenFormDCategory(1)}}
   ><div>
     <img src="https://m.media-amazon.com/images/I/31sXhw7skNS._AC_UF894,1000_QL80_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>All TVs</span>
@@ -2018,7 +2017,7 @@ function Flatscreens(props) {
   onClick={()=> {BrandCategory(1); ToggleSelectTabs(1); ScreenFormDCategory(1); GetSamsung()}}
   ><div>
     <img src="https://m.media-amazon.com/images/I/71bdeNqyARL._AC_UF1000,1000_QL80_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Samsung</span>
@@ -2030,7 +2029,7 @@ function Flatscreens(props) {
   onClick={()=> {BrandCategory(2); ToggleSelectTabs(1); ScreenFormDCategory(1); GetHisense()}}
   ><div>
     <img src="https://m.media-amazon.com/images/I/912yXOrPu6L._AC_UF1000,1000_QL80_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Hisense</span>
@@ -2041,7 +2040,7 @@ function Flatscreens(props) {
   onClick={()=> {BrandCategory(3); ToggleSelectTabs(1); ScreenFormDCategory(1); GetSony()}}
   ><div>
     <img src="https://m.media-amazon.com/images/I/81KbyIky10L._AC_UF894,1000_QL80_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Sony</span>
@@ -2052,7 +2051,7 @@ function Flatscreens(props) {
   onClick={()=> {BrandCategory(4); ToggleSelectTabs(1); ScreenFormDCategory(1); GetTCL()}}
   ><div>
     <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6423/6423898_sd.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>TCL</span>
@@ -2063,7 +2062,7 @@ function Flatscreens(props) {
   onClick={()=> {BrandCategory(5); ToggleSelectTabs(1); ScreenFormDCategory(1); GetOther()}}
   ><div>
     <img src="https://wcctv.co.za/wp-content/uploads/2021/04/STL-55U20UM.png"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Other Brands</span>

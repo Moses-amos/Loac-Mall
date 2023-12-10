@@ -740,52 +740,52 @@ return (
   </div>
   <div style={{ marginTop: '5px'}}>
                         <div>
-                            <span style={{ fontWeight: '700', fontSize: '13px', color: '#656481'}}>~ (was Price) is Optional.</span>
+                            <span style={{ fontWeight: '600', fontSize: '14px', color: '#3E3D53'}}>was Price is Optional.</span>
                         </div>
                         <div>
-                            <span style={{ fontWeight: '700', fontSize: '13px', color: '#656481'}}>~ (Discount as Amount & Discount as Percentage) is Optional.</span>
+                            <span style={{ fontWeight: '600', fontSize: '14px', color: '#3E3D53'}}>Discount as Amount & Discount as Percentage is Optional.</span>
                         </div>
                         <div>
-                            <span style={{ fontWeight: '700', fontSize: '13px', color: '#656481'}}>~ Pick 1 Discount Method (Discount as Amount) or (Discount as Percentage) - don't enter values for both.</span>
+                            <span style={{ fontWeight: '600', fontSize: '14px', color: '#3E3D53'}}>(Discount as Amount) or (Discount as Percentage) - don't enter values for both.</span>
                         </div>
                         <div>
-                            <span style={{ fontWeight: '700', fontSize: '13px', color: '#656481'}}>~ Be sure to Save changes made.</span>
+                            <span style={{ fontWeight: '600', fontSize: '14px', color: '#3E3D53'}}>Be sure to Save changes made.</span>
                         </div>
                      </div>
   <ul style={{ width: '100%', display: 'block', position: 'relative', padding: '15px 5px'}}>
-    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+    <li className='Edit_Details_Title_box'>
       <div style={{ width: '25%',paddingTop: '5px'}}>
         <span className='Edit_Details_Title'>Product Title:</span>
       </div>
 
       <div style={{ width: '75%', paddingLeft: '20px'}}>
-        <TextareaAutosize minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}}
+        <TextareaAutosize minRows={2} 
+           style={{ width: '465px', fontSize: '15px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}}
             onChange={onTitleChange} placeholder={Product.title} value={TitleValue} />
       </div>
     </li>
 
-    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+    <li className='Edit_Details_Title_box'>
       <div style={{ width: '25%',paddingTop: '5px'}}>
         <span className='Edit_Details_Title'>Price:</span>
       </div>
       <div style={{ width: '75%', paddingLeft: '20px'}}>
-        <span style={{ position: 'absolute', zIndex: '9', marginLeft: '50px', color: '#74767c', fontWeight: 'bolder', marginTop: '4px'}}>N$ </span>
+        <span style={{ position: 'absolute', zIndex: '9', marginLeft: '50px', color: '#74767c', fontWeight: 'bolder', marginTop: '8px'}}>N$ </span>
         <input type="text" onChange={onPriceChange} placeholder={Product.price} value={PriceValue}
-          style={{ width: '250px', height: '30px', position: 'relative', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}}
+          style={{ width: '250px', height: '35px', position: 'relative', fontSize: '15px', color: '#333', outline: '1px solid #c4c3c3', fontWeight: '600', border: 'none', borderRadius: '2px', textAlign: 'center'}}
           />
       </div>
     </li>
 
-    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+    <li className='Edit_Details_Title_box'>
       <div style={{ width: '25%',paddingTop: '5px', position: 'relative'}}>
         <span className='Edit_Details_Title'>was Price:</span>
       </div>
       <div style={{ width: '75%', paddingLeft: '20px', position: 'relative'}}>
-      <span style={{ position: 'absolute', zIndex: '9', marginLeft: '50px', color: '#74767c', fontWeight: 'bolder', marginTop: '4px'}}>N$ </span>
+      <span style={{ position: 'absolute', zIndex: '9', marginLeft: '50px', color: '#74767c', fontWeight: 'bolder', marginTop: '8px'}}>N$ </span>
         <input type="text" onChange={onPriceWasChange} placeholder={Product.wasPrice} value={PriceWasValue}
-         style={{ width: '250px', height: '30px', position: 'relative', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}}
+         style={{ width: '250px', height: '35px', position: 'relative', fontSize: '15px', color: '#333', outline: '1px solid #c4c3c3', fontWeight: '600', border: 'none', borderRadius: '2px', textAlign: 'center'}}
            />
       </div>
       <div className='Was_Price_zero'>
@@ -795,15 +795,15 @@ return (
       </div>
 
     </li>
-    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+    <li className='Edit_Details_Title_box'>
       <div style={{ width: '25%',paddingTop: '5px', position: 'relative'}}>
         <span className='Edit_Details_Title'>Discount Amount:</span>
       </div>
       <div style={{ width: '75%', paddingLeft: '20px', position: 'relative'}}>
-      <span style={{ position: 'absolute', zIndex: '9', marginLeft: '50px', color: '#74767c', fontWeight: 'bolder', marginTop: '4px'}}>N$ </span>
+      <span style={{ position: 'absolute', zIndex: '9', marginLeft: '50px', color: '#74767c', fontWeight: 'bolder', marginTop: '8px'}}>N$ </span>
 
         <input type="text" onChange={onSpecialAttributeChange} placeholder={Product.specialAttribute} value={SpecialAttribute}
-         style={{ width: '250px', height: '30px', position: 'relative', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}}
+         style={{ width: '250px', height: '35px', position: 'relative', fontSize: '15px', color: '#333', outline: '1px solid #c4c3c3', fontWeight: '600', border: 'none', borderRadius: '2px', textAlign: 'center'}}
            />
       </div>
       <div className='Was_Price_zero'>
@@ -813,7 +813,7 @@ return (
       </div>
 
     </li>
-    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+    <li className='Edit_Details_Title_box'>
       <div style={{ width: '25%',paddingTop: '5px', position: 'relative'}}>
         <span className='Edit_Details_Title'>Discount Percentage:</span>
       </div>
@@ -822,7 +822,7 @@ return (
       </div>
       <div style={{ width: '75%', paddingLeft: '20px', position: 'relative'}}>
         <input type="text" onChange={onSpecialChange} placeholder={Product.special} value={SpecialPercent}
-         style={{ width: '250px', height: '30px', position: 'relative', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center', marginRight: '10px'}}
+         style={{ width: '250px', height: '35px', position: 'relative', fontSize: '15px', color: '#333', outline: '1px solid #c4c3c3', fontWeight: '600', border: 'none', borderRadius: '2px', textAlign: 'center', marginRight: '10px'}}
            />
            <span style={{fontSize: '13px', color: '#656481', fontWeight: 'bolder'}}>include (%)</span>
       </div>
@@ -832,7 +832,7 @@ return (
       </button>
       </div>
     </li>
-    <li style={{ listStyle: 'none', width: '100%', marginTop: '5px', display: 'flex', padding: '10px 0px'}}>
+    {/* <li style={{ listStyle: 'none', width: '100%', marginTop: '5px', display: 'flex', padding: '10px 0px'}}>
     <div style={{ width: '20%',paddingTop: '5px'}}>
         <span className='Edit_Details_Title'>Delivery Status:</span>
       </div>
@@ -854,24 +854,24 @@ return (
     <></>
     :
     selectDeliveryStatus === false ?
-    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px', marginBottom: '15px'}}>
+    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '15px 0px', marginBottom: '15px5}}>
       <div style={{ width: '25%',paddingTop: '5px'}}>
         <span className='Edit_Details_Title'>Option Applied:</span>
       </div>
       <div style={{ width: '75%', paddingLeft: '20px'}}>
         <input type="text" placeholder={Product.deliveryStatus}
-         style={{ width: '250px', height: '30px', position: 'relative', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}}
+         style={{ width: '250px', height: '30px', position: 'relative', fontSize: '15px', color: '#333', outline: '1px solid #c4c3c3', fontWeight: '600', border: 'none', borderRadius: '2px', textAlign: 'center'}}
            />
       </div>
     </li>
     :
-    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px', marginBottom: '15px'}}>
+    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '15px 0px', marginBottom: '15px5}}>
     <div style={{ width: '25%',paddingTop: '5px'}}>
       <span className='Edit_Details_Title'>Option Selected:</span>
     </div>
     <div style={{ width: '75%', paddingLeft: '20px'}}>
       <input type="text" placeholder={DeliveryStatus}
-       style={{ width: '250px', height: '30px', position: 'relative', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}}
+       style={{ width: '250px', height: '30px', position: 'relative', fontSize: '15px', color: '#333', outline: '1px solid #c4c3c3', fontWeight: '600', border: 'none', borderRadius: '2px', textAlign: 'center'}}
          />
     </div>
   </li>
@@ -899,28 +899,28 @@ return (
     <></>
     :
     selectWarrenty === false ?
-    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px', marginBottom: '15px'}}>
+    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '15px 0px', marginBottom: '15px5}}>
       <div style={{ width: '25%',paddingTop: '5px'}}>
         <span className='Edit_Details_Title'>Warrenty Applied:</span>
       </div>
       <div style={{ width: '75%', paddingLeft: '20px'}}>
         <input type="text" placeholder={Product.warrenty}
-         style={{ width: '250px', height: '30px', position: 'relative', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}}
+         style={{ width: '250px', height: '30px', position: 'relative', fontSize: '15px', color: '#333', outline: '1px solid #c4c3c3', fontWeight: '600', border: 'none', borderRadius: '2px', textAlign: 'center'}}
            />
       </div>
     </li>
     :
-    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px', marginBottom: '15px'}}>
+    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '15px 0px', marginBottom: '15px5}}>
     <div style={{ width: '25%',paddingTop: '5px'}}>
       <span className='Edit_Details_Title'>Warrenty Selected:</span>
     </div>
     <div style={{ width: '75%', paddingLeft: '20px'}}>
       <input type="text" placeholder={WarrentyValue}
-       style={{ width: '250px', height: '30px', position: 'relative', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}}
+       style={{ width: '250px', height: '30px', position: 'relative', fontSize: '15px', color: '#333', outline: '1px solid #c4c3c3', fontWeight: '600', border: 'none', borderRadius: '2px', textAlign: 'center'}}
          />
     </div>
   </li>
-    }
+    } */}
 
     {/* <li style={{ listStyle: 'none', width: '100%', display: 'block', marginTop: '20px', padding: '10px 0px', borderTop: '2px solid #c5cbd5'}}>
       <div style={{ width: '100%', padding: '10px 0px'}}>
@@ -932,7 +932,7 @@ return (
           placeholder={Product.description} value={SpecificationValue} />
       </div>
     </li> */}
-    {/* <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+    {/* <li className='Edit_Details_Title_box'>
       <div style={{ width: '25%',paddingTop: '5px'}}>
         <span>Product Category</span>
       </div>
@@ -945,7 +945,7 @@ return (
 
     {Product.product === "Battery" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -955,7 +955,7 @@ return (
         </div>
       </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Battery Type</span>
                 </div>
@@ -965,7 +965,7 @@ return (
                 </div>
               </li>
 
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Reachargeable?</span>
                 </div>
@@ -975,7 +975,7 @@ return (
                 </div>
               </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -984,7 +984,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Units Count</span>
         </div>
@@ -997,7 +997,7 @@ return (
     :
     Product.product === "Tool Accessory" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1006,7 +1006,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -1015,7 +1015,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1028,7 +1028,7 @@ return (
     :
     Product.product === "Power Tool" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1037,7 +1037,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1048,7 +1048,7 @@ return (
               </li>
             
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Data Transfer Rate</span>
                 </div>
@@ -1058,7 +1058,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1067,7 +1067,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -1081,7 +1081,7 @@ return (
     :
     Product.product === "Nail Gun" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1090,7 +1090,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Number of Fasteners</span>
         </div>
@@ -1100,7 +1100,7 @@ return (
         </div>
       </li>
 
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1109,7 +1109,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -1118,7 +1118,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1131,7 +1131,7 @@ return (
     :
     Product.product === "Jig Saw" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1140,7 +1140,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1149,7 +1149,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Blade Material</span>
                 </div>
@@ -1159,7 +1159,7 @@ return (
                 </div>
               </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1172,7 +1172,7 @@ return (
     :
     Product.product === "Electric Sander" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1181,7 +1181,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Rotational Speed</span>
                 </div>
@@ -1190,7 +1190,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1199,7 +1199,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Voltage</span>
                 </div>
@@ -1209,7 +1209,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1218,7 +1218,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -1233,7 +1233,7 @@ return (
     :
     Product.product === "Electric Planer" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1242,7 +1242,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1251,7 +1251,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1260,7 +1260,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -1270,7 +1270,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -1284,7 +1284,7 @@ return (
     :
     Product.product === "Electric Chainsaw" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1293,7 +1293,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Horsepower</span>
         </div>
@@ -1303,7 +1303,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Chain Length</span>
                 </div>
@@ -1313,7 +1313,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1322,7 +1322,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1331,7 +1331,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -1341,7 +1341,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -1355,7 +1355,7 @@ return (
     :
     Product.product === "Power Drill" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1365,7 +1365,7 @@ return (
         </div>
       </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Rotational Speed</span>
                 </div>
@@ -1375,7 +1375,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1384,7 +1384,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Data Transfer Rate</span>
                 </div>
@@ -1394,7 +1394,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1407,7 +1407,7 @@ return (
     :
     Product.product === "Outdoor Tool" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1416,7 +1416,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1425,7 +1425,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1438,7 +1438,7 @@ return (
     :
     Product.product === "Medal Detector" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1447,7 +1447,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1456,7 +1456,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -1466,7 +1466,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1479,7 +1479,7 @@ return (
     :
     Product.product === "Lawn Mower" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1488,7 +1488,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Cutting Width</span>
                 </div>
@@ -1498,7 +1498,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Number of Positions</span>
                 </div>
@@ -1507,7 +1507,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1517,7 +1517,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1526,7 +1526,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -1541,7 +1541,7 @@ return (
     :
     Product.product === "Pressure Washer" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1550,7 +1550,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Maximum Pressure</span>
         </div>
@@ -1560,7 +1560,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Maximum Flow Rate</span>
         </div>
@@ -1569,7 +1569,7 @@ return (
         </div>
       </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1579,7 +1579,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1588,7 +1588,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -1603,7 +1603,7 @@ return (
     :
     Product.product === "Trimmer Tool" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1612,7 +1612,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Cutting Width</span>
                 </div>
@@ -1622,7 +1622,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1632,7 +1632,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1641,7 +1641,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -1656,7 +1656,7 @@ return (
     :
     Product.product === "Leaf Blower" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1666,7 +1666,7 @@ return (
         </div>
       </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Maximum Speed</span>
                 </div>
@@ -1676,7 +1676,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1686,7 +1686,7 @@ return (
                 </div>
               </li>
             
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -1696,7 +1696,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1711,7 +1711,7 @@ return (
     || Product.product === "Grill Accessory" || Product.product === "Outdoor Kitchen"
     || Product.product === "Log Splitter" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1721,7 +1721,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1730,7 +1730,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -1744,7 +1744,7 @@ return (
     :
     Product.product === "Fire Place" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1753,7 +1753,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Installation Type</span>
         </div>
@@ -1763,7 +1763,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -1773,7 +1773,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Control Method</span>
                 </div>
@@ -1783,7 +1783,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1792,7 +1792,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -1806,7 +1806,7 @@ return (
     :
     Product.product === "Heater" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1815,7 +1815,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1825,7 +1825,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Control Method</span>
                 </div>
@@ -1835,7 +1835,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -1845,7 +1845,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1858,7 +1858,7 @@ return (
     :
     Product.product === "Electric Fan" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1868,7 +1868,7 @@ return (
         </div>
       </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Electric Fan Design</span>
                 </div>
@@ -1878,7 +1878,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -1888,7 +1888,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Control Method</span>
                 </div>
@@ -1898,7 +1898,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -1908,7 +1908,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1921,7 +1921,7 @@ return (
     :
     Product.product === "Evaporative Cooler" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -1930,7 +1930,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Air Flow Capacity</span>
         </div>
@@ -1940,7 +1940,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Floor Area</span>
                 </div>
@@ -1950,7 +1950,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Reservoir Capacity</span>
                 </div>
@@ -1960,7 +1960,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Control Method</span>
                 </div>
@@ -1970,7 +1970,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -1979,7 +1979,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -1989,7 +1989,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -2003,7 +2003,7 @@ return (
     :
     Product.product === "Dehumidifier" || Product.product === "Humidifier" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2012,7 +2012,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Capacity</span>
                 </div>
@@ -2022,7 +2022,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Floor Area</span>
                 </div>
@@ -2032,7 +2032,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -2042,7 +2042,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2051,7 +2051,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -2065,7 +2065,7 @@ return (
     :
     Product.product === "Kitchen Thermometer" || Product.product === "Kitchen Torch" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2074,7 +2074,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -2084,7 +2084,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2093,7 +2093,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -2107,7 +2107,7 @@ return (
     :
     Product.product === "Air Purifier" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2116,7 +2116,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -2126,7 +2126,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2135,7 +2135,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -2149,7 +2149,7 @@ return (
     :
     Product.product === "Air Conditioner" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2158,7 +2158,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Cooling Power</span>
         </div>
@@ -2168,7 +2168,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Floor Area</span>
                 </div>
@@ -2178,7 +2178,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -2188,7 +2188,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Control Method</span>
                 </div>
@@ -2198,7 +2198,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2207,7 +2207,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -2217,7 +2217,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -2232,7 +2232,7 @@ return (
     Product.product=== "Steam Cleaner" ||
     Product.product=== "Carpet Cleaner" || Product.product=== "Thermostat" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2241,7 +2241,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2250,7 +2250,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Special Features</span>
                 </div>
@@ -2264,7 +2264,7 @@ return (
     :
     Product.product === "Robot Vacuum" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2273,7 +2273,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Controller Type</span>
         </div>
@@ -2283,7 +2283,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Special Features</span>
                 </div>
@@ -2293,7 +2293,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2302,7 +2302,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -2316,7 +2316,7 @@ return (
     :
     Product.product === "Vacuum Cleaner" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2325,7 +2325,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Form Factor</span>
         </div>
@@ -2335,7 +2335,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2344,7 +2344,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Special Features</span>
         </div>
@@ -2354,7 +2354,7 @@ return (
         </div>
       </li>
             
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -2368,7 +2368,7 @@ return (
     :
     Product.product === "Wash Machine" || Product.product === "Dryer" || Product.product === "Washer Dryer Combo" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2377,7 +2377,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -2387,7 +2387,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Access Location</span>
                 </div>
@@ -2396,7 +2396,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Capacity</span>
                 </div>
@@ -2407,7 +2407,7 @@ return (
               </li>
 
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2416,7 +2416,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -2426,7 +2426,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -2440,7 +2440,7 @@ return (
     :
     Product.product === "Clothing Iron" || Product.product === "Steamer"  ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2449,7 +2449,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2458,7 +2458,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -2473,7 +2473,7 @@ return (
     Product.product === "Air Fryer Oven" || Product.product === "Air Fryer" || Product.product === "Deep Fryer"
     || Product.product === "Kettle"|| Product.product === "Mixer Attachment" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2483,7 +2483,7 @@ return (
         </div>
       </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -2493,7 +2493,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Oil Capacity</span>
                 </div>
@@ -2503,7 +2503,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2512,7 +2512,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -2526,7 +2526,7 @@ return (
     :
     Product.product === "Indoor Grill" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2535,7 +2535,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -2545,7 +2545,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2554,7 +2554,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -2569,7 +2569,7 @@ return (
     Product.product === "Juicer" || Product.product === "Food Processor" ||
      Product.product === "Food Chopper" || Product.product === "Toaster" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2578,7 +2578,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -2588,7 +2588,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2597,7 +2597,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -2611,7 +2611,7 @@ return (
     :
     Product.product === "Griddle" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2621,7 +2621,7 @@ return (
         </div>
       </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Number of Settings</span>
                 </div>
@@ -2631,7 +2631,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -2641,7 +2641,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2650,7 +2650,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -2660,7 +2660,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -2677,7 +2677,7 @@ return (
     || Product.product === "Popcorn Machine" || Product.product === "Ice Cream Machine" || Product.product === "Cotton Candy Machine" ||
     Product.product === "Ice Shaver" || Product.product === "Fondue Maker" || Product.product === "Dehydrator" || Product.product === "Dry Ager" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2686,7 +2686,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -2696,7 +2696,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Capacity</span>
                 </div>
@@ -2706,7 +2706,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2715,7 +2715,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -2740,7 +2740,7 @@ return (
     :
     Product.product === "Hand Mixer" || Product.product === "Mixer Machine" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2749,7 +2749,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Number of Speeds</span>
         </div>
@@ -2759,7 +2759,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -2769,7 +2769,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2790,7 +2790,7 @@ return (
               </li>
             
         
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -2800,7 +2800,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -2814,7 +2814,7 @@ return (
     :
     Product.product === "Kitchen Appliance Package" || Product.product === "Appliance Bundle" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2837,7 +2837,7 @@ return (
     :
     Product.product === "Wall Oven" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2846,7 +2846,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -2856,7 +2856,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Capacity</span>
                 </div>
@@ -2866,7 +2866,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2875,7 +2875,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -2890,7 +2890,7 @@ return (
     Product.product === "Coffee Maker" || Product.product === "Tea Maker" || Product.product === "Expresso Machine" ||
     Product.product === "Soda Maker" || Product.product === "Ice Maker" || Product.product === "Water Cooler Dispenser" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2900,7 +2900,7 @@ return (
         </div>
       </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -2910,7 +2910,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Capacity</span>
                 </div>
@@ -2920,7 +2920,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -2930,7 +2930,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -2939,7 +2939,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -2964,7 +2964,7 @@ return (
     :
     Product.product === "Instant Pot" || Product.product === "Multi Cooker" || Product.product === "Slow Cooker" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -2973,7 +2973,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Cooker Type</span>
         </div>
@@ -2983,7 +2983,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -2993,7 +2993,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Capacity</span>
                 </div>
@@ -3003,7 +3003,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -3013,7 +3013,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3022,7 +3022,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -3047,7 +3047,7 @@ return (
     :
     Product.product === "Cooking Appliance" || Product.product === "Cooktop" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3056,7 +3056,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -3066,7 +3066,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Burner Type</span>
                 </div>
@@ -3076,7 +3076,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3085,7 +3085,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -3099,7 +3099,7 @@ return (
     :
     Product.product === "Dishwasher" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3108,7 +3108,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Installation Type</span>
                 </div>
@@ -3118,7 +3118,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Capacity</span>
                 </div>
@@ -3128,7 +3128,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -3138,7 +3138,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3147,7 +3147,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -3161,7 +3161,7 @@ return (
     :
     Product.product === "Microwave" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3170,7 +3170,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -3180,7 +3180,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Capacity</span>
                 </div>
@@ -3190,7 +3190,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3199,7 +3199,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -3213,7 +3213,7 @@ return (
     :
     Product.product === "Freezer" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3223,7 +3223,7 @@ return (
         </div>
       </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Door Material</span>
                 </div>
@@ -3233,7 +3233,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3242,7 +3242,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -3252,7 +3252,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -3266,7 +3266,7 @@ return (
     :
     Product.product === "Refrigerator" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3275,7 +3275,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Installation Type</span>
                 </div>
@@ -3284,7 +3284,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Number of Doors</span>
                 </div>
@@ -3295,7 +3295,7 @@ return (
               </li>
 
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Capacity</span>
                 </div>
@@ -3304,7 +3304,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Configuration</span>
                 </div>
@@ -3314,7 +3314,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3323,7 +3323,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -3337,7 +3337,7 @@ return (
     :
     Product.product === "Auto Remote Start" || Product.product === "Auto Navigation" || Product.product === "Auto Accessory" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3346,7 +3346,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3359,7 +3359,7 @@ return (
     :
     Product.product === "Auto Phone Accessory" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3368,7 +3368,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Compatible Devices</span>
                 </div>
@@ -3378,7 +3378,7 @@ return (
                 </div>
               </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3391,7 +3391,7 @@ return (
     :
     Product.product === "Auto Speaker" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3400,7 +3400,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3409,7 +3409,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -3423,7 +3423,7 @@ return (
     :
     Product.product === "Auto Audio" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3432,7 +3432,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -3442,7 +3442,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3455,7 +3455,7 @@ return (
     :
     Product.product === "Auto Electronic" || Product.product === "Auto Amplifier" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3464,7 +3464,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Number of Channels</span>
         </div>
@@ -3473,7 +3473,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Number of Batteries</span>
         </div>
@@ -3483,7 +3483,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3496,7 +3496,7 @@ return (
     :
     Product.product === "Auto Cam" || Product.product === "Auto Backup Cam" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3505,7 +3505,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Mounting Type</span>
                 </div>
@@ -3515,7 +3515,7 @@ return (
                 </div>
               </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Mounting Type</span>
                 </div>
@@ -3525,7 +3525,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Video Capture Resolution</span>
                 </div>
@@ -3535,7 +3535,7 @@ return (
                 </div>
               </li>
 
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Media Type</span>
                 </div>
@@ -3546,7 +3546,7 @@ return (
               </li>
 
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3562,7 +3562,7 @@ return (
     || Product.product === "Electric Shaver" || Product.product === "Epilator" || Product.product === "Nose Hair Trimmer" || Product.product === "Body Hair Trimmer"
     || Product.product === "Steam Vaporizer" || Product.product === "Vape" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3572,7 +3572,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -3582,7 +3582,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3591,7 +3591,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Capacity</span>
         </div>
@@ -3601,7 +3601,7 @@ return (
         </div>
       </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -3617,7 +3617,7 @@ return (
     || Product.product === "Massage Device" || Product.product === "Thermometer Device" || Product.product === "Weight Device"
     || Product.product === "Inhaler" || Product.product === "Vaporizer" ?
     <ul style={{ width: '100%', display: 'block'}}>
-<li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+<li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3626,7 +3626,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -3636,7 +3636,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3645,7 +3645,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -3658,7 +3658,7 @@ return (
     :
     Product.product === "Treadmill Machine" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3668,19 +3668,19 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -3690,7 +3690,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3699,7 +3699,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Maximum Speed</span>
         </div>
@@ -3709,7 +3709,7 @@ return (
         </div>
       </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -3730,7 +3730,7 @@ return (
                 </div>
               </li>
             
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -3740,7 +3740,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -3754,7 +3754,7 @@ return (
     :
     Product.product === "Stationery Bike" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3764,19 +3764,19 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -3786,7 +3786,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3795,7 +3795,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Maximum Weight</span>
                 </div>
@@ -3805,7 +3805,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -3826,7 +3826,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -3840,7 +3840,7 @@ return (
     :
     Product.product === "Elliptical Machine" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3850,19 +3850,19 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -3872,7 +3872,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3881,7 +3881,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -3891,7 +3891,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -3905,7 +3905,7 @@ return (
     :
     Product.product === "Rowing Machine" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -3915,19 +3915,19 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -3937,7 +3937,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -3946,7 +3946,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -3956,7 +3956,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Maximum Weight</span>
                 </div>
@@ -3977,7 +3977,7 @@ return (
                 </div>
               </li>
             
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -3987,7 +3987,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -4001,7 +4001,7 @@ return (
     :
     Product.product === "Exercise Machine" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -4011,19 +4011,19 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -4033,7 +4033,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4042,7 +4042,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -4063,7 +4063,7 @@ return (
                 </div>
               </li>
             
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -4073,7 +4073,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -4088,7 +4088,7 @@ return (
     Product.product === "Console Accessory" || Product.product === "Console Controller" || Product.product === "Console Remote"
     || Product.product === "Console Camera" || Product.product === "Controller Accessory" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -4097,7 +4097,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -4107,7 +4107,7 @@ return (
                 </div>
               </li>
 
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Compatible Console</span>
                 </div>
@@ -4117,7 +4117,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4143,7 +4143,7 @@ return (
     :
     Product.product === "Game Disc" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -4152,7 +4152,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Media Type</span>
                 </div>
@@ -4161,7 +4161,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Compatible Console</span>
                 </div>
@@ -4176,7 +4176,7 @@ return (
     || Product.product === "Cool Tech" || Product.product === "Smart Door System"
     || Product.product === "Baby Monitor" || Product.product === "Motion Sensor" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -4185,7 +4185,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4210,7 +4210,7 @@ return (
     :
     Product.product === "Fitness Tracker" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -4219,19 +4219,19 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Screen Size</span>
                 </div>
@@ -4241,7 +4241,7 @@ return (
                 </div>
               </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Band Material</span>
                 </div>
@@ -4251,7 +4251,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4261,7 +4261,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Battery Life</span>
         </div>
@@ -4287,7 +4287,7 @@ return (
     :
     Product.product === "Stop Watch" || Product.product === "Muscle Trainer" || Product.product === "Muscle Massager" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -4296,20 +4296,20 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4334,7 +4334,7 @@ return (
     :
     Product.product === "Watch"?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -4343,19 +4343,19 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Band Material</span>
         </div>
@@ -4365,7 +4365,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4390,7 +4390,7 @@ return (
     :
     Product.product === "Audio Recorder" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -4399,7 +4399,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Microphone Form Factor</span>
         </div>
@@ -4409,7 +4409,7 @@ return (
         </div>
       </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -4418,7 +4418,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Storage Capacity</span>
         </div>
@@ -4427,7 +4427,7 @@ return (
               value={StorageCapacity} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4440,7 +4440,7 @@ return (
     :
     Product.product === "Guitar Amp" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -4449,7 +4449,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -4459,7 +4459,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4468,7 +4468,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -4478,7 +4478,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Compatible Devices</span>
                 </div>
@@ -4492,7 +4492,7 @@ return (
     :
     Product.product === "Audio Device" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -4501,7 +4501,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Device</span>
         </div>
@@ -4510,7 +4510,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4523,7 +4523,7 @@ return (
     :
     Product.product === "PlayStation Console" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Brand</span>
                 </div>
@@ -4532,7 +4532,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Model Name</span>
                 </div>
@@ -4543,7 +4543,7 @@ return (
                     fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Storage Capacity</span>
         </div>
@@ -4552,7 +4552,7 @@ return (
               value={StorageCapacity} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -4561,7 +4561,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4584,7 +4584,7 @@ return (
     :
     Product.product === "XBOX Console" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Brand</span>
                 </div>
@@ -4593,7 +4593,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Model Name</span>
                 </div>
@@ -4604,7 +4604,7 @@ return (
                     fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Processor Name</span>
                 </div>
@@ -4614,7 +4614,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Memory (RAM)</span>
                 </div>
@@ -4623,7 +4623,7 @@ return (
                       value={MemorySpeed} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Storage Capacity</span>
         </div>
@@ -4632,7 +4632,7 @@ return (
               value={StorageCapacity} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -4641,7 +4641,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4669,7 +4669,7 @@ return (
     :
     Product.product === "Nintendo" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Brand</span>
                 </div>
@@ -4678,18 +4678,18 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Screen Size</span>
                 </div>
@@ -4698,7 +4698,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Play Modes</span>
                 </div>
@@ -4708,7 +4708,7 @@ return (
                 </div>
               </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Storage Capacity</span>
         </div>
@@ -4717,7 +4717,7 @@ return (
               value={StorageCapacity} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -4726,7 +4726,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4749,7 +4749,7 @@ return (
     :
     Product.product === "Steam Deck" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Brand</span>
                 </div>
@@ -4758,7 +4758,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Model Name</span>
                 </div>
@@ -4769,7 +4769,7 @@ return (
                     fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
                 </div>
               </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Screen Size</span>
                 </div>
@@ -4778,7 +4778,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Play Modes</span>
                 </div>
@@ -4787,7 +4787,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Storage Capacity</span>
         </div>
@@ -4796,7 +4796,7 @@ return (
               value={StorageCapacity} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -4805,7 +4805,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4828,7 +4828,7 @@ return (
     :
     Product.product === "Handheld Console" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -4837,18 +4837,18 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Screen Size</span>
                 </div>
@@ -4858,7 +4858,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Play Modes</span>
                 </div>
@@ -4868,7 +4868,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Processor</span>
                 </div>
@@ -4877,7 +4877,7 @@ return (
                       value={ProcessorName} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Graphics Card</span>
                 </div>
@@ -4887,7 +4887,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Storages</span>
                 </div>
@@ -4902,7 +4902,7 @@ return (
                       placeholder={Product.nvme} value={NVMeValue} style={{ width: '80px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', paddingLeft: '5px'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Memory (RAM)</span>
                 </div>
@@ -4916,7 +4916,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -4926,7 +4926,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -4935,7 +4935,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Operating System</span>
         </div>
@@ -4959,7 +4959,7 @@ return (
     :
     Product.product === "Game Console" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -4968,18 +4968,18 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5002,7 +5002,7 @@ return (
     :
     Product.product === "Digital Clock" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5011,7 +5011,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -5021,7 +5021,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5034,7 +5034,7 @@ return (
         :
         Product.product === "Vinyl Record" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Artist</span>
                 </div>
@@ -5047,7 +5047,7 @@ return (
     :
     Product.product === "Audio Mixer" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5056,7 +5056,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -5065,7 +5065,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Number of Channels</span>
                 </div>
@@ -5074,7 +5074,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5083,7 +5083,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -5093,7 +5093,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -5107,7 +5107,7 @@ return (
     :
     Product.product === "Turntable" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5116,7 +5116,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -5125,7 +5125,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -5135,7 +5135,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5144,7 +5144,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -5158,7 +5158,7 @@ return (
     :
     Product.product === "Audio Player" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5167,7 +5167,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Media Type</span>
                 </div>
@@ -5177,7 +5177,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -5186,7 +5186,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Storage Capacity</span>
         </div>
@@ -5195,7 +5195,7 @@ return (
               value={StorageCapacity} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5208,7 +5208,7 @@ return (
     :
     Product.product === "Vlogger Kit" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5221,7 +5221,7 @@ return (
     :
     Product.product === "Photo Background" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5230,7 +5230,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Size</span>
         </div>
@@ -5240,7 +5240,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5253,7 +5253,7 @@ return (
     :
     Product.product === "Camera Film" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5262,7 +5262,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Film Format Type</span>
         </div>
@@ -5272,7 +5272,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Exposures per Roll</span>
         </div>
@@ -5286,7 +5286,7 @@ return (
     :
     Product.product === "Photo Frame" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5295,7 +5295,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Resolution</span>
         </div>
@@ -5304,7 +5304,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Screen Size</span>
                 </div>
@@ -5313,7 +5313,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -5322,7 +5322,7 @@ return (
                       style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5335,7 +5335,7 @@ return (
     :
     Product.product === "Camera Flash , Lighting" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5344,7 +5344,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Compatible Mountings</span>
                 </div>
@@ -5354,7 +5354,7 @@ return (
                 </div>
               </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5367,7 +5367,7 @@ return (
     :
     Product.product === "Gimbal" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5376,7 +5376,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Compatible Mountings</span>
                 </div>
@@ -5385,7 +5385,7 @@ return (
                       value={CompatibleModel} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                 </div>
               </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5398,7 +5398,7 @@ return (
     :
     Product.product === "Camera Lense" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5407,7 +5407,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Focal Length Description</span>
         </div>
@@ -5417,7 +5417,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Lens Type</span>
         </div>
@@ -5427,7 +5427,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Compatible Mountings</span>
                 </div>
@@ -5437,7 +5437,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5450,7 +5450,7 @@ return (
     :
     Product.product === "Tripod, Stabilizer" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5459,7 +5459,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Compatible Devices</span>
                 </div>
@@ -5469,7 +5469,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -5479,7 +5479,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Weight Limit</span>
                 </div>
@@ -5489,7 +5489,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Max and Min Height</span>
                 </div>
@@ -5500,7 +5500,7 @@ return (
               </li>
 
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5513,7 +5513,7 @@ return (
     :
     Product.product === "Binocular" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5522,19 +5522,19 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Objective Lens Diameter</span>
         </div>
@@ -5544,7 +5544,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5557,7 +5557,7 @@ return (
     :
     Product.product === "Drone" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5566,19 +5566,19 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5587,7 +5587,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Video Capture Resolution</span>
                 </div>
@@ -5597,7 +5597,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Memory Type</span>
                 </div>
@@ -5607,7 +5607,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -5617,7 +5617,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Battery Capacity</span>
                 </div>
@@ -5627,7 +5627,7 @@ return (
                 </div>
               </li>
             
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -5641,7 +5641,7 @@ return (
     :
     Product.product === "Camcorder" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5650,19 +5650,19 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5671,7 +5671,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Video Capture Resolution</span>
                 </div>
@@ -5681,7 +5681,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Screen Size</span>
                 </div>
@@ -5691,7 +5691,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Optical Zoom</span>
                 </div>
@@ -5702,7 +5702,7 @@ return (
               </li>
 
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Memory Type</span>
                 </div>
@@ -5712,7 +5712,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -5722,7 +5722,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Control Type</span>
                 </div>
@@ -5748,7 +5748,7 @@ return (
         :
         Product.product === "Action Camera" ?
       <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5757,19 +5757,19 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5778,7 +5778,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Video Capture Resolution</span>
         </div>
@@ -5788,7 +5788,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Screen Size</span>
         </div>
@@ -5798,7 +5798,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Optical Zoom</span>
         </div>
@@ -5808,7 +5808,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Memory Type</span>
         </div>
@@ -5818,7 +5818,7 @@ return (
         </div>
       </li>
 
-                <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                <li className='Edit_Details_Title_box'>
                     <div style={{ width: '25%',paddingTop: '5px'}}>
                       <span className='Edit_Details_Title'>Connectivity</span>
                     </div>
@@ -5842,7 +5842,7 @@ return (
     :
     Product.product === "Camera" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5851,19 +5851,19 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5872,7 +5872,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Form Factor</span>
         </div>
@@ -5882,7 +5882,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Screen Size</span>
                 </div>
@@ -5892,7 +5892,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Effective Still Resolution</span>
                 </div>
@@ -5902,7 +5902,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Optical Zoom</span>
                 </div>
@@ -5912,7 +5912,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Memory Type</span>
                 </div>
@@ -5922,7 +5922,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -5932,7 +5932,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Photo Sensor Size</span>
                 </div>
@@ -5957,7 +5957,7 @@ return (
     :
     Product.product === "Dish Antenna" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5966,7 +5966,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Max Range</span>
         </div>
@@ -5976,7 +5976,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -5989,7 +5989,7 @@ return (
     :
     Product.product === "Projector Mount" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -5998,7 +5998,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Mounting Type</span>
         </div>
@@ -6008,7 +6008,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6033,7 +6033,7 @@ return (
     :
     Product.product === "Sound Bar Mount" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6042,7 +6042,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -6067,7 +6067,7 @@ return (
     :
     Product.product === "Tv Mount" || Product.product === "Tv Frame" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6076,7 +6076,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -6086,7 +6086,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>TV Size</span>
         </div>
@@ -6096,7 +6096,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Minimum Compatible Size</span>
         </div>
@@ -6106,7 +6106,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Maximum Tilt Angle</span>
         </div>
@@ -6120,7 +6120,7 @@ return (
     :
     Product.product === "Blue-Ray Player" || Product.product === "CD/DVD Player" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6129,7 +6129,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Media Type</span>
                 </div>
@@ -6139,7 +6139,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -6149,7 +6149,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6163,7 +6163,7 @@ return (
     :
     Product.product === "Bluetooth Speaker" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6172,19 +6172,19 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -6194,7 +6194,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6208,7 +6208,7 @@ return (
     :
     Product.product === "Sound Bar" || Product.product === "Decoder" || Product.product === "Streaming Device" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6217,7 +6217,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -6227,7 +6227,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -6241,7 +6241,7 @@ return (
         :
         Product.product === "Stereo System" ?
                 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6250,7 +6250,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-                <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                <li className='Edit_Details_Title_box'>
                     <div style={{ width: '25%',paddingTop: '5px'}}>
                       <span className='Edit_Details_Title'>Connectivity</span>
                     </div>
@@ -6260,7 +6260,7 @@ return (
                     </div>
                   </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6273,7 +6273,7 @@ return (
             :
         Product.product === "Projector" ?
                 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6282,7 +6282,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Resolution</span>
         </div>
@@ -6292,7 +6292,7 @@ return (
         </div>
       </li>
 
-                <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                <li className='Edit_Details_Title_box'>
                     <div style={{ width: '25%',paddingTop: '5px'}}>
                       <span className='Edit_Details_Title'>Connectivity</span>
                     </div>
@@ -6301,7 +6301,7 @@ return (
                           style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
                     </div>
                   </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6314,7 +6314,7 @@ return (
     :
     Product.product === "Flatscreen Tv" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6324,7 +6324,7 @@ return (
         </div>
       </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Screen Size</span>
                 </div>
@@ -6334,7 +6334,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Refresh Rate</span>
         </div>
@@ -6344,7 +6344,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Resolution</span>
         </div>
@@ -6354,7 +6354,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Display Type</span>
         </div>
@@ -6364,7 +6364,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -6374,7 +6374,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Storage</span>
                 </div>
@@ -6384,7 +6384,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Internet Support</span>
                 </div>
@@ -6438,7 +6438,7 @@ return (
     :
     Product.product === "Small Keyboard" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6447,7 +6447,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -6457,7 +6457,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6470,7 +6470,7 @@ return (
     :
     Product.product === "Stylus" || Product.product === "Selfie Stick" || Product.product === "Mobile Tracker" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6479,7 +6479,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -6489,7 +6489,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6502,7 +6502,7 @@ return (
     :
     Product.product === "WiFi Hotspot" || Product.product === "Surge Protector" || Product.product === "Remote Control" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6511,7 +6511,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6524,7 +6524,7 @@ return (
     :
     Product.product === "Tablet Stand Mount" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6534,7 +6534,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Mounting Type</span>
                 </div>
@@ -6544,7 +6544,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6557,7 +6557,7 @@ return (
     :
     Product.product === "Phone Mount" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6566,7 +6566,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Mounting Type</span>
                 </div>
@@ -6576,7 +6576,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6589,7 +6589,7 @@ return (
     :
     Product.product === "Phone Case" || Product.product === "Phone Grip" || Product.product === "Popsocket" || Product.product === "Tablet Case Sleeve" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -6599,7 +6599,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6613,7 +6613,7 @@ return (
     Product.product === "Screen Protector" || Product.product === "Tablet Screen Protector"
     || Product.product === "Nintendo Screen Protector" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6622,7 +6622,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -6632,7 +6632,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Size</span>
         </div>
@@ -6642,7 +6642,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Compatible Models</span>
                 </div>
@@ -6667,7 +6667,7 @@ return (
     :
     Product.product === "Powerbank" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6676,7 +6676,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Battery Capacity</span>
         </div>
@@ -6697,7 +6697,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6711,7 +6711,7 @@ return (
     Product.product === "Phone Charger" || Product.product === "Charge Cable" ||
      Product.product === "Charging Dock" || Product.product === "Controller Charger" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6721,7 +6721,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Connector Type</span>
         </div>
@@ -6731,7 +6731,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6756,7 +6756,7 @@ return (
     Product.product === "iPhone" || Product.product === "Smartphone"  || Product.product === "E Reader" 
     || Product.product === "Tablet" || Product.product === "iPad" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6765,19 +6765,19 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Screen Size</span>
                 </div>
@@ -6787,7 +6787,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Resolution</span>
         </div>
@@ -6797,7 +6797,7 @@ return (
         </div>
       </li>
             
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Storage Capacity</span>
         </div>
@@ -6807,7 +6807,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Memory (RAM)</span>
                 </div>
@@ -6817,7 +6817,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Operating System</span>
         </div>
@@ -6827,7 +6827,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Cellular Technology</span>
         </div>
@@ -6837,7 +6837,7 @@ return (
         </div>
       </li>
             
-         <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+         <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>SIM Card Slot</span>
         </div>
@@ -6847,7 +6847,7 @@ return (
         </div>
       </li>
 
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>SDCard Slot</span>
         </div>
@@ -6857,7 +6857,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6882,7 +6882,7 @@ return (
     Product.product === "Calculator"
     || Product.product === "SIM Card" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6891,7 +6891,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -6901,7 +6901,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6914,7 +6914,7 @@ return (
     :
     Product.product === "Projector" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6923,7 +6923,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Resolution</span>
         </div>
@@ -6933,7 +6933,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -6943,7 +6943,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -6956,7 +6956,7 @@ return (
     :
     Product.product === "Photo Edit Software" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -6965,18 +6965,18 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Software Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Compatible Devices</span>
                 </div>
@@ -6991,7 +6991,7 @@ return (
     Product.product === "Computer Software" || Product.product === "Anti-Virus Software"
     || Product.product === "System Software" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -7000,15 +7000,15 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Software Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
 
@@ -7016,18 +7016,18 @@ return (
     :
     Product.product === "Monitor" ?
     <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Display Size</span>
         </div>
@@ -7036,7 +7036,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Resolution</span>
         </div>
@@ -7045,7 +7045,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Aspect Ratio</span>
         </div>
@@ -7054,7 +7054,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -7063,7 +7063,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Refresh Rate</span>
         </div>
@@ -7072,7 +7072,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '5%', color: '#74767c', fontWeight: 'bolder',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Ports</span>
         </div>
@@ -7104,7 +7104,7 @@ return (
     :
     Product.product === "Desktop Pc" ?
     <ul style={{ width: '100%', display: 'block'}}>
-    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+    <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Processor</span>
         </div>
@@ -7113,7 +7113,7 @@ return (
               value={ProcessorName} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Graphics Card</span>
         </div>
@@ -7122,7 +7122,7 @@ return (
               value={GraphicsCardName} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Memory (RAM)</span>
         </div>
@@ -7139,7 +7139,7 @@ return (
               style={{ width: '50px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', paddingLeft: '6px'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Graphics Memory (VRAM)</span>
         </div>
@@ -7153,7 +7153,7 @@ return (
           </div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Storages</span>
         </div>
@@ -7168,7 +7168,7 @@ return (
               placeholder={Product.nvme} value={NVMeValue} style={{ width: '80px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', paddingLeft: '5px'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Total Storage</span>
         </div>
@@ -7177,7 +7177,7 @@ return (
               value={BusStandard} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Motherboard</span>
         </div>
@@ -7186,7 +7186,7 @@ return (
               value={MotherboardName} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Power Supply</span>
         </div>
@@ -7195,7 +7195,7 @@ return (
               value={PowerSupplyName} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Wifi Module</span>
         </div>
@@ -7204,7 +7204,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Operating System</span>
         </div>
@@ -7223,18 +7223,18 @@ return (
             placeholder={Product.inclusions} value={Inclusions} />
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Display Size</span>
         </div>
@@ -7243,7 +7243,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Resolution</span>
         </div>
@@ -7252,7 +7252,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '5%', color: '#74767c', fontWeight: 'bolder',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Ports</span>
         </div>
@@ -7283,7 +7283,7 @@ return (
                border: 'none', borderRadius: '2px', paddingLeft: '15px'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Slots & Pins</span>
         </div>
@@ -7301,7 +7301,7 @@ return (
     :
     Product.product === "Laptop" || Product.product === "MacBook" ? 
     <ul className='Info-left-product_details'>
-    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+    <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -7310,7 +7310,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Display Size</span>
         </div>
@@ -7319,7 +7319,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -7328,7 +7328,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Processor</span>
         </div>
@@ -7337,7 +7337,7 @@ return (
               value={ProcessorName} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Graphics Card</span>
         </div>
@@ -7346,7 +7346,7 @@ return (
               value={GraphicsCardName} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Memory (RAM)</span>
         </div>
@@ -7363,7 +7363,7 @@ return (
               style={{ width: '50px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', paddingLeft: '6px'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Storages</span>
         </div>
@@ -7378,7 +7378,7 @@ return (
               placeholder={Product.nvme} value={NVMeValue} style={{ width: '80px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', paddingLeft: '5px'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Total Storage</span>
         </div>
@@ -7387,7 +7387,7 @@ return (
               value={BusStandard} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Camera</span>
         </div>
@@ -7396,7 +7396,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Operating System</span>
         </div>
@@ -7415,7 +7415,7 @@ return (
             placeholder={Product.inclusions} value={Inclusions} />
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '5%',  color: '#74767c', fontWeight: 'bolder',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Ports</span>
         </div>
@@ -7447,7 +7447,7 @@ return (
     :
     Product.product === "Ethernet Range Extender" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -7456,7 +7456,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Range</span>
         </div>
@@ -7466,7 +7466,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -7479,7 +7479,7 @@ return (
     :
     Product.product === "Cable Modem" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -7488,7 +7488,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -7498,7 +7498,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -7511,7 +7511,7 @@ return (
     :
     Product.product === "Ethernet Switch" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -7521,7 +7521,7 @@ return (
         </div>
       </li>
 
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Number of Ports</span>
         </div>
@@ -7531,7 +7531,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Shell Material</span>
                 </div>
@@ -7541,7 +7541,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -7554,7 +7554,7 @@ return (
     :
     Product.product === "Wifi Adapter" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -7563,7 +7563,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Data Transfer Rate</span>
         </div>
@@ -7574,7 +7574,7 @@ return (
       </li>
 
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Supported Operating System</span>
         </div>
@@ -7584,7 +7584,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Devices</span>
         </div>
@@ -7594,7 +7594,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -7607,7 +7607,7 @@ return (
     :
     Product.product === "Router" || Product.product === "Mesh WiFi System" || Product.product === "WiFi Range Extender" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -7616,7 +7616,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Frequency Band Class</span>
         </div>
@@ -7626,7 +7626,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Frequency</span>
         </div>
@@ -7636,7 +7636,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -7646,7 +7646,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Supported Operating System</span>
         </div>
@@ -7657,7 +7657,7 @@ return (
       </li>
 
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -7673,7 +7673,7 @@ return (
     || Product.product === "Unlisted Cable" || Product.product === "Auxilary Cable"
     || Product.product === "Sata Cable" || Product.product === "Molex Related" || Product.product === "Audio Splitter" ?
         <ul style={{ width: '100%', display: 'block'}}>
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Cable Type</span>
         </div>
@@ -7683,7 +7683,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Cable Lenght</span>
         </div>
@@ -7693,7 +7693,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -7718,7 +7718,7 @@ return (
     :
     Product.product === "Ink" || Product.product === "Toner" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -7728,7 +7728,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Compatible Devices</span>
                 </div>
@@ -7738,7 +7738,7 @@ return (
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Page Yield</span>
         </div>
@@ -7748,7 +7748,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Pigment</span>
         </div>
@@ -7762,7 +7762,7 @@ return (
     :
     Product.product === "Label Printer" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -7772,7 +7772,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Printing Technology</span>
         </div>
@@ -7782,7 +7782,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -7792,7 +7792,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -7801,7 +7801,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Printer Output</span>
         </div>
@@ -7811,7 +7811,7 @@ return (
         </div>
       </li>
             
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Supported Operating System</span>
         </div>
@@ -7825,7 +7825,7 @@ return (
     :
     Product.product === "Photo Printer" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -7835,7 +7835,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Printing Technology</span>
         </div>
@@ -7845,7 +7845,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -7855,7 +7855,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -7864,7 +7864,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Maximum Print Speed</span>
         </div>
@@ -7874,7 +7874,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Print Speed Monochrome</span>
         </div>
@@ -7888,7 +7888,7 @@ return (
     :
     Product.product === "Scanner" ?
         <ul style={{ width: '100%', display: 'block'}}>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -7898,7 +7898,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Scanner Type</span>
         </div>
@@ -7908,7 +7908,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -7918,7 +7918,7 @@ return (
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -7927,7 +7927,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Resolution</span>
         </div>
@@ -7937,7 +7937,7 @@ return (
         </div>
       </li>
             
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -7951,7 +7951,7 @@ return (
     :
     Product.product === "Printer" ?
     <ul style={{ width: '100%', display: 'block'}}>
-           <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+           <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -7960,19 +7960,19 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Functions</span>
         </div>
@@ -7981,7 +7981,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Body Color</span>
         </div>
@@ -7990,7 +7990,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Input Tray Capacity</span>
         </div>
@@ -7999,7 +7999,7 @@ return (
               value={InputTrayCapacity} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Output Tray Capacity</span>
         </div>
@@ -8008,7 +8008,7 @@ return (
               value={OutputTrayCapacity} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Black Cartridge</span>
         </div>
@@ -8017,7 +8017,7 @@ return (
               value={CompatibleBlackInks} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Color Cartridge</span>
         </div>
@@ -8026,7 +8026,7 @@ return (
               value={CompatibleColorInks} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Mono Print Speed</span>
         </div>
@@ -8035,7 +8035,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Mono Color Speed</span>
         </div>
@@ -8050,7 +8050,7 @@ return (
     || Product.product === "USB Drive" || Product.product === "Memory Card" ||
     Product.product === "Recordable CD Disc" || Product.product === "Console Memory Card" || Product.product === "Recordable DVD Disc"  ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -8059,7 +8059,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Storage Capacity</span>
         </div>
@@ -8068,7 +8068,7 @@ return (
               value={StorageCapacity} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Console</span>
         </div>
@@ -8078,7 +8078,7 @@ return (
         </div>
       </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Disc Units</span>
                 </div>
@@ -8088,7 +8088,7 @@ return (
                 </div>
               </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -8103,7 +8103,7 @@ return (
     || Product.product === "External SSD" || Product.product === "External HDD Drive"
     || Product.product === "Desktop HDD Drive" || Product.product === "NVMe SSD"  ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -8112,7 +8112,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Storage Capacity</span>
         </div>
@@ -8121,7 +8121,7 @@ return (
               value={StorageCapacity} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Interface</span>
         </div>
@@ -8131,7 +8131,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Case Material</span>
         </div>
@@ -8141,7 +8141,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -8151,7 +8151,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Speed</span>
         </div>
@@ -8161,7 +8161,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Devices</span>
         </div>
@@ -8171,7 +8171,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -8185,7 +8185,7 @@ return (
     :
     Product.product === "Virtual Reality"  ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -8194,19 +8194,19 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Field of View</span>
         </div>
@@ -8216,7 +8216,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -8226,7 +8226,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Operating System</span>
         </div>
@@ -8236,7 +8236,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Devices</span>
         </div>
@@ -8246,7 +8246,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -8256,7 +8256,7 @@ return (
         </div>
       </li>
             
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -8266,7 +8266,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -8280,7 +8280,7 @@ return (
     :
     Product.product === "Webcam"  ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -8289,7 +8289,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Memory Type</span>
         </div>
@@ -8299,7 +8299,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Screen Size</span>
                 </div>
@@ -8309,7 +8309,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -8319,7 +8319,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Video Capture Resolution</span>
                 </div>
@@ -8329,7 +8329,7 @@ return (
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -8339,7 +8339,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Camcorder type</span>
         </div>
@@ -8366,7 +8366,7 @@ return (
     || Product.product === "Earbuds" || Product.product === "AirPods" || Product.product === "AirPod Max"
     || Product.product === "EarPods"  ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -8375,18 +8375,18 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Ear Placement</span>
         </div>
@@ -8396,7 +8396,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -8406,7 +8406,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -8420,7 +8420,7 @@ return (
     :
     Product.product === "USB Speaker" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -8429,7 +8429,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Maximum Output Power</span>
         </div>
@@ -8439,7 +8439,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Audio Output Mode</span>
         </div>
@@ -8449,7 +8449,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -8459,7 +8459,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Devices</span>
         </div>
@@ -8469,7 +8469,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Connectivity</span>
                 </div>
@@ -8483,7 +8483,7 @@ return (
     :
     Product.product === "Power Supply" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -8509,7 +8509,7 @@ return (
                 <div className='Info-productdetail_li-left'>Cooling:</div>
                 <div className='Info-productdetail_li-right'>{Product.fan}</div>
             </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -8572,18 +8572,18 @@ return (
     :
     Product.product === "Desktop Casing" ?
     <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Case Type</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Suitable Motherboards</span>
         </div>
@@ -8592,7 +8592,7 @@ return (
               value={SeriesName} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -8601,7 +8601,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -8610,7 +8610,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -8619,7 +8619,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -8628,7 +8628,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Cooling</span>
         </div>
@@ -8637,7 +8637,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '5%', color: '#74767c', fontWeight: 'bolder',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Ports</span>
         </div>
@@ -8651,7 +8651,7 @@ return (
               border: 'none', borderRadius: '2px', paddingLeft: '10px'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '15%', color: '#74767c', fontWeight: 'bolder',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Slots & Pins</span>
         </div>
@@ -8672,7 +8672,7 @@ return (
     :
     Product.product === "WiFi Card" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -8681,7 +8681,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Hardware Interface</span>
         </div>
@@ -8691,7 +8691,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Data Transfer Rate</span>
         </div>
@@ -8701,7 +8701,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Supported Windows</span>
         </div>
@@ -8711,7 +8711,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Device</span>
         </div>
@@ -8725,7 +8725,7 @@ return (
     :
     Product.product === "Motherboard" ?
     <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Motherboard Series</span>
         </div>
@@ -8734,7 +8734,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>CPU Socket</span>
         </div>
@@ -8743,7 +8743,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Max Memory Supported</span>
         </div>
@@ -8752,7 +8752,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Memory Supported</span>
         </div>
@@ -8761,7 +8761,7 @@ return (
               value={MemoryGenerationValue} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Devices</span>
         </div>
@@ -8770,7 +8770,7 @@ return (
               value={CompatibleDevice} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '5%', color: '#74767c', fontWeight: 'bolder',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Ports</span>
         </div>
@@ -8797,7 +8797,7 @@ return (
               border: 'none', borderRadius: '2px', paddingLeft: '15px'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '15%', color: '#74767c', fontWeight: 'bolder',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Slots & Pins</span>
         </div>
@@ -8816,18 +8816,18 @@ return (
     :
     Product.product === "Graphics Card" ?
     <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Model Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Graphics Card Memory (VRAM)</span>
         </div>
@@ -8842,7 +8842,7 @@ return (
           </div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Max Resolution</span>
         </div>
@@ -8851,7 +8851,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Clock Speed</span>
         </div>
@@ -8866,7 +8866,7 @@ return (
           </div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Cooling</span>
         </div>
@@ -8875,7 +8875,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Display Via</span>
         </div>
@@ -8884,7 +8884,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Additional Power</span>
         </div>
@@ -8893,7 +8893,7 @@ return (
               value={PowerConnector} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '5%', color: '#74767c', fontWeight: 'bolder',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Ports</span>
         </div>
@@ -8923,7 +8923,7 @@ return (
     :
     Product.product === "Processor" ?
     <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Processor</span>
         </div>
@@ -8932,7 +8932,7 @@ return (
               value={ModelName} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Manufacturer</span>
         </div>
@@ -8941,7 +8941,7 @@ return (
               value={Manufacturer} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
       <div style={{ width: '25%',paddingTop: '5px'}}>
         <span>Cores</span>
       </div>
@@ -8951,7 +8951,7 @@ return (
           />
       </div>
     </li>
-    <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+    <li className='Edit_Details_Title_box'>
       <div style={{ width: '25%',paddingTop: '5px'}}>
         <span>Threads</span>
       </div>
@@ -8961,7 +8961,7 @@ return (
           />
       </div>
     </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Max Memory Supported</span>
         </div>
@@ -8970,7 +8970,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Memory Bandwidth</span>
         </div>
@@ -8979,7 +8979,7 @@ return (
               value={MemoryBandwidth} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Unlocked ?:</span>
         </div>
@@ -8988,7 +8988,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Wattage:</span>
         </div>
@@ -8997,7 +8997,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Integrated Graphics:</span>
         </div>
@@ -9006,7 +9006,7 @@ return (
               value={IntegratedGraphics} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Socket Type:</span>
         </div>
@@ -9015,7 +9015,7 @@ return (
               value={CPUSocket} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Motherboard:</span>
         </div>
@@ -9024,7 +9024,7 @@ return (
               value={CompatibleMotherboards} style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Supported Operating System</span>
         </div>
@@ -9040,7 +9040,7 @@ return (
      || Product.product === "Laptop Disc Drive" || Product.product === "Optical Disc Drive" 
     || Product.product ==="External Disc Drive" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9049,7 +9049,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-                        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9059,7 +9059,7 @@ return (
         </div>
       </li>
             
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Devices</span>
         </div>
@@ -9075,7 +9075,7 @@ return (
     Product.product === "Phone Battery" || Product.product === "Tablet Battery" 
     || Product.product === "Camera Battery" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9084,7 +9084,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Models</span>
         </div>
@@ -9098,7 +9098,7 @@ return (
     :
     Product.product ==="Laptop Stand" || Product.product ==="Webcam Cover" || Product.product ==="Speaker Stand" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9107,7 +9107,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -9117,7 +9117,7 @@ return (
         </div>
       </li>
             
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9126,7 +9126,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Devices</span>
         </div>
@@ -9142,7 +9142,7 @@ return (
     || Product.product ==="Portable Power Station" || Product.product ==="Cooling Pad" || Product.product ==="Desktop Cooling Fan" 
     || Product.product ==="Desk Pad" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9151,7 +9151,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -9161,7 +9161,7 @@ return (
         </div>
       </li>
             
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9170,7 +9170,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -9179,7 +9179,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -9193,7 +9193,7 @@ return (
     :
     Product.product === "Clover Power Cable" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Cable Lenght</span>
         </div>
@@ -9203,7 +9203,7 @@ return (
         </div>
       </li>
             
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9220,7 +9220,7 @@ return (
                 <div className='Info-productdetail_li-left'>Cable Name:</div>
                 <div className='Info-productdetail_li-right'>3 Pin Round Power Cable</div>
             </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Cable Lenght</span>
         </div>
@@ -9230,7 +9230,7 @@ return (
         </div>
       </li>
             
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9243,7 +9243,7 @@ return (
     :
     Product.product === "Keyboard" || Product.product === "Mouse" || Product.product === "Mouse Keyboard Combo" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9252,7 +9252,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Interface</span>
         </div>
@@ -9262,7 +9262,7 @@ return (
         </div>
       </li>
             
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9271,7 +9271,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Devices</span>
         </div>
@@ -9285,7 +9285,7 @@ return (
     :
     Product.product === "USB Hub" || Product.product === "Docking Station"  ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9295,7 +9295,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -9305,7 +9305,7 @@ return (
         </div>
       </li>
             
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9314,7 +9314,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Devices</span>
         </div>
@@ -9330,7 +9330,7 @@ return (
     Product.product === "Laptop Sleeve" || Product.product ==="Laptop Backpack" 
     || Product.product ==="Console Bag" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9340,7 +9340,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -9350,7 +9350,7 @@ return (
         </div>
       </li>
             
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9359,7 +9359,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Designed For</span>
         </div>
@@ -9373,7 +9373,7 @@ return (
     :
     Product.product ==="USB Microphone" || Product.product ==="Camera Microphone" || Product.product ==="Memory Card Reader" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9383,7 +9383,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Connectivity</span>
         </div>
@@ -9393,7 +9393,7 @@ return (
         </div>
       </li>
             
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9402,7 +9402,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Devices</span>
         </div>
@@ -9416,7 +9416,7 @@ return (
     :
     Product.product === "Laptop Cleaner" ?
         <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9426,7 +9426,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Volume</span>
         </div>
@@ -9436,7 +9436,7 @@ return (
         </div>
       </li>
             
-                  <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                  <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9445,7 +9445,7 @@ return (
               style={{ width: '465px', height: '30px', fontSize: '13px', color: '#656481', outline: '2px solid #656481', fontWeight: 'bolder', border: 'none', borderRadius: '2px', textAlign: 'center'}} /></div>
         </div>
       </li>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Compatible Devices</span>
         </div>
@@ -9459,7 +9459,7 @@ return (
     :
     Product.product === "Laptop DDR3 Ram" || Product.product === "Laptop DDR4 Ram" || Product.product === "Laptop DDR5 Ram" ?
         <ul style={{ width: '100%', display: 'block'}}>
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9469,7 +9469,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Clock Speed</span>
         </div>
@@ -9479,7 +9479,7 @@ return (
         </div>
       </li>
    
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Quantity</span>
         </div>
@@ -9492,7 +9492,7 @@ return (
     :
     Product.product === "Desktop DDR3 Ram" || Product.product === "Desktop DDR4 Ram" || Product.product === "Desktop DDR5 Ram" ?
         <ul style={{ width: '100%', display: 'block'}}>
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9502,7 +9502,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Clock Speed</span>
         </div>
@@ -9512,7 +9512,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Quantity</span>
         </div>
@@ -9533,7 +9533,7 @@ return (
     || Product.product === "Tablecloth Set" || Product.product === "Table Runner Set" || Product.product === "Table Skirt Set" || Product.product === "Kitchen Apron Set" 
     || Product.product === "Potholder Mittens Set" || Product.product === "Dishcloth Set" || Product.product === "Placemat Set"  ?
         <ul style={{ width: '100%', display: 'block'}}>
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9543,7 +9543,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -9553,7 +9553,7 @@ return (
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Size</span>
         </div>
@@ -9563,7 +9563,7 @@ return (
         </div>
       </li> 
             
-                        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9588,7 +9588,7 @@ return (
 :
             Product.product === "Throw Pillow Set" || Product.product === "Bed Pillow" || Product.product === "Backrest Pillow Set" ?
       <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9598,7 +9598,7 @@ return (
         </div>
       </li>
 
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Fill Material</span>
         </div>
@@ -9608,7 +9608,7 @@ return (
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Size</span>
         </div>
@@ -9618,7 +9618,7 @@ return (
         </div>
       </li> 
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9643,7 +9643,7 @@ return (
     :
     Product.product === "Floor Pillow" || Product.product === "Pouf" ?
         <ul style={{ width: '100%', display: 'block'}}>
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9653,7 +9653,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Fill Material</span>
         </div>
@@ -9663,7 +9663,7 @@ return (
         </div>
       </li>
             
-                        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9673,7 +9673,7 @@ return (
         </div>
       </li>
             
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -9683,7 +9683,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -9697,7 +9697,7 @@ return (
 :
     Product.product === "Floor Ornament" || Product.product === "Table Top Ornament" || Product.product === "Wall Ornament" ?
         <ul style={{ width: '100%', display: 'block'}}>
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9707,7 +9707,7 @@ return (
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -9717,7 +9717,7 @@ return (
         </div>
       </li>
             
-                        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9731,7 +9731,7 @@ return (
 :
 Product.product === "Curtains" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9741,7 +9741,7 @@ Product.product === "Curtains" ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -9751,7 +9751,7 @@ Product.product === "Curtains" ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Opacity</span>
         </div>
@@ -9761,7 +9761,7 @@ Product.product === "Curtains" ?
         </div>
       </li>
 
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9771,7 +9771,7 @@ Product.product === "Curtains" ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Fabric Dimensions</span>
         </div>
@@ -9797,7 +9797,7 @@ Product.product === "Wall Unit" || Product.product === "Tv Stand Cabinet" || Pro
 || Product.product === "Console Table" || Product.product === "Ottoman Table" || Product.product === "Pantry Cabinet"
  ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9807,7 +9807,7 @@ Product.product === "Wall Unit" || Product.product === "Tv Stand Cabinet" || Pro
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -9817,7 +9817,7 @@ Product.product === "Wall Unit" || Product.product === "Tv Stand Cabinet" || Pro
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9827,7 +9827,7 @@ Product.product === "Wall Unit" || Product.product === "Tv Stand Cabinet" || Pro
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -9837,7 +9837,7 @@ Product.product === "Wall Unit" || Product.product === "Tv Stand Cabinet" || Pro
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -9852,7 +9852,7 @@ Product.product === "Wall Unit" || Product.product === "Tv Stand Cabinet" || Pro
 Product.product === "Accent Chair" || Product.product === "Recliner Chair" || Product.product === "Chaise Lounge"
 || Product.product === "Rocking Chair" || Product.product === "Glider Chair" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9862,7 +9862,7 @@ Product.product === "Accent Chair" || Product.product === "Recliner Chair" || Pr
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9872,7 +9872,7 @@ Product.product === "Accent Chair" || Product.product === "Recliner Chair" || Pr
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -9882,7 +9882,7 @@ Product.product === "Accent Chair" || Product.product === "Recliner Chair" || Pr
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -9908,7 +9908,7 @@ Product.product === "Accent Chair" || Product.product === "Recliner Chair" || Pr
 :
 Product.product === "Sofa Bed" || Product.product === "Love Seat" || Product.product === "Futon" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9918,7 +9918,7 @@ Product.product === "Sofa Bed" || Product.product === "Love Seat" || Product.pro
         </div>
       </li>
         
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Design</span>
         </div>
@@ -9928,7 +9928,7 @@ Product.product === "Sofa Bed" || Product.product === "Love Seat" || Product.pro
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -9938,7 +9938,7 @@ Product.product === "Sofa Bed" || Product.product === "Love Seat" || Product.pro
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -9948,7 +9948,7 @@ Product.product === "Sofa Bed" || Product.product === "Love Seat" || Product.pro
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -9974,7 +9974,7 @@ Product.product === "Sofa Bed" || Product.product === "Love Seat" || Product.pro
 :
 Product.product === "Dinette Set" || Product.product === "Table Set" || Product.product === "Patio Bistro Set" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -9984,7 +9984,7 @@ Product.product === "Dinette Set" || Product.product === "Table Set" || Product.
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Table Material</span>
         </div>
@@ -9994,7 +9994,7 @@ Product.product === "Dinette Set" || Product.product === "Table Set" || Product.
         </div>
       </li>
             
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Size</span>
         </div>
@@ -10004,7 +10004,7 @@ Product.product === "Dinette Set" || Product.product === "Table Set" || Product.
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10014,7 +10014,7 @@ Product.product === "Dinette Set" || Product.product === "Table Set" || Product.
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Number of Chairs</span>
         </div>
@@ -10024,7 +10024,7 @@ Product.product === "Dinette Set" || Product.product === "Table Set" || Product.
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Table Size</span>
         </div>
@@ -10041,7 +10041,7 @@ Product.product === "Kitchen Island" || Product.product === "Bakers Rack" || Pro
 || Product.product === "Towel Rack" || Product.product === "Coat Rack" || Product.product === "Play Tent"
 || Product.product === "Toy Chest" || Product.product === "Toy Box" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10051,7 +10051,7 @@ Product.product === "Kitchen Island" || Product.product === "Bakers Rack" || Pro
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10061,7 +10061,7 @@ Product.product === "Kitchen Island" || Product.product === "Bakers Rack" || Pro
         </div>
       </li>
             
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Design</span>
         </div>
@@ -10071,7 +10071,7 @@ Product.product === "Kitchen Island" || Product.product === "Bakers Rack" || Pro
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10081,7 +10081,7 @@ Product.product === "Kitchen Island" || Product.product === "Bakers Rack" || Pro
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Assembly</span>
         </div>
@@ -10091,7 +10091,7 @@ Product.product === "Kitchen Island" || Product.product === "Bakers Rack" || Pro
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -10101,7 +10101,7 @@ Product.product === "Kitchen Island" || Product.product === "Bakers Rack" || Pro
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -10115,7 +10115,7 @@ Product.product === "Kitchen Island" || Product.product === "Bakers Rack" || Pro
 :
 Product.product === "Bedroom Suite" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10125,7 +10125,7 @@ Product.product === "Bedroom Suite" ?
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Size</span>
         </div>
@@ -10135,7 +10135,7 @@ Product.product === "Bedroom Suite" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10145,7 +10145,7 @@ Product.product === "Bedroom Suite" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10155,7 +10155,7 @@ Product.product === "Bedroom Suite" ?
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Assembly</span>
         </div>
@@ -10165,7 +10165,7 @@ Product.product === "Bedroom Suite" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -10190,7 +10190,7 @@ Product.product === "Bedroom Suite" ?
 :
 Product.product === "Headboard" || Product.product === "Kids Headboard" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10200,7 +10200,7 @@ Product.product === "Headboard" || Product.product === "Kids Headboard" ?
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Size</span>
         </div>
@@ -10210,7 +10210,7 @@ Product.product === "Headboard" || Product.product === "Kids Headboard" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10220,7 +10220,7 @@ Product.product === "Headboard" || Product.product === "Kids Headboard" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10230,7 +10230,7 @@ Product.product === "Headboard" || Product.product === "Kids Headboard" ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -10255,7 +10255,7 @@ Product.product === "Headboard" || Product.product === "Kids Headboard" ?
 :
 Product.product === "Wardrobe" || Product.product === "Storage Bench" || Product.product === "Printer Stand" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10265,7 +10265,7 @@ Product.product === "Wardrobe" || Product.product === "Storage Bench" || Product
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10275,7 +10275,7 @@ Product.product === "Wardrobe" || Product.product === "Storage Bench" || Product
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10285,7 +10285,7 @@ Product.product === "Wardrobe" || Product.product === "Storage Bench" || Product
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Assembly</span>
         </div>
@@ -10295,7 +10295,7 @@ Product.product === "Wardrobe" || Product.product === "Storage Bench" || Product
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -10305,7 +10305,7 @@ Product.product === "Wardrobe" || Product.product === "Storage Bench" || Product
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -10323,7 +10323,7 @@ Product.product === "Drawar Dresser" || Product.product === "Nightstand" || Prod
  || Product.product === "Wall Shelve Set" || Product.product === "Desk" || Product.product === "Gaming Desk"
  || Product.product === "Baby Dresser" || Product.product === "Kids Vanity"  ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10333,7 +10333,7 @@ Product.product === "Drawar Dresser" || Product.product === "Nightstand" || Prod
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10343,7 +10343,7 @@ Product.product === "Drawar Dresser" || Product.product === "Nightstand" || Prod
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Number of Drawars</span>
         </div>
@@ -10353,7 +10353,7 @@ Product.product === "Drawar Dresser" || Product.product === "Nightstand" || Prod
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10363,7 +10363,7 @@ Product.product === "Drawar Dresser" || Product.product === "Nightstand" || Prod
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Assembly</span>
         </div>
@@ -10373,7 +10373,7 @@ Product.product === "Drawar Dresser" || Product.product === "Nightstand" || Prod
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -10383,7 +10383,7 @@ Product.product === "Drawar Dresser" || Product.product === "Nightstand" || Prod
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -10397,7 +10397,7 @@ Product.product === "Drawar Dresser" || Product.product === "Nightstand" || Prod
 :
 Product.product === "Bookshelf" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10407,7 +10407,7 @@ Product.product === "Bookshelf" ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10417,7 +10417,7 @@ Product.product === "Bookshelf" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Number of Shelves</span>
         </div>
@@ -10427,7 +10427,7 @@ Product.product === "Bookshelf" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10437,7 +10437,7 @@ Product.product === "Bookshelf" ?
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Assembly</span>
         </div>
@@ -10447,7 +10447,7 @@ Product.product === "Bookshelf" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -10457,7 +10457,7 @@ Product.product === "Bookshelf" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -10471,7 +10471,7 @@ Product.product === "Bookshelf" ?
 :
 Product.product === "Cube Storage Organizer" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10481,7 +10481,7 @@ Product.product === "Cube Storage Organizer" ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10491,7 +10491,7 @@ Product.product === "Cube Storage Organizer" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Number of Cubes</span>
         </div>
@@ -10501,7 +10501,7 @@ Product.product === "Cube Storage Organizer" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10511,7 +10511,7 @@ Product.product === "Cube Storage Organizer" ?
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Assembly</span>
         </div>
@@ -10521,7 +10521,7 @@ Product.product === "Cube Storage Organizer" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -10531,7 +10531,7 @@ Product.product === "Cube Storage Organizer" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -10545,7 +10545,7 @@ Product.product === "Cube Storage Organizer" ?
 :
 Product.product === "Desk Organizer" || Product.product === "Storage Basket" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10555,7 +10555,7 @@ Product.product === "Desk Organizer" || Product.product === "Storage Basket" ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10565,7 +10565,7 @@ Product.product === "Desk Organizer" || Product.product === "Storage Basket" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10575,7 +10575,7 @@ Product.product === "Desk Organizer" || Product.product === "Storage Basket" ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -10585,7 +10585,7 @@ Product.product === "Desk Organizer" || Product.product === "Storage Basket" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -10612,7 +10612,7 @@ Product.product === "Outdoor Loveseat" || Product.product === "Outdoor Couch Set
 || Product.product === "3 Piece Set" || Product.product === "4 Piece Set" || Product.product === "5 Piece Set"
 || Product.product === "6 Piece Set" || Product.product === "Sectional Sofa" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10622,7 +10622,7 @@ Product.product === "Outdoor Loveseat" || Product.product === "Outdoor Couch Set
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10632,7 +10632,7 @@ Product.product === "Outdoor Loveseat" || Product.product === "Outdoor Couch Set
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Shape</span>
         </div>
@@ -10642,7 +10642,7 @@ Product.product === "Outdoor Loveseat" || Product.product === "Outdoor Couch Set
         </div>
       </li>
         
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Number of Pieces</span>
         </div>
@@ -10652,7 +10652,7 @@ Product.product === "Outdoor Loveseat" || Product.product === "Outdoor Couch Set
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10662,7 +10662,7 @@ Product.product === "Outdoor Loveseat" || Product.product === "Outdoor Couch Set
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -10672,7 +10672,7 @@ Product.product === "Outdoor Loveseat" || Product.product === "Outdoor Couch Set
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -10698,7 +10698,7 @@ Product.product === "Outdoor Loveseat" || Product.product === "Outdoor Couch Set
 Product.product === "Gazebo" || Product.product === "Pergola" || Product.product === "Outdoor Umbrella"
 || Product.product === "Portable Shed" || Product.product === "Patio Awning" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10708,7 +10708,7 @@ Product.product === "Gazebo" || Product.product === "Pergola" || Product.product
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10718,7 +10718,7 @@ Product.product === "Gazebo" || Product.product === "Pergola" || Product.product
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10728,7 +10728,7 @@ Product.product === "Gazebo" || Product.product === "Pergola" || Product.product
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Assembly</span>
         </div>
@@ -10738,7 +10738,7 @@ Product.product === "Gazebo" || Product.product === "Pergola" || Product.product
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Size</span>
         </div>
@@ -10763,7 +10763,7 @@ Product.product === "Gazebo" || Product.product === "Pergola" || Product.product
 :
 Product.product === "Baby Crib" || Product.product === "Toddler Bed" || Product.product === "Changing Table" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10773,7 +10773,7 @@ Product.product === "Baby Crib" || Product.product === "Toddler Bed" || Product.
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10783,7 +10783,7 @@ Product.product === "Baby Crib" || Product.product === "Toddler Bed" || Product.
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Target Gender</span>
         </div>
@@ -10793,7 +10793,7 @@ Product.product === "Baby Crib" || Product.product === "Toddler Bed" || Product.
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10803,7 +10803,7 @@ Product.product === "Baby Crib" || Product.product === "Toddler Bed" || Product.
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -10813,7 +10813,7 @@ Product.product === "Baby Crib" || Product.product === "Toddler Bed" || Product.
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -10838,7 +10838,7 @@ Product.product === "Baby Crib" || Product.product === "Toddler Bed" || Product.
 :
 Product.product === "Crib Mattress" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10848,7 +10848,7 @@ Product.product === "Crib Mattress" ?
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Fill Material</span>
         </div>
@@ -10858,7 +10858,7 @@ Product.product === "Crib Mattress" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10868,7 +10868,7 @@ Product.product === "Crib Mattress" ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -10878,7 +10878,7 @@ Product.product === "Crib Mattress" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -10903,7 +10903,7 @@ Product.product === "Crib Mattress" ?
 :
 Product.product === "Bassinet Bedside-Sleeper" || Product.product === "Travel Bed" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10913,7 +10913,7 @@ Product.product === "Bassinet Bedside-Sleeper" || Product.product === "Travel Be
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10923,7 +10923,7 @@ Product.product === "Bassinet Bedside-Sleeper" || Product.product === "Travel Be
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -10933,7 +10933,7 @@ Product.product === "Bassinet Bedside-Sleeper" || Product.product === "Travel Be
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Max Weight</span>
         </div>
@@ -10943,7 +10943,7 @@ Product.product === "Bassinet Bedside-Sleeper" || Product.product === "Travel Be
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -10974,7 +10974,7 @@ Product.product === "Table Lamp" || Product.product === "Floor Lamp" || Product.
 || Product.product === "Inspirational Decore" || Product.product === "Painting Art" || Product.product === "Photographic Art"
 || Product.product === "Metal Wall Art"  ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -10984,7 +10984,7 @@ Product.product === "Table Lamp" || Product.product === "Floor Lamp" || Product.
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -10994,7 +10994,7 @@ Product.product === "Table Lamp" || Product.product === "Floor Lamp" || Product.
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11004,7 +11004,7 @@ Product.product === "Table Lamp" || Product.product === "Floor Lamp" || Product.
         </div>
       </li>
         
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -11014,7 +11014,7 @@ Product.product === "Table Lamp" || Product.product === "Floor Lamp" || Product.
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -11024,7 +11024,7 @@ Product.product === "Table Lamp" || Product.product === "Floor Lamp" || Product.
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -11049,7 +11049,7 @@ Product.product === "Table Lamp" || Product.product === "Floor Lamp" || Product.
 :
 Product.product === "Ceiling Fan" || Product.product === "Fandelier"    ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11059,7 +11059,7 @@ Product.product === "Ceiling Fan" || Product.product === "Fandelier"    ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -11069,7 +11069,7 @@ Product.product === "Ceiling Fan" || Product.product === "Fandelier"    ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Number of Speeds</span>
         </div>
@@ -11079,7 +11079,7 @@ Product.product === "Ceiling Fan" || Product.product === "Fandelier"    ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11089,7 +11089,7 @@ Product.product === "Ceiling Fan" || Product.product === "Fandelier"    ?
         </div>
       </li>
         
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -11099,7 +11099,7 @@ Product.product === "Ceiling Fan" || Product.product === "Fandelier"    ?
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -11109,7 +11109,7 @@ Product.product === "Ceiling Fan" || Product.product === "Fandelier"    ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -11136,7 +11136,7 @@ Product.product === "Table Mirror" || Product.product === "Wall Mirror" || Produ
 || Product.product === "Digital Clock" || Product.product === "Accent Clock" || Product.product === "Table Top Frame"
 || Product.product === "Wall Frame" || Product.product === "Gallary Frame" || Product.product === "Digital Frame"    ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11146,7 +11146,7 @@ Product.product === "Table Mirror" || Product.product === "Wall Mirror" || Produ
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Frame Material</span>
                 </div>
@@ -11156,7 +11156,7 @@ Product.product === "Table Mirror" || Product.product === "Wall Mirror" || Produ
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Screen Size</span>
                 </div>
@@ -11167,7 +11167,7 @@ Product.product === "Table Mirror" || Product.product === "Wall Mirror" || Produ
               </li>
 
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11177,7 +11177,7 @@ Product.product === "Table Mirror" || Product.product === "Wall Mirror" || Produ
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Resolution</span>
         </div>
@@ -11187,7 +11187,7 @@ Product.product === "Table Mirror" || Product.product === "Wall Mirror" || Produ
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -11197,7 +11197,7 @@ Product.product === "Table Mirror" || Product.product === "Wall Mirror" || Produ
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -11211,7 +11211,7 @@ Product.product === "Table Mirror" || Product.product === "Wall Mirror" || Produ
 :
 Product.product === "Scented Candles" || Product.product === "Flameless Candles" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11221,7 +11221,7 @@ Product.product === "Scented Candles" || Product.product === "Flameless Candles"
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Frame Material</span>
                 </div>
@@ -11231,7 +11231,7 @@ Product.product === "Scented Candles" || Product.product === "Flameless Candles"
                 </div>
               </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Frame Material</span>
                 </div>
@@ -11241,7 +11241,7 @@ Product.product === "Scented Candles" || Product.product === "Flameless Candles"
                 </div>
               </li>
 
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -11251,7 +11251,7 @@ Product.product === "Scented Candles" || Product.product === "Flameless Candles"
                 </div>
               </li>
 
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Scent</span>
                 </div>
@@ -11261,7 +11261,7 @@ Product.product === "Scented Candles" || Product.product === "Flameless Candles"
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11271,7 +11271,7 @@ Product.product === "Scented Candles" || Product.product === "Flameless Candles"
         </div>
       </li>
 
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Burning Duration</span>
                 </div>
@@ -11281,7 +11281,7 @@ Product.product === "Scented Candles" || Product.product === "Flameless Candles"
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -11291,7 +11291,7 @@ Product.product === "Scented Candles" || Product.product === "Flameless Candles"
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -11316,7 +11316,7 @@ Product.product === "Scented Candles" || Product.product === "Flameless Candles"
 Product.product === "Candle Holder Set" || Product.product === "Pillar Candle Stand" || Product.product === "Candelabra Candle Stand"
 || Product.product === "Bookend Set" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11326,7 +11326,7 @@ Product.product === "Candle Holder Set" || Product.product === "Pillar Candle St
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -11336,7 +11336,7 @@ Product.product === "Candle Holder Set" || Product.product === "Pillar Candle St
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11346,7 +11346,7 @@ Product.product === "Candle Holder Set" || Product.product === "Pillar Candle St
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Number of Pieces</span>
                 </div>
@@ -11360,7 +11360,7 @@ Product.product === "Candle Holder Set" || Product.product === "Pillar Candle St
 :
 Product.product === "Oil Diffuser" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11370,7 +11370,7 @@ Product.product === "Oil Diffuser" ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -11380,7 +11380,7 @@ Product.product === "Oil Diffuser" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11390,7 +11390,7 @@ Product.product === "Oil Diffuser" ?
         </div>
       </li>
         
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -11400,7 +11400,7 @@ Product.product === "Oil Diffuser" ?
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Capacity</span>
                 </div>
@@ -11417,7 +11417,7 @@ Product.product === "Artificial Plant" || Product.product === "Artificial Tree" 
 || Product.product === "Planter Set" || Product.product === "Globe" || Product.product === "Sculpture" || Product.product === "Decorative Tray"
 || Product.product === "Decorative Bowl Sets" || Product.product === "Room Divider" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11427,7 +11427,7 @@ Product.product === "Artificial Plant" || Product.product === "Artificial Tree" 
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -11437,7 +11437,7 @@ Product.product === "Artificial Plant" || Product.product === "Artificial Tree" 
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11447,7 +11447,7 @@ Product.product === "Artificial Plant" || Product.product === "Artificial Tree" 
         </div>
       </li>
         
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -11457,7 +11457,7 @@ Product.product === "Artificial Plant" || Product.product === "Artificial Tree" 
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -11476,7 +11476,7 @@ Product.product === "Marble Tiles" || Product.product === "Ceramic Tiles" || Pro
 || Product.product === "Glass Tiles" || Product.product === "Mosaic Tiles" || Product.product === "Cork Tiles"
 || Product.product === "Carpet Tiles" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11486,7 +11486,7 @@ Product.product === "Marble Tiles" || Product.product === "Ceramic Tiles" || Pro
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Pack Size</span>
         </div>
@@ -11496,7 +11496,7 @@ Product.product === "Marble Tiles" || Product.product === "Ceramic Tiles" || Pro
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11506,7 +11506,7 @@ Product.product === "Marble Tiles" || Product.product === "Ceramic Tiles" || Pro
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Shape</span>
         </div>
@@ -11516,7 +11516,7 @@ Product.product === "Marble Tiles" || Product.product === "Ceramic Tiles" || Pro
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -11541,7 +11541,7 @@ Product.product === "Marble Tiles" || Product.product === "Ceramic Tiles" || Pro
 :
 Product.product === "Linoleum Flooring" || Product.product === "Vinyl Flooring" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11551,7 +11551,7 @@ Product.product === "Linoleum Flooring" || Product.product === "Vinyl Flooring" 
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Pack Size</span>
         </div>
@@ -11561,7 +11561,7 @@ Product.product === "Linoleum Flooring" || Product.product === "Vinyl Flooring" 
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11571,7 +11571,7 @@ Product.product === "Linoleum Flooring" || Product.product === "Vinyl Flooring" 
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Shape</span>
         </div>
@@ -11581,7 +11581,7 @@ Product.product === "Linoleum Flooring" || Product.product === "Vinyl Flooring" 
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -11595,7 +11595,7 @@ Product.product === "Linoleum Flooring" || Product.product === "Vinyl Flooring" 
 :
 Product.product === "Cookware Set" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11605,7 +11605,7 @@ Product.product === "Cookware Set" ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -11615,7 +11615,7 @@ Product.product === "Cookware Set" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Set Pieces</span>
         </div>
@@ -11625,7 +11625,7 @@ Product.product === "Cookware Set" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11640,7 +11640,7 @@ Product.product === "Cookware Set" ?
 Product.product === "Instant Pot" || Product.product === "Dutch Oven" || Product.product === "Frying Pan"
 || Product.product === "Skillet" || Product.product === "Roaster Pan" || Product.product === "Steel Pressure Cooker" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11650,7 +11650,7 @@ Product.product === "Instant Pot" || Product.product === "Dutch Oven" || Product
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -11660,7 +11660,7 @@ Product.product === "Instant Pot" || Product.product === "Dutch Oven" || Product
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Capacity</span>
         </div>
@@ -11670,7 +11670,7 @@ Product.product === "Instant Pot" || Product.product === "Dutch Oven" || Product
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11680,7 +11680,7 @@ Product.product === "Instant Pot" || Product.product === "Dutch Oven" || Product
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -11690,7 +11690,7 @@ Product.product === "Instant Pot" || Product.product === "Dutch Oven" || Product
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -11720,7 +11720,7 @@ Product.product === "Storage Canister Set" || Product.product === "Storage Conta
 || Product.product === "Serving Bowl Set" || Product.product === "Butter Dish Set" || Product.product === "Gravy Boat Set"
 || Product.product === "Sugar & Creamer Set" || Product.product === "Salt & Pepper Shakers" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11730,19 +11730,19 @@ Product.product === "Storage Canister Set" || Product.product === "Storage Conta
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Collection Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -11752,7 +11752,7 @@ Product.product === "Storage Canister Set" || Product.product === "Storage Conta
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Number of Pieces</span>
                 </div>
@@ -11762,7 +11762,7 @@ Product.product === "Storage Canister Set" || Product.product === "Storage Conta
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11772,7 +11772,7 @@ Product.product === "Storage Canister Set" || Product.product === "Storage Conta
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Capacity</span>
         </div>
@@ -11797,7 +11797,7 @@ Product.product === "Storage Canister Set" || Product.product === "Storage Conta
 :
 Product.product === "Silverware Set" || Product.product === "Silverware Chest" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11807,7 +11807,7 @@ Product.product === "Silverware Set" || Product.product === "Silverware Chest" ?
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -11817,7 +11817,7 @@ Product.product === "Silverware Set" || Product.product === "Silverware Chest" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11827,7 +11827,7 @@ Product.product === "Silverware Set" || Product.product === "Silverware Chest" ?
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Number of Pieces</span>
                 </div>
@@ -11837,7 +11837,7 @@ Product.product === "Silverware Set" || Product.product === "Silverware Chest" ?
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Special Features</span>
         </div>
@@ -11884,7 +11884,7 @@ Product.product === "Food Scale" || Product.product === "Cooking Timer" || Produ
 || Product.product === "Mount Clawfoot Filler" || Product.product === "Floor Clawfoot Filler"
 || Product.product === "Kids Blanket" || Product.product === "Weighted Blanket" || Product.product === "Electric Blanket" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11894,7 +11894,7 @@ Product.product === "Food Scale" || Product.product === "Cooking Timer" || Produ
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -11904,7 +11904,7 @@ Product.product === "Food Scale" || Product.product === "Cooking Timer" || Produ
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -11914,7 +11914,7 @@ Product.product === "Food Scale" || Product.product === "Cooking Timer" || Produ
         </div>
       </li>
         
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -11924,7 +11924,7 @@ Product.product === "Food Scale" || Product.product === "Cooking Timer" || Produ
                 </div>
               </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -11934,7 +11934,7 @@ Product.product === "Food Scale" || Product.product === "Cooking Timer" || Produ
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -11948,7 +11948,7 @@ Product.product === "Food Scale" || Product.product === "Cooking Timer" || Produ
 :
 Product.product === "Knife Set" || Product.product === "Cleaver Set" || Product.product === "Electric Knife" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -11958,7 +11958,7 @@ Product.product === "Knife Set" || Product.product === "Cleaver Set" || Product.
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Blade Material</span>
         </div>
@@ -11968,7 +11968,7 @@ Product.product === "Knife Set" || Product.product === "Cleaver Set" || Product.
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Blade Edge</span>
         </div>
@@ -11978,7 +11978,7 @@ Product.product === "Knife Set" || Product.product === "Cleaver Set" || Product.
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Number of Pieces</span>
                 </div>
@@ -11988,7 +11988,7 @@ Product.product === "Knife Set" || Product.product === "Cleaver Set" || Product.
                 </div>
               </li>
             
-              <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+              <li className='Edit_Details_Title_box'>
                 <div style={{ width: '25%',paddingTop: '5px'}}>
                   <span className='Edit_Details_Title'>Power Source</span>
                 </div>
@@ -11998,7 +11998,7 @@ Product.product === "Knife Set" || Product.product === "Cleaver Set" || Product.
                 </div>
               </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -12012,7 +12012,7 @@ Product.product === "Knife Set" || Product.product === "Cleaver Set" || Product.
 :
 Product.product === "Base Set" || Product.product === "Bed Frame" || Product.product === "Bedroom Suite" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -12022,7 +12022,7 @@ Product.product === "Base Set" || Product.product === "Bed Frame" || Product.pro
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -12032,19 +12032,19 @@ Product.product === "Base Set" || Product.product === "Bed Frame" || Product.pro
         </div>
       </li>
             
-                <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+                <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Collection Name</span>
         </div>
         <div style={{ width: '75%', display: 'flex', paddingLeft: '20px'}}>
           <div> <TextareaAutosize type="text" onChange={onModelNameChange} placeholder={Product.modelName} value={ModelName}
               minRows={1} 
-           style={{ width: '465px', fontSize: '13px', color: '#656481', outline: '2px solid orange',
-            fontWeight: 'bolder', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
+           style={{ width: '465px', fontSize: '13px', color: '#333', outline: '1px solid orange',
+            fontWeight: '600', border: 'none', borderRadius: '2px', padding: '5px 15px'}} /></div>
         </div>
       </li>
             
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Size</span>
         </div>
@@ -12054,7 +12054,7 @@ Product.product === "Base Set" || Product.product === "Bed Frame" || Product.pro
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -12064,7 +12064,7 @@ Product.product === "Base Set" || Product.product === "Bed Frame" || Product.pro
         </div>
       </li>
             
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -12074,7 +12074,7 @@ Product.product === "Base Set" || Product.product === "Bed Frame" || Product.pro
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -12099,7 +12099,7 @@ Product.product === "Base Set" || Product.product === "Bed Frame" || Product.pro
 :
 Product.product === "Mattress" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -12109,7 +12109,7 @@ Product.product === "Mattress" ?
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Fill Material</span>
         </div>
@@ -12119,7 +12119,7 @@ Product.product === "Mattress" ?
         </div>
       </li>
             
-        <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+        <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Size</span>
         </div>
@@ -12129,7 +12129,7 @@ Product.product === "Mattress" ?
         </div>
       </li>
         
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -12139,7 +12139,7 @@ Product.product === "Mattress" ?
         </div>
       </li>
             
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -12149,7 +12149,7 @@ Product.product === "Mattress" ?
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>
@@ -12175,7 +12175,7 @@ Product.product === "Mattress" ?
 Product.product === "Bunk Bed" || Product.product === "Loft Bed" || Product.product === "Kids Bed"
 || Product.product === "Toddler Bed" || Product.product === "Folding Bed" || Product.product === "Adjustable Bed" ?
 <ul style={{ width: '100%', display: 'block'}}>
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Brand</span>
         </div>
@@ -12185,7 +12185,7 @@ Product.product === "Bunk Bed" || Product.product === "Loft Bed" || Product.prod
         </div>
       </li>
         
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Material</span>
         </div>
@@ -12195,7 +12195,7 @@ Product.product === "Bunk Bed" || Product.product === "Loft Bed" || Product.prod
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Assembly</span>
         </div>
@@ -12205,7 +12205,7 @@ Product.product === "Bunk Bed" || Product.product === "Loft Bed" || Product.prod
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Color</span>
         </div>
@@ -12215,7 +12215,7 @@ Product.product === "Bunk Bed" || Product.product === "Loft Bed" || Product.prod
         </div>
       </li>
             
-            <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+            <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Design</span>
         </div>
@@ -12225,7 +12225,7 @@ Product.product === "Bunk Bed" || Product.product === "Loft Bed" || Product.prod
         </div>
       </li>
         
-          <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+          <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Weight</span>
         </div>
@@ -12235,7 +12235,7 @@ Product.product === "Bunk Bed" || Product.product === "Loft Bed" || Product.prod
         </div>
       </li>
             
-      <li style={{ listStyle: 'none', width: '100%', display: 'flex', padding: '10px 0px'}}>
+      <li className='Edit_Details_Title_box'>
         <div style={{ width: '25%',paddingTop: '5px'}}>
           <span className='Edit_Details_Title'>Item Dimensions</span>
         </div>

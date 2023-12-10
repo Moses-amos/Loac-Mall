@@ -73,7 +73,6 @@ function RetailerSettings() {
 
 
   return (
-
     <div className='Retailer_Settings_container'>
   <div className='Profile_details_page_box'>
     <div style={{width: '100%', height: '50px', display: 'flex'}}>
@@ -87,68 +86,74 @@ function RetailerSettings() {
         <div style={{ width: '100%', display: 'flex'}}>
           <div style={{ width: '70%'}}>
 
-          {User.profileImage === undefined ?
-            <></>
+            {User.accountTier === "Verified" ?
+            <>
+            {User.profileImage === undefined ?
+              <></>
+              :
+              User.profileImage && User.profileImage.length === 0 ?
+              
+            <div className="Brand_account_detail_box">
+            <div className='Brand_account_image_box'>
+            <div className='Brand_account_title_left_box'>Brand Logo:</div>
+        </div>
+          <div style={{ listStyle: 'none', width: '100%', display: 'flex'}}>
+        <div style={{ minWidth: '170px',height: '72px', borderRadius: '7px',
+         border: '1px solid #c5cbd5', background: '#fff', overflow: 'hidden'}}>
+          <LogoImage refreshFunction={updateImage} />
+        </div>
+        <div style={{ width: '100%', marginLeft: '40px', paddingTop: '40px'}}>
+        <div style={{ padding: '3px 0px 0px 0px'}}>
+                <button onClick={() => {SaveDetails(); refreshPage()}} className='Brand_account_information_save'>Update</button>
+            </div>
+        </div>
+  
+      </div>
+            </div>
+  
             :
-            User.profileImage && User.profileImage.length === 0 ?
-            
-          <div className="Brand_account_detail_box">
-          <div className='Brand_account_image_box'>
+            <>
+            <div className={toggleImageBox === 1 ? "Brand_account_detail_box" : "Brand_account_detail_box_hide"}>
+            <div className='Brand_account_image_box'>
+            <div className='Brand_account_title_left_box'>Brand Logo:</div>
+          <div className="Brand_account_title_right_box Brand_logo_edit" onClick={() => {ImageSelectBox(2)}}>Edit</div>
+        </div>
+          <div style={{ width: '100%', height: '100%'}}>
+        <div style={{ width: '170px', height: '72px', borderRadius: '7px',
+         border: '1px solid #c5cbd5', background: '#fff', overflow: 'hidden'}}>
+          <ProfileImage images={User.profileImage} />
+        </div>
+      </div>
+            </div>
+  
+            <div className={toggleImageBox === 2 ? "Brand_account_detail_box" : "Brand_account_detail_box_hide"}>
+            <div className='Brand_account_image_box'>
           <div className='Brand_account_title_left_box'>Brand Logo:</div>
+          <div className="Brand_account_title_right_cancel_box Brand_logo_edit" onClick={() => {ImageSelectBox(1)}}>Cancel</div>
+        </div>
+          <div style={{ listStyle: 'none', width: '100%', display: 'flex'}}>
+        <div style={{ minWidth: '170px',height: '68px', borderRadius: '7px',
+         border: '1px solid #c5cbd5', background: '#fff', overflow: 'hidden'}}>
+          <LogoImage refreshFunction={updateImage} />
+        </div>
+        <div style={{ width: '100%', marginLeft: '40px', paddingTop: '40px'}}>
+        <div style={{ padding: '3px 0px 0px 0px'}}>
+                <button onClick={() => {SaveDetails(); refreshPage()}} className='Brand_account_information_save'>Update</button>
+            </div>
+        </div>
+  
       </div>
-        <div style={{ listStyle: 'none', width: '100%', display: 'flex'}}>
-      <div style={{ minWidth: '170px',height: '72px', borderRadius: '7px',
-       border: '1px solid #c5cbd5', background: '#fff', overflow: 'hidden'}}>
-        <LogoImage refreshFunction={updateImage} />
-      </div>
-      <div style={{ width: '100%', marginLeft: '40px', paddingTop: '40px'}}>
-      <div style={{ padding: '3px 0px 0px 0px'}}>
-              <button onClick={() => {SaveDetails(); refreshPage()}} className='Brand_account_information_save'>Update</button>
-          </div>
-      </div>
-
-    </div>
-          </div>
-
-          :
-          <>
-          <div className={toggleImageBox === 1 ? "Brand_account_detail_box" : "Brand_account_detail_box_hide"}>
-          <div className='Brand_account_image_box'>
-          <div className='Brand_account_title_left_box'>Brand Logo:</div>
-        <div className="Brand_account_title_right_box Brand_logo_edit" onClick={() => {ImageSelectBox(2)}}>Edit</div>
-      </div>
-        <div style={{ width: '100%', height: '100%'}}>
-      <div style={{ width: '170px', height: '72px', borderRadius: '7px',
-       border: '1px solid #c5cbd5', background: '#fff', overflow: 'hidden'}}>
-        <ProfileImage images={User.profileImage} />
-      </div>
-    </div>
-          </div>
-
-          <div className={toggleImageBox === 2 ? "Brand_account_detail_box" : "Brand_account_detail_box_hide"}>
-          <div className='Brand_account_image_box'>
-        <div className='Brand_account_title_left_box'>Brand Logo:</div>
-        <div className="Brand_account_title_right_cancel_box Brand_logo_edit" onClick={() => {ImageSelectBox(1)}}>Cancel</div>
-      </div>
-        <div style={{ listStyle: 'none', width: '100%', display: 'flex'}}>
-      <div style={{ minWidth: '170px',height: '68px', borderRadius: '7px',
-       border: '1px solid #c5cbd5', background: '#fff', overflow: 'hidden'}}>
-        <LogoImage refreshFunction={updateImage} />
-      </div>
-      <div style={{ width: '100%', marginLeft: '40px', paddingTop: '40px'}}>
-      <div style={{ padding: '3px 0px 0px 0px'}}>
-              <button onClick={() => {SaveDetails(); refreshPage()}} className='Brand_account_information_save'>Update</button>
-          </div>
-      </div>
-
-    </div>
-          </div>
-          </>
+            </div>
+            </>
+            }
+            </>
+            :
+            <></>
+            }
           
-          }
-
-
-        {User.name === undefined ?
+          {User.accountTier === "Verified" ?
+          <>
+          {User.name === undefined ?
         <></>
         :
           User.name && User.name === "" ?
@@ -159,7 +164,7 @@ function RetailerSettings() {
         <div style={{ width: '100%', display: 'flex'}}>
           <div>
             <input type="text" onChange={onNameChange} value={NameValue} maxLength={20}
-            style={{ width: '450px', height: '35px', fontWeight: '600', border: 'none', fontSize: '15px', color: '#656481', 
+            style={{ width: '450px', height: '35px', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
             outline: '1px solid #c5cbd5', borderRadius: '2px', paddingLeft: '10px'}} />
           </div>
           
@@ -179,8 +184,8 @@ function RetailerSettings() {
         </div>
         <div style={{ width: '100%'}}>
           <div
-            style={{ width: '450px', height: '35px', fontSize: '14px', color: '#656481', outline: '1px solid #c5cbd5',
-             border: 'none', fontWeight: '700', borderRadius: '2px', display: 'flex', alignItems: 'center', paddingLeft: '15px'}} >
+            style={{ width: '450px', height: '35px', fontSize: '16.8px', color: '#656481', outline: '1px solid #c5cbd5',
+             border: 'none', fontWeight: '600', borderRadius: '2px', display: 'flex', alignItems: 'center', paddingLeft: '15px'}} >
                 {User.name}
               </div>
         </div>
@@ -194,7 +199,7 @@ function RetailerSettings() {
         <div style={{ width: '100%', display: 'flex'}}>
           <div>
             <input type="text" onChange={onNameChange} value={NameValue} maxLength={20}
-            style={{ width: '450px', height: '35px', fontWeight: '600', border: 'none', fontSize: '15px', color: '#656481', 
+            style={{ width: '450px', height: '35px', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
             outline: '1px solid #c5cbd5', borderRadius: '2px', paddingLeft: '10px'}} />
           </div>
           
@@ -208,6 +213,74 @@ function RetailerSettings() {
       </div>
         </>
         }
+          </>
+          :
+          <>
+          {User.name === undefined ?
+        <></>
+        :
+          User.name && User.name === "" ?
+        <div className="Brand_account_detail_box">
+        <div className='Brand_account_title_box'>
+           <span className='Brand_account_title_left_box'>Name:</span>
+        </div>
+        <div style={{ width: '100%', display: 'flex'}}>
+          <div>
+            <input type="text" onChange={onNameChange} value={NameValue} maxLength={20}
+            style={{ width: '450px', height: '35px', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
+            outline: '1px solid #c5cbd5', borderRadius: '2px', paddingLeft: '10px'}} />
+          </div>
+          
+            <div style={{ width: '100%', margin: '10px 0px 0px 20px'}}>
+            <div style={{ padding: '0px 0px 0px 0px'}}>
+                <button onClick={() => {SaveDetails(); refreshPage()}} className='Brand_account_information_save'>Save</button>
+            </div>
+        </div>
+        </div>
+      </div>
+        :
+        <>
+        <div className={toggleNameBox === 1 ? "Brand_account_detail_box" : "Brand_account_detail_box_hide"}>
+        <div className='Brand_account_title_box'>
+        <div className='Brand_account_title_left_box'>Name:</div>
+        <div className="Brand_account_title_right_box" onClick={() => {NameSelectBox(2)}}>Edit</div>
+        </div>
+        <div style={{ width: '100%'}}>
+          <div
+            style={{ width: '450px', height: '35px', fontSize: '16.8px', color: '#656481', outline: '1px solid #c5cbd5',
+             border: 'none', fontWeight: '600', borderRadius: '2px', display: 'flex', alignItems: 'center', paddingLeft: '15px'}} >
+                {User.name}
+              </div>
+        </div>
+      </div>
+
+      <div className={toggleNameBox === 2 ? "Brand_account_detail_box" : "Brand_account_detail_box_hide"}>
+        <div className='Brand_account_title_box'>
+        <div className='Brand_account_title_left_box'>Name:</div>
+        <div className="Brand_account_title_right_cancel_box" onClick={() => {NameSelectBox(1)}}>Cancel</div>
+        </div>
+        <div style={{ width: '100%', display: 'flex'}}>
+          <div>
+            <input type="text" onChange={onNameChange} value={NameValue} maxLength={20}
+            style={{ width: '450px', height: '35px', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
+            outline: '1px solid #c5cbd5', borderRadius: '2px', paddingLeft: '10px'}} />
+          </div>
+          
+            <div style={{ width: '100%', margin: '10px 0px 0px 20px'}}>
+            <div style={{ padding: '0px 0px 0px 0px'}}>
+                <button onClick={() => {SaveDetails(); refreshPage()}} className='Brand_account_information_save'>Save</button>
+            </div>
+        </div>
+        </div>
+      
+      </div>
+        </>
+        }
+          </>
+          
+          }
+
+
 
         {User.contact === undefined ?
         <></>
@@ -215,12 +288,12 @@ function RetailerSettings() {
         User.contact && User.contact === "" ?
         <div className="Brand_account_detail_box">
       <div className='Brand_account_title_box'>
-        <span className='Brand_account_title_left_box'>Contact Nr:</span>
+        <span className='Brand_account_title_left_box'>Contact nr:</span>
       </div>
       <div style={{ width: '100%', display: 'flex'}}>
         <div>
           <input type="text" onChange={onContactChange} value={ContactValue} maxLength={20}
-          style={{ width: '450px', height: '35px', fontWeight: '600', border: 'none', fontSize: '15px', color: '#656481', 
+          style={{ width: '450px', height: '35px', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
           outline: '1px solid #c5cbd5', borderRadius: '2px', paddingLeft: '15px'}} />
         </div>
         <div style={{ width: '100%', margin: '10px 0px 0px 20px'}}>
@@ -234,13 +307,13 @@ function RetailerSettings() {
         <>
         <div className={toggleContactBox === 1 ? "Brand_account_detail_box" : "Brand_account_detail_box_hide"}>
         <div className='Brand_account_title_box'>
-          <div className='Brand_account_title_left_box'>Contact Nr:</div>
+          <div className='Brand_account_title_left_box'>Contact nr:</div>
         <div className="Brand_account_title_right_box" onClick={() => {ContactSelectBox(2)}}>Edit</div>
         </div>
         <div style={{ width: '100%'}}>
           <div
-            style={{ width: '450px', height: '35px', fontSize: '14px', color: '#656481', outline: '1px solid #c5cbd5',
-             border: 'none', fontWeight: '700', borderRadius: '2px', display: 'flex', alignItems: 'center', paddingLeft: '15px'}} >
+            style={{ width: '450px', height: '35px', fontSize: '16.8px', color: '#656481', outline: '1px solid #c5cbd5',
+             border: 'none', fontWeight: '600', borderRadius: '2px', display: 'flex', alignItems: 'center', paddingLeft: '15px'}} >
                 {User.contact}
               </div>
         </div>
@@ -248,13 +321,13 @@ function RetailerSettings() {
 
       <div className={toggleContactBox === 2 ? "Brand_account_detail_box" : "Brand_account_detail_box_hide"}>
       <div className='Brand_account_title_box'>
-        <div className='Brand_account_title_left_box'>Contact Nr:</div>
+        <div className='Brand_account_title_left_box'>Contact nr:</div>
         <div className="Brand_account_title_right_cancel_box" onClick={() => {ContactSelectBox(1)}}>Cancel</div>
       </div>
       <div style={{ width: '100%', display: 'flex'}}>
         <div>
           <input type="text" onChange={onContactChange} value={ContactValue} maxLength={20}
-          style={{ width: '450px', height: '35px', fontWeight: '600', border: 'none', fontSize: '15px', color: '#656481', 
+          style={{ width: '450px', height: '35px', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
           outline: '1px solid #c5cbd5', borderRadius: '2px', paddingLeft: '15px'}} />
         </div>
         <div style={{ width: '100%', margin: '10px 0px 0px 20px'}}>

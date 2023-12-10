@@ -345,7 +345,7 @@ return (
     </div>
     <div style={{ width: '100%', paddingTop: '10px'}}>
     <div className={toggleNav===1 ? "ShowProfile_box": "ShowProfile_box-hide"}>
-        <div style={{ paddingTop: '30px', paddingBottom: '56px'}}>
+        <div style={{ paddingTop: '30px', paddingBottom: '68px'}}>
       <div className='UserLocations_box'>
       <div className='UserLocations_title'>
           <span>Which Town/City are you in or which is close to you?</span>
@@ -575,7 +575,7 @@ return (
         </div>
         <div style={{ width: '100%'}}>
           <input type="text" onChange={onNameChange} value={NameValue}
-             style={{ width: '300px', height: '35px', fontWeight: '500', border: 'none', fontSize: '15px', color: '#656481', 
+             style={{ width: '300px', height: '35px', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
             outline: '1px solid #c5cbd5', borderRadius: '2px', paddingLeft: '10px'}} />
         </div>
       </div>
@@ -592,7 +592,7 @@ return (
         </div>
         <div style={{ width: '100%'}}>
           <div
-            style={{ width: '300px', height: '35px', fontSize: '15px', color: '#656481', outline: '1px solid #c5cbd5',
+            style={{ width: '300px', height: '35px', fontSize: '16.8px', color: '#656481', outline: '1px solid #c5cbd5',
             border: 'none', fontWeight: '600', borderRadius: '2px', display: 'flex', alignItems: 'center', paddingLeft: '10px'}} >
                 {UserData.name}
               </div>
@@ -624,7 +624,7 @@ return (
       </div>
       <div style={{ width: '100%'}}>
         <input type="text" onChange={onLastNameChange} value={LastNameValue}
-           style={{ width: '300px', height: '35px', fontWeight: '600', border: 'none', fontSize: '15px', color: '#656481', 
+           style={{ width: '300px', height: '35px', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
           outline: '1px solid #c5cbd5', borderRadius: '2px', paddingLeft: '15px'}} />
       </div>
     </div>
@@ -641,7 +641,7 @@ return (
         </div>
         <div style={{ width: '100%'}}>
           <div
-            style={{ width: '300px', height: '35px', fontSize: '15px', color: '#656481', outline: '1px solid #c5cbd5',
+            style={{ width: '300px', height: '35px', fontSize: '16.8px', color: '#656481', outline: '1px solid #c5cbd5',
             border: 'none', fontWeight: '600', borderRadius: '2px', display: 'flex', alignItems: 'center', paddingLeft: '10px'}} >
                 {UserData.lastname}
               </div>
@@ -658,7 +658,7 @@ return (
         </div>
       <div style={{ width: '100%'}}>
         <input type="text" onChange={onLastNameChange} value={LastNameValue}
-           style={{ width: '300px', height: '35px', fontWeight: '600', border: 'none', fontSize: '15px', color: '#656481', 
+           style={{ width: '300px', height: '35px', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
           outline: '1px solid #c5cbd5', borderRadius: '2px', paddingLeft: '15px'}} />
       </div>
     </div>
@@ -672,7 +672,7 @@ return (
       </div>
       <div style={{ width: '100%'}}>
         <input type="text" onChange={onContactsChange} value={ContactValue}
-           style={{ width: '300px', height: '35px', fontWeight: '600', border: 'none', fontSize: '15px', color: '#656481', 
+           style={{ width: '300px', height: '35px', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
           outline: '1px solid #c5cbd5', borderRadius: '2px', paddingLeft: '15px'}} />
       </div>
     </div>
@@ -689,7 +689,7 @@ return (
         </div>
         <div style={{ width: '100%'}}>
           <div
-            style={{ width: '300px', height: '35px', fontSize: '15px', color: '#656481', outline: '1px solid #c5cbd5',
+            style={{ width: '300px', height: '35px', fontSize: '16.8px', color: '#656481', outline: '1px solid #c5cbd5',
             border: 'none', fontWeight: '600', borderRadius: '2px', display: 'flex', alignItems: 'center', paddingLeft: '10px'}} >
                 {UserData.contact}
               </div>
@@ -706,7 +706,7 @@ return (
         </div>
       <div style={{ width: '100%'}}>
         <input type="text" onChange={onContactsChange} value={ContactValue}
-           style={{ width: '300px', height: '35px', fontWeight: '600', border: 'none', fontSize: '15px', color: '#656481', 
+           style={{ width: '300px', height: '35px', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
           outline: '1px solid #c5cbd5', borderRadius: '2px', paddingLeft: '15px'}} />
       </div>
     </div>
@@ -720,7 +720,7 @@ return (
       </div>
       <div style={{ width: '100%'}}>
         <TextareaAutosize minRows={2} onChange={onAddressChange} value={AddressValue}
-           style={{ width: '300px', resize: 'none', fontWeight: '700', border: 'none', fontSize: '15px', color: '#656481', 
+           style={{ width: '300px', resize: 'none', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
           outline: '1px solid #c5cbd5', borderRadius: '2px', padding: '5px'}} />
       </div>
     </div>
@@ -737,7 +737,7 @@ return (
         </div>
         <div style={{ width: '100%'}}>
         <TextareaAutosize minRows={2} readOnly value={UserData.address}
-           style={{ width: '300px', resize: 'none', fontWeight: '700', border: 'none', fontSize: '15px', color: '#656481', 
+           style={{ width: '300px', resize: 'none', fontWeight: '600', border: 'none', fontSize: '16.8px', color: '#656481', 
           outline: '1px solid #c5cbd5', borderRadius: '2px', padding: '5px'}} />
         </div>
       </div>
@@ -753,7 +753,7 @@ return (
         </div>
       <div style={{ width: '100%'}}>
       <TextareaAutosize minRows={2} onChange={onAddressChange} value={AddressValue}
-           style={{ width: '300px', resize: 'none', fontWeight: '700', border: 'none', fontSize: '15px', color: '#656481', 
+           style={{ width: '300px', resize: 'none', fontWeight: '500', border: 'none', fontSize: '16.8px', color: '#656481', 
           outline: '1px solid #c5cbd5', borderRadius: '2px', padding: '5px'}} />
       </div>
     </div>

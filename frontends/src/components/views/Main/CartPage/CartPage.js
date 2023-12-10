@@ -523,7 +523,7 @@ function CartPage(props) {
   <span className='CartPage_checkout_span'>Select Location</span>  
 </div>
 :
-UserData && UserData.userLocation === "Windhoek" || UserData && UserData.userLocation === "KatimaMulilo" ||
+    UserData && UserData.userLocation === "Windhoek" || UserData && UserData.userLocation === "KatimaMulilo" ||
     UserData && UserData.userLocation === "Swakop" || UserData && UserData.userLocation === "Walvis" 
      || UserData && UserData.userLocation === "Oshakati" || UserData && UserData.userLocation === "Grootfontein" ||
      UserData && UserData.userLocation === "Rundu" || UserData && UserData.userLocation === "Otjiwarongo" ||
@@ -592,7 +592,7 @@ UserData && UserData.userLocation === "Windhoek" || UserData && UserData.userLoc
 </div>
     </div>
     :
-    UserData && UserData.userLocation === "Windhoek" || UserData && UserData.userLocation === "KatimaMulilo" ||
+    ( props.user && UserData ) && UserData.userLocation === "Windhoek" || UserData && UserData.userLocation === "KatimaMulilo" ||
     UserData && UserData.userLocation === "Swakop" || UserData && UserData.userLocation === "Walvis" 
      || UserData && UserData.userLocation === "Oshakati" || UserData && UserData.userLocation === "Grootfontein" ||
      UserData && UserData.userLocation === "Rundu" || UserData && UserData.userLocation === "Otjiwarongo" ||
@@ -816,7 +816,7 @@ UserData && UserData.userLocation === "Windhoek" || UserData && UserData.userLoc
                     <div className='Place_order_title_box'>
                     <span className='Place_order_title_span'>Email:</span>
                     </div>
-                    <div style={{ width: '280px', height: '35px', fontSize: '15px', display: 'flex', alignItems: 'center', color: '#656481', outline: '2px solid lightgray', fontWeight: '500', border: 'none', borderRadius: '2px', paddingLeft: '5px'}}>
+                    <div style={{ width: '280px', height: '35px', fontSize: '16.8px', display: 'flex', alignItems: 'center', color: '#656481', outline: '1px solid #c5cbd5', fontWeight: '500', border: 'none', borderRadius: '2px', paddingLeft: '10px'}}>
                     {UserData.email}
                     </div>
                     </div>
@@ -828,9 +828,9 @@ UserData && UserData.userLocation === "Windhoek" || UserData && UserData.userLoc
                     </div>
                     <div>
                     {UserData.name === "" || UserData.name === undefined ?
-                      <input onChange={onNameChange} value={NameValue} type='text' style={{ width: '280px', height: '35px', fontSize: '14px', color: '#656481', outline: '2px solid lightgray', fontWeight: '700', border: 'none', borderRadius: '2px', paddingLeft: '5px'}} />
+                      <input onChange={onNameChange} value={NameValue} type='text' style={{ width: '280px', height: '35px', fontSize: '16.8px', color: '#656481', outline: '1px solid #c5cbd5', fontWeight: '500', border: 'none', borderRadius: '2px', paddingLeft: '10px'}} />
                     :
-                    <div style={{ width: '280px', height: '35px', fontSize: '15px', display: 'flex', alignItems: 'center', color: '#656481', outline: '2px solid lightgray', fontWeight: '500', border: 'none', borderRadius: '2px', paddingLeft: '5px'}}>
+                    <div style={{ width: '280px', height: '35px', fontSize: '16.8px', display: 'flex', alignItems: 'center', color: '#656481', outline: '1px solid #c5cbd5', fontWeight: '500', border: 'none', borderRadius: '2px', paddingLeft: '10px'}}>
                     {UserData.name}
                     </div>
                     }
@@ -845,9 +845,9 @@ UserData && UserData.userLocation === "Windhoek" || UserData && UserData.userLoc
                     </div>
                     <div>
                     {UserData.lastname === "" || UserData.lastname === undefined ?
-                        <input onChange={onLastNameChange} value={LastNameValue} type='text' style={{ width: '280px', height: '35px', fontSize: '14px', color: '#656481', outline: '2px solid lightgray', fontWeight: '700', border: 'none', borderRadius: '2px', paddingLeft: '5px'}} />
+                        <input onChange={onLastNameChange} value={LastNameValue} type='text' style={{ width: '280px', height: '35px', fontSize: '16.8px', color: '#656481', outline: '1px solid #c5cbd5', fontWeight: '500', border: 'none', borderRadius: '2px', paddingLeft: '10px'}} />
                         :
-                    <div style={{ width: '280px', height: '35px', fontSize: '15px', display: 'flex', alignItems: 'center', color: '#656481', outline: '2px solid lightgray', fontWeight: '500', border: 'none', borderRadius: '2px', paddingLeft: '5px'}}>
+                    <div style={{ width: '280px', height: '35px', fontSize: '16.8px', display: 'flex', alignItems: 'center', color: '#656481', outline: '1px solid #c5cbd5', fontWeight: '500', border: 'none', borderRadius: '2px', paddingLeft: '10px'}}>
                     {UserData.lastname}
                     </div>
                     }
@@ -863,9 +863,9 @@ UserData && UserData.userLocation === "Windhoek" || UserData && UserData.userLoc
                     </div>
                     <div>
                     {UserData.contact === "" || UserData.contact === undefined ?
-                        <input onChange={onContactsChange} value={ContactValue} type='text' style={{ width: '280px', height: '35px', fontSize: '14px', color: '#656481', outline: '2px solid lightgray', fontWeight: '700', border: 'none', borderRadius: '2px', paddingLeft: '5px'}} />
+                        <input onChange={onContactsChange} value={ContactValue} type='text' style={{ width: '280px', height: '35px', fontSize: '16.8px', color: '#656481', outline: '1px solid #c5cbd5', fontWeight: '500', border: 'none', borderRadius: '2px', paddingLeft: '10px'}} />
                         :
-                    <div style={{ width: '280px', height: '35px', fontSize: '15px', display: 'flex', alignItems: 'center', color: '#656481', outline: '2px solid lightgray', fontWeight: '500', border: 'none', borderRadius: '2px', paddingLeft: '5px'}}>
+                    <div style={{ width: '280px', height: '35px', fontSize: '16.8px', display: 'flex', alignItems: 'center', color: '#656481', outline: '1px solid #c5cbd5', fontWeight: '500', border: 'none', borderRadius: '2px', paddingLeft: '10px'}}>
                     {UserData.contact}
                     </div>
                     }

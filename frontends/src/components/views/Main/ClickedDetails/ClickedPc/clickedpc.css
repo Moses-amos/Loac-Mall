@@ -1,7 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700;900&display=swap');
 
@@ -12,6 +12,7 @@
 
 .Clicked_page_Main_wrapper {
     display: block;
+    padding-top: 15px;
     background: #f7f3f6;
 }
 
@@ -102,9 +103,9 @@
 .Side-image_tabs {
     width: 100%;
     background: #fff;
+    border-radius: 15px;
     padding: 1px;
     height: 100%;
-    border-radius: 3px;
     border: none;
     cursor: pointer;
     box-shadow: 1px 2px 2px #c5cbd5;
@@ -154,7 +155,7 @@
 
 .Clicked_Item_description_title {
     font-family: 'Saira', sans-serif;    
-    font-size: 18px;
+    font-size: 18.8px;
     color: #222;
     font-weight: 700;
 }
@@ -249,10 +250,10 @@
 }
 
 .Clicked_page_Info_cart_wishlist_box {
-    width: 40%;
+    width: 30%;
     display: block;
     height: 100%;
-    padding: 20px 15px 0px 0px;
+    padding: 25px 15px 0px 0px;
 }
 
 .Info-prices_padding {
@@ -265,7 +266,6 @@
 .Clicked_page_Info_item_prices {
     display: block;
     margin-bottom: 10px;
-    margin-top: 15px;
 }
 
 .Info-item_prices {
@@ -474,8 +474,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid #c5cbd5;
+    transition: all 0.2s ease-in-out;
     box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
     background: #47c6f0;
 }
@@ -490,17 +491,18 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 10px;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid #c5cbd5;
-    background: #1dcd61;
+    background: #03C04A;
+    transition: all 0.2s ease-in-out;
     box-shadow: 0 2px 5px 0 rgba(213,217,217,.5);
 
 }
 
 .Info-addtowishlist:hover {
-    background: #03C04A;
+    background: #c25be9;
 }
 
 .Info-cart_span {
@@ -540,7 +542,7 @@
     width: 100%;
     display: flex;
     list-style: none;
-    padding-top: 5px;
+    padding-top: 8px;
 }
 
 .Info-productdetail_li-flexnorm {
@@ -663,15 +665,15 @@
     font-family: 'Saira', sans-serif;    
     font-size: 15px;
     color: #333;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .Info-productdetail_circled_info {
     width: 45px;
-    height: 20px;
+    height: 25px;
     font-family: 'Saira', sans-serif;    
     border-radius: 5px;
-    border: 2px solid #74767c;
+    border: 1px solid #74767c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -681,19 +683,21 @@
     width: 35%;
     /* font-family: 'Oswald', sans-serif; */
     font-family: 'Saira', sans-serif;    
-    font-size: 15px;
+    font-size: 16px;
     color: #070606;
     /* color: #333; */
     margin-bottom: 5px;
+    letter-spacing: 0;
+    word-break: break-word;
     font-weight: 600;
     text-size-adjust: 100%;
 }
 
 .Info-productdetail_li-right {
     width: 65%;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Saira', sans-serif;    
-    font-weight: 600;
+    font-weight: 500;
     /* color: rgb(15, 17, 17); */
     padding-left: 20px;
     letter-spacing: 0;
@@ -720,9 +724,9 @@
 .Seller_info_left {
     width: 40%;
     font-family: 'Saira', sans-serif;    
-    font-size: 15px;
+    font-size: 16px;
     color: #333;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .Seller_info_right {
@@ -775,14 +779,15 @@
     font-family: 'Saira', sans-serif;    
     /* font-size: 14px; */
     margin-top: 20px;
-    font-weight: 700;
+    line-height: 1.9;
+    font-weight: 500;
     color: #57595e;
     /* text-size-adjust: 100%; */
 }
 
 .Info-productdetail_des-attr_right-font {
     font-family: 'Saira', sans-serif;    
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     color: #333;
 }
@@ -978,9 +983,9 @@ tr:nth-child(odd) {
 }
 
 .Side_image {
-    width: 74px;
-    height: 45px;
-    padding: 5px;
+    width: 80px;
+    height: 50px;
+    padding: 2px;
 }
 
 .Side-img {

@@ -22,9 +22,9 @@ useEffect(() => {
     
     }, [])
 
-    const VerifiedAccountSelect = () => {
+    const FreeAccountSelect = () => {
         const variables = {
-            accountTier: "Verified",
+            accountTier: "Free",
           }
         
           Axios.post("/api/users/setRole", variables)
@@ -56,9 +56,9 @@ useEffect(() => {
   {/* <div className='Criteria_listed_details'>
     <span>The Brand should be well pronounced on Social Media.</span>
   </div> */}
-  <div className='Criteria_listed_details'>
+  {/* <div className='Criteria_listed_details'>
     <span>Has a Returns Policy in effect.</span>
-  </div>
+  </div> */}
 
   <div className='Criteria_verify_details_first'>
     <span>Includes:</span>
@@ -77,7 +77,11 @@ useEffect(() => {
     <span>Landing Page</span>
   </div>
 
+  <div className='Verified_listed_details'>
+    <span> <b style={{ fontSize: '16px', color: '#333'}}>Base Plan: </b>  Starts at N$ 150/month from Jan/2024</span>
+  </div>
 
+  
   <div className='Verified_plan_First_Monthly_box'>
   <div className='Pricings_tabs_organise'>
 
@@ -184,6 +188,29 @@ useEffect(() => {
 
 </div>
 
+<div className='Why_join_box'>
+  <div className='Why_join_title_box'>
+    <div className='Why_join_title'>Why</div>
+    <div className='Platform_text_box'>
+      <span>The platform is to show where an item is available</span>
+    </div>
+
+    <div className='Platform_survey_text'>
+    <a className='Platform_survey_text_mobile'>View Demo: On Laptop</a>
+    <a href='/item/upload' target={'_blank'} className='Platform_survey_text_link'>View Demo</a> : <a href='https://airtable.com/appjhh4NJ0vW38rGA/shrOExu561nrFQx50'className='Platform_survey_text_mobile'>survey</a>
+      <a href='https://airtable.com/appjhh4NJ0vW38rGA/shrOExu561nrFQx50'className='Platform_survey_text_link'>survey</a>
+    </div>
+  
+
+</div>
+  <div className="Why_join_right_box">
+  <div>
+      <img style={{ width: '100%',height: '110px', borderRadius: '15px' }} src='https://i.imgur.com/a3A7ho5.jpg'  />
+    </div>
+  </div>
+
+</div>
+
 
 <div className='Free_page_banner'>
   <div className='Criteria_selectTabs_box'>
@@ -193,14 +220,14 @@ useEffect(() => {
   </div>
 
   <div className='Criteria_listed_details_first'>
-    <span>Individuals & Businesses</span>
+    <span>Individuals & Small Businesses</span>
   </div>
 
   <div className='Criteria_verify_details_first'>
     <span>Includes:</span>
   </div>
   <div className='Verified_listed_details'>
-    <span>4 Items upload limit</span>
+    <span>5 Items upload limit</span>
   </div>
   <div className='Verified_listed_details'>
     <span>Landing Page</span>
@@ -237,7 +264,7 @@ useEffect(() => {
    :
    <div className="Free_options_currenty_boxes">
        <div 
-        onClick={() => {VerifiedAccountSelect()}}
+        onClick={() => {FreeAccountSelect()}}
         className='Criteria_button_text'>Free Account</div>     
    </div>
   }
@@ -249,7 +276,7 @@ useEffect(() => {
     </div>
     <div className='Criteria_image_right'>   
         <div style={{width: '100%'}}>
-          <img style={{ width: '100%',height: '385px', borderRadius: '15px' }} src='https://i.imgur.com/n9fgfz4.jpg'  />
+          <img style={{ width: '100%',height: '385px', borderRadius: '15px' }} src='https://i.imgur.com/n9fgfz4.jpg' />
         </div>
         
         </div>

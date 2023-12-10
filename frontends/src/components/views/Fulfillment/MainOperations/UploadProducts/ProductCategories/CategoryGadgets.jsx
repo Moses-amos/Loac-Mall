@@ -266,7 +266,7 @@ function CategoryGadgets(props) {
                                             <div onClick={()=>{props.sethoverCategory(); props.setProductType("iPhone")}} className='Category-select_button'>select</div>
                                         </div>
                                     </li>
-                                    <li className="SelectCategory-li" onMouseEnter={() => PhoneTabletCategory()}
+                                    {/* <li className="SelectCategory-li" onMouseEnter={() => PhoneTabletCategory()}
                                         >                       
                                         <div>Smartphone</div>
                                         <div>
@@ -292,7 +292,7 @@ function CategoryGadgets(props) {
                                         <div>E Reader</div>
                                         <div>
                                             <div onClick={()=>{props.sethoverCategory(); props.setProductType("E Reader")}} className='Category-select_button'>select</div>
-                                        </div></li>
+                                        </div></li> */}
                                 </ul>
 
                                 {/* Tv , Home theater */}
@@ -594,7 +594,7 @@ function CategoryGadgets(props) {
                                     </li>
                                     <li className="SelectCategory-li" onMouseEnter={() => ConsoleCategory()}
                                         >                       
-                                        <div>XBOX Console</div>
+                                        <div>Xbox Console</div>
                                         <div>
                                             <div onClick={()=>{props.sethoverCategory(); props.setProductType("XBOX Console")}} className='Category-select_button'>select</div>
                                         </div>

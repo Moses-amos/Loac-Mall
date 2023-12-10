@@ -53,9 +53,16 @@ function SearchedCart(props) {
             </div>
             <div>
             <div style={{ padding: '25px 0px 2px 0px', display: 'flex'}}>
+
+            {props.product.accountTier === "Free" ?
+              <div style={{ position: 'relative'}}>
+              <span style={{ fontSize: '15px', fontWeight: '500', color: '#333'}}>Available From</span>
+            </div>
+              :
               <div style={{ position: 'relative'}}>
                 <span style={{ fontSize: '15px', fontWeight: '500', color: '#333'}}>Available In</span>
               </div>
+              }
               
               </div>
               <div className='Searching_Available_towns_box'>

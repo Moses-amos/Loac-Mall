@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import { Button, Form } from 'antd';
-import './productsupload.css'
-import Axios from 'axios'
-import { useSelector } from 'react-redux';
+import '../../../../Fulfillment/MainOperations/UploadProducts/productsupload.css'
+
 import TextareaAutosize from 'react-textarea-autosize';
-import CategoryGadgets from './ProductCategories/CategoryGadgets';
-import CategoryAppliances from './ProductCategories/CategoryAppliances';
-import CategoryHome from './ProductCategories/CategoryHome';
-import CategoryClothing from './ProductCategories/CategoryClothing';
-import CategoryBook from './ProductCategories/CategoryBook'
+import CategoryGadgets from '../../../../Fulfillment/MainOperations/UploadProducts/ProductCategories/CategoryGadgets';
+import CategoryAppliances from '../../../../Fulfillment/MainOperations/UploadProducts/ProductCategories/CategoryAppliances';
+import CategoryHome from '../../../../Fulfillment/MainOperations/UploadProducts/ProductCategories/CategoryHome';
+import CategoryClothing from '../../../../Fulfillment/MainOperations/UploadProducts/ProductCategories/CategoryClothing';
+import CategoryBook from '../../../../Fulfillment/MainOperations/UploadProducts/ProductCategories/CategoryBook'
 
-import ImageUploadOne from './ImagesUpload/ImageUploadOne'
-import ImageUploadTwo from './ImagesUpload/ImageUploadTwo';
-import ImageUploadThree from './ImagesUpload/ImageUploadThree';
-import ImageUploadFour from './ImagesUpload/ImageUploadFour';
-import ImageUploadFive from './ImagesUpload/ImageUploadFive';
+import ImageUploadOne from '../../../../Fulfillment/MainOperations/UploadProducts/ImagesUpload/ImageUploadOne'
+import ImageUploadTwo from '../../../../Fulfillment/MainOperations/UploadProducts/ImagesUpload/ImageUploadTwo';
+import ImageUploadThree from '../../../../Fulfillment/MainOperations/UploadProducts/ImagesUpload/ImageUploadThree';
+import ImageUploadFour from '../../../../Fulfillment/MainOperations/UploadProducts/ImagesUpload/ImageUploadFour';
+import ImageUploadFive from '../../../../Fulfillment/MainOperations/UploadProducts/ImagesUpload/ImageUploadFive';
 
-import ClothesUpload from './UploadDetails/ClothesUpload'
+import ClothesUpload from '../../../../Fulfillment/MainOperations/UploadProducts/UploadDetails/ClothesUpload'
 
 const VideoMemory = [
 {key:"unset", value: "unset"},
@@ -46,7 +45,6 @@ const Memory = [
 {key:"24 GB", value: "24 GB"},
 {key:"32 GB", value: "32 GB"},
 ]
-
 
 const DisplayPortCount = [
     {key:"0", value: "0"},
@@ -490,7 +488,6 @@ function ProductsUpload(props) {
         window.location.reload(false);
       }
 
-const user = useSelector(state => state.user)
 // Use State not updating
 const [TitleValue, setTitleValue] = useState("")
 const [SpecificationValue, setSpecificationValue] = useState("")
@@ -626,11 +623,6 @@ const [ImageDetailsFive, setImageDetailsFive] = useState([])
 const [DiscountOption, setDiscountOption] = useState(1)
 const [UploadedItem, setUploadedItem] = useState(false)
 
-if (UploadedItem === true) {
-  setTimeout(() => {
-    refreshPage()
-}, 1000);
-}
 
 // Clothes States
 const [ClothMaterial, setClothMaterial] = useState("")
@@ -1439,7 +1431,6 @@ const BrandCategory = (index) => {
   const MacBookAirModel = () => {
     setBrandValue("Apple")
     setModelName("MacBook Air")
-
   }
 
   const MacBookAirM2ChipModel = () => {
@@ -1642,17 +1633,6 @@ const HoverTab = (index) => {
     sethoverCategory(index);
     }
 
-
-useEffect(() => {
-    Axios.get('/api/users/getUser')
-    .then(response => {
-        if (response.data.success) {
-        //   (response.data.doc);
-          setSellerId(response.data.doc._id)
-          setUserData(response.data.doc)
-        }
-    })
-}, [])
 
 const onTitleChange = (event) => {
 setTitleValue(event.currentTarget.value)
@@ -2090,233 +2070,20 @@ const onSsdSlotsChange = (event) => {
     setSsdCount(event.currentTarget.value)
     }
 
+    const OpenAccount = () => {
+        props.history.push("/login")
+        refreshPage()
+    }
+
 // const onBuildPc = (event) => {
 //     setPcBuild(event.currentTarget.value)
 //     }
 
-const onSubmit = (event) => {
-event.preventDefault();
-
-
-if (!TitleValue || !SpecificationValue || !PriceValue || !WarrentyValue || !ImageDetailsOne) {
-    return alert('Fill All Necessary Information: Title - Description - Price - Warrenty - ImageDetailsOne')
-}
-
-const variables = {
-writer: user.userData._id,
-title: TitleValue,
-description: SpecificationValue,
-price: PriceValue,
-wasPrice: PriceWasValue,
-special: SpecialPercent,
-sellerId: SellerId,
-images: ImageDetailsOne,
-imageOne: ImageDetailsOne,
-imageTwo: ImageDetailsTwo,
-imageThree: ImageDetailsThree,
-imageFour: ImageDetailsFour,
-imageFive: ImageDetailsFive,
-product: ProductType,
-warrenty: WarrentyValue,
-deliveryStatus: DeliveryStatus,
-processorName: ProcessorName,
-processorFrequency: ProcessorFrequency,
-graphicsCardName: GraphicsCardName,
-vRam: VramValue,
-coreCount: CoreValue,
-graphicsCardGeneration: GraphicsCardGenerationValue,
-ram: MemoryValue,
-ramArrangement: ArrangementValue,
-ramGeneration: MemoryGenerationValue,
-hardDisk: HardDiskValue,
-ssd: SolidStateValue,
-nvme: NVMeValue,
-operatingSystem: OSName,
-inclusions: Inclusions,
-motherboard: MotherboardName,
-powerSupply: PowerSupplyName,
-wifiModule: WifiModule,
-ethernetPort: EthernetPortValue,
-usbPort: USBPortValue,
-vgaPort: VGAPortValue,
-pciPort: PCIExpress,
-hdmiPort: HDMIPortValue,
-ramSlot: RamSlotValue,
-modelName: ModelName,
-resolution: Resolution,
-aspectRatio: AspectRatio,
-displaySize: DisplaySize,
-color: ColorValue,
-resolutionType: ResolutionType,
-fps: RefreshRate,
-threeD: ThreeDValue,
-brand: BrandValue,
-cType: CTypeValue,
-sdCardSlot: SDSlotValue,
-ramSpeed: MemorySpeed,
-compatibleDevice: CompatibleDevice,
-fan: FanCount,
-displayVia: DisplayVia,
-busStandard: BusStandard,
-graphicsCardSpeed: GraphicsSpeed,
-wattage: Wattage,
-manufacturer: Manufacturer,
-threads: ThreadCount,
-cpuUnlock: CPUStatus,
-maxRam: MaxMemory,
-ramBandwidth: MemoryBandwidth,
-integratedGraphics: IntegratedGraphics,
-supportedOS: SupportedWindows,
-compatibleMotherboards: CompatibleMotherboards,
-seriesName: SeriesName,
-cpuSocket: CPUSocket,
-displayPort: DisplayPortValue,
-chipsetType: ChipsetType,
-connectorType: ConnectorType,
-weight: WeightValue,
-sataCount: SataCount,
-fourPinCount: FourPin,
-sixPinCount: SixPin,
-twentyPlusCount: TwentyPlus,
-molexCount: Molex,
-floppyCount: Floppy,
-specialAttribute: SpecialAttribute,
-dimensions: Dimensions,
-hddSlots: HDDSlotCount,
-ssdSlots: SSDSlotCount,
-functions: Functions,
-inputTray: InputTrayCapacity,
-outputTray: OutputTrayCapacity,
-compatibleBlackInks: CompatibleBlackInks,
-compatibleColorInks:CompatibleColorInks,
-powerSource: PowerSource,
-stockedInk: StockedInk,
-monoPrint: MonoPrint,
-colorPrint: ColorPrint,
-compatibleModel: CompatibleModel,
-cableLenght: CableLenght,
-interface: Interface,
-cableType: CableType,
-gender: ConnectorGender,
-transferRate: TransferRate,
-bodyCover: BodyCover,
-storageCapacity: StorageCapacity,
-hardwareInterface: HardwareInterface,
-diskStorage: DiskStorageValue,
-pageYield: PageYield,
-sataPin: SataPinCount,
-hddInsert: HDDInsert,
-ssdInsert: SSDInsert,
-nvmeSlot: NVMeSlotCount,
-mdotTwo: MtwoValue,
-nvmeBus: NVMeBusCount,
-powerConnector: PowerConnector,
-dviPort: DVIValue,
-ramBus: RamBusCount,
-hddCount: HddCount,
-ssdCount: SsdCount,
-dvdDrive: DVDDriveValue,
-voltage: Voltage,
-featureCount: FeatureCount,
-genderCategory: GenderedItem,
-Walvis: UserData.Walvis,
-Swakop: UserData.Swakop,
-Windhoek: UserData.Windhoek,
-KatimaMulilo: UserData.KatimaMulilo,
-Grootfontein: UserData.Grootfontein,
-Rundu: UserData.Rundu,
-Otjiwarongo: UserData.Otjiwarongo,
-Oshakati: UserData.Oshakati,
-Okahandja: UserData.Okahandja,
-Gobabis: UserData.Gobabis,
-Rehoboth: UserData.Rehoboth,
-Ongwediva: UserData.Ongwediva,
-Ondangwa: UserData.Ondangwa,
-Tsumeb: UserData.Tsumeb,
-retailerImage: UserData.profileImage,
-accountier: UserData.accountTier,
-
-}
-
-Axios.post('/api/product/uploadProduct', variables)
-.then(response => {
-if (response.data.success) {
-setUploadedItem(true)
-// props.history.push('/')
-} else {
-alert('Failed to upload Product')
-}
-})
-}
 
 return (
 <div className='Products_upload_main_box'>
-    {/* <RetailerSidebar /> */}
-    
-    {UserData._id === undefined ?
-    <></>
-    :
-    UserData.Windhoek === false && UserData.KatimaMulilo === false &&
-        UserData.Swakop === false && UserData.Walvis === false
-        && UserData.Oshakati === false && UserData.Grootfontein === false &&
-        UserData.Rundu === false && UserData.Otjiwarongo === false &&
-        UserData.Ongwediva === false && UserData.Okahandja === false
-        && UserData.Gobabis === false && UserData.Rehoboth === false
-        && UserData.Tsumeb === false && (UploadedItem === false) ?
-        <>
-        {UserData.accountTier === "Free" ?
-        <div className='Important_Location_Note_wrapper'>
-        <div className='No_Location_Set'>
-            <div className='Notice_box_justify'>
-            <div className='No_Location_Text'>
-                    <span className='Important_Location_Text_span'>Select location before Uploading Items</span>
-                </div>
-
-            <div className='Set_Fulfilments_Button'>
-  <div style={{ width: '150px', height: '40px', background: 'orange', display: 'flex', 
-    justifyContent: 'center', alignItems: 'center', borderRadius: '10px'}}>
-      <a href="/set-location" style={{ width: '100%', height: '100%', display: 'flex', 
-    justifyContent: 'center', alignItems: 'center' }}><span style={{color: '#fff', fontSize: '16px', fontWeight: '500'}}>Locations</span></a>
-    </div>
-            </div>
-            </div>
-        </div>
-      </div>
-        :
-        <div className='Important_Location_Note_wrapper'>
-        <div className='No_Location_Set'>
-            <div className='Notice_box_justify'>
-            <div className='No_Location_Text'>
-                    <span className='Important_Location_Text_span'>Select locations before Uploading Items</span>
-                </div>
-
-            <div className='Set_Fulfilments_Button'>
-  <div style={{ width: '150px', height: '40px', background: 'orange', display: 'flex', 
-    justifyContent: 'center', alignItems: 'center', borderRadius: '10px'}}>
-      <a href="/store-locations" style={{ width: '100%', height: '100%', display: 'flex', 
-    justifyContent: 'center', alignItems: 'center' }}><span style={{color: '#fff', fontSize: '16px', fontWeight: '500'}}>Locations</span></a>
-    </div>
-            </div>
-            </div>
-                
-
-        </div>
-      </div>
-        }
-        </>
-      
-:
-// UploadedItem === true ?
-// <div className='Upload_Success_Location_Set'>
-// <div>
-//     <div className='No_Location_Note'>
-//         <span className='Important_Location_Note_Uploaded'>Uploaded Successfully</span>
-//     </div>
-// </div>
-// </div>
-// :
     <div className='Retailer_Upload_box'>
-        <Form onSubmit={onSubmit}>
+        <Form>
          <div className='SelectCategory_Container_Upload'>
                 <div className='SelectCategory_Box_Upload'>
                     <span className='SelectCategory_Title_Upload'>Select Product Category</span>
@@ -17228,7 +16995,6 @@ onClick={()=> { TvCategory(2); NoAssemblyRequired()}} >
                                     </div>
                                 </div>
                             </li>
-                            
                             <li
                                 style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '20px 10px'}}>
                                 <div style={{ paddingRight: '40px'}}>
@@ -21566,13 +21332,11 @@ onClick={()=> { TvCategory(2); NoAssemblyRequired()}} >
 
         
             <div className='Submit-upload-button_box'>
-                <Button className="Submit-upload-button" onClick={onSubmit}>Upload Item
+                <Button className="Submit-upload-button" onClick={() => {OpenAccount()}}>Open Account
                 </Button> 
             </div>
         </Form>
     </div>
-    }
-
 </div>
 )
 }

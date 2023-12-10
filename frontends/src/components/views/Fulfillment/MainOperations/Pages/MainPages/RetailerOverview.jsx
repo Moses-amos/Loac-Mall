@@ -194,7 +194,7 @@ const SearchedProducts = Products.map((product, index) => {
           <button className='Overview_Edit_button'
           ><a style={{ color: '#fff', width: '100%', display: 'flex', alignItems: 'center'
           , justifyContent: 'center', height: '100%'}} 
-          // href={`/edit/product/${product._id}`}
+          href={`/edit/product/${product._id}`}
           >Edit </a></button>
           </div>
           
@@ -304,7 +304,7 @@ const DisplayProducts = Products.map((product, index) => {
           <button className='Overview_Edit_button'
           ><a style={{ color: '#fff', width: '100%', display: 'flex', alignItems: 'center'
           , justifyContent: 'center', height: '100%'}}
-          //  href={`/edit/product/${product._id}`}
+           href={`/edit/product/${product._id}`}
            >Edit </a></button>
           </div>
           
@@ -397,10 +397,10 @@ return (
                   </div>
 
 
-                  {WriterProducts.length === 8 && UserData.accountTier === "Free" ?
+                  {WriterProducts.length === 5 && UserData.accountTier === "Free" ?
           <div className='Add_product_button_overview'>
-            <div className='Add_product_button_overview_box' onClick={PopUpUpgrade}>
-            <span className='Add_product_button_overview_box_span'>Upload Item</span></div>
+            <div className='Add_product_button_overview_box'>
+            <span className='Add_product_button_overview_box_span'>limit Reached</span></div>
          </div>
                     :
 <div className='Add_product_button_overview'>
@@ -432,7 +432,7 @@ return (
 
                   <div className='Overview_Account_details_box'>
                   <div className='Overview_Account_title_box'>
-                  Contact Nr:
+                  Contact nr:
                   </div>
                   <div className='Overview_Account_subject_box'>
                   {UserData.contact? <>{UserData.contact}</>:<>none</>}
@@ -442,7 +442,7 @@ return (
                   <div>
                     <div className='Overview_Account_information_button'><a style={{ width: '100%', height: '100%', display: 'flex', 
                           justifyContent: 'center', alignItems: 'center' }} href='/re-settings'>
-                          <span style={{ color: '#fff', fontSize: '16px', fontWeight: '500'}}>Update</span> </a> </div>
+                          <span style={{ color: '#fff', fontSize: '16px', fontWeight: '500'}}>Edit</span> </a> </div>
                   </div>
                   
                   </div>

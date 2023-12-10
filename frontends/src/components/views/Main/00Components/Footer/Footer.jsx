@@ -28,12 +28,17 @@ return (
       <div className='Rights_container'>
 
       <div className='mobile_top_padding'>
-      <span><a href='/account-plans' className='Rights-span_about'>Marketing Account</a> </span>
+      <span> <a className='Rights-span_about' href='/about-us'>About Us</a> </span>
         </div>
     
       <div className='mobile_top_padding_about'>
-      <span><a className='Rights-span_about' href='/about-us'>About Us</a> </span>
+      <span><a href='/account-plans' className='Rights-span_about'>Central Account</a></span>
         </div>
+
+      <div className='mobile_top_padding_about'>
+      <span><a href='/#' className='Rights-span_about'>Contact</a> </span>
+        </div>
+
     <div className='Social_links_rights'>
       <div className='Social_links_box'>
     <div>
@@ -68,16 +73,23 @@ fill="white"></path></svg>
 
 
       <div className='bottom_top_padding_top'>
-      <span><a href='/account-plans' className='Rights-span_about'>Marketing Account</a> </span>
+      <span> <a className='Rights-span_about' href='/about-us'>About Us</a></span>
         </div>
       
       <div className='bottom_top_padding'>
-      <span><a className='Rights-span_about' href='/about-us'>About Us</a> </span>
+      <span> <a href='/account-plans' className='Rights-span_about'>Central Account</a></span>
         </div>
+
     <div className='Footer_bottom_display'>
-    <div className='bottom_top_padding'>
-      <span className='Rights-span'>© 2023 Loac Mall.</span>
+    <div className='Footer_bottom_box'>
+      <span className='Rights-span'>© 2023 Loac.</span>
     </div>
+
+    <div className='Footer_bottom_box'>
+      <span><a className='Rights-span' href='https://airtable.com/appcCxiXmMu8HSzZ3/shr84xLtcsdXVRU3v'>Contact</a></span>
+    </div>
+
+
     </div>
       </div>
 

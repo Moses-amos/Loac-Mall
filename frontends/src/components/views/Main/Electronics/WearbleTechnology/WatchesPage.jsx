@@ -520,7 +520,6 @@ const SearchedProducts = Products.map((product, index) => {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -544,7 +543,7 @@ const SearchedProducts = Products.map((product, index) => {
   ><div>
     <img 
     src='https://pbs.twimg.com/media/F56Aj2EWIAAuhQs?format=png&name=small'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Watches</span>
@@ -557,10 +556,10 @@ const SearchedProducts = Products.map((product, index) => {
   ><div>
     <img 
     src='https://d1rkccsb0jf1bk.cloudfront.net/products/100006164/main/a1167-2658-view1-1476100604-408.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Digital Watches</span>
+    <span>Digital</span>
   </div>
    </div>
 
@@ -571,10 +570,10 @@ const SearchedProducts = Products.map((product, index) => {
     <img 
     src='https://pbs.twimg.com/media/F7XBBdRXoAA-fcj?format=jpg&name=small'
     // src="https://staticimg.titan.co.in/Helios/Catalog/PL15712JSBL03MW_1.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Popular Watches</span>
+    <span>Popular</span>
   </div>
     </a>
   
@@ -592,10 +591,10 @@ const SearchedProducts = Products.map((product, index) => {
     // src='https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dw3dd4cfe1/TAG_Heuer_Formula_1/CAZ101AL.FT8052/CAZ101AL.FT8052_0913.png?impolicy=resize&width=1920'
     // src='https://www.swisswatchexpo.com/images/custom-catalog-content/header/tag-heuer.jpg'
    
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Luxury Watches</span>
+    <span>Luxury</span>
   </div>
     </a>
   
@@ -609,10 +608,10 @@ const SearchedProducts = Products.map((product, index) => {
     src='https://m.media-amazon.com/images/I/71TIOhVWQ5L.jpg'
     // src='https://m.media-amazon.com/images/I/51XmJudl4xL._AC_UF894,1000_QL80_.jpg'
     // src="https://m.media-amazon.com/images/I/61ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Smart Watches</span>
+    <span>Smart</span>
   </div>
     </a>
    </div>
@@ -624,10 +623,10 @@ const SearchedProducts = Products.map((product, index) => {
     <img 
       src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj4ZB_vTTtQ8ZWYoiuuV363Yg06fLaneCLcz8BfWrzNmwpyGYYwkFfMIr9x9wU0eOOs3U&usqp=CAU'
     // src="https://www.krishnawatch.com/cdn/shop/products/DW00100163_66_83348290-4899-43b3-beea-4d76b513e65f.png?v=1668667083"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Women's Watches</span>
+    <span>Women's</span>
   </div>
     </a>
    </div>
@@ -638,7 +637,7 @@ const SearchedProducts = Products.map((product, index) => {
       <div>
     <img 
     src="https://www.bennettwinch.com/cdn/shop/products/Bennett_Winch_Watch-Roll_Brown_FrontOpen.jpg?v=1632491197"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Watch Accessories</span>

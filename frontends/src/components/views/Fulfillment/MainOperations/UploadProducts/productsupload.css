@@ -17,10 +17,10 @@
     align-items: center;
     justify-content: center;
     /* border-radius: 3px; */
-    font-weight: 700;
+    font-weight: 500;
     font-family: 'Saira', sans-serif;
     /* font-family: 'Open Sans', sans-serif; */
-    font-size: 14px;
+    font-size: 16px;
     /* font-weight: 500; */
     color: #fff;
     border: 2px solid #fff;
@@ -51,7 +51,7 @@
     justify-content: center;
     align-items: center;
     height: 250px;
-    background: #03C04A;
+    background: #026c90;
     box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
 }
 
@@ -87,7 +87,7 @@
 
 .Product_Title_input_box {
     /* width: 935px; */
-    width: 850px;
+    width: 950px;
     font-size: 16px;
     font-weight: 500;
     height: 40px;
@@ -240,15 +240,22 @@
     width: 400px;
     height: 45px;
     display: flex;
-    border: 3px solid #1380e7;
+    /* border: 3px solid #1380e7; */
     align-items: center;
+    border: none;
     justify-content: center;
     background: #1380e7;
     font-family: 'Saira', sans-serif;    
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 10px;
-    font-weight: 700;
+    font-weight: 600;
     color: #fff;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.Edit-upload-button:hover {
+    background: #03C04A;
 }
 
 .Submit-upload-button {
@@ -285,7 +292,7 @@
     position: absolute;
     margin-top: 5px;
     /* z-index: 10; */
-    margin-left: -245px;
+    margin-left: -255px;
     /* margin-left: -20px; */
     min-height: 507px;
     padding: 5px 18px 0px 17px;
@@ -300,7 +307,7 @@
     margin-top: 5px;
     /* z-index: 10; */
     /* margin-left: -176px; */
-    margin-left: -401px;
+    margin-left: -411px;
     min-height: 507px;
     padding: 5px 18px 0px 17px;
     border-radius: 5px;
@@ -312,7 +319,7 @@
     position: absolute;
     margin-top: 5px;
     /* z-index: 10; */
-    margin-left: -557px;
+    margin-left: -567px;
     min-height: 507px;
     padding: 5px 18px 0px 17px;
     border-radius: 5px;
@@ -324,7 +331,7 @@
     position: absolute;
     margin-top: 5px;
     /* z-index: 10; */
-    margin-left: -713px;
+    margin-left: -723px;
     min-height: 507px;
     padding: 5px 18px 0px 17px;
     border-radius: 5px;
@@ -332,10 +339,10 @@
     background-color: #fff;
 }
 
-.Pending_one-select_list {
+.Book-select_list {
     position: absolute;
     margin-top: 5px;
-    margin-left: -488px;
+    margin-left: -879px;
     min-height: 507px;
     padding: 5px 18px 0px 17px;
     border-radius: 5px;
@@ -629,7 +636,7 @@
 }
 
 .Details-Input_style {
-    height: 30px;
+    height: 35px;
     width: 450px;
     font-size: 15px;
     color: #333;
@@ -643,7 +650,7 @@
 }
 
 .Details-Input_style_monitor_min {
-    height: 30px;
+    height: 35px;
     width: 230px;
     font-size: 15px;
     color: #333;
@@ -657,7 +664,7 @@
 }
 
 .Details-Input_style_PowerSupply {
-    height: 30px;
+    height: 35px;
     width: 180px;
     font-size: 15px;
     color: #333;
@@ -671,7 +678,7 @@
 }
 
 .Details-Input_style_printer_min {
-    height: 30px;
+    height: 35px;
     width: 240px;
     font-size: 15px;
     font-family: 'Saira', sans-serif;    
@@ -685,7 +692,7 @@
 }
 
 .Details-Input-mid_style {
-    height: 30px;
+    height: 35px;
     width: 150px;
     font-size: 13px;
     color: #333;
@@ -777,7 +784,7 @@
 
 .Select_Phone_brand-options_box {
     display: flex;
-    padding: 10px 0px 0px 20px;
+    padding: 10px 0px 0px 0px;
     justify-content: space-between;
 }
 
@@ -820,7 +827,7 @@
 
 .Select_brand_option_selected_style {
     width: 95px;
-    height: 30px;
+    height: 35px;
     cursor: pointer;
     margin-right: 20px;
     display: flex;
@@ -835,7 +842,7 @@
 
 .Select_brand_option_selected_style_last {
     width: 95px;
-    height: 30px;
+    height: 35px;
     cursor: pointer;
     display: flex;
     font-family: 'Saira', sans-serif;    
@@ -849,7 +856,7 @@
 
 .Select_brand_tv_option_selected_style {
     width: 97px;
-    height: 30px;
+    height: 35px;
     cursor: pointer;
     margin-right: 20px;
     display: flex;
@@ -864,7 +871,7 @@
 
 .Select_tv_option_selected_style {
     width: 185px;
-    height: 30px;
+    height: 35px;
     cursor: pointer;
     margin-right: 20px;
     display: flex;
@@ -879,7 +886,7 @@
 
 .Select_headphone_option_selected_style {
     width: 135px;
-    height: 30px;
+    height: 35px;
     cursor: pointer;
     margin-right: 22px;
     display: flex;
@@ -894,7 +901,7 @@
 
 .Select_smart_tv_option_selected_style {
     width: 215px;
-    height: 30px;
+    height: 35px;
     cursor: pointer;
     margin-right: 20px;
     display: flex;
@@ -909,7 +916,7 @@
 
 .Select_phone_brand_option_selected_style {
     width: 95px;
-    height: 30px;
+    height: 35px;
     cursor: pointer;
     margin-right: 20px;
     display: flex;
@@ -940,7 +947,7 @@
 
 .Input_midwidth_Style {
     width: 280px;
-    height: 30px;
+    height: 35px;
     font-size: 15px;
     color: #333;
     font-weight: 600;
@@ -954,7 +961,7 @@
 
 .Input_fullwidth_Style {
     width: 630px;
-    height: 30px;
+    height: 35px;
     font-size: 15px;
     color: #333;
     font-weight: 600;
@@ -968,7 +975,7 @@
 
 .Input_four_hundred_Style {
     width: 400px;
-    height: 30px;
+    height: 35px;
     font-size: 15px;
     color: #333;
     font-weight: 600;
@@ -982,7 +989,7 @@
 
 .Input_two_hundred_Style {
     width: 250px;
-    height: 30px;
+    height: 35px;
     font-size: 15px;
     color: #333;
     font-weight: 600;

@@ -60,7 +60,7 @@ return (
                 :
                 (Product.special !== "" && Product.special !== "0") && (Product.specialAttribute === "" || Product.specialAttribute === "0" ) ?
                 <div 
-                style={{ width: '90px', padding: '10px 0px 20px 0px'}}
+                style={{ width: '80px', padding: '10px 0px 20px 0px'}}
                 >
                 <div className='SavePercent'>
                     <span className='Percent-Deal_span_detail'>Save {Product.special}</span>
@@ -168,9 +168,15 @@ src={`http://localhost:5000/${Images[0]}`}
 
    </div>
 
-    <div className='Available_In_title'>
+    {Product.accountTier === "Free" ?
+        <div className='Available_In_title'>
+           <span style={{ fontSize: '15px', fontWeight: '700', color: '#333'}}>Available From</span>
+        </div>
+        :
+        <div className='Available_In_title'>
             <span style={{ fontSize: '15px', fontWeight: '700', color: '#333'}}>Available In</span>
         </div>
+    }
 
     <div className='Info_page_Available_locations'>
     <AvailableLocation UserData={UserData} Product={Product} />
@@ -3775,7 +3781,7 @@ src={`http://localhost:5000/${Images[0]}`}
             }
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Memory (RAM):</div>
+                Memory:</div>
                 <div className='Info-productdetail_li-right'>{Product.ramSpeed}</div>
             </li>
             <li className='Info-productdetail_li'>
@@ -3941,7 +3947,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.processorName !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Processor (CPU):</div>
+                Processor:</div>
                 <div className='Info-productdetail_li-right'>{Product.processorName}</div>
             </li>
             :
@@ -3953,7 +3959,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.graphicsCardName !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Graphics Card (GPU):</div>
+                Graphics Card:</div>
                 <div className='Info-productdetail_li-right'>{Product.graphicsCardName}</div>
             </li>
             :
@@ -3975,7 +3981,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.ram !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Memory (RAM):</div>
+                Memory:</div>
                 <div className='Info-productdetail_li-right'>{Product.ram} {Product.ramGeneration}</div>
             </li>
             :
@@ -5445,25 +5451,25 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.usbPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.usbPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>HDMI Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.hdmiPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.hdmiPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>Ethernet Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.ethernetPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.ethernetPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>VGA Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.vgaPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.vgaPort}</span>
                     </div>
                 </div>
             </li>
@@ -5844,7 +5850,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.ramSpeed !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Memory (RAM):</div>
+                Memory:</div>
                 <div className='Info-productdetail_li-right'>{Product.ramSpeed}</div>
             </li>
             :
@@ -6105,19 +6111,19 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.usbPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.usbPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>HDMI Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.hdmiPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.hdmiPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>VGA Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.vgaPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.vgaPort}</span>
                     </div>
                 </div>
             </li>
@@ -6125,13 +6131,13 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>3D:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.threeD}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.threeD}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB-C Port:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.cType}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.cType}</span>
                     </div>
                 </div>
             </li>
@@ -6143,7 +6149,7 @@ src={`http://localhost:5000/${Images[0]}`}
         <ul className='Info-left-product_details'>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                    Processor (CPU):
+                    Processor:
                 </div>
                 <div className='Info-productdetail_li-right'>
                     {Product.processorName}
@@ -6151,13 +6157,13 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                    Graphics Card (GPU):
+                    Graphics Card:
                 </div>
                 <div className='Info-productdetail_li-right'>{Product.graphicsCardName} {Product.vRam}</div>
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                    Memory (RAM):
+                    Memory:
                 </div>
                 <div className='Info-productdetail_li-right'>
                     {Product.ram} {Product.ramGeneration} {Product.ramArrangement} 
@@ -6165,7 +6171,7 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                    Video Memory (VRAM):
+                    Video Memory:
                 </div>
                 <div className='Info-productdetail_li-right'>{Product.vRam} {Product.graphicsCardGeneration}</div>
             </li>
@@ -6266,16 +6272,16 @@ src={`http://localhost:5000/${Images[0]}`}
             <span style={{ color: '#070606', fontSize: '14px', fontWeight: '700'}}>more specs</span>
             </li>
             <li className='Info-productdetail_li-flex'>
-                <div style={{ paddingRight: '230px', display: 'flex'}}>
+                <div  className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>Disc Drive:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.dvdDrive}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.dvdDrive}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB-C Port:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.cType}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.cType}</span>
                     </div>
                 </div>
             </li>
@@ -6283,25 +6289,25 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div className='More_info_box'>
                 <div className='Info-productdetail_flex-span'>USB Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.usbPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.usbPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>HDMI Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.hdmiPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.hdmiPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>VGA Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.vgaPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.vgaPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>Ethernet Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.ethernetPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.ethernetPort}</span>
                     </div>
                 </div>
             </li>
@@ -6312,18 +6318,18 @@ src={`http://localhost:5000/${Images[0]}`}
                 :
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>Ram Slots:</div>
-                    <div style={{ padding: '2px 10px',minWidth: '145px', height: '20px', borderRadius: '5px', border: '2px solid #74767c', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.ramSlot}</span>
+                    <div style={{ padding: '2px 5px',minWidth: '105px', height: '25px', borderRadius: '5px', border: '1px solid #74767c', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.ramSlot}</span>
                     </div>
                 </div>
                 }
                 {Product.nvmeSlot === "" || Product.nvmeSlot === "unset" ?
                 <></>
                 :
-                <div style={{  display: 'flex'}}>
+                <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>NVMe Slots:</div>
-                    <div style={{ padding: '2px 10px',minWidth: '145px', height: '20px', borderRadius: '5px', border: '2px solid #74767c', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.nvmeSlot}</span>
+                    <div style={{ padding: '2px 5px',minWidth: '105px', height: '25px', borderRadius: '5px', border: '1px solid #74767c', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.nvmeSlot}</span>
                     </div>
                 </div>
                 }
@@ -6352,7 +6358,7 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                    Processor (CPU):
+                    Processor:
                 </div>
                 <div className='Info-productdetail_li-right'>
                     {Product.processorName}
@@ -6360,13 +6366,13 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                    Graphics Card (GPU):
+                    Graphics Card:
                 </div>
                 <div className='Info-productdetail_li-right'>{Product.graphicsCardName}</div>
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                    Memory (RAM):
+                    Memory:
                 </div>
                 <div className='Info-productdetail_li-right'>{Product.ram} {Product.ramGeneration} {Product.ramArrangement}
                     </div>
@@ -6418,19 +6424,19 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>Disc Drive:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.dvdDrive}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.dvdDrive}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB-C Port:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.cType}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.cType}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>SDCard Reader:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.sdCardSlot}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.sdCardSlot}</span>
                     </div>
                 </div>
             </li>
@@ -6438,25 +6444,25 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.usbPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.usbPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>HDMI Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.hdmiPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.hdmiPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>VGA Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.vgaPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.vgaPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>Ethernet Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.ethernetPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.ethernetPort}</span>
                     </div>
                 </div>
             </li>
@@ -6470,6 +6476,12 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div className='Info-productdetail_li-left'>
                     Brand:</div>
                 <div className='Info-productdetail_li-right'>Apple</div>
+    
+            </li>
+            <li className='Info-productdetail_li'>
+                <div className='Info-productdetail_li-left'>
+                    Model Name:</div>
+                    <div className='Info-productdetail_li-right'>{Product.modelName}</div>
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
@@ -6483,40 +6495,26 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                    Processor (CPU):
+                    Processor:
                 </div>
                 <div className='Info-productdetail_li-right'>
                     {Product.processorName}
                 </div>
             </li>
+            
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                    Graphics Card (GPU):
-                </div>
-                <div className='Info-productdetail_li-right'>{Product.graphicsCardName}</div>
-            </li>
-            <li className='Info-productdetail_li'>
-                <div className='Info-productdetail_li-left'>
-                    Memory (RAM):
+                    Memory:
                 </div>
                 <div className='Info-productdetail_li-right'>{Product.ram} {Product.ramGeneration} {Product.ramArrangement}
                     </div>
             </li>
+            
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
                     Storage:
                 </div>
-                <div className='Info-productdetail_li-right'>{Product.hardDisk === "none" || Product.hardDisk === "" ? <div
-                        className='Info-productDetails_condition'></div>: <>{Product.hardDisk} HDD</>} {Product.ssd === "none" || Product.ssd === "" ? <div
-                        className='Info-productDetails_condition'></div>: <>{Product.ssd} SSD</>} {Product.nvme ===
-                    "none" || Product.nvme === "" ? <div className='Info-productDetails_condition'></div>: <>{Product.nvme} NVMe SSD</>}
-                </div>
-            </li>
-            <li className='Info-productdetail_li'>
-                <div className='Info-productdetail_li-left'>
-                    Total Storage:
-                </div>
-                <div className='Info-productdetail_li-right'>{Product.busStandard}</div>
+                <div className='Info-productdetail_li-right'>{Product.ssd} SSD</div>
             </li>
             {Product.resolution !== "" ?
             <li className='Info-productdetail_li'>
@@ -6547,21 +6545,21 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li-flex'>
                 <div className='More_info_box'>
-                    <div className='Info-productdetail_flex-span'>Disc Drive:</div>
+                    <div className='Info-productdetail_flex-span'>Lightning Port:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.dvdDrive}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.dvdDrive}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB-C Port:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.cType}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.cType}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>SDCard Reader:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.sdCardSlot}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.sdCardSlot}</span>
                     </div>
                 </div>
             </li>
@@ -6569,25 +6567,25 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.usbPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.usbPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>HDMI Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.hdmiPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.hdmiPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>VGA Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.vgaPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.vgaPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>Ethernet Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.ethernetPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.ethernetPort}</span>
                     </div>
                 </div>
             </li>
@@ -7791,13 +7789,13 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>ATX Power Connectors 20+4-pin:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.twentyPlusCount}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.twentyPlusCount}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>ATX 12v Connectors 4-Pin:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.fourPinCount}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.fourPinCount}</span>
                     </div>
                 </div>
             </li>
@@ -7805,13 +7803,13 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div className='More_info_box'>
                 <div className='Info-productdetail_flex-span'>Floppy Drive Connectors 4-Pin:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.floppyCount}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.floppyCount}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>Molex Connectors 4-Pin:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.molexCount}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.molexCount}</span>
                     </div>
                 </div>
             </li>
@@ -7819,13 +7817,13 @@ src={`http://localhost:5000/${Images[0]}`}
             <div className='More_info_box'>
                 <div className='Info-productdetail_flex-span'>SATA Connectors:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.sataCount}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.sataCount}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                 <div className='Info-productdetail_flex-span'>PCI Express Connectors 6-Pin:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.sixPinCount}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.sixPinCount}</span>
                     </div>
                 </div>
             </li>
@@ -7902,19 +7900,19 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>Disc Drive:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.dvdDrive}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.dvdDrive}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB-C Port:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.cType}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.cType}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.usbPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.usbPort}</span>
                     </div>
                 </div>
             </li>
@@ -7922,13 +7920,13 @@ src={`http://localhost:5000/${Images[0]}`}
             <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>HDD Slots:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.hddCount}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.hddCount}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>SSD Slots:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.ssdCount}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.ssdCount}</span>
                     </div>
                 </div>
             </li>
@@ -8053,25 +8051,25 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.usbPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.usbPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>HDMI Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.hdmiPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.hdmiPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                 <div className='Info-productdetail_flex-span'>VGA Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.vgaPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.vgaPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>Ethernet Port:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.ethernetPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.ethernetPort}</span>
                     </div>
                 </div>
             </li>
@@ -8079,25 +8077,25 @@ src={`http://localhost:5000/${Images[0]}`}
                 <div style={{ paddingRight: '20px', display: 'flex'}}>
                     <div className='Info-productdetail_flex-span'>DVI Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.dviPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.dviPort}</span>
                     </div>
                 </div>
                 <div style={{ paddingRight: '20px',display: 'flex'}}>
                     <div className='Info-productdetail_flex-span'>PCI Express Slots:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.pciPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.pciPort}</span>
                     </div>
                 </div>
                 <div style={{ paddingRight: '20px', display: 'flex'}}>
                 <div className='Info-productdetail_flex-span'>Ram Slots:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.ramSlot}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.ramSlot}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                 <div className='Info-productdetail_flex-span'>NVMe SSD Slots:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.nvmeBus}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.nvmeBus}</span>
                     </div>
                 </div>
             </li>
@@ -8119,7 +8117,7 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                    Video Memory (VRAM):</div>
+                    Video Memory:</div>
                 <div className='Info-productdetail_li-right'>{Product.vRam} {Product.graphicsCardGeneration}</div>
             </li>
             {Product && Product.resolution === undefined ?
@@ -8169,19 +8167,19 @@ src={`http://localhost:5000/${Images[0]}`}
             <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB-C Port:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.cType}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.cType}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>USB Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.usbPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.usbPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>DisplayPort:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.displayPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.displayPort}</span>
                     </div>
                 </div>
             </li>
@@ -8189,13 +8187,13 @@ src={`http://localhost:5000/${Images[0]}`}
             <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>HDMI Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.hdmiPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.hdmiPort}</span>
                     </div>
                 </div>
                 <div className='More_info_box'>
                     <div className='Info-productdetail_flex-span'>DVI Ports:</div>
                     <div className='Info-productdetail_circled_info'>
-                        <span style={{ color: '#3e4e5b', fontSize: '13px', fontWeight: '700'}}>{Product.dviPort}</span>
+                        <span style={{ color: '#3e4e5b', fontSize: '14px', fontWeight: '500'}}>{Product.dviPort}</span>
                     </div>
                 </div>
             </li>
@@ -8697,7 +8695,7 @@ src={`http://localhost:5000/${Images[0]}`}
             <></>
             }
             <li className='Info-productdetail_li'>
-                <div className='Info-productdetail_li-left'>Memory (RAM):</div>
+                <div className='Info-productdetail_li-left'>Memory:</div>
                 <div className='Info-productdetail_li-right'>{Product.ram} {Product.product}</div>
             </li>
             {Product && Product.ramSpeed === undefined ?
@@ -8737,7 +8735,7 @@ src={`http://localhost:5000/${Images[0]}`}
             <></>
             }
             <li className='Info-productdetail_li'>
-                <div className='Info-productdetail_li-left'>Memory (RAM):</div>
+                <div className='Info-productdetail_li-left'>Memory:</div>
                 <div className='Info-productdetail_li-right'>{Product.ram} {Product.product}</div>
             </li>
             {Product && Product.ramSpeed === undefined ?
@@ -11973,27 +11971,27 @@ Product.product === "Bunk Bed" || Product.product === "Loft Bed" || Product.prod
     </div>
 </div>
 
-    {Product.accountier === "Free" ?
+    {Product.accountTier === "Free" ?
     <div style={{ paddingBottom: '40px'}}>
     <li className='Info_seller_title'>
-        <span style={{ color: '#222', fontSize: '17px', fontWeight: '700'}}>Contact Information</span>
+        <span style={{ color: '#333', fontSize: '18.8px', fontWeight: '600'}}>Contact Information</span>
     </li>
     <li className='Info_seller_info_below'>
                 <div className='Seller_info_box'>
                 <div className='Seller_info_left'>
-                        <div>{Product.sellerName}</div>
+                        <div>{Product.sellerName} Take a Lokke</div>
                     </div>
                 </div>
                 <div className='Seller_info_box'>
                     <div className='Seller_info_left'>
-                        <div>{Product.sellerContact}</div>
+                        <div>{Product.sellerContact} 081 495 4899</div>
                     </div>
                 </div>
             </li>
     </div>
     :
     <></>
-    }
+    } 
     
 </div> 
     }

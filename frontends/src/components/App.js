@@ -16,7 +16,6 @@ import Fulfillment from './views/Fulfillment/Fulfillment.jsx';
 
 // Authentic Route Imports
 import InvestorRoutes from './views/Admin/InvestorRoutes';
-import InvestorAppend from './views/Admin/InvestorAppend';
 
 // Main Routes
 import RetailerSettingsRoutes from './views/Fulfillment/MainOperations/Pages/MainPages/Settings/RetailerSettingsRoutes';
@@ -64,6 +63,8 @@ function App() {
 
       <Route exact path="/account-plans" component={SellerAccountRoutes} />
       <Route exact path="/free-account" component={ClickedAccountRoutes} />
+      <Route exact path="/demo/upload" component={SellerAccountRoutes} />
+      
       <Route exact path="/retailer-criteria" component={SellerAccountRoutes} />
       <Route exact path="/verified-account" component={ClickedAccountRoutes} />
 
@@ -85,16 +86,7 @@ function App() {
       <Route exact path="/home/:userId" component={LandingpageRoutes} />
 
       {/* Investor Routes */}
-      <Route exact path="/investor/Roger" component={InvestorRoutes} />
-      <Route exact path="/investor/Betty" component={InvestorRoutes} />
-      <Route exact path="/investor/Dennis" component={InvestorRoutes} />
-      <Route exact path="/investor/German" component={InvestorRoutes} />
-
-      {/* Investor Roles */}
-      <Route exact path="/confirm/Roger" component={InvestorAppend} />
-      <Route exact path="/confirm/Betty" component={InvestorAppend} />
-      <Route exact path="/confirm/Dennis" component={InvestorAppend} />
-      <Route exact path="/confirm/German" component={InvestorAppend} />
+      <Route exact path="/investor/stat" component={InvestorRoutes} />
 
       {/* Nav Menu Categories */}
       <Route exact path="/portable-speakers" component={NavCategoryRoutes} />
@@ -160,10 +152,11 @@ function App() {
       <Route exact path="/brochure-deals" component={BranchLocationRoutes} />
       <Route exact path="/item/upload" component={BranchLocationRoutes} />
       <Route exact path="/edit/product/:productId" component={MainOperations} />
-      
+
       <Route exact path="/re-settings" component={RetailerSettingsRoutes} />
       <Route exact path="/manage-account" component={RetailerSettingsRoutes} />   
       <Route exact path="/store-locations" component={RetailerSettingsRoutes} />   
+      <Route exact path="/set-location" component={RetailerSettingsRoutes} />   
 
       <Route exact path="/windhoek-branch" component={BranchLocationRoutes} />
       <Route exact path="/walvis-bay-branch" component={BranchLocationRoutes} />

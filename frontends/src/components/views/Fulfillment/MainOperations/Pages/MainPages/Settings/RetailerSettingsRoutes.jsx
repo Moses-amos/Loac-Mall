@@ -7,6 +7,7 @@ const SettingSidebar = lazy(() => import('./SettingSidebar'));
 const RetailerSettings = lazy(() => import('../RetailerSettings'));
 const BillingPage = lazy(() => import('../BillingPage'));
 const StoreLocations = lazy(() => import('../StoreLocations'));
+const SetLocation = lazy(() => import('../SetLocation'));
 
 
 function RetailerSettingsRoutes() {
@@ -22,6 +23,7 @@ function RetailerSettingsRoutes() {
     <Switch>
           <Route exact path="/re-settings" component={Auth(RetailerSettings, true)} />
           <Route exact path="/manage-account" component={Auth(BillingPage, true)} />
+          <Route exact path="/set-location" component={Auth(SetLocation, true)} />
           <Route exact path="/store-locations" component={Auth(StoreLocations, true)} />
     </Switch>
     </div>

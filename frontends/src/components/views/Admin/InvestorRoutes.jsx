@@ -5,10 +5,7 @@ import Auth from '../../../hoc/auth';
 import ScrollToTop from '../../assets/ScrollToTop';
 
 const RetailerNav = lazy(() => import('./Components/RetailerNav/RetailerNav'));
-const RogerInvestor = lazy(() => import('./InvestorPages/RogerInvestor'));
-const BettyInvestor = lazy(() => import('./InvestorPages/BettyInvestor'));
-const GermanInvestor = lazy(() => import('./InvestorPages/GermanInvestor'));
-const DennisInvestor = lazy(() => import('./InvestorPages/DennisInvestor'));
+const StatPages = lazy(() => import('./InvestorPages/StatPages'));
 
 function InvestorRoutes() {
   return (
@@ -17,10 +14,7 @@ function InvestorRoutes() {
       <ScrollToTop />
       <RetailerNav />
       <Switch>
-            <Route exact path="/investor/Roger" component={Auth(RogerInvestor, true)} />
-            <Route exact path="/investor/Betty" component={Auth(BettyInvestor, true)} />
-            <Route exact path="/investor/Dennis" component={Auth(DennisInvestor, true)} />
-            <Route exact path="/investor/German" component={Auth(GermanInvestor, true)} />
+            <Route exact path="/investor/stat" component={Auth(StatPages, true)} />
       </Switch>
       </Router>
     </Suspense>

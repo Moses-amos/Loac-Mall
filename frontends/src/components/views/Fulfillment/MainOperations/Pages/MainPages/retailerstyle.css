@@ -236,17 +236,17 @@
     width: 40%;
     font-size: 16px;
     font-family: 'Saira', sans-serif;    
-    font-weight: 700;
+    font-weight: 600;
     /* color: #656481; */
-    color: #1a1818;
+    color: #333;
 }
 
 .Overview-item_price-quantity_right_span {
     width: 60%;
     font-size: 16px;
     font-family: 'Saira', sans-serif;    
-    font-weight: 700;
-    color: #595964;
+    font-weight: 600;
+    color: #74767c;
     /* color: #1a1818; */
 }
 
@@ -1096,8 +1096,8 @@
         width: 55%;
         font-size: 14px;
         font-family: 'Saira', sans-serif;    
-        font-weight: 700;
-        color: #595964;
+        font-weight: 600;
+        color: #74767c;
         /* color: #1a1818; */
     }
     
@@ -1105,9 +1105,9 @@
         width: 45%;
         font-size: 14px;
         font-family: 'Saira', sans-serif;    
-        font-weight: 700;
+        font-weight: 600;
         /* color: #656481; */
-        color: #1a1818;
+        color: #333;
     }
 
     /* .Overview_page_options_listing {

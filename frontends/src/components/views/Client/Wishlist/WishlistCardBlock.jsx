@@ -40,7 +40,7 @@ props.products && props.products.map(product => (
         <div className='Wishlistlisting_buttons'>
             <button className='Wishlist_addtocart_button'
             onClick={()=> props.addToCart(product._id)}
-            >Save Item </button>
+            >To Saves</button>
             </div>  
       <div className='Wishlistlisting_buttons'>
             <button className='Wishlist_remove_button'
@@ -50,7 +50,7 @@ props.products && props.products.map(product => (
         </div>
         </div>
 
-            <div className='Wishlist_price_bottom'>
+            <div className='Wishlist_price_bottom_box'>
               <span className='Wishlist_price_bottom_span'>N$ {product.price}</span>
             </div>
       </div>
@@ -110,7 +110,7 @@ return (
           <div style={{ width: '100%', display: 'block'}}>
           <div className='Wishlistlisting_buttons'>
             <button className='Wishlist_addtocart_button'
-            >Save Item </button>
+            >To Saves</button>
             </div>  
       <div className='Wishlistlisting_buttons'>
             <button className='Wishlist_remove_button'
@@ -141,7 +141,7 @@ return (
           <div style={{ width: '100%', display: 'block'}}>
           <div className='Wishlistlisting_buttons'>
             <button className='Wishlist_addtocart_button'
-            >Save Item </button>
+            >To Saves</button>
             </div>  
       <div className='Wishlistlisting_buttons'>
             <button className='Wishlist_remove_button'

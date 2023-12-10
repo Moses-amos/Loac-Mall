@@ -2,6 +2,8 @@
 
 /* Logo */
 .Logo_name_box {
+    width: 100px;
+    overflow: hidden;
     height: 43px;
     display: flex;
     margin-left: 5px;

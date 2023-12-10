@@ -159,10 +159,10 @@ return (
 
         <div style={{ marginTop: '10px', display: 'flex'}}>
               <div >
-                <span style={{ fontWeight: '600', fontSize: '15px', textDecoration: 'underline', color: '#fff'}}>Already have :</span>
+                <span style={{ fontWeight: '600', fontSize: '15px', textDecoration: 'underline', color: '#fff'}}>Already have an Account ?:</span>
               </div>
               <div style={{marginLeft: '10px'}}>
-                  <a style={{ fontWeight: '600', fontSize: '15px', textDecoration: 'none', color: '#1380e7'}} href="/login">Account ?</a>
+                  <a style={{ fontWeight: '600', fontSize: '15px', textDecoration: 'none', color: '#1380e7'}} href="/login">Sign In</a>
               </div>
         </div>
       </Form>

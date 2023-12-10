@@ -446,11 +446,11 @@ return (
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Video Games</div></a></div>
-        {/*  <div className='Top_categories_Select' 
+         <div className='Top_categories_Select' 
           onClick={() => {SecondCategory(6);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://i5.walmartimages.com/seo/Frigidaire-GCRG3060AF-30-Gallery-Series-Stainless-Steel-Gas-Range-with-5-cu-ft-Oven-Capacity-5-Burners-Air-Fry-and-True-Convection_3bb73b77-f86c-45e3-be8a-c8da573c3a87.4f1f12c54964d1bbfa371b7b84a891af.png" 
+              <img loading='lazy'  src="https://i.imgur.com/nFStlW1.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Baby</div></a></div>
@@ -485,23 +485,34 @@ return (
               <img loading='lazy'  src="https://i5.walmartimages.com/seo/Frigidaire-GCRG3060AF-30-Gallery-Series-Stainless-Steel-Gas-Range-with-5-cu-ft-Oven-Capacity-5-Burners-Air-Fry-and-True-Convection_3bb73b77-f86c-45e3-be8a-c8da573c3a87.4f1f12c54964d1bbfa371b7b84a891af.png" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
-            </div>Health, Wellness</div></a></div>
+            </div>Health Aids</div></a></div>
             <div className='Top_categories_Select' 
           onClick={() => {SecondCategory(11);FirstCategory()}}
+          ><a className='Top_categories_Select_link_tag'>
+            <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
+              <img loading='lazy'  src="https://i.imgur.com/VbJATAO.jpg" 
+              style={{ width: '100%', height: '100%'}}
+             alt="" />
+            </div>Fitness</div></a></div>
+
+            <div className='Top_categories_Select' 
+          onClick={() => {SecondCategory(12);FirstCategory()}}
+          ><a className='Top_categories_Select_link_tag'>
+            <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
+              <img loading='lazy'  src="https://i.imgur.com/6hdUdq4.jpg" 
+              style={{ width: '100%', height: '100%'}}
+             alt="" />
+            </div>Sports & Outdoors</div></a></div>
+
+            <div className='Top_categories_Select' 
+          onClick={() => {SecondCategory(13);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
               <img loading='lazy'  src="https://i5.walmartimages.com/seo/Frigidaire-GCRG3060AF-30-Gallery-Series-Stainless-Steel-Gas-Range-with-5-cu-ft-Oven-Capacity-5-Burners-Air-Fry-and-True-Convection_3bb73b77-f86c-45e3-be8a-c8da573c3a87.4f1f12c54964d1bbfa371b7b84a891af.png" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
-            </div>Fitness</div></a></div>
-          <div className='Top_categories_Select' 
-          onClick={() => {SecondCategory(12);FirstCategory()}}
-          ><a className='Top_categories_Select_link_tag'>
-            <div className='Top_categories_Select_link'>Sports & Outdoors</div></a></div>
-          <div className='Top_categories_Select' 
-          onClick={() => {SecondCategory(13);FirstCategory()}}
-          ><a className='Top_categories_Select_link_tag'>
-            <div className='Top_categories_Select_link'>Home Improvements</div></a></div> */}
+            </div>Home Improvements</div></a></div>
+
         </div>
         </div>
 
@@ -865,7 +876,7 @@ return (
         <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/playStation-consoles'
           >
-            <div className='Top_categories_Select_link'>PlayStations Consoles</div></a></div>
+            <div className='Top_categories_Select_link'>PlayStation Consoles</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/xbox-consoles'
           >
@@ -936,6 +947,10 @@ return (
           >
             <div className='Top_categories_Select_link'>Baby Playards</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
+          // href='/baby-activity'
+          >
+            <div className='Top_categories_Select_link'>High Chairs & Boosters</div></a></div>
+            {/* <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           // href='/baby-items'
           >
             <div className='Top_categories_Select_link'>Diaper Bags</div></a></div>
@@ -958,7 +973,7 @@ return (
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           // href='/baby-toys'
           >
-            <div className='Top_categories_Select_link'>Baby Toys</div></a></div>
+            <div className='Top_categories_Select_link'>Baby Toys</div></a></div> */}
         </div>
         </div>
 
@@ -2059,10 +2074,10 @@ return (
           href='/explore-sneakers'
           >
             <div className='Top_categories_Select_link'>Popular Shoes</div></a></div>
-            <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/soccer-cleats'
+            {/* <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
+          href='/soccer-cleats'
           >
-            <div className='Top_categories_Select_link'>Soccer Cleats</div></a></div>
+            <div className='Top_categories_Select_link'>Soccer Cleats</div></a></div> */}
             
         </div>
         </div>
@@ -3982,10 +3997,9 @@ return (
             <div className='Top_categories_Select_link'>Laptops</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'href='/desktops'>
             <div className='Top_categories_Select_link'>Desktops</div></a></div>
-          <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/monitors'
-          >
+          <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'href='/monitors'>
             <div className='Top_categories_Select_link'>Monitors</div></a></div>
+          
           {/* <div className='Top_categories_Select' onClick={() => {ElectronicsCategory(); 
               ComputersCategory(1)}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'>Computer Components</div></a></div>

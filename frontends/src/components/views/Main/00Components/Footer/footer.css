@@ -4,7 +4,7 @@
     /* width: 1349px; */
     width: 100%;
     z-index: 5;
-    height: 240px;
+    height: 230px;
     background-color: #026c90;
     /* background-color: orangered; */
     display: flex;
@@ -53,21 +53,21 @@
 }
 
 .Footer_text_conatiner {
-    width: 50%;
+    width: 55%;
 }
 
 .Rights {
     /* margin-top: 20px; */
-    width: 50%;
+    width: 45%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     /* justify-content: space-between; */
 }
 
 .Rights-span_about {
     color: #fff;
     font-family: 'Saira', sans-serif;    /* color: #333; */
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     font-style: normal;
 }
@@ -156,11 +156,18 @@
 
 .Rights_container {
     display: block;
+    width: 80%;
 }
 
 .Footer_bottom_display {
-    display: block;
-    margin-top: 20px;
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer_bottom_box {
+    width: 50%;
 }
 
 .Footer_hidden_text {
@@ -227,7 +234,7 @@
     .Royal-footer {
         /* width: 1349px; */
         width: 100%;
-        height: 360px;
+        height: 430px;
         /* background-color: orangered; */
         background-color: #026c90;
         display: flex;

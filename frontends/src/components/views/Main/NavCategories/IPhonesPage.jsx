@@ -1635,7 +1635,6 @@ const GetOtheriPhones = () => {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -1654,7 +1653,7 @@ const GetOtheriPhones = () => {
     deviceType={props.deviceType}
     >
 
-  <div className={SelectTabs ===1 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+<div className={SelectTabs ===1 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(1); StorageCategory(0); PhoneModelCategory(0)}}
   ><div>
     <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone-14-pro-max-colors.png"
@@ -1740,8 +1739,8 @@ const GetOtheriPhones = () => {
     src='https://s7d1.scene7.com/is/image/tracfone/apple-latest-iphonese-black-back?scl=1&fmt=webp-alpha&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0'
     // src='https://m.media-amazon.com/images/I/81wmQz6ukzL.jpg'
     // src="https://i5.walmartimages.com/seo/Straight-Talk-Apple-iPhone-SE-2022-3rd-Gen-5G-64GB-Red-Prepaid-Smartphone-Locked-to-Straight-Talk_92121213-6d06-4ed2-9601-94a6cfe40971.4a13950cfefb5fa532bae8692808a9d7.jpeg"
-   style={{ width: '100%', height: '230px', padding: '0p 0px 7px 0px', borderRadius: '15px', overflow: 'hide'}} alt="" />
-  </div>
+    className="Image_Large_size"  alt="" />
+    </div>
   <div className="Image_title_box">
     <span>iPhone SE</span>
   </div>
@@ -1751,8 +1750,8 @@ const GetOtheriPhones = () => {
   onClick={()=> {ToggleSelectTabs(7); StorageCategory(0); PhoneModelCategory(); GetiPhoneXR()}}
   ><div>
     <img src="https://static.digitecgalaxus.ch/Files/3/9/2/4/5/1/8/2/iphone_xr_product-red_digitec-galaxus.jpg"
-   style={{ width: '100%', height: '230px', padding: '0p 0px 7px 0px', borderRadius: '15px', overflow: 'hide'}} alt="" />
-  </div>
+   className="Image_Large_size"  alt="" />
+   </div>
   <div className="Image_title_box">
     <span>iPhone XR</span>
   </div>
@@ -1794,7 +1793,7 @@ const GetOtheriPhones = () => {
   </div>
    </div>
 
-   <div className={SelectTabs ===11 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   {/* <div className={SelectTabs ===11 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(11); StorageCategory(0); PhoneModelCategory(); GetOtheriPhones()}}
   ><div>
     <img src="https://www.bdprice.com.bd/wp-content/uploads/2020/11/Apple-iPhone-5.jpg"
@@ -1803,7 +1802,7 @@ const GetOtheriPhones = () => {
   <div className="Image_title_box">
     <span>Other iPhones</span>
   </div>
-   </div>
+   </div> */}
 
 
 </Carousel>
@@ -1987,187 +1986,18 @@ const GetOtheriPhones = () => {
   :
   <>
   {(SelectTabs === 1 && toggleStorageSize === 0 ) && togglePhoneModel === 0 && ToggleLocation === false ?
- <div className='ListedItems_container'>
- <div className="Listed_fetched_products_wrapper">
- <div className='Item_listed_Box'>
- <div className='Item_listed_Details'>
-     <a> <div className='Item_listed_image'>
-     <img className='Item_listed_image_size' src={NoImage} alt="" />
-   </div>
-   <div className='Item_listed_title_box'>
-       <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
-   </div>
-   </a>
-
-   <div className='Item_value_box'>
-     <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
-     <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
-   </div>
-
-   <div className='Marketer_listing_logo'>
-   <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
-   </div>
-
- </div>
- 
- </div>
- 
- <div className='Item_listed_Box'>
- <div className='Item_listed_Details'>
-     <a> <div className='Item_listed_image'>
-     <img className='Item_listed_image_size'src={NoImage} alt="" />
-   </div>
-   <div className='Item_listed_title_box'>
-       <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
-   </div>
-   </a>
-
-   <div className='Item_value_box'>
-     <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
-     <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
-   </div>
-
-   <div className='Marketer_listing_logo'>
-   <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
-   </div>
-
- </div>
- 
- </div>
- <div className='Item_listed_Box'>
- <div className='Item_listed_Details'>
-     <a> <div className='Item_listed_image'>
-     <img className='Item_listed_image_size'src={NoImage} alt="" />
-   </div>
-   <div className='Item_listed_title_box'>
-       <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
-   </div>
-   </a>
-
-   <div className='Item_value_box'>
-     <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
-     <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
-   </div>
-
-   <div className='Marketer_listing_logo'>
-   <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
-   </div>
-
- </div>
- 
- </div>
- <div className='Item_listed_Box'>
- <div className='Item_listed_Details'>
-     <a> <div className='Item_listed_image'>
-     <img className='Item_listed_image_size'src={NoImage} alt="" />
-   </div>
-   <div className='Item_listed_title_box'>
-       <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
-   </div>
-   </a>
-
-   <div className='Item_value_box'>
-     <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
-     <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
-   </div>
-
-   <div className='Marketer_listing_logo'>
-   <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
-   </div>
-
- </div>
- 
- </div>
- <div className='Item_listed_Box'>
- <div className='Item_listed_Details'>
-     <a> <div className='Item_listed_image'>
-     <img className='Item_listed_image_size'src={NoImage} alt="" />
-   </div>
-   <div className='Item_listed_title_box'>
-       <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
-   </div>
-   </a>
-
-   <div className='Item_value_box'>
-     <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
-     <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
-   </div>
-
-   <div className='Marketer_listing_logo'>
-   <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
-   </div>
-
- </div>
- 
- </div>
- <div className='Item_listed_Box'>
- <div className='Item_listed_Details'>
-     <a> <div className='Item_listed_image'>
-     <img className='Item_listed_image_size'src={NoImage} alt="" />
-   </div>
-   <div className='Item_listed_title_box'>
-       <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
-   </div>
-   </a>
-
-   <div className='Item_value_box'>
-     <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
-     <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
-   </div>
-
-   <div className='Marketer_listing_logo'>
-   <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
-   </div>
-
- </div>
- 
- </div>
- <div className='Item_listed_Box'>
- <div className='Item_listed_Details'>
-     <a> <div className='Item_listed_image'>
-     <img className='Item_listed_image_size'src={NoImage} alt="" />
-   </div>
-   <div className='Item_listed_title_box'>
-       <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
-   </div>
-   </a>
-
-   <div className='Item_value_box'>
-     <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
-     <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
-   </div>
-
-   <div className='Marketer_listing_logo'>
-   <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
-   </div>
-
- </div>
- 
- </div>
- <div className='Item_listed_Box'>
- <div className='Item_listed_Details'>
-     <a> <div className='Item_listed_image'>
-     <img className='Item_listed_image_size'src={NoImage} alt="" />
-   </div>
-   <div className='Item_listed_title_box'>
-       <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
-   </div>
-   </a>
-
-   <div className='Item_value_box'>
-     <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
-     <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
-   </div>
-
-   <div className='Marketer_listing_logo'>
-   <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
-   </div>
-
- </div>
- 
- </div>
- </div>
-</div>
+ <div style={{
+  width: '100%', display: 'flex', flexDirection: 'column',
+  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+  }}>
+  <br />
+  <Empty description={false} />
+  <div style={{
+  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+  }}>
+  <p>No Items listed yet</p>
+  </div>
+  </div>
   :
   <></>
   }

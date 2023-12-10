@@ -435,7 +435,7 @@ const TagHeuerWatchesPage = TagHeuerWatches.map((product, index) => {
   onClick={()=> {ToggleSelectTabs(0)}}
   ><div>
     <img 
-    src='https://imagedelivery.net/lyg2LuGO05OELPt1DKJTnw/77d53a52-1294-4d04-c9f7-f6b0fd5b5600/public'
+    src='https://cdna.lystit.com/400/500/tr/photos/shoppremiumoutlets/a6855e90/omega-designer-blue-Blue-Dial-Watch.jpeg'
    style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
   </div>
   <div className="Image_title_box">

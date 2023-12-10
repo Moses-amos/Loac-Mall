@@ -1287,7 +1287,7 @@ const GetMacMini = () => {
 
    <div className="Select_image_product"
   >
-    <a>
+    <a href='/monitors'>
       <div>
     <img src="https://www.hp.com/content/dam/sites/worldwide/personal-computers/consumer/monitors-accessories/computer-monitors-b/HP%20E27%20G5@2x.png"
    style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />

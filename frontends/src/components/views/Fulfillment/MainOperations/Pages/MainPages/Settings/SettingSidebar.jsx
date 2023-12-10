@@ -53,11 +53,22 @@ justifyContent: 'center', alignItems: 'center' }}><span style={{color: '#fff', f
                       <EditLocationOutlined />
                     </div>
                     <div style={{ paddingLeft: '11px'}}>
-                        <NavLink className='CLient-sidebar-titles-User' to={'/store-locations'}> 
+
+                    {UserData.accountTier === "Free" ?
+                      <NavLink className='CLient-sidebar-titles-User' to={'/set-location'}> 
+                      <div style={{ width: '135px', height: '100px', display: 'flex', alignItems: 'center'}}>
+                      Location
+                      </div>
+                      </NavLink>
+                      :
+                      <NavLink className='CLient-sidebar-titles-User' to={'/store-locations'}> 
                         <div style={{ width: '135px', height: '100px', display: 'flex', alignItems: 'center'}}>
                         Locations
                         </div>
-                        </NavLink> </div> 
+                        </NavLink>
+                      }
+
+                         </div> 
                         </li> 
                        {/* <li
                             className='CLient-sidebar-header-User'>

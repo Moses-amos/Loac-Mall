@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import Dropzone from 'react-dropzone';
 import Axios from 'axios';
+import '../../EditStyle.css'
+import '../../../UploadProducts/productsupload.css'
+import '../../../../../Main/ClickedDetails/ClickedPc/clickedpc.css'
+import '../../../Pages/MainPages/retailerstyle.css'
 
 function ImageOne(props) {
 

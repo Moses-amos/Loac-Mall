@@ -653,7 +653,7 @@ function PopularWatches(props) {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/61Mm2rrwjEL._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Police</span>
@@ -666,7 +666,7 @@ function PopularWatches(props) {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/51YF7uhhwTL._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Casio</span>
@@ -677,7 +677,7 @@ function PopularWatches(props) {
   onClick={()=> {ToggleSelectTabs(4); GetNixon()}}
   ><div>
     <img src="https://m.media-amazon.com/images/I/91mhdjSePYL._AC_UY1000_.jpg"
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Nixon</span>
@@ -690,7 +690,7 @@ function PopularWatches(props) {
     <img 
     src='https://i.pinimg.com/1200x/1d/53/2a/1d532aebb85126d464e67af2a8402180.jpg'
     // src='https://www.swisswatchexpo.com/images/custom-catalog-content/header/tag-heuer.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Steve Madden</span>
@@ -703,7 +703,7 @@ function PopularWatches(props) {
   ><div>
     <img 
     src='https://images-na.ssl-images-amazon.com/images/I/51mNklc86PL.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Diesel</span>
@@ -715,7 +715,7 @@ function PopularWatches(props) {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/61m59hG9MIL._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Ferro</span>
@@ -727,7 +727,7 @@ function PopularWatches(props) {
   ><div>
     <img 
     src='https://pbs.twimg.com/media/F6eNpKAWYAAR3De?format=jpg&name=4096x4096'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Guess</span>
@@ -739,7 +739,7 @@ function PopularWatches(props) {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/81ZFpqDYIoL._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Emporior Armani</span>
@@ -751,7 +751,7 @@ function PopularWatches(props) {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/81ZAodzxfsL._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Armani Exchange</span>
@@ -763,7 +763,7 @@ function PopularWatches(props) {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/81lMHfLmFZL._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Timberland</span>
@@ -775,7 +775,7 @@ function PopularWatches(props) {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/81Jye4lkUJL._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Puma</span>
@@ -787,7 +787,7 @@ function PopularWatches(props) {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/91j9POmdxCL._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Michael Khors</span>
@@ -795,24 +795,24 @@ function PopularWatches(props) {
    </div>
 
 
-   <div className={SelectTabs ===13 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   {/* <div className={SelectTabs ===13 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(13); GetFabiani()}}
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/51apVw+FxLL._AC_UY780_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Fabiani</span>
   </div>
-   </div>
+   </div> */}
 
    <div className={SelectTabs ===14 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(14); GetSuperdry()}}
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/71uiLbE+q-L._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>SuperDry</span>

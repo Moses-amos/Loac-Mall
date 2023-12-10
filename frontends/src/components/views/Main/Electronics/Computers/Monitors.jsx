@@ -1,27 +1,58 @@
 import React, { useEffect,useState } from 'react'
 import Axios from 'axios'
 import { Empty } from 'antd';
+import Carousel from "react-multi-carousel";
 import '../../00Components/pages.css'
-import SearchBar from '../../00Components/SearchBar/SearchBar'
 import {Bars} from "react-loader-spinner";
 import SearchedCart from '../../00Components/Cards/SearchedProductCart/SearchedCart'
 import ProductCart from '../../00Components/Cards/ProductCart/ProductCart'
 
-function Monitors() {
+function Monitors(props) {
 
   const [UserData, setUserData] = useState([])
   const [MonitorItems, setMonitorItems] = useState([])
 
-  const [SelectTabs, setSelectTabs] = useState(0)
+  const [SelectTabs, setSelectTabs] = useState(1)
   const [Products, setProducts] = useState([])
   const [ToggleLocation, setToggleLocation] = useState(false)
   const [IsLoading, setIsLoading] = useState(true)
 
   const SetLocation = () => setToggleLocation(!ToggleLocation)
 
+  const [ToggleVerified, setToggleVerified] = useState(false)
+  const SetVerified = () => setToggleVerified(!ToggleVerified)
+
   const ToggleSelectTabs = (index) => {
     setSelectTabs(index);
   }  
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+      slidesToSlide: 3,
+      partialVisibilityGutter: 40
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 5,
+      slidesToSlide: 3,
+      partialVisibilityGutter: 30
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 600 },
+      items: 3,
+      slidesToSlide: 3,
+      partialVisibilityGutter: 20
+    },
+    mobile: {
+      breakpoint: { max: 600, min: 0 },
+      items: 2,
+      slidesToSlide: 1,
+      partialVisibilityGutter: 10
+    }
+  };
 
   useEffect(() => {
 
@@ -251,27 +282,64 @@ const updateSearchTerms = (newSearchTerm) => {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
     <div className='Category_selectTabs_box'>
     <div>
-      <span className='Category_selectTabs_span'>Desktop Computers</span>
+      <span className='Category_selectTabs_span'>Monitors</span>
     </div>
-    <div className='Select_tabs_organise'>
-    <div className={SelectTabs ===1 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
-        onClick={()=> {ToggleSelectTabs(1)}} >
-            <span>All Monitors</span>
-          </div>
-    <div className={SelectTabs ===2 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
-        onClick={()=> {ToggleSelectTabs(2)}} >
-            <span>32 inch & Under</span>
-          </div>
-          <div className={SelectTabs ===3 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
-        onClick={()=> {ToggleSelectTabs(3)}} >
-          <span>33 inch & Up</span>
-          </div>
+
+    <div className='Select_tabs_slider'>
+    <Carousel className='Carosal_style_images' 
+    responsive={responsive}
+    partialVisible={true}
+    swipeable={true}
+    draggable={true}
+    minimumTouchDrag={50}
+    deviceType={props.deviceType}
+    >
+
+  <div className={SelectTabs ===1 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+  onClick={()=> {ToggleSelectTabs(1)}}
+  ><div>
+    <img 
+    src='https://m.media-amazon.com/images/I/81o-jZFisVL.jpg'
+   style={{ width: '100%', height: '140px', padding: '0p 0px 7px 0px'}} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>All Monitors</span>
+  </div>
+    
+   </div>
+
+   <div className={SelectTabs ===2 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+  onClick={()=> {ToggleSelectTabs(2)}}
+  ><div>
+    <img 
+    src='https://i.imgur.com/iQkQbKj.png'
+   style={{ width: '100%', height: '140px', padding: '0p 0px 7px 0px'}} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>32 inch & Under</span>
+  </div>
+    
+   </div>
+
+   <div className={SelectTabs ===3 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+  onClick={()=> {ToggleSelectTabs(3)}}
+  ><div>
+    <img 
+    src='https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/peripherals/output-devices/dell/monitors/u3423we/media-gallery/monitor-u3423we-silver-gallery-2.psd?fmt=pjpg&pscan=auto&scl=1&wid=3906&hei=2333&qlt=100,1&resMode=sharp2&size=3906,2333&chrss=full&imwidth=5000'
+   style={{ width: '100%', height: '140px', padding: '0p 0px 7px 0px'}} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>33 inch & Up</span>
+  </div>
+   </div>
+
+</Carousel>
+
     </div>
     </div>
   </div>
@@ -283,24 +351,39 @@ const updateSearchTerms = (newSearchTerm) => {
     </div>
 
     {UserData.length === 0 ?
+        <>
         <div className='My_location_items_box'>
-        <a href='/login' style={{ width: '100%', height: '100%', display: 'flex', 
-          justifyContent: 'center', alignItems: 'center' }}>
-        <span>Near Me</span>
-        </a>
-      </div>
+            <a href='/login' style={{ width: '100%', height: '100%', display: 'flex', 
+              justifyContent: 'center', alignItems: 'center' }}>
+            <span>Near Me</span>
+            </a>
+          </div>
+          <div onClick={SetVerified}  className={ToggleVerified === true ? 'Verified_items_box_active' : 'Verified_items_box'}>
+          <span>Verified</span>
+        </div>
+        </>
     :
     (UserData.length !== 0 & UserData.userLocation === "") && UserData.operateLocation === "User" ?
-      <div className='My_location_items_box'>
+    <>
+    <div className='My_location_items_box'>
         <a href='/0settings' style={{ width: '100%', height: '100%', display: 'flex', 
           justifyContent: 'center', alignItems: 'center' }}>
         <span>Near Me</span>
         </a>
       </div>
+      <div onClick={SetVerified}  className={ToggleVerified === true ? 'Verified_items_box_active' : 'Verified_items_box'}>
+      <span>Verified</span>
+    </div>
+    </>
       :
+      <>
       <div onClick={SetLocation}  className={ToggleLocation === true ? 'My_location_items_box_active' : 'My_location_items_box'}>
       <span>Near Me</span>
     </div>
+    <div onClick={SetVerified}  className={ToggleVerified === true ? 'Verified_items_box_active' : 'Verified_items_box'}>
+    <span>Verified</span>
+  </div>
+      </>
     }
     </div>
 
@@ -319,6 +402,8 @@ const updateSearchTerms = (newSearchTerm) => {
 
   </div>
 
+  <div className='ListedItems_container'>
+
   {MonitorItems && MonitorItems.length === undefined ?
   <></>
   :
@@ -330,10 +415,11 @@ const updateSearchTerms = (newSearchTerm) => {
   IsLoading === true ?
   <></>
   :
-  <div className='ListedItems_container'>
+  <>
+  {SelectTabs === 1 && ToggleLocation === false ?
  <div style={{
   width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center'
+  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
   }}>
   <br />
   <Empty description={false} />
@@ -343,37 +429,207 @@ const updateSearchTerms = (newSearchTerm) => {
   <p>No Items listed yet</p>
   </div>
   </div>
-  </div>
+  :
+  <></>
+  }
+  </>
   }
   </>
 :
-<div className='ListedItems_container'>
 <div className={SelectTabs === 1 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
   {MonitorsPage}
 </div>
+}
 
+{MonitorItems && MonitorItems.length === undefined ?
+  <></>
+  :
+  MonitorItems && MonitorItems.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {SelectTabs === 2 && ToggleLocation === false ?
+ <div style={{
+  width: '100%', display: 'flex', flexDirection: 'column',
+  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+  }}>
+  <br />
+  <Empty description={false} />
+  <div style={{
+  width: '100%', display: 'flex', justifyContent: 'center'
+  }}>
+  <p>No Items listed yet</p>
+  </div>
+  </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
 <div className={SelectTabs === 2 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
   {ThirtyUnderPage}
 </div>
+}
 
-  <div className={SelectTabs === 3 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+{MonitorItems && MonitorItems.length === undefined ?
+  <></>
+  :
+  MonitorItems && MonitorItems.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {SelectTabs === 3 && ToggleLocation === false ?
+ <div style={{
+  width: '100%', display: 'flex', flexDirection: 'column',
+  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+  }}>
+  <br />
+  <Empty description={false} />
+  <div style={{
+  width: '100%', display: 'flex', justifyContent: 'center'
+  }}>
+  <p>No Items listed yet</p>
+  </div>
+  </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
+<div className={SelectTabs === 3 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
   {ThirtyUpPage}
 </div>
+}
 
+{/* Location */}
+{MonitorItems && MonitorItems.length === undefined ?
+  <></>
+  :
+  MonitorItems && MonitorItems.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {SelectTabs === 1 && ToggleLocation === true ?
+ <div style={{
+  width: '100%', display: 'flex', flexDirection: 'column',
+  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+  }}>
+  <br />
+  <Empty description={false} />
+  <div style={{
+  width: '100%', display: 'flex', justifyContent: 'center'
+  }}>
+  <p>No Items listed yet</p>
+  </div>
+  </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
 <div className={SelectTabs === 1 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
   {MonitorsPageLocation}
 </div>
+}
 
+{MonitorItems && MonitorItems.length === undefined ?
+  <></>
+  :
+  MonitorItems && MonitorItems.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {SelectTabs === 2 && ToggleLocation === true ?
+ <div style={{
+  width: '100%', display: 'flex', flexDirection: 'column',
+  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+  }}>
+  <br />
+  <Empty description={false} />
+  <div style={{
+  width: '100%', display: 'flex', justifyContent: 'center'
+  }}>
+  <p>No Items listed yet</p>
+  </div>
+  </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
 <div className={SelectTabs === 2 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
   {ThirtyUnderPageLocation}
 </div>
+}
 
-  <div className={SelectTabs === 3 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+{MonitorItems && MonitorItems.length === undefined ?
+  <></>
+  :
+  MonitorItems && MonitorItems.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {SelectTabs === 3 && ToggleLocation === true ?
+ <div style={{
+  width: '100%', display: 'flex', flexDirection: 'column',
+  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+  }}>
+  <br />
+  <Empty description={false} />
+  <div style={{
+  width: '100%', display: 'flex', justifyContent: 'center'
+  }}>
+  <p>No Items listed yet</p>
+  </div>
+  </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
+<div className={SelectTabs === 3 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
   {ThirtyUpPageLocation}
 </div>
-
-</div>
 }
+
+
+  </div>
+
 
   </div>
   :

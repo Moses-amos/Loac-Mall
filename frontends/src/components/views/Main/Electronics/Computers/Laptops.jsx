@@ -1,7 +1,7 @@
 import React, { useEffect,useState } from 'react'
 import Axios from 'axios'
-import { Empty } from 'antd';
 import Carousel from "react-multi-carousel";
+import { Empty } from 'antd';
 import 'react-multi-carousel/lib/styles.css';
 
 import '../../00Components/pages.css'
@@ -865,10 +865,9 @@ const getProducts = (variables) => {
                                               })
 
     
-                                                const LaptopsAppleFourGigPage = MacBookLaptops.map((product, index) => {
+                                                const LaptopsMacBookAirPage = MacBookLaptops.map((product, index) => {
     
-                                                  if (product.ram === "4 GB" 
-                                                 ) {
+                                                  if ((product.modelName === "MacBook Air") && product.ssd === "256 GB") {
                                                   return (
                                                     <ProductCart key={index} UserData={UserData} product={product} />
     
@@ -877,10 +876,10 @@ const getProducts = (variables) => {
                                                   
                                                   })
     
-                                                  const LaptopsAppleFourGigPageLocation = MacBookLaptops.map((product, index) => {
+                                                  const LaptopsMacBookAirPageLocation = MacBookLaptops.map((product, index) => {
     
-                                                    if ((product.ram === "4 GB" 
-                                                   ) && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
+                                                    if ((product.modelName === "MacBook Air" && product.ssd === "256 GB")  
+                                                    && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
                                                     || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
                                                     || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
                                                     || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
@@ -892,11 +891,11 @@ const getProducts = (variables) => {
                                                     }
                                                     
                                                     })
+
                                               
-                                                  const LaptopsAppleEightGigPage = MacBookLaptops.map((product, index) => {
+                                                  const LaptopsMacBookAirMChipTwoHundredPage = MacBookLaptops.map((product, index) => {
                                               
-                                                    if (product.ram === "8 GB"
-                                                   ) {
+                                                    if (product.modelName === "MacBook Air | M2 Chip" && product.ssd === "256 GB") {
                                                     return (
                                                       <ProductCart key={index} UserData={UserData} product={product} />
     
@@ -905,10 +904,9 @@ const getProducts = (variables) => {
                                                     
                                                     })
     
-                                                    const LaptopsAppleEightGigPageLocation = MacBookLaptops.map((product, index) => {
+                                                    const LaptopsMacBookAirMChipTwoHundredPageLocation = MacBookLaptops.map((product, index) => {
                                               
-                                                      if ((product.ram === "8 GB" 
-                                                     ) && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
+                                                      if ((product.modelName === "MacBook Air | M2 Chip" && product.ssd === "256 GB") && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
                                                       || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
                                                       || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
                                                       || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
@@ -920,11 +918,37 @@ const getProducts = (variables) => {
                                                       }
                                                       
                                                       })
-                                                  
-                                                    const LaptopsAppleSixteenGigPage = MacBookLaptops.map((product, index) => {
+
+                                                      const LaptopsMacBookAirMChipFiveHundredPage = MacBookLaptops.map((product, index) => {
                                               
-                                                      if ((product.ram !== "4 GB" && (product.ram !== "8 GB" 
-                                                     ))) {
+                                                        if (product.modelName === "MacBook Air | M2 Chip" && product.ssd === "512 GB") {
+                                                        return (
+                                                          <ProductCart key={index} UserData={UserData} product={product} />
+        
+                                                        )
+                                                        }
+                                                        
+                                                        })
+        
+                                                        const LaptopsMacBookAirMChipFiveHundredPageLocation = MacBookLaptops.map((product, index) => {
+                                                  
+                                                          if ((product.modelName === "MacBook Air | M2 Chip" && product.ssd === "512 GB") && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
+                                                          || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
+                                                          || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
+                                                          || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
+                                                           && product.Gobabis === true))) {
+                                                          return (
+                                                            <ProductCart key={index} UserData={UserData} product={product} />
+          
+                                                          )
+                                                          }
+                                                          
+                                                          })
+
+                                                  
+                                                    const LaptopsMacBookProMChipTwoHundredPage = MacBookLaptops.map((product, index) => {
+                                              
+                                                      if (product.modelName === "MacBook Pro | M2 Chip" && product.ssd === "256 GB") {
                                                       return (
                                                         <ProductCart key={index} UserData={UserData} product={product} />
     
@@ -933,21 +957,103 @@ const getProducts = (variables) => {
                                                       
                                                       })
     
-                                                      const LaptopsAppleSixteenGigPageLocation = MacBookLaptops.map((product, index) => {
+                                                      const LaptopsMacBookProMChipTwoHundredPageLocation = MacBookLaptops.map((product, index) => {
                                               
-                                                        if ((product.ram !== "4 GB" && (product.ram !== "8 GB" 
-                                                       )) && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
+                                                        if ((product.modelName === "MacBook Pro | M2 Chip" && product.ssd === "256 GB") && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
                                                         || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
                                                         || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
                                                         || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
                                                          && product.Gobabis === true))) {
                                                         return (
                                                           <ProductCart key={index} UserData={UserData} product={product} />
-      
+        
                                                         )
                                                         }
                                                         
                                                         })
+
+
+                                                        const LaptopsMacBookProMChipFiveHundredPage = MacBookLaptops.map((product, index) => {
+                                              
+                                                          if (product.modelName === "MacBook Pro | M2 Chip" && product.ssd === "512 GB") {
+                                                          return (
+                                                            <ProductCart key={index} UserData={UserData} product={product} />
+        
+                                                          )
+                                                          }
+                                                          
+                                                          })
+        
+                                                          const LaptopsMacBookProMChipFiveHundredPageLocation = MacBookLaptops.map((product, index) => {
+                                                  
+                                                            if ((product.modelName === "MacBook Pro | M2 Chip" && product.ssd === "512 GB") && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
+                                                            || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
+                                                            || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
+                                                            || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
+                                                             && product.Gobabis === true))) {
+                                                            return (
+                                                              <ProductCart key={index} UserData={UserData} product={product} />
+            
+                                                            )
+                                                            }
+                                                            
+                                                            })
+
+
+                                                            const LaptopsMacBookProMChipProFiveHundredPage = MacBookLaptops.map((product, index) => {
+                                              
+                                                              if (product.modelName === "MacBook Pro | M2 Pro" && product.ssd === "512 GB") {
+                                                              return (
+                                                                <ProductCart key={index} UserData={UserData} product={product} />
+            
+                                                              )
+                                                              }
+                                                              
+                                                              })
+            
+                                                              const LaptopsMacBookProMChipProFiveHundredPageLocation = MacBookLaptops.map((product, index) => {
+                                                      
+                                                                if ((product.modelName === "MacBook Pro | M2 Pro" && product.ssd === "512 GB") && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
+                                                                || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
+                                                                || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
+                                                                || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
+                                                                 && product.Gobabis === true))) {
+                                                                return (
+                                                                  <ProductCart key={index} UserData={UserData} product={product} />
+                
+                                                                )
+                                                                }
+                                                                
+                                                                })
+
+
+                                                                const LaptopsMacBookProMChipProTerabytePage = MacBookLaptops.map((product, index) => {
+                                              
+                                                                  if (product.modelName === "MacBook Pro | M2 Pro" && product.ssd === "1 TB") {
+                                                                  return (
+                                                                    <ProductCart key={index} UserData={UserData} product={product} />
+                
+                                                                  )
+                                                                  }
+                                                                  
+                                                                  })
+                
+                                                                  const LaptopsMacBookProMChipProTerabytePageLocation = MacBookLaptops.map((product, index) => {
+                                                          
+                                                                    if ((product.modelName === "MacBook Pro | M2 Pro" && product.ssd === "1 TB") && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
+                                                                    || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
+                                                                    || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
+                                                                    || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
+                                                                     && product.Gobabis === true))) {
+                                                                    return (
+                                                                      <ProductCart key={index} UserData={UserData} product={product} />
+                    
+                                                                    )
+                                                                    }
+                                                                    
+                                                                    })
+
+
     
     
                                                       const LaptopsOtherFourGigPage = OtherLaptops.map((product, index) => {
@@ -1595,89 +1701,7 @@ const getProducts = (variables) => {
                                                                                                       
                                                                                                       })
                                                             
-                                                            
-                                                                                                        const LaptopsAppleFourGigPageDDRFour = MacBookLaptops.map((product, index) => {
-                                                            
-                                                                                                          if ((product.ram === "4 GB") && product.ramGeneration === "DDR4") {
-                                                                                                          return (
-                                                                                                            <ProductCart key={index} UserData={UserData} product={product} />
-                                                            
-                                                                                                          )
-                                                                                                          }
-                                                                                                          
-                                                                                                          })
-                                                            
-                                                                                                          const LaptopsAppleFourGigPageDDRFourLocation = MacBookLaptops.map((product, index) => {
-                                                            
-                                                                                                            if ((product.ram === "4 GB") && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
-                                                                                                            || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
-                                                                                                            || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
-                                                                                                            || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
-                                                                                                             && product.Gobabis === true)) && product.ramGeneration === "DDR4") {
-                                                                                                            return (
-                                                                                                              <ProductCart key={index} UserData={UserData} product={product} />
-                                                              
-                                                                                                            )
-                                                                                                            }
-                                                                                                            
-                                                                                                            })
-                                                                                                      
-                                                                                                          const LaptopsAppleEightGigPageDDRFour = MacBookLaptops.map((product, index) => {
-                                                                                                      
-                                                                                                            if ((product.ram === "8 GB") && product.ramGeneration === "DDR4") {
-                                                                                                            return (
-                                                                                                              <ProductCart key={index} UserData={UserData} product={product} />
-                                                            
-                                                                                                            )
-                                                                                                            }
-                                                                                                            
-                                                                                                            })
-                                                            
-                                                                                                            const LaptopsAppleEightGigPageDDRFourLocation = MacBookLaptops.map((product, index) => {
-                                                                                                      
-                                                                                                              if ((product.ram === "8 GB") && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
-                                                                                                              || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
-                                                                                                              || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
-                                                                                                              || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
-                                                                                                               && product.Gobabis === true)) && product.ramGeneration === "DDR4") {
-                                                                                                              return (
-                                                                                                                <ProductCart key={index} UserData={UserData} product={product} />
-                                                              
-                                                                                                              )
-                                                                                                              }
-                                                                                                              
-                                                                                                              })
-                                                                                                          
-                                                                                                            const LaptopsAppleSixteenGigPageDDRFour = MacBookLaptops.map((product, index) => {
-                                                                                                      
-                                                                                                              if (((product.ram !== "4 GB" && product.ramGeneration === "DDR4") && (product.ram !== "8 GB" 
-                                                                                                             ))) {
-                                                                                                              return (
-                                                                                                                <ProductCart key={index} UserData={UserData} product={product} />
-                                                            
-                                                                                                              )
-                                                                                                              }
-                                                                                                              
-                                                                                                              })
-                                                            
-                                                                                                              const LaptopsAppleSixteenGigPageDDRFourLocation = MacBookLaptops.map((product, index) => {
-                                                                                                      
-                                                                                                                if (((product.ram !== "4 GB" && product.ramGeneration === "DDR4") && (product.ram !== "8 GB" 
-                                                                                                               )) && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
-                                                                                                                || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
-                                                                                                                || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
-                                                                                                                || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
-                                                                                                                 && product.Gobabis === true))) {
-                                                                                                                return (
-                                                                                                                  <ProductCart key={index} UserData={UserData} product={product} />
-                                                              
-                                                                                                                )
-                                                                                                                }
-                                                                                                                
-                                                                                                                })
-                                                            
-                                                                                                              
-                                                            
+
                                                                                                               const LaptopsOtherFourGigPageDDRFour = OtherLaptops.map((product, index) => {
                                                             
                                                                                                                 if ((product.ram === "4 GB") && product.ramGeneration === "DDR4") {
@@ -2321,88 +2345,6 @@ const getProducts = (variables) => {
                                           
                                           })
 
-                               
-                                            const LaptopsAppleFourGigPageDDRFive = MacBookLaptops.map((product, index) => {
-
-                                              if ((product.ram === "4 GB") && product.ramGeneration === "DDR5") {
-                                              return (
-                                                <ProductCart key={index} UserData={UserData} product={product} />
-
-                                              )
-                                              }
-                                              
-                                              })
-
-                                              const LaptopsAppleFourGigPageDDRFiveLocation = MacBookLaptops.map((product, index) => {
-
-                                                if ((product.ram === "4 GB") && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
-                                                || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
-                                                || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
-                                                || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
-                                                 && product.Gobabis === true)) && product.ramGeneration === "DDR5") {
-                                                return (
-                                                  <ProductCart key={index} UserData={UserData} product={product} />
-  
-                                                )
-                                                }
-                                                
-                                                })
-                                          
-                                              const LaptopsAppleEightGigPageDDRFive = MacBookLaptops.map((product, index) => {
-                                          
-                                                if ((product.ram === "8 GB") && product.ramGeneration === "DDR5") {
-                                                return (
-                                                  <ProductCart key={index} UserData={UserData} product={product} />
-
-                                                )
-                                                }
-                                                
-                                                })
-
-                                                const LaptopsAppleEightGigPageDDRFiveLocation = MacBookLaptops.map((product, index) => {
-                                          
-                                                  if ((product.ram === "8 GB") && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
-                                                  || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
-                                                  || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
-                                                  || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
-                                                   && product.Gobabis === true)) && product.ramGeneration === "DDR5") {
-                                                  return (
-                                                    <ProductCart key={index} UserData={UserData} product={product} />
-  
-                                                  )
-                                                  }
-                                                  
-                                                  })
-                                              
-                                                const LaptopsAppleSixteenGigPageDDRFive = MacBookLaptops.map((product, index) => {
-                                          
-                                                  if (((product.ram !== "4 GB" && product.ramGeneration === "DDR5") && (product.ram !== "8 GB" 
-                                                 ))) {
-                                                  return (
-                                                    <ProductCart key={index} UserData={UserData} product={product} />
-
-                                                  )
-                                                  }
-                                                  
-                                                  })
-
-                                                  const LaptopsAppleSixteenGigPageDDRFiveLocation = MacBookLaptops.map((product, index) => {
-                                          
-                                                    if (((product.ram !== "4 GB" && product.ramGeneration === "DDR5") && (product.ram !== "8 GB" 
-                                                   )) && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
-                                                    || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
-                                                    || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
-                                                    || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
-                                                     && product.Gobabis === true))) {
-                                                    return (
-                                                      <ProductCart key={index} UserData={UserData} product={product} />
-  
-                                                    )
-                                                    }
-                                                    
-                                                    })
-
-                                                  
 
                                                   const LaptopsOtherFourGigPageDDRFive = OtherLaptops.map((product, index) => {
 
@@ -2567,7 +2509,7 @@ const getProducts = (variables) => {
    </div>
 
    <div className={SelectTabs ===5 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
-  onClick={()=> {ToggleSelectTabs(5); RamSelect(); MemoryLaptopCategory(1); GetMacBook()}}
+  onClick={()=> {ToggleSelectTabs(5); RamSelect(0); MemoryLaptopCategory(1); GetMacBook()}}
   ><div>
     <img src="https://m.media-amazon.com/images/I/717n9H3RSxL._AC_UF894,1000_QL80_.jpg"
    className="Image_Mid_size" alt="" />
@@ -2630,6 +2572,26 @@ const getProducts = (variables) => {
           </div>
 
     </div>
+
+    <div className={SelectTabs ===5 ? 'Select_tabs_organise' : 'Listed_fetched_products-hide'}>
+    <div className={ToggleRamType ===0 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
+        onClick={()=> {RamSelect(0); MemoryLaptopCategory(1)}} >
+            <span>Air</span>
+          </div>
+    <div className={ToggleRamType ===1 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
+        onClick={()=> {RamSelect(1); MemoryLaptopCategory(1)}} >
+            <span>Air | M2 Chip</span>
+          </div>
+          <div className={ToggleRamType ===2 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
+        onClick={()=> {RamSelect(2); MemoryLaptopCategory(1)}} >
+          <span>Pro | M2 Chip</span>
+          </div>
+          <div className={ToggleRamType ===3 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
+        onClick={()=> {RamSelect(3); MemoryLaptopCategory(2)}} >
+          <span>Pro | M2 Pro</span>
+          </div>
+
+    </div>
     </div>
   </div>
 
@@ -2661,7 +2623,7 @@ const getProducts = (variables) => {
     }
     </div>
 
-    <div className='My_location_items_choose_box'>
+    <div className={SelectTabs !==5 ? 'My_location_items_choose_box_second' : 'Listed_fetched_products-hide'}>
     <div 
     className='Item_options_Front_box'>
       <span>RAM</span>
@@ -2683,6 +2645,71 @@ const getProducts = (variables) => {
     </div>
     </div>
 
+    <div className={SelectTabs ===5 && ToggleRamType ===0 ? 'My_location_items_choose_box_second' : 'Listed_fetched_products-hide'}>
+    <div 
+    className='Item_options_Front_box'>
+      <span>Size</span>
+    </div>
+    <div 
+    className='active-Item_options_choose_box Item_options_choose_box'
+    >
+      <span>256 GB</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===5 && ToggleRamType ===1 ? 'My_location_items_choose_box_second' : 'Listed_fetched_products-hide'}>
+    <div 
+    className='Item_options_Front_box'>
+      <span>Size</span>
+    </div>
+    <div 
+    className={toggleMemoySizelaptop === 1 ? 'Item_options_choose_box active-Item_options_choose_box' : 'Item_options_choose_box'}
+    onClick={()=> {MemoryLaptopCategory(1)}}>
+      <span>256 GB</span>
+    </div>
+    <div 
+    className={toggleMemoySizelaptop === 2 ? 'Item_options_choose_box active-Item_options_choose_box' : 'Item_options_choose_box'}
+    onClick={()=> {MemoryLaptopCategory(2)}}>
+      <span>512 GB</span>
+    </div>
+    
+    </div>
+
+    <div className={SelectTabs ===5 && ToggleRamType ===2 ? 'My_location_items_choose_box_second' : 'Listed_fetched_products-hide'}>
+    <div 
+    className='Item_options_Front_box'>
+      <span>Size</span>
+    </div>
+    <div 
+    className={toggleMemoySizelaptop === 1 ? 'Item_options_choose_box active-Item_options_choose_box' : 'Item_options_choose_box'}
+    onClick={()=> {MemoryLaptopCategory(1)}}>
+      <span>256 GB</span>
+    </div>
+    <div 
+    className={toggleMemoySizelaptop === 2 ? 'Item_options_choose_box active-Item_options_choose_box' : 'Item_options_choose_box'}
+    onClick={()=> {MemoryLaptopCategory(2)}}>
+      <span>512 GB</span>
+    </div>
+    
+    </div>
+
+    <div className={SelectTabs ===5 && ToggleRamType ===3 ? 'My_location_items_choose_box_second' : 'Listed_fetched_products-hide'}>
+    <div 
+    className='Item_options_Front_box'>
+      <span>Size</span>
+    </div>
+    <div 
+    className={toggleMemoySizelaptop === 2 ? 'Item_options_choose_box active-Item_options_choose_box' : 'Item_options_choose_box'}
+    onClick={()=> {MemoryLaptopCategory(2)}}>
+      <span>512 GB</span>
+    </div>
+    <div 
+    className={toggleMemoySizelaptop === 3 ? 'Item_options_choose_box active-Item_options_choose_box' : 'Item_options_choose_box'}
+    onClick={()=> {MemoryLaptopCategory(3)}}>
+      <span>1 TB</span>
+    </div>
+    </div>
+
   </div>
 
 {/* All Laptops */}
@@ -2699,18 +2726,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -2736,18 +2763,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -2773,18 +2800,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -2811,18 +2838,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -2848,18 +2875,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -2885,18 +2912,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -2924,18 +2951,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -2961,18 +2988,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -2998,18 +3025,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3036,18 +3063,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3073,18 +3100,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3110,18 +3137,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3150,18 +3177,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3187,18 +3214,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3224,18 +3251,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3262,18 +3289,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3299,18 +3326,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3336,18 +3363,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3376,18 +3403,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3413,18 +3440,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+          <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3450,18 +3477,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3488,18 +3515,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3525,18 +3552,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3562,18 +3589,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3601,18 +3628,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3638,18 +3665,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3675,18 +3702,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3713,18 +3740,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3750,18 +3777,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3787,18 +3814,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3825,19 +3852,19 @@ const getProducts = (variables) => {
   <></>
   :
   <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === false ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3845,8 +3872,8 @@ const getProducts = (variables) => {
   }
   </>
 :
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleFourGigPage}
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookAirPage}
 </div>
 }
 
@@ -3862,19 +3889,19 @@ const getProducts = (variables) => {
   <></>
   :
   <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === false ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3882,8 +3909,8 @@ const getProducts = (variables) => {
   }
   </>
 :
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleEightGigPage}
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookAirMChipTwoHundredPage}
 </div>
 }
 
@@ -3899,19 +3926,19 @@ const getProducts = (variables) => {
   <></>
   :
   <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === false ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3919,10 +3946,160 @@ const getProducts = (variables) => {
   }
   </>
 :
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleSixteenGigPage}
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookAirMChipFiveHundredPage}
 </div>
 }
+
+{MacBookLaptops && MacBookLaptops.length === undefined ?
+  <></>
+  :
+  MacBookLaptops && MacBookLaptops.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === false ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookProMChipTwoHundredPage}
+</div>
+}
+
+{MacBookLaptops && MacBookLaptops.length === undefined ?
+  <></>
+  :
+  MacBookLaptops && MacBookLaptops.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === false ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookProMChipFiveHundredPage}
+</div>
+}
+
+{MacBookLaptops && MacBookLaptops.length === undefined ?
+  <></>
+  :
+  MacBookLaptops && MacBookLaptops.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 3 && ToggleLocation === false ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 3 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookProMChipProFiveHundredPage}
+</div>
+}
+
+{MacBookLaptops && MacBookLaptops.length === undefined ?
+  <></>
+  :
+  MacBookLaptops && MacBookLaptops.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 3 && ToggleLocation === false ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 3 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookProMChipProTerabytePage}
+</div>
+}
+
+
 
 {/* Apple Location */}
 {MacBookLaptops && MacBookLaptops.length === undefined ?
@@ -3937,19 +4114,19 @@ const getProducts = (variables) => {
   <></>
   :
   <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === true ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3957,8 +4134,8 @@ const getProducts = (variables) => {
   }
   </>
 :
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleFourGigPageLocation}
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookAirPageLocation}
 </div>
 }
 
@@ -3974,19 +4151,19 @@ const getProducts = (variables) => {
   <></>
   :
   <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === true ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -3994,8 +4171,8 @@ const getProducts = (variables) => {
   }
   </>
 :
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleEightGigPageLocation}
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookAirMChipTwoHundredPageLocation}
 </div>
 }
 
@@ -4011,19 +4188,19 @@ const getProducts = (variables) => {
   <></>
   :
   <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === true ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4031,10 +4208,159 @@ const getProducts = (variables) => {
   }
   </>
 :
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleSixteenGigPageLocation}
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookAirMChipFiveHundredPageLocation}
 </div>
 }
+
+{MacBookLaptops && MacBookLaptops.length === undefined ?
+  <></>
+  :
+  MacBookLaptops && MacBookLaptops.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === true ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookProMChipTwoHundredPageLocation}
+</div>
+}
+
+{MacBookLaptops && MacBookLaptops.length === undefined ?
+  <></>
+  :
+  MacBookLaptops && MacBookLaptops.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === true ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookProMChipFiveHundredPageLocation}
+</div>
+}
+
+{MacBookLaptops && MacBookLaptops.length === undefined ?
+  <></>
+  :
+  MacBookLaptops && MacBookLaptops.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 3 && ToggleLocation === true ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 3 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookProMChipProFiveHundredPageLocation}
+</div>
+}
+
+{MacBookLaptops && MacBookLaptops.length === undefined ?
+  <></>
+  :
+  MacBookLaptops && MacBookLaptops.length === 0 ?
+  <>
+  {IsLoading === undefined ?
+  <></>
+  :
+  IsLoading === true ?
+  <></>
+  :
+  <>
+  {(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 3 && ToggleLocation === true ?
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
+  :
+  <></>
+  }
+  </>
+  }
+  </>
+:
+<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 3 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
+    {LaptopsMacBookProMChipProTerabytePageLocation}
+</div>
+}
+
 
 
 {/* PEBL Laptops*/}
@@ -4051,18 +4377,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4088,18 +4414,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4125,18 +4451,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4163,18 +4489,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4200,18 +4526,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4237,18 +4563,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4277,18 +4603,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4314,18 +4640,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4351,18 +4677,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4389,18 +4715,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4426,18 +4752,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4463,18 +4789,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4502,18 +4828,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4539,18 +4865,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4576,18 +4902,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4614,18 +4940,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4651,18 +4977,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4688,18 +5014,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 0 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4727,18 +5053,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4764,18 +5090,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4801,18 +5127,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4839,18 +5165,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4876,18 +5202,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4913,18 +5239,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4952,18 +5278,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -4989,18 +5315,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5026,18 +5352,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5064,18 +5390,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5101,18 +5427,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5138,18 +5464,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5178,18 +5504,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5215,18 +5541,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5252,18 +5578,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5290,18 +5616,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5327,18 +5653,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5364,18 +5690,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5404,18 +5730,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5441,18 +5767,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5478,18 +5804,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5516,18 +5842,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5553,18 +5879,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5590,18 +5916,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5629,18 +5955,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5666,18 +5992,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5703,18 +6029,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5741,18 +6067,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5778,18 +6104,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5815,18 +6141,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -5839,230 +6165,6 @@ const getProducts = (variables) => {
 </div>
 }
 
-
-{/* Apple Laptops*/}
-{MacBookLaptops && MacBookLaptops.length === undefined ?
-  <></>
-  :
-  MacBookLaptops && MacBookLaptops.length === 0 ?
-  <>
-  {IsLoading === undefined ?
-  <></>
-  :
-  IsLoading === true ?
-  <></>
-  :
-  <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
-  :
-  <></>
-  }
-  </>
-  }
-  </>
-:
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleFourGigPageDDRFour}
-</div>
-}
-
-{MacBookLaptops && MacBookLaptops.length === undefined ?
-  <></>
-  :
-  MacBookLaptops && MacBookLaptops.length === 0 ?
-  <>
-  {IsLoading === undefined ?
-  <></>
-  :
-  IsLoading === true ?
-  <></>
-  :
-  <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
-  :
-  <></>
-  }
-  </>
-  }
-  </>
-:
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleEightGigPageDDRFour}
-</div>
-}
-
-{MacBookLaptops && MacBookLaptops.length === undefined ?
-  <></>
-  :
-  MacBookLaptops && MacBookLaptops.length === 0 ?
-  <>
-  {IsLoading === undefined ?
-  <></>
-  :
-  IsLoading === true ?
-  <></>
-  :
-  <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
-  :
-  <></>
-  }
-  </>
-  }
-  </>
-:
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleSixteenGigPageDDRFour}
-</div>
-}
-
-{/* Apple Location */}
-{MacBookLaptops && MacBookLaptops.length === undefined ?
-  <></>
-  :
-  MacBookLaptops && MacBookLaptops.length === 0 ?
-  <>
-  {IsLoading === undefined ?
-  <></>
-  :
-  IsLoading === true ?
-  <></>
-  :
-  <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
-  :
-  <></>
-  }
-  </>
-  }
-  </>
-:
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleFourGigPageDDRFourLocation}
-</div>
-}
-
-{MacBookLaptops && MacBookLaptops.length === undefined ?
-  <></>
-  :
-  MacBookLaptops && MacBookLaptops.length === 0 ?
-  <>
-  {IsLoading === undefined ?
-  <></>
-  :
-  IsLoading === true ?
-  <></>
-  :
-  <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
-  :
-  <></>
-  }
-  </>
-  }
-  </>
-:
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleEightGigPageDDRFourLocation}
-</div>
-}
-
-{MacBookLaptops && MacBookLaptops.length === undefined ?
-  <></>
-  :
-  MacBookLaptops && MacBookLaptops.length === 0 ?
-  <>
-  {IsLoading === undefined ?
-  <></>
-  :
-  IsLoading === true ?
-  <></>
-  :
-  <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
-  :
-  <></>
-  }
-  </>
-  }
-  </>
-:
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleSixteenGigPageDDRFourLocation}
-</div>
-}
 
 
 {/* PEBL Laptops*/}
@@ -6079,18 +6181,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6116,18 +6218,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6153,18 +6255,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6191,18 +6293,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6228,18 +6330,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6265,18 +6367,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6305,18 +6407,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6342,18 +6444,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6379,18 +6481,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6417,18 +6519,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6454,18 +6556,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6491,18 +6593,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6530,18 +6632,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6567,18 +6669,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6604,18 +6706,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6642,18 +6744,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6679,18 +6781,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6716,18 +6818,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 1 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6755,18 +6857,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6792,18 +6894,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6829,18 +6931,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6867,18 +6969,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6904,18 +7006,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6941,18 +7043,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 0 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -6980,18 +7082,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7017,18 +7119,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7054,18 +7156,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7092,18 +7194,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7129,18 +7231,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7166,18 +7268,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 1 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7206,18 +7308,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7243,18 +7345,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7280,18 +7382,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7318,18 +7420,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7355,18 +7457,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7392,18 +7494,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 2 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7432,18 +7534,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7469,18 +7571,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7506,18 +7608,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7544,18 +7646,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7581,18 +7683,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7618,18 +7720,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 3 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7657,18 +7759,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7694,18 +7796,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7731,18 +7833,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7769,18 +7871,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7806,18 +7908,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7843,18 +7945,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 4 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -7864,231 +7966,6 @@ const getProducts = (variables) => {
 :
 <div className={(SelectTabs === 4 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
     {LaptopsAsusSixteenGigPageDDRFiveLocation}
-</div>
-}
-
-
-{/* Apple Laptops*/}
-{MacBookLaptops && MacBookLaptops.length === undefined ?
-  <></>
-  :
-  MacBookLaptops && MacBookLaptops.length === 0 ?
-  <>
-  {IsLoading === undefined ?
-  <></>
-  :
-  IsLoading === true ?
-  <></>
-  :
-  <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
-  :
-  <></>
-  }
-  </>
-  }
-  </>
-:
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleFourGigPageDDRFive}
-</div>
-}
-
-{MacBookLaptops && MacBookLaptops.length === undefined ?
-  <></>
-  :
-  MacBookLaptops && MacBookLaptops.length === 0 ?
-  <>
-  {IsLoading === undefined ?
-  <></>
-  :
-  IsLoading === true ?
-  <></>
-  :
-  <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
-  :
-  <></>
-  }
-  </>
-  }
-  </>
-:
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleEightGigPageDDRFive}
-</div>
-}
-
-{MacBookLaptops && MacBookLaptops.length === undefined ?
-  <></>
-  :
-  MacBookLaptops && MacBookLaptops.length === 0 ?
-  <>
-  {IsLoading === undefined ?
-  <></>
-  :
-  IsLoading === true ?
-  <></>
-  :
-  <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
-  :
-  <></>
-  }
-  </>
-  }
-  </>
-:
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === false ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleSixteenGigPageDDRFive}
-</div>
-}
-
-{/* Apple Location */}
-{MacBookLaptops && MacBookLaptops.length === undefined ?
-  <></>
-  :
-  MacBookLaptops && MacBookLaptops.length === 0 ?
-  <>
-  {IsLoading === undefined ?
-  <></>
-  :
-  IsLoading === true ?
-  <></>
-  :
-  <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
-  :
-  <></>
-  }
-  </>
-  }
-  </>
-:
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleFourGigPageDDRFiveLocation}
-</div>
-}
-
-{MacBookLaptops && MacBookLaptops.length === undefined ?
-  <></>
-  :
-  MacBookLaptops && MacBookLaptops.length === 0 ?
-  <>
-  {IsLoading === undefined ?
-  <></>
-  :
-  IsLoading === true ?
-  <></>
-  :
-  <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
-  :
-  <></>
-  }
-  </>
-  }
-  </>
-:
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleEightGigPageDDRFiveLocation}
-</div>
-}
-
-{MacBookLaptops && MacBookLaptops.length === undefined ?
-  <></>
-  :
-  MacBookLaptops && MacBookLaptops.length === 0 ?
-  <>
-  {IsLoading === undefined ?
-  <></>
-  :
-  IsLoading === true ?
-  <></>
-  :
-  <>
-  {(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
-  :
-  <></>
-  }
-  </>
-  }
-  </>
-:
-<div className={(SelectTabs === 5 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === true ? "Listed_fetched_products_wrapper" : "Listed_fetched_products-hide"}>
-    {LaptopsAppleSixteenGigPageDDRFiveLocation}
 </div>
 }
 
@@ -8107,18 +7984,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8144,18 +8021,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8181,18 +8058,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8219,18 +8096,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8256,18 +8133,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8293,18 +8170,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 7 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8333,18 +8210,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8370,18 +8247,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8407,18 +8284,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8445,18 +8322,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8482,18 +8359,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8519,18 +8396,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 8 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8558,18 +8435,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8595,18 +8472,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8632,18 +8509,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === false ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8670,18 +8547,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 1 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8707,18 +8584,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 2 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }
@@ -8744,18 +8621,18 @@ const getProducts = (variables) => {
   :
   <>
   {(SelectTabs === 9 && toggleMemoySizelaptop === 3 ) && ToggleRamType === 2 && ToggleLocation === true ?
- <div style={{
-  width: '100%', display: 'flex', flexDirection: 'column',
-  justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
-  }}>
-  <br />
-  <Empty description={false} />
-  <div style={{
-  width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
-  }}>
-  <p>No Items listed yet</p>
-  </div>
-  </div>
+        <div style={{
+        width: '100%', display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', background: '#fff', borderBottomRightRadius: '10px', borderBottomLeftRadius: '10px'
+        }}>
+        <br />
+        <Empty description={false} />
+        <div style={{
+        width: '100%', display: 'flex', justifyContent: 'center', fontWeight: '500'
+        }}>
+        <p>No Items listed yet</p>
+        </div>
+        </div>
   :
   <></>
   }

@@ -152,22 +152,22 @@ function AboutUs(props) {
                 </div>
             </div>
             <div style={{ marginTop: '40px'}}>
-                <div>
-                    <span className='About_us_purpose_span'>Products Not Allowed</span>
+            <div>
+                <span className='About_us_purpose_span'>Not Allowed</span>
+            </div>
+            <div style={{ marginTop: '5px'}}>
+                <div style={{ marginTop: '5px'}}>
+                 <span className='Purpose_span'>
+                    Ecommerce marketplace providers are not allowed on the platform.
+                </span>
                 </div>
                 <div style={{ marginTop: '5px'}}>
-                    {/* <div style={{ marginTop: '5px'}}>
-                     <span className='Purpose_span'>
-                        We do do not allow meats, fresh foods or any perishable products that are refrigerated.
-                    </span>
-                    </div> */}
-                    <div style={{ marginTop: '5px'}}>
-                     <span className='Purpose_span'>
-                        All kinds of consumable foods are not allowed on the platform.
-                    </span>
-                    </div>
+                 <span className='Purpose_span'>
+                    All kinds of consumable foods are not allowed on the platform.
+                </span>
                 </div>
             </div>
+        </div>
             </div>
           </div>
             

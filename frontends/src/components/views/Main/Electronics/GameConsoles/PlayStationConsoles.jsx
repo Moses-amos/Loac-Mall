@@ -18,13 +18,18 @@ function PlayStationConsoles(props) {
     const [PlayStationsThree, setPlayStationsThree] = useState([])
 
     const [toggleConsoleModel, settoggleConsoleModel] = useState(0)
+
     const [SelectTabs, setSelectTabs] = useState(1)
     const [Products, setProducts] = useState([])
     const [ToggleLocation, setToggleLocation] = useState(false)
+
     const [IsLoading, setIsLoading] = useState(true)
   
     const SetLocation = () => setToggleLocation(!ToggleLocation)
-  
+    
+    const [ToggleVerified, setToggleVerified] = useState(false)
+    const SetVerified = () => setToggleVerified(!ToggleVerified)
+
     const ToggleSelectTabs = (index) => {
       setSelectTabs(index);
     }  
@@ -208,6 +213,30 @@ function PlayStationConsoles(props) {
               
               })
 
+              const PlayStationsFiveStandardPageVerified = PlayStationsFive.map((product, index) => {
+                if (product.modelName === "PS5 Standard" && product.accountTier === "Verified" ) {
+                return (
+                  <ProductCart key={index} UserData={UserData} product={product} />
+          
+                )
+                }
+                
+                })
+          
+                const PlayStationsFiveStandardPageLocationVerified = PlayStationsFive.map((product, index) => {
+                  if (( product.modelName === "PS5 Standard" && product.accountTier === "Verified") && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
+                  || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
+                  || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
+                  || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
+                   && product.Gobabis === true))) {
+                  return (
+                    <ProductCart key={index} UserData={UserData} product={product} />
+            
+                  )
+                  }
+                  
+                  })
+
               const PlayStationsFiveDigitalPage = PlayStationsFive.map((product, index) => {
                 if (product.modelName === "PS5 Digital") {
                 return (
@@ -231,6 +260,31 @@ function PlayStationConsoles(props) {
                   }
                   
                   })
+
+                  const PlayStationsFiveDigitalPageVerified = PlayStationsFive.map((product, index) => {
+                    if (product.modelName === "PS5 Digital" && product.accountTier === "Verified") {
+                    return (
+                      <ProductCart key={index} UserData={UserData} product={product} />
+              
+                    )
+                    }
+                    
+                    })
+              
+                    const PlayStationsFiveDigitalPageLocationVerified = PlayStationsFive.map((product, index) => {
+                      if (( product.modelName === "PS5 Digital" && product.accountTier === "Verified" ) && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
+                      || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
+                      || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
+                      || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
+                       && product.Gobabis === true))) {
+                      return (
+                        <ProductCart key={index} UserData={UserData} product={product} />
+                
+                      )
+                      }
+                      
+                      })
+
 
 
               const PlayStationsFourStandardPage = PlayStationsFour.map((product, index) => {
@@ -257,6 +311,30 @@ function PlayStationConsoles(props) {
                   
                   })
 
+                  const PlayStationsFourStandardPageVerified = PlayStationsFour.map((product, index) => {
+                    if (product.modelName === "PS4 Standard" && product.accountTier === "Verified") {
+                    return (
+                      <ProductCart key={index} UserData={UserData} product={product} />
+              
+                    )
+                    }
+                    
+                    })
+              
+                    const PlayStationsFourStandardPageLocationVerified = PlayStationsFour.map((product, index) => {
+                      if (( product.modelName === "PS4 Standard" && product.accountTier === "Verified" ) && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
+                      || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
+                      || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
+                      || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
+                       && product.Gobabis === true))) {
+                      return (
+                        <ProductCart key={index} UserData={UserData} product={product} />
+                
+                      )
+                      }
+                      
+                      })
+
 
                   const PlayStationsFourSlimPage = PlayStationsFour.map((product, index) => {
                     if (product.modelName === "PS4 Slim") {
@@ -281,6 +359,30 @@ function PlayStationConsoles(props) {
                       }
                       
                       })
+
+                      const PlayStationsFourSlimPageVerified = PlayStationsFour.map((product, index) => {
+                        if (product.modelName === "PS4 Slim" && product.accountTier === "Verified") {
+                        return (
+                          <ProductCart key={index} UserData={UserData} product={product} />
+                  
+                        )
+                        }
+                        
+                        })
+                  
+                        const PlayStationsFourSlimPageLocationVerified = PlayStationsFour.map((product, index) => {
+                          if (( product.modelName === "PS4 Slim" && product.accountTier === "Verified" ) && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
+                          || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
+                          || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
+                          || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
+                           && product.Gobabis === true))) {
+                          return (
+                            <ProductCart key={index} UserData={UserData} product={product} />
+                    
+                          )
+                          }
+                          
+                          })
 
                       const PlayStationsFourProPage = PlayStationsFour.map((product, index) => {
                         if (product.modelName === "PS4 Pro") {
@@ -307,6 +409,31 @@ function PlayStationConsoles(props) {
                           })
 
 
+                          const PlayStationsFourProPageVerified = PlayStationsFour.map((product, index) => {
+                            if (product.modelName === "PS4 Pro" && product.accountTier === "Verified") {
+                            return (
+                              <ProductCart key={index} UserData={UserData} product={product} />
+                      
+                            )
+                            }
+                            
+                            })
+                      
+                            const PlayStationsFourProPageLocationVerified = PlayStationsFour.map((product, index) => {
+                              if (( product.modelName === "PS4 Pro" && product.accountTier === "Verified" ) && ((UserData.userLocation === "Windhoek" && product.Windhoek === true) || (UserData.userLocation === "Walvis" && product.Walvis === true) || (UserData.userLocation === "Swakop" && product.Swakop === true)
+                              || (UserData.userLocation === "Okahandja" && product.Okahandja === true) || (UserData.userLocation === "Oshakati" && product.Oshakati === true) || (UserData.userLocation === "Grootfontein" && product.Grootfontein === true)
+                              || (UserData.userLocation === "Rehoboth" && product.Rehoboth === true) || (UserData.userLocation === "KatimaMulilo" && product.KatimaMulilo === true) || (UserData.userLocation === "Ongwediva" && product.Ongwediva === true)
+                              || (UserData.userLocation === "Otjiwarongo" && product.Otjiwarongo === true) || (UserData.userLocation === "Tsumeb" && product.Tsumeb === true) || (UserData.userLocation === "Gobabis"
+                               && product.Gobabis === true))) {
+                              return (
+                                <ProductCart key={index} UserData={UserData} product={product} />
+                        
+                              )
+                              }
+                              
+                              })
+
+
                           const PlayStationsThreePage = PlayStationsThree.map((product, index) => {
                             return (
                               <ProductCart key={index} UserData={UserData} product={product} />
@@ -327,7 +454,6 @@ function PlayStationConsoles(props) {
                               }
                               
                               })
-
 
 
 
@@ -443,24 +569,41 @@ function PlayStationConsoles(props) {
     </div>
 
     {UserData.length === 0 ?
-        <div className='My_location_items_box'>
+    <>
+    <div className='My_location_items_box'>
         <a href='/login' style={{ width: '100%', height: '100%', display: 'flex', 
           justifyContent: 'center', alignItems: 'center' }}>
         <span>Near Me</span>
         </a>
       </div>
+      <div onClick={SetVerified}  className={ToggleVerified === true ? 'Verified_items_box_active' : 'Verified_items_box'}>
+      <span>Verified</span>
+    </div>
+    </>
     :
     (UserData.length !== 0 & UserData.userLocation === "") && UserData.operateLocation === "User" ?
-      <div className='My_location_items_box'>
+    <>
+    <div className='My_location_items_box'>
         <a href='/0settings' style={{ width: '100%', height: '100%', display: 'flex', 
           justifyContent: 'center', alignItems: 'center' }}>
         <span>Near Me</span>
         </a>
       </div>
+      <div onClick={SetVerified}  className={ToggleVerified === true ? 'Verified_items_box_active' : 'Verified_items_box'}>
+      <span>Verified</span>
+    </div>
+    </>
+    
       :
+      <>
       <div onClick={SetLocation}  className={ToggleLocation === true ? 'My_location_items_box_active' : 'My_location_items_box'}>
       <span>Near Me</span>
     </div>
+    <div onClick={SetVerified}  className={ToggleVerified === true ? 'Verified_items_box_active' : 'Verified_items_box'}>
+    <span>Verified</span>
+  </div>
+      </>
+      
     }
     </div>
   </div>

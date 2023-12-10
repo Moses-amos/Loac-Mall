@@ -168,15 +168,15 @@
 .TrackOrder_item_price_quantity_title_branch_main {
     font-size: 18px;
     font-family: 'Saira', sans-serif;    
-    font-weight: 700;
+    font-weight: 600;
     color: #333;
 }
 
 .TrackOrder-item_price-quantity_right_span_branch_main {
     font-size: 18px;
     font-family: 'Saira', sans-serif;    
-    font-weight: 700;
-    color: #656481;
+    font-weight: 600;
+    color: #74767c;
 }
 
 .TrackOrder-item_title_span {
@@ -324,16 +324,16 @@
 
 
 .TrackOrder-item_status_span {
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Saira', sans-serif;    
-    font-weight: 700;
+    font-weight: 600;
     color: #656481;
 }
 
 .TrackOrder_item_status_text {
     font-size: 16px;
     font-family: 'Saira', sans-serif;    
-    font-weight: 700;
+    font-weight: 600;
     color: #656481;
 }
 
@@ -583,7 +583,7 @@
 }
 
 .TrackOrder-item_delivery_stages_span_User_main {
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Saira', sans-serif;    
     font-weight: 500;
     color: #333;
@@ -611,7 +611,7 @@
 
 .Track_order_cancel_buttom {
     padding: 5px 15px;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
     border-radius: 5px;
     font-weight: 500;

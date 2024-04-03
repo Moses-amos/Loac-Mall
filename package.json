@@ -1,7 +1,7 @@
 {
-  "name": "royalcomputers",
+  "name": "loac mall",
   "version": "1.0.0",
-  "description": "Royal Computers Website",
+  "description": "Ecommerce Website",
   "main": "index.js",
   "engine": {
     "node": "10.16.0",

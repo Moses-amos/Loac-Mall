@@ -50,27 +50,27 @@ function PlayStationConsoles(props) {
         superLargeDesktop: {
           // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
-          items: 5,
-          slidesToSlide: 3,
-          partialVisibilityGutter: 40
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 5,
+          items: 7,
           slidesToSlide: 3,
           partialVisibilityGutter: 30
         },
-        tablet: {
-          breakpoint: { max: 1024, min: 600 },
-          items: 3,
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 7,
           slidesToSlide: 3,
           partialVisibilityGutter: 20
         },
+        tablet: {
+          breakpoint: { max: 1024, min: 600 },
+          items: 4,
+          slidesToSlide: 3,
+          partialVisibilityGutter: 15
+        },
         mobile: {
           breakpoint: { max: 600, min: 0 },
-          items: 2,
-          slidesToSlide: 1,
-          partialVisibilityGutter: 10
+          items: 3,
+          slidesToSlide: 2,
+    
         }
       };
     
@@ -478,12 +478,12 @@ function PlayStationConsoles(props) {
     deviceType={props.deviceType}
     >
 
-  <div className={SelectTabs ===1 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(1); ConsoleModelCategory(0)}}
   ><div>
-    <img 
-    src='https://www.denofgeek.com/wp-content/uploads/2020/06/playstation-5-console-design.jpg?fit=3594%2C2031'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/lxzu4oC.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>PlayStation 5</span>
@@ -491,12 +491,12 @@ function PlayStationConsoles(props) {
     
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2); GetPlayStationFour(); ConsoleModelCategory(0)}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/41sN+-1hRsL._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/f25YL9B.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>PlayStation 4</span>
@@ -504,12 +504,12 @@ function PlayStationConsoles(props) {
     
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(3); GetPlayStationThree(); ConsoleModelCategory()}}
   ><div>
-    <img 
-    src='https://pbs.twimg.com/media/F56aSXlWMAARobA?format=png&name=small'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/257K9SR.png'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>PlayStation 3</span>
@@ -526,6 +526,7 @@ function PlayStationConsoles(props) {
         <span>Models</span>
     </div>
     </div>
+    
     <div className={SelectTabs ===1 ? 'Select_tabs_organise' : 'Listed_fetched_products-hide'}>
     <div className={toggleConsoleModel ===0 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
         onClick={()=> {ConsoleModelCategory(0)}} >

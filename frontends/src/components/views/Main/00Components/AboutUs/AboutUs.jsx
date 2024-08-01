@@ -129,7 +129,7 @@ function AboutUs(props) {
             </div>
             <div style={{ marginTop: '40px'}}>
                 <div>
-                    <span className='About_us_purpose_span'>How it Works</span>
+                    <span className='About_us_purpose_span'>Pay In-Store</span>
                 </div>
                 <div>
                     <div style={{ marginTop: '5px'}}>
@@ -140,20 +140,8 @@ function AboutUs(props) {
                 </div>
             </div>
             <div style={{ marginTop: '40px'}}>
-                <div>
-                    <span className='About_us_purpose_span'>Online Payments</span>
-                </div>
-                <div>
-                    <div style={{ marginTop: '5px'}}>
-                    <span className='Purpose_span'>
-                    No Online Payments
-                    </span>
-                    </div>
-                </div>
-            </div>
-            <div style={{ marginTop: '40px'}}>
             <div>
-                <span className='About_us_purpose_span'>Not Allowed</span>
+                <span className='About_us_purpose_span'>Terms</span>
             </div>
             <div style={{ marginTop: '5px'}}>
                 <div style={{ marginTop: '5px'}}>

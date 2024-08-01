@@ -38,27 +38,27 @@ function HomeDecorePage(props) {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-      slidesToSlide: 3,
-      partialVisibilityGutter: 40
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 6,
       slidesToSlide: 3,
       partialVisibilityGutter: 30
     },
-    tablet: {
-      breakpoint: { max: 1024, min: 600 },
-      items: 3,
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 6,
       slidesToSlide: 3,
       partialVisibilityGutter: 20
     },
+    tablet: {
+      breakpoint: { max: 1024, min: 600 },
+      items: 4,
+      slidesToSlide: 3,
+      partialVisibilityGutter: 15
+    },
     mobile: {
       breakpoint: { max: 600, min: 0 },
-      items: 2,
-      slidesToSlide: 1,
-      partialVisibilityGutter: 10
+      items: 3,
+      slidesToSlide: 2,
+
     }
   };
 
@@ -432,7 +432,6 @@ const GetRubberPlants = () => {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -442,7 +441,7 @@ const GetRubberPlants = () => {
     </div>
 
     <div className='Select_tabs_slider'>
-    <Carousel className='Carosal_style_images' 
+    {/* <Carousel className='Carosal_style_images' 
     responsive={responsive}
     partialVisible={true}
     swipeable={true}
@@ -456,7 +455,7 @@ const GetRubberPlants = () => {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/71SFaMQxZeL._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Throw Pillows</span>
@@ -469,7 +468,7 @@ const GetRubberPlants = () => {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/71ALj4+DRtL._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Throw Blankets</span>
@@ -482,7 +481,7 @@ const GetRubberPlants = () => {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/71MJywpczTL._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Table Lamps</span>
@@ -493,7 +492,7 @@ const GetRubberPlants = () => {
   onClick={()=> {ToggleSelectTabs(4); GetFloorLamps()}}
   ><div>
     <img src="https://storage.leafmedia.io/hunker_data/product/9cfdbeab-220c-4561-8480-1476bd3a88f4-LEPOWERWoodTripodFloorLamp.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Floor Lamps</span>
@@ -506,7 +505,7 @@ const GetRubberPlants = () => {
   ><div>
     <img 
     src='https://people.com/thmb/QLWVClgVnajpAf1l92FlupoygRk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/moynesa-ultra-thin-washable-vintage-area-rug-0e8ada11eeb54df6b7865b5e2ed7d2eb.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Throw Rugs</span>
@@ -518,7 +517,7 @@ const GetRubberPlants = () => {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/81AD4V7AnsL._AC_UF1000,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Runner Rugs</span>
@@ -530,7 +529,7 @@ const GetRubberPlants = () => {
     <a href='/mirrors'>
       <div>
     <img src="https://i5.walmartimages.com/asr/95030027-a941-437d-8155-9fd59b35a499.ff6d6760161826064ffa430026262ae4.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Mirrors</span>
@@ -543,7 +542,7 @@ const GetRubberPlants = () => {
     <a href='/clocks'>
       <div>
     <img src="https://m.media-amazon.com/images/I/61kNNY6UDrL._AC_UF894,1000_QL80_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Clocks</span>
@@ -557,7 +556,7 @@ const GetRubberPlants = () => {
     <a>
       <div>
     <img src="https://m.media-amazon.com/images/I/91oAc2CeAVL._AC_UF350,350_QL50_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Wall Art</span>
@@ -567,7 +566,133 @@ const GetRubberPlants = () => {
    </div>
 
 
-</Carousel>
+</Carousel> */}
+<Carousel className='Carosal_style_images' 
+    responsive={responsive}
+    partialVisible={true}
+    swipeable={true}
+    draggable={true}
+    minimumTouchDrag={50}
+    deviceType={props.deviceType}
+    >
+
+<div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(1)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/AesdhYI.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Throw Pillows</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(2); GetThrowBlankets()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/hxsfo05.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Throw Blankets</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(3); GetTableLamps()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/4sf7ugq.png'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Table Lamps</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(4); GetFloorLamps()}}
+  ><div>
+    <img  src="https://i.imgur.com/pbYYNCi.png"
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Floor Lamps</span>
+  </div>
+   </div>
+
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(6); GetThrowRugs()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/7LcACFT.png'
+    className={SelectTabs ===6 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Throw Rugs</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(7); GetRunnerRugs()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/eXhscpe.png'
+    className={SelectTabs ===7 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Runner Rugs</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  >
+    <a href='/mirrors'>
+      <div>
+    <img  src="https://i5.walmartimages.com/asr/95030027-a941-437d-8155-9fd59b35a499.ff6d6760161826064ffa430026262ae4.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+   className="Image_Mid_size" alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Mirrors</span>
+  </div>
+    </a>
+   </div>
+
+   <div className='Select_image_product_longer'
+  >
+    <a href='/clocks'>
+      <div>
+    <img  src="https://m.media-amazon.com/images/I/61kNNY6UDrL._AC_UF894,1000_QL80_.jpg"
+   className="Image_Mid_size" alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Clocks</span>
+  </div>
+    </a>
+
+   </div>
+
+   <div className='Select_image_product_longer'
+  >
+    <a>
+      <div>
+    <img  src="https://m.media-amazon.com/images/I/91oAc2CeAVL._AC_UF350,350_QL50_.jpg"
+   className="Image_Mid_size" alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Wall Art</span>
+  </div>
+    </a>
+  
+   </div>
+
+
+</Carousel> 
 
     </div>
     </div>

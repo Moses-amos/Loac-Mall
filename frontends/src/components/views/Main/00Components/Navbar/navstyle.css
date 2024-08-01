@@ -284,20 +284,21 @@
     padding: 4px 0px 5px 0px;
     justify-content: center;
     align-items: center;
-    background: #333;
-    border-radius: 15px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #656481;
+    border-radius: 10px;
     /* box-shadow: 1px 1px 1px rgb(251, 163, 48); */
     transition: all 0.2s ease-in-out;
 }
 
 .Account-span-box:hover {
-    background: #00BFFF;
-    color: #f1eeee;
+    border: 1px solid orange;
 }
 
 .Account-span-box:hover .Account-span_title{
-    color: #f1eeee;
-}
+    color: orange;
+} 
 
 .Account-span-user {
     display: flex;
@@ -313,16 +314,16 @@
     /* font-family: 'Open Sans', sans-serif; */
     /* font-family: 'Inter', sans-serif; */
     font-family: 'Saira', sans-serif;    
-
-    font-weight: 700;
-    color: #fff;
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+    color: #333;
 }
 
 .Account-span_title_in {
     font-size: 18px;
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Saira', sans-serif;    
-    font-weight: 700;
+    font-weight: 600;
     color: #333;
 }
 
@@ -418,7 +419,7 @@
 .Route-span-style {
     font-size: 18px;
     font-family: 'Saira', sans-serif;    
-    font-weight: 600;
+    font-weight: 500;
     color: #656481;
 }
 

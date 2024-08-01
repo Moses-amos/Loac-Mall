@@ -40,27 +40,27 @@ function ClocksPage(props) {
       superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5,
-        slidesToSlide: 3,
-        partialVisibilityGutter: 40
-      },
-      desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 5,
+        items: 7,
         slidesToSlide: 3,
         partialVisibilityGutter: 30
       },
-      tablet: {
-        breakpoint: { max: 1024, min: 600 },
-        items: 3,
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 7,
         slidesToSlide: 3,
         partialVisibilityGutter: 20
       },
+      tablet: {
+        breakpoint: { max: 1024, min: 600 },
+        items: 4,
+        slidesToSlide: 3,
+        partialVisibilityGutter: 15
+      },
       mobile: {
         breakpoint: { max: 600, min: 0 },
-        items: 2,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 10
+        items: 3,
+        slidesToSlide: 2,
+  
       }
     };
   
@@ -332,25 +332,25 @@ function ClocksPage(props) {
     deviceType={props.deviceType}
     >
 
-  <div className={SelectTabs ===1 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(1); ConnectivityCategory(1)}}
   ><div>
-    <img 
-    src='https://5.imimg.com/data5/SELLER/Default/2023/7/327780487/TT/SN/PX/99946172/plastic-analog-table-clock-500x500.jpeg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img  
+    src='https://i.imgur.com/jEtRuQ4.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Table Clocks</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2); GetWallClocks(); ConnectivityCategory(1)}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/61k6d61hP9L._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/u09ETGD.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Wall Clocks</span>
@@ -358,12 +358,12 @@ function ClocksPage(props) {
     
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(3); GetCuckooClocks(); ConnectivityCategory()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/51ic8muUNIL.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/f8EfT7v.png'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Cuckoo Clocks</span>

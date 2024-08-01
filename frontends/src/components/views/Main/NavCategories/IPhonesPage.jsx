@@ -60,27 +60,26 @@ function IPhonesPage(props) {
       superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5,
+        items: 6,
         slidesToSlide: 3,
         partialVisibilityGutter: 40
       },
       desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 5,
+        items: 6,
         slidesToSlide: 3,
         partialVisibilityGutter: 30
       },
       tablet: {
         breakpoint: { max: 1024, min: 600 },
-        items: 3,
+        items: 4,
         slidesToSlide: 3,
         partialVisibilityGutter: 20
       },
       mobile: {
         breakpoint: { max: 600, min: 0 },
-        items: 2,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 10
+        items: 3,
+        slidesToSlide: 2,
 
       }
     };
@@ -1653,37 +1652,37 @@ const GetOtheriPhones = () => {
     deviceType={props.deviceType}
     >
 
-<div className={SelectTabs ===1 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(1); StorageCategory(0); PhoneModelCategory(0)}}
   ><div>
     <img src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone-14-pro-max-colors.png"
-   className="Image_Large_size"  alt="" />
-  </div>
+   className={SelectTabs ===1 ? "Image_Background_small_size_active" : 'Image_Background_small_size'} alt="" />
+   </div>
   <div className="Image_title_box">
-    <span>All</span>
+    <span>iPhones</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===0 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(0); StorageCategory(1); PhoneModelCategory(1); GetiPhoneFifteens()}}
   ><div>
     <img 
     src='https://i.imgur.com/XTLq7bj.jpg'
-   className="Image_Large_size"  alt="" />
-  </div>
+    className={SelectTabs ===0 ? "Image_Background_small_size_active" : 'Image_Background_small_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>iPhone 15</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2); StorageCategory(1); PhoneModelCategory(1); GetiPhoneFourteens()}}
   ><div>
     <img 
     src='https://res-3.cloudinary.com/grover/image/upload/v1668183806/if5nfatiq3vzalgizmwe.png'
-   className="Image_Large_size"  alt="" />
+    className={SelectTabs ===2 ? "Image_Background_small_size_active" : 'Image_Background_small_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>iPhone 14</span>
@@ -1691,102 +1690,102 @@ const GetOtheriPhones = () => {
     
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(3); StorageCategory(1); PhoneModelCategory(1); GetiPhoneThirteens()}}
   ><div>
     <img 
        src="https://i.imgur.com/Q0ODEcL.jpg"
     // src='https://images-na.ssl-images-amazon.com/images/I/61AwGDDZd3L._AC_UL600_SR600,600_.jpg'
     // src="https://www.elkjop.no/image/dv_web_D180001002838548/361939/iphone-13-pro-5g-smartphone-128gb-gull--pdp_zoom-3000--pdp_main-540.jpg"
-   className="Image_Large_size"  alt="" />
+    className={SelectTabs ===3 ? "Image_Background_small_size_active" : 'Image_Background_small_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>iPhone 13</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===4 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(4); StorageCategory(0); PhoneModelCategory(); GetiPhoneTwelves()}}
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/71hIfcIPyxS._AC_UF1000,1000_QL80_.jpg'
     // src="https://www.mega.pk/items_images/APPLE+IPHONE+12+PRO+MAX+6GB+RAM+256GB+STORAGE+DUAL+SIM+GOLD+Price+in+Pakistan%2C+Specifications%2C+Features_-_20986.webp"
-   className="Image_Large_size"  alt="" />
+    className={SelectTabs ===4 ? "Image_Background_small_size_active" : 'Image_Background_small_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>iPhone 12</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===5 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(5); StorageCategory(0); PhoneModelCategory(); GetiPhoneEleven()}}
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/51XA-n2E0PL._AC_UF894,1000_QL80_.jpg'
     // src='https://istore.co.na/cdn/shop/products/190199220898iPhone1164GBBlack.jp_942d1385-f9b7-42fb-ab05-99500ff4b2c8_2048x.jpg?v=1611573872'
     // src="https://d1eh9yux7w8iql.cloudfront.net/product_images/290035_52f0d766-fbef-4625-959e-38ace3517201.jpg"
-   className="Image_Large_size"  alt="" />
+    className={SelectTabs ===5 ? "Image_Background_small_size_active" : 'Image_Background_small_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>iPhone 11</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===6 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(6); StorageCategory(0); PhoneModelCategory(); GetiPhoneSE()}}
   ><div>
     <img 
     src='https://s7d1.scene7.com/is/image/tracfone/apple-latest-iphonese-black-back?scl=1&fmt=webp-alpha&qlt=80,0&resMode=sharp2&op_usm=1.75,0.3,2,0'
     // src='https://m.media-amazon.com/images/I/81wmQz6ukzL.jpg'
     // src="https://i5.walmartimages.com/seo/Straight-Talk-Apple-iPhone-SE-2022-3rd-Gen-5G-64GB-Red-Prepaid-Smartphone-Locked-to-Straight-Talk_92121213-6d06-4ed2-9601-94a6cfe40971.4a13950cfefb5fa532bae8692808a9d7.jpeg"
-    className="Image_Large_size"  alt="" />
+    className={SelectTabs ===6 ? "Image_Background_small_size_active" : 'Image_Background_small_size'} alt="" />
     </div>
   <div className="Image_title_box">
     <span>iPhone SE</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===7 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(7); StorageCategory(0); PhoneModelCategory(); GetiPhoneXR()}}
   ><div>
     <img src="https://static.digitecgalaxus.ch/Files/3/9/2/4/5/1/8/2/iphone_xr_product-red_digitec-galaxus.jpg"
-   className="Image_Large_size"  alt="" />
-   </div>
+    className={SelectTabs ===7 ? "Image_Background_small_size_active" : 'Image_Background_small_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>iPhone XR</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===8 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(8); StorageCategory(0); PhoneModelCategory(); GetiPhoneEight()}}
   ><div>
     <img src="https://m.media-amazon.com/images/I/61ob-gsAAmL._AC_UF350,350_QL80_.jpg"
-   className="Image_Large_size"  alt="" />
-  </div>
+    className={SelectTabs ===8 ? "Image_Background_small_size_active" : 'Image_Background_small_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>iPhone 8</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===9 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(9); ; StorageCategory(0); PhoneModelCategory(); GetiPhoneSeven()}}
   ><div>
-    <img src="https://files.refurbed.com/ii/iphone-7-1688027195.jpg?t=fitdesign&h=600&w=800"
-   className="Image_Large_size"  alt="" />
-  </div>
+    <img src="https://m.media-amazon.com/images/I/61+Y6Fwf87L._AC_UF1000,1000_QL80_.jpg"
+    className={SelectTabs ===9 ? "Image_Background_small_size_active" : 'Image_Background_small_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>iPhone 7</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===10 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(10); StorageCategory(0); PhoneModelCategory(); GetiPhoneSix()}}
   ><div>
     <img 
-    src='https://i5.walmartimages.com/asr/97a46620-f585-4565-b1f9-2cb6aa09247d_1.12fd6907a0b8e7d7c559b683dee69e0e.jpeg'
+    src='https://i.imgur.com/WBlrjSE.png'
     // src='https://pricehub.ng/wp-content/uploads/thumbs_dir/refurbished-class-a-apple-iphone-6-plus-1gb-ram16gb-rom-gold-pzpavvxckaqowmy1ph2w4cvihjqxhawoph2q217mvc.jpg'
     // src="https://ultimoelectronics.co.uk/wp-content/uploads/2020/09/Refurbished-Sim-Free-Apple-iPhone-6-Space-Grey.jpg"
-   className="Image_Large_size"  alt="" />
+    className={SelectTabs ===10 ? "Image_Background_small_size_active" : 'Image_Background_small_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>iPhone 6</span>
@@ -1807,6 +1806,72 @@ const GetOtheriPhones = () => {
 
 </Carousel>
 
+    </div>
+
+    <div className={SelectTabs ===1 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>iPhones</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===0 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>iPhone 15</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===2 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>iPhone 14</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===3 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>iPhone 13</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===4 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>iPhone 12</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===5 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>iPhone 11</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===6 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>iPhone SE</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===7 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>iPhone XR</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===8 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>iPhone 8</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===9 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>iPhone 7</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===10 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>iPhone 6</span>
+    </div>
     </div>
 
     <div className={SelectTabs ===2 || SelectTabs ===0 || SelectTabs ===3  ? 'Select_tabs_organise' : 'Listed_fetched_products-hide'}>

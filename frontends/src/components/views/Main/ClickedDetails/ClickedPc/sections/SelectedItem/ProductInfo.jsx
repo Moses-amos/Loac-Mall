@@ -239,7 +239,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li> 
             :
@@ -349,7 +349,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li> 
             :
@@ -456,7 +456,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.voltage}</div>
             </li>
             :
@@ -502,7 +502,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.voltage}</div>
             </li>
             :
@@ -572,7 +572,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.voltage}</div>
             </li>
             :
@@ -736,7 +736,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -801,7 +801,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -938,7 +938,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -1002,7 +1002,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -1049,7 +1049,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -1113,7 +1113,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -1206,7 +1206,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -1438,7 +1438,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -1519,7 +1519,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -1647,7 +1647,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -1729,7 +1729,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -1769,7 +1769,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -1810,7 +1810,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -1874,7 +1874,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -1929,7 +1929,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -2018,7 +2018,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -2086,7 +2086,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -2158,7 +2158,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -2246,7 +2246,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -2310,7 +2310,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -2374,7 +2374,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -2426,7 +2426,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -2478,7 +2478,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -2554,7 +2554,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -2619,7 +2619,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -2957,7 +2957,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -3052,7 +3052,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -3123,7 +3123,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -3230,7 +3230,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -3325,7 +3325,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -3634,7 +3634,7 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Storage Capacity:</div>
+                Storage:</div>
                 <div className='Info-productdetail_li-right'>{Product.featureCount}</div>
             </li>
             <li className='Info-productdetail_li'>
@@ -3676,7 +3676,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -3733,7 +3733,7 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Storage Capacity:</div>
+                Storage:</div>
                 <div className='Info-productdetail_li-right'>{Product.featureCount}</div>
             </li>
             <li className='Info-productdetail_li'>
@@ -3786,7 +3786,7 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Storage Capacity:</div>
+                Storage:</div>
                 <div className='Info-productdetail_li-right'>{Product.featureCount}</div>
             </li>
             <li className='Info-productdetail_li'>
@@ -3837,7 +3837,7 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Storage Capacity:</div>
+                Storage:</div>
                 <div className='Info-productdetail_li-right'>{Product.featureCount}</div>
             </li>
             <li className='Info-productdetail_li'>
@@ -3883,7 +3883,7 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Storage Capacity:</div>
+                Storage:</div>
                 <div className='Info-productdetail_li-right'>{Product.featureCount}</div>
             </li>
             <li className='Info-productdetail_li'>
@@ -4130,7 +4130,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -4211,7 +4211,7 @@ src={`http://localhost:5000/${Images[0]}`}
             </li>
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Storage Capacity:</div>
+                Storage:</div>
                 <div className='Info-productdetail_li-right'>{Product.featureCount}</div>
             </li>
             <li className='Info-productdetail_li'>
@@ -5256,7 +5256,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -5838,7 +5838,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.functions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Storage Capacity:</div>
+                Storage:</div>
                 <div className='Info-productdetail_li-right'>{Product.functions}</div>
             </li>
             :
@@ -7275,7 +7275,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.storageCapacity !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Storage Capacity:</div>
+                Storage:</div>
                 <div className='Info-productdetail_li-right'>{Product.storageCapacity === "Not Listed" ? <>{Product.featureCount}</> : <>{Product.storageCapacity}</>}</div>
             </li>
             :
@@ -7329,7 +7329,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.storageCapacity !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Storage Capacity:</div>
+                Storage:</div>
                 <div className='Info-productdetail_li-right'>{Product.storageCapacity === "Not Listed" ? <>{Product.featureCount}</> : <>{Product.storageCapacity}</>}</div>
             </li>
             :
@@ -7401,7 +7401,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -7508,7 +7508,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -7883,7 +7883,7 @@ src={`http://localhost:5000/${Images[0]}`}
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -8411,7 +8411,7 @@ src={`http://localhost:5000/${Images[0]}`}
             :
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
-                <div className='Info-productdetail_li-left'>Item Dimensions:</div>
+                <div className='Info-productdetail_li-left'>Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.weight}</div>
             </li>
             :
@@ -9125,7 +9125,7 @@ Product.product === "Wall Unit" || Product.product === "Tv Stand Cabinet" || Pro
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -9179,7 +9179,7 @@ Product.product === "Accent Chair" || Product.product === "Recliner Chair" || Pr
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -9255,7 +9255,7 @@ Product.product === "Sofa Bed" || Product.product === "Love Seat" || Product.pro
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -9433,7 +9433,7 @@ Product.product === "Kitchen Island" || Product.product === "Bakers Rack" || Pro
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -9673,7 +9673,7 @@ Product.product === "Wardrobe" || Product.product === "Storage Bench" || Product
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -9765,7 +9765,7 @@ Product.product === "Drawar Dresser" || Product.product === "Nightstand" || Prod
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -9853,7 +9853,7 @@ Product.product === "Bookshelf" ?
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -9941,7 +9941,7 @@ Product.product === "Cube Storage Organizer" ?
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -10005,7 +10005,7 @@ Product.product === "Desk Organizer" || Product.product === "Storage Basket" ?
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -10105,7 +10105,7 @@ Product.product === "Outdoor Loveseat" || Product.product === "Outdoor Couch Set
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -10269,7 +10269,7 @@ Product.product === "Baby Crib" || Product.product === "Toddler Bed" || Product.
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -10345,7 +10345,7 @@ Product.product === "Crib Mattress" ?
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -10421,7 +10421,7 @@ Product.product === "Bassinet Bedside-Sleeper" || Product.product === "Travel Be
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -10515,7 +10515,7 @@ Product.product === "Table Lamp" || Product.product === "Floor Lamp" || Product.
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -10615,7 +10615,7 @@ Product.product === "Ceiling Fan" || Product.product === "Fandelier"    ?
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -10718,7 +10718,7 @@ Product.product === "Table Mirror" || Product.product === "Wall Mirror" || Produ
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -10818,7 +10818,7 @@ Product.product === "Scented Candles" || Product.product === "Flameless Candles"
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -11014,7 +11014,7 @@ Product.product === "Artificial Plant" || Product.product === "Artificial Tree" 
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -11083,7 +11083,7 @@ Product.product === "Marble Tiles" || Product.product === "Ceramic Tiles" || Pro
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -11159,7 +11159,7 @@ Product.product === "Linoleum Flooring" || Product.product === "Vinyl Flooring" 
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -11300,7 +11300,7 @@ Product.product === "Instant Pot" || Product.product === "Dutch Oven" || Product
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -11578,7 +11578,7 @@ Product.product === "Food Scale" || Product.product === "Cooking Timer" || Produ
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -11742,7 +11742,7 @@ Product.product === "Base Set" || Product.product === "Bed Frame" || Product.pro
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -11830,7 +11830,7 @@ Product.product === "Mattress" ?
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :
@@ -11931,7 +11931,7 @@ Product.product === "Bunk Bed" || Product.product === "Loft Bed" || Product.prod
             Product && Product.dimensions !== "" ?
             <li className='Info-productdetail_li'>
                 <div className='Info-productdetail_li-left'>
-                Item Dimensions:</div>
+                Dimensions:</div>
                 <div className='Info-productdetail_li-right'>{Product.dimensions}</div>
             </li>
             :

@@ -43,27 +43,27 @@ function SmartWatches(props) {
         superLargeDesktop: {
           // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
-          items: 5,
+          items: 6,
           slidesToSlide: 3,
           partialVisibilityGutter: 40
         },
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 5,
+          items: 6,
           slidesToSlide: 3,
           partialVisibilityGutter: 30
         },
         tablet: {
           breakpoint: { max: 1024, min: 600 },
-          items: 3,
+          items: 4,
           slidesToSlide: 3,
           partialVisibilityGutter: 20
         },
         mobile: {
           breakpoint: { max: 600, min: 0 },
-          items: 2,
-          slidesToSlide: 1,
-          partialVisibilityGutter: 10
+          items: 3,
+          slidesToSlide: 2,
+  
         }
       };
     
@@ -409,6 +409,116 @@ function SmartWatches(props) {
     </div>
 
     <div className='Select_tabs_slider_longer'>
+    {/* <Carousel className='Carosal_style_images' 
+    responsive={responsive}
+    partialVisible={true}
+    swipeable={true}
+    draggable={true}
+    minimumTouchDrag={50}
+    deviceType={props.deviceType}
+    >
+
+  <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(1)}}
+  ><div>
+    <img 
+    src='https://m.media-amazon.com/images/I/61ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg'
+   className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Smart Watches</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(2); GetAppleWatches()}}
+  ><div>
+    <img 
+    src='https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202309_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1693611639254'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Apple</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(3); GetSamsungWatches()}}
+  ><div>
+    <img 
+    src='https://www.elgiganten.se/image/dv_web_D1800010021089916/492754/samsung-galaxy-watch5-44mm-bt-silver.jpg'
+    // src='https://www.swisswatchexpo.com/images/custom-catalog-content/header/tag-heuer.jpg'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Galaxy</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(4); GetHuaweiWatches()}}
+  ><div>
+    <img src="https://cdn1.smartprix.com/rx-izSDy5a8R-w420-h420/huawei-watch-gt-3-se.jpg"
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Huawei</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(5); GetGarminWatches()}}
+  ><div>
+    <img 
+    src='https://i.imgur.com/QcNvTkq.png'
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Garmin</span>
+  </div>
+   </div>
+
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(6); GetReflexActiveWatches()}}
+  ><div>
+    <img 
+    src='https://m.media-amazon.com/images/I/71MvYY4g+BL._AC_CR0%2C0%2C0%2C0_SX352_SY330_.jpg'
+    className={SelectTabs ===6 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Reflex Active</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(7); GetFitbitWatches()}}
+  ><div>
+    <img 
+    src='https://m.media-amazon.com/images/I/61L5Jko2QqL._AC_UF1000,1000_QL80_.jpg'
+    className={SelectTabs ===7 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Fitbit Trackers</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(8)}}
+  ><div>
+    <img 
+    src='https://m.media-amazon.com/images/I/71e83m82p1L._AC_UF1000,1000_QL80_.jpg'
+    className={SelectTabs ===8 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>More Brands</span>
+  </div>
+   </div>
+
+
+</Carousel> */}
     <Carousel className='Carosal_style_images' 
     responsive={responsive}
     partialVisible={true}
@@ -418,38 +528,38 @@ function SmartWatches(props) {
     deviceType={props.deviceType}
     >
 
-  <div className={SelectTabs ===1 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(1)}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/61ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg'
-   className="Image_Large_size" alt="" />
+    <img  
+    src='https://i.imgur.com/66Pvthd.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Smart Watches</span>
+    <span>All</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2); GetAppleWatches()}}
   ><div>
-    <img 
-    src='https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/watch-card-40-ultra2-202309_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1693611639254'
-   className="Image_Large_size" alt="" />
+    <img  
+    src='https://i.imgur.com/pawEEvl.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Apple</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(3); GetSamsungWatches()}}
   ><div>
-    <img 
-    src='https://www.elgiganten.se/image/dv_web_D1800010021089916/492754/samsung-galaxy-watch5-44mm-bt-silver.jpg'
+    <img  
+    src='https://i.imgur.com/rfjoTl1.png'
     // src='https://www.swisswatchexpo.com/images/custom-catalog-content/header/tag-heuer.jpg'
-   className="Image_Large_size" alt="" />
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Galaxy</span>
@@ -457,23 +567,23 @@ function SmartWatches(props) {
     
    </div>
 
-   <div className={SelectTabs ===4 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(4); GetHuaweiWatches()}}
   ><div>
-    <img src="https://cdn1.smartprix.com/rx-izSDy5a8R-w420-h420/huawei-watch-gt-3-se.jpg"
-   className="Image_Large_size" alt="" />
-  </div>
+    <img  src="https://i.imgur.com/DHXGDMs.png"
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Huawei</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===5 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(5); GetGarminWatches()}}
   ><div>
-    <img 
-    src='https://i.imgur.com/QcNvTkq.png'
-   className="Image_Large_size" alt="" />
+    <img  
+    src='https://i.imgur.com/nE8QuUL.png'
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Garmin</span>
@@ -481,39 +591,39 @@ function SmartWatches(props) {
    </div>
 
 
-   <div className={SelectTabs ===6 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(6); GetReflexActiveWatches()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/71MvYY4g+BL._AC_CR0%2C0%2C0%2C0_SX352_SY330_.jpg'
-   className="Image_Large_size" alt="" />
+    <img  
+    src='https://i.imgur.com/WDfj7WK.png'
+    className={SelectTabs ===6 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Reflex Active</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===7 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(7); GetFitbitWatches()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/61L5Jko2QqL._AC_UF1000,1000_QL80_.jpg'
-   className="Image_Large_size" alt="" />
+    <img  
+    src='https://i.imgur.com/N1QV1zk.png'
+    className={SelectTabs ===7 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Fitbit Trackers</span>
+    <span>Fitbit</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===8 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(8)}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/71e83m82p1L._AC_UF1000,1000_QL80_.jpg'
-   className="Image_Large_size" alt="" />
+    <img  
+    src='https://i.imgur.com/gjU0E6S.png'
+    className={SelectTabs ===8 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>More Brands</span>
+    <span>Smart Brands</span>
   </div>
    </div>
 

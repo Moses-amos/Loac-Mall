@@ -44,31 +44,58 @@ const clickSearch = () => setSearchResults(!searchResults)
     }, 1000);
   })
 
+  // const responsive = {
+  //   superLargeDesktop: {
+  //     // the naming can be any, depends on you.
+  //     breakpoint: { max: 4000, min: 3000 },
+  //     items: 6,
+  //     slidesToSlide: 3,
+  //     partialVisibilityGutter: 40
+  //   },
+  //   desktop: {
+  //     breakpoint: { max: 3000, min: 1024 },
+  //     items: 6,
+  //     slidesToSlide: 3,
+  //     partialVisibilityGutter: 30
+  //   },
+  //   tablet: {
+  //     breakpoint: { max: 1024, min: 600 },
+  //     items: 4,
+  //     slidesToSlide: 3,
+  //     partialVisibilityGutter: 20
+  //   },
+  //   mobile: {
+  //     breakpoint: { max: 600, min: 0 },
+  //     items: 3,
+  //     slidesToSlide: 2,
+  //   }
+  // };
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-      slidesToSlide: 3,
-      partialVisibilityGutter: 40
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 6,
       slidesToSlide: 3,
       partialVisibilityGutter: 30
     },
-    tablet: {
-      breakpoint: { max: 1024, min: 600 },
-      items: 3,
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 6,
       slidesToSlide: 3,
       partialVisibilityGutter: 20
     },
+    tablet: {
+      breakpoint: { max: 1024, min: 600 },
+      items: 4,
+      slidesToSlide: 3,
+      partialVisibilityGutter: 15
+    },
     mobile: {
       breakpoint: { max: 600, min: 0 },
-      items: 2,
-      slidesToSlide: 1,
-      partialVisibilityGutter: 10
+      items: 3,
+      slidesToSlide: 2,
+
     }
   };
 
@@ -350,61 +377,97 @@ const getProducts = (variables) => {
     deviceType={props.deviceType}
     >
 
-  <div className={SelectTabs ===1 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(1)}}
   ><div>
-    <img 
-    src='https://pbs.twimg.com/media/F55w5AUW0AEoj9e?format=png&name=small'
-   style={{ width: '100%', height: '140px', padding: '0p 0px 7px 0px'}} alt="" />
-  </div>
+    <img  
+    src='https://i.imgur.com/6cvCsug.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
-    <span>All Speakers</span>
+    <span>All</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2); GetJBL()}}
   ><div>
-    <img 
-    src='https://rukminim1.flixcart.com/image/850/1000/speaker/mobile-speaker/h/j/r/jbl-go-original-imae5hwezvj9ewm5.jpeg?q=90'
-   style={{ width: '100%', height: '140px', padding: '0p 0px 7px 0px'}} alt="" />
-  </div>
+    <img  
+    src='https://i.imgur.com/BPKIyaK.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>JBL</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(3); GetVolkano()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/5149dKjZbSL._AC_.jpg'
-   style={{ width: '100%', height: '140px', padding: '0p 0px 7px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/vwmQqaf.png'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Volkano</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===4 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(4); GetSony()}}
   ><div>
-    <img src="https://media.takealot.com/covers_images/58b2ac0d40b54ab19547236dca847cd7/s-pdpxl.file"
-   style={{ width: '100%', height: '140px', padding: '0p 0px 7px 0px'}} alt="" />
-  </div>
+    <img  src="https://i.imgur.com/ZXOXs8L.png"
+   className={SelectTabs ===4 ? "Image_Background_small_size_active" : 'Image_Background_small_size'} alt="" />
+   </div>
   <div className="Image_title_box">
     <span>Sony</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===5 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(6);}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/derU4rT.png'
+    className={SelectTabs ===6 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Orion</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(7); }}
+  ><div>
+    <img  
+    src='https://trysonos.sg/cdn/shop/products/move-hero_bb13c2ef-0e06-46de-a73d-b012b9c2af0d.png?v=1613456592'
+    className={SelectTabs ===7 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Sonos</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(8);}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/AdKI158.png'
+    className={SelectTabs ===8 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Bose</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(5); GetOther()}}
   ><div>
-    <img 
-    src='https://www.cliqtosave.com/media/catalog/product/cache/b6e757def9170ceba44f3c945fba1c3b/a/m/amp-3305-bk.jpg'
-   style={{ width: '100%', height: '140px', padding: '0p 0px 7px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/BGTLyja.png'
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>More Brands</span>
@@ -415,6 +478,37 @@ const getProducts = (variables) => {
 </Carousel>
 
     </div>
+
+    <div className={SelectTabs ===1 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Speaker Brands</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===2 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>JBL Brand</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs === 3 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Volkano Brand</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===4 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Sony Brand</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===5 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>More Brands</span>
+    </div>
+    </div>
+
     </div>
   </div>
 

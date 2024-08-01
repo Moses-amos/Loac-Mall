@@ -2001,71 +2001,71 @@ function Flatscreens(props) {
     minimumTouchDrag={50}
     deviceType={props.deviceType}
     >
-  <div className={toggleBrands ===0 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+  <div className='Select_image_product_longer'
   onClick={()=> {BrandCategory(0); ToggleSelectTabs(1); ScreenFormDCategory(1)}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/31sXhw7skNS._AC_UF894,1000_QL80_.jpg"
-   className="Image_Mid_size" alt="" />
-  </div>
+    <img  src="https://i.imgur.com/YrU2Efc.png"
+    className={toggleBrands ===0 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>All TVs</span>
   </div>
     
    </div>
 
-   <div className={toggleBrands ===1 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {BrandCategory(1); ToggleSelectTabs(1); ScreenFormDCategory(1); GetSamsung()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/71bdeNqyARL._AC_UF1000,1000_QL80_.jpg"
-   className="Image_Mid_size" alt="" />
-  </div>
+    <img  src="https://i.imgur.com/Kg35Liz.png"
+    className={toggleBrands ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
-    <span>Samsung</span>
+    <span>Samsung Brands</span>
   </div>
     
    </div>
 
-   <div className={toggleBrands ===2 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {BrandCategory(2); ToggleSelectTabs(1); ScreenFormDCategory(1); GetHisense()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/912yXOrPu6L._AC_UF1000,1000_QL80_.jpg"
-   className="Image_Mid_size" alt="" />
-  </div>
+    <img  src="https://i.imgur.com/JHDz9gg.png"
+    className={toggleBrands ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
-    <span>Hisense</span>
+    <span>Hisense Brands</span>
   </div>
    </div>
 
-   <div className={toggleBrands ===3 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {BrandCategory(3); ToggleSelectTabs(1); ScreenFormDCategory(1); GetSony()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/81KbyIky10L._AC_UF894,1000_QL80_.jpg"
-   className="Image_Mid_size" alt="" />
-  </div>
+    <img  src="https://i.imgur.com/k3b29t5.png"
+    className={toggleBrands ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
-    <span>Sony</span>
+    <span>Sony Brands</span>
   </div>
    </div>
 
-   <div className={toggleBrands ===4 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {BrandCategory(4); ToggleSelectTabs(1); ScreenFormDCategory(1); GetTCL()}}
   ><div>
-    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6423/6423898_sd.jpg"
-   className="Image_Mid_size" alt="" />
-  </div>
+    <img  src="https://i.imgur.com/o0V9A7f.png"
+    className={toggleBrands ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
-    <span>TCL</span>
+    <span>TCL Brands</span>
   </div>
    </div>
 
-   <div className={toggleBrands ===5 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {BrandCategory(5); ToggleSelectTabs(1); ScreenFormDCategory(1); GetOther()}}
   ><div>
-    <img src="https://wcctv.co.za/wp-content/uploads/2021/04/STL-55U20UM.png"
-   className="Image_Mid_size" alt="" />
-  </div>
+    <img  src="https://wcctv.co.za/wp-content/uploads/2021/04/STL-55U20UM.png"
+    className={toggleBrands ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
-    <span>Other Brands</span>
+    <span>More Brands</span>
   </div>
    </div>
 

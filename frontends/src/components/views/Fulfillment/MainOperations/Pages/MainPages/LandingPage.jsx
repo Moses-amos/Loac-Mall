@@ -284,8 +284,22 @@ UserData.accountTier === "Free" ? */}
         <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
       </div>
 
-      <div className='Marketer_listing_logo'>
-      <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
+    </div>
+    
+    </div>
+    <div className='Item_listed_Box'>
+    <div className='Item_listed_Details'>
+        <a> <div className='Item_listed_image'>
+        <img className='Item_listed_image_size'src={NoImage} alt="" />
+      </div>
+      <div className='Item_listed_title_box'>
+          <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
+      </div>
+      </a>
+
+      <div className='Item_value_box'>
+        <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
+        <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
       </div>
 
     </div>
@@ -306,8 +320,22 @@ UserData.accountTier === "Free" ? */}
         <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
       </div>
 
-      <div className='Marketer_listing_logo'>
-      <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
+    </div>
+    
+    </div>
+    <div className='Item_listed_Box'>
+    <div className='Item_listed_Details'>
+        <a> <div className='Item_listed_image'>
+        <img className='Item_listed_image_size'src={NoImage} alt="" />
+      </div>
+      <div className='Item_listed_title_box'>
+          <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
+      </div>
+      </a>
+
+      <div className='Item_value_box'>
+        <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
+        <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
       </div>
 
     </div>
@@ -328,8 +356,22 @@ UserData.accountTier === "Free" ? */}
         <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
       </div>
 
-      <div className='Marketer_listing_logo'>
-      <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
+    </div>
+    
+    </div>
+    <div className='Item_listed_Box'>
+    <div className='Item_listed_Details'>
+        <a> <div className='Item_listed_image'>
+        <img className='Item_listed_image_size'src={NoImage} alt="" />
+      </div>
+      <div className='Item_listed_title_box'>
+          <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
+      </div>
+      </a>
+
+      <div className='Item_value_box'>
+        <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
+        <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
       </div>
 
     </div>
@@ -350,10 +392,6 @@ UserData.accountTier === "Free" ? */}
         <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
       </div>
 
-      <div className='Marketer_listing_logo'>
-      <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
-      </div>
-
     </div>
     
     </div>
@@ -370,76 +408,6 @@ UserData.accountTier === "Free" ? */}
       <div className='Item_value_box'>
         <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
         <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
-      </div>
-
-      <div className='Marketer_listing_logo'>
-      <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
-      </div>
-
-    </div>
-    
-    </div>
-    <div className='Item_listed_Box'>
-    <div className='Item_listed_Details'>
-        <a> <div className='Item_listed_image'>
-        <img className='Item_listed_image_size'src={NoImage} alt="" />
-      </div>
-      <div className='Item_listed_title_box'>
-          <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
-      </div>
-      </a>
-
-      <div className='Item_value_box'>
-        <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
-        <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
-      </div>
-
-      <div className='Marketer_listing_logo'>
-      <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
-      </div>
-
-    </div>
-    
-    </div>
-    <div className='Item_listed_Box'>
-    <div className='Item_listed_Details'>
-        <a> <div className='Item_listed_image'>
-        <img className='Item_listed_image_size'src={NoImage} alt="" />
-      </div>
-      <div className='Item_listed_title_box'>
-          <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
-      </div>
-      </a>
-
-      <div className='Item_value_box'>
-        <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
-        <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
-      </div>
-
-      <div className='Marketer_listing_logo'>
-      <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
-      </div>
-
-    </div>
-    
-    </div>
-    <div className='Item_listed_Box'>
-    <div className='Item_listed_Details'>
-        <a> <div className='Item_listed_image'>
-        <img className='Item_listed_image_size'src={NoImage} alt="" />
-      </div>
-      <div className='Item_listed_title_box'>
-          <p className='Item_listed_title_text'>This is where title of the item will be shown.</p>
-      </div>
-      </a>
-
-      <div className='Item_value_box'>
-        <div className='Item_value_saved_box'><span className='Item_value_saved'>Save 0%</span></div>
-        <div className='Item_value_price_box'><span className='Item_value_price'>N$ 0.00</span></div>
-      </div>
-
-      <div className='Marketer_listing_logo'>
-      <img style={{ width: '100%', height: '100%', borderRadius: '7px'}} src="https://i.imgur.com/dpJ1ekD.jpg" alt="" />
       </div>
 
     </div>

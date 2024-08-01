@@ -50,27 +50,27 @@ function PopularWatches(props) {
         superLargeDesktop: {
           // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
-          items: 5,
-          slidesToSlide: 3,
-          partialVisibilityGutter: 40
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 5,
+          items: 6,
           slidesToSlide: 3,
           partialVisibilityGutter: 30
         },
-        tablet: {
-          breakpoint: { max: 1024, min: 600 },
-          items: 3,
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 6,
           slidesToSlide: 3,
           partialVisibilityGutter: 20
         },
+        tablet: {
+          breakpoint: { max: 1024, min: 600 },
+          items: 4,
+          slidesToSlide: 3,
+          partialVisibilityGutter: 15
+        },
         mobile: {
           breakpoint: { max: 600, min: 0 },
-          items: 2,
-          slidesToSlide: 1,
-          partialVisibilityGutter: 10
+          items: 3,
+          slidesToSlide: 2,
+    
         }
       };
     
@@ -621,7 +621,6 @@ function PopularWatches(props) {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -639,7 +638,8 @@ function PopularWatches(props) {
     </div>
 
     <div className='Select_tabs_slider_longer'>
-    <Carousel className='Carosal_style_images' 
+
+<Carousel className='Carosal_style_images' 
     responsive={responsive}
     partialVisible={true}
     swipeable={true}
@@ -648,12 +648,12 @@ function PopularWatches(props) {
     deviceType={props.deviceType}
     >
 
-  <div className={SelectTabs ===1 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(1)}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/61Mm2rrwjEL._AC_UY1000_.jpg'
-   className="Image_Large_size"  alt="" />
+    <img  
+    src='https://i.imgur.com/8RrNdBq.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Police</span>
@@ -661,36 +661,36 @@ function PopularWatches(props) {
     
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2); GetCasio()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/51YF7uhhwTL._AC_UY1000_.jpg'
-   className="Image_Large_size"  alt="" />
+    <img  
+    src='https://i.imgur.com/jnMZIGb.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Casio</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===4 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(4); GetNixon()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/91mhdjSePYL._AC_UY1000_.jpg"
-   className="Image_Large_size"  alt="" />
-  </div>
+    <img  src="https://i.imgur.com/Ida6dNb.png"
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Nixon</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(3); GetSteveMadden()}}
   ><div>
-    <img 
-    src='https://i.pinimg.com/1200x/1d/53/2a/1d532aebb85126d464e67af2a8402180.jpg'
+    <img  
+    src='https://i.imgur.com/IjL0LFA.png'
     // src='https://www.swisswatchexpo.com/images/custom-catalog-content/header/tag-heuer.jpg'
-   className="Image_Large_size"  alt="" />
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Steve Madden</span>
@@ -698,107 +698,108 @@ function PopularWatches(props) {
     
    </div>
 
-   <div className={SelectTabs ===5 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(5); GetDiesel()}}
   ><div>
-    <img 
-    src='https://images-na.ssl-images-amazon.com/images/I/51mNklc86PL.jpg'
-   className="Image_Large_size"  alt="" />
+    <img  
+    src='https://i.imgur.com/U91n09M.png'
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Diesel</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===7 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(7); GetFerro()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/61m59hG9MIL._AC_UY1000_.jpg'
-   className="Image_Large_size"  alt="" />
+    <img  
+    src='https://i.imgur.com/Gl9qx5R.png'
+    className={SelectTabs ===7 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Ferro</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===6 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(6); GetGuess()}}
   ><div>
-    <img 
-    src='https://pbs.twimg.com/media/F6eNpKAWYAAR3De?format=jpg&name=4096x4096'
-   className="Image_Large_size"  alt="" />
-  </div>
+    <img  
+    src='https://i.imgur.com/TenwFUz.png'
+    // src='https://i.imgur.com/VLRmb18.jpg'
+    className={SelectTabs ===6 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Guess</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===8 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(8); GetEmporiorArmani()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/81ZFpqDYIoL._AC_UY1000_.jpg'
-   className="Image_Large_size"  alt="" />
+    <img  
+    src='https://i.imgur.com/hfde4qj.png'
+    className={SelectTabs ===8 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Emporior Armani</span>
+    <span>Emporio</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===9 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(9); GetArmaniExchange()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/81ZAodzxfsL._AC_UY1000_.jpg'
-   className="Image_Large_size"  alt="" />
+    <img  
+    src='https://i.imgur.com/mldWYiX.png'
+    className={SelectTabs ===9 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Armani Exchange</span>
+    <span>Exchange</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===10 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(10); GetTimberland()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/81lMHfLmFZL._AC_UY1000_.jpg'
-   className="Image_Large_size"  alt="" />
+    <img  
+    src='https://i.imgur.com/eUJDuVD.png'
+    className={SelectTabs ===10 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Timberland</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===12 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(12); GetPuma()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/81Jye4lkUJL._AC_UY1000_.jpg'
-   className="Image_Large_size"  alt="" />
+    <img  
+    src='https://i.imgur.com/4GYEuX4.png'
+    className={SelectTabs ===12 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Puma</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===11 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(11); GetMichaelKhors()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/91j9POmdxCL._AC_UY1000_.jpg'
-   className="Image_Large_size"  alt="" />
+    <img  
+    src='https://i.imgur.com/NhdTFZ9.png'
+    className={SelectTabs ===11 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Michael Khors</span>
   </div>
    </div>
 
-
-   {/* <div className={SelectTabs ===13 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+{/* 
+   <div className={SelectTabs ===13 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(13); GetFabiani()}}
   ><div>
-    <img 
+    <img  
     src='https://m.media-amazon.com/images/I/51apVw+FxLL._AC_UY780_.jpg'
    className="Image_Large_size"  alt="" />
   </div>
@@ -807,12 +808,12 @@ function PopularWatches(props) {
   </div>
    </div> */}
 
-   <div className={SelectTabs ===14 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(14); GetSuperdry()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/71uiLbE+q-L._AC_UY1000_.jpg'
-   className="Image_Large_size"  alt="" />
+    <img  
+    src='https://i.imgur.com/CAa4hCz.png'
+    className={SelectTabs ===14 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>SuperDry</span>

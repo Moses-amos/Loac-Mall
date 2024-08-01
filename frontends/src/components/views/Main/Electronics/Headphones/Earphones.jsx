@@ -47,27 +47,27 @@ function Earphones(props) {
       superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5,
-        slidesToSlide: 3,
-        partialVisibilityGutter: 40
-      },
-      desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 5,
+        items: 6,
         slidesToSlide: 3,
         partialVisibilityGutter: 30
       },
-      tablet: {
-        breakpoint: { max: 1024, min: 600 },
-        items: 3,
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 6,
         slidesToSlide: 3,
         partialVisibilityGutter: 20
       },
+      tablet: {
+        breakpoint: { max: 1024, min: 600 },
+        items: 4,
+        slidesToSlide: 3,
+        partialVisibilityGutter: 15
+      },
       mobile: {
         breakpoint: { max: 600, min: 0 },
-        items: 2,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 10
+        items: 3,
+        slidesToSlide: 2,
+  
       }
     };
   
@@ -442,7 +442,7 @@ function Earphones(props) {
     </div>
 
     <div className='Select_tabs_slider'>
-    <Carousel className='Carosal_style_images' 
+    {/* <Carousel className='Carosal_style_images' 
     responsive={responsive}
     partialVisible={true}
     swipeable={true}
@@ -457,7 +457,7 @@ function Earphones(props) {
     <img 
     src='https://pbs.twimg.com/media/F54tED1W0AAhu5e?format=png&name=small'
     // src="https://o.remove.bg/downloads/8515d56a-b04c-47e0-a1e4-070c470b4f94/earbuds-under-50-2048px-7225-2048-2x1-1-removebg-preview.png"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Earbuds</span>
@@ -470,7 +470,7 @@ function Earphones(props) {
   ><div>
     <img 
     src='https://pbs.twimg.com/media/F54tEDsXcAA3nrV?format=png&name=small'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>EarPods</span>
@@ -485,7 +485,7 @@ function Earphones(props) {
     src='https://images.macrumors.com/t/jeSIj6IH-yMuFn6CI44qwcc9Q4o=/800x0/smart/article-new/2019/10/airpods-pro-roundup.jpg?lossy'
     // src='https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV2?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1632861338000'
     // src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1660803972361"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>AirPods</span>
@@ -496,7 +496,7 @@ function Earphones(props) {
   onClick={()=> {ToggleSelectTabs(4); GetHeadphones(); ConnectivityCategory(1)}}
   ><div>
     <img src="https://www.cowinaudio.com/cdn/shop/products/e7-active-noise-cancelling-bluetooth-over-ear-headphones-yellow-cowinaudio-130264_300x.jpg?v=1640058001"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Headphones</span>
@@ -508,7 +508,7 @@ function Earphones(props) {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/615SnzHjhJL._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>PC Headsets</span>
@@ -522,6 +522,91 @@ function Earphones(props) {
     src='https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6376/6376549cv11d.jpg'
    style={{ width: '100%', height: '110px', padding: '5px 0px', borderRadius: '15px', overflow: 'hide'}} alt="" />
   </div>
+  <div className="Image_title_box">
+    <span>AirPods Max</span>
+  </div>
+   </div>
+
+
+</Carousel> */}
+<Carousel className='Carosal_style_images' 
+    responsive={responsive}
+    partialVisible={true}
+    swipeable={true}
+    draggable={true}
+    minimumTouchDrag={50}
+    deviceType={props.deviceType}
+    >
+
+<div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(1); ConnectivityCategory(1)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/wN1UyWm.png'
+    // src="https://o.remove.bg/downloads/8515d56a-b04c-47e0-a1e4-070c470b4f94/earbuds-under-50-2048px-7225-2048-2x1-1-removebg-preview.png"
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Earbuds</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(2); GetEarPods(); ConnectivityCategory()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/0hMNSpD.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>EarPods</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(3); GetAirPods(); ConnectivityCategory()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/UdDG7yn.png'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>AirPods</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(4); GetHeadphones(); ConnectivityCategory(1)}}
+  ><div>
+    <img  src="https://i.imgur.com/Srmzblt.png"
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Headphones</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(5); GetHeadsets(); ConnectivityCategory(1)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/fIM6GOP.png'
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>PC Headsets</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(6); GetAirpodMax(); ConnectivityCategory()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/SQNhyEt.png'
+    className={SelectTabs ===6 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>AirPods Max</span>
   </div>

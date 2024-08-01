@@ -39,27 +39,27 @@ function MediaDevices(props) {
       superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5,
-        slidesToSlide: 3,
-        partialVisibilityGutter: 40
-      },
-      desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 5,
+        items: 7,
         slidesToSlide: 3,
         partialVisibilityGutter: 30
       },
-      tablet: {
-        breakpoint: { max: 1024, min: 600 },
-        items: 3,
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 7,
         slidesToSlide: 3,
         partialVisibilityGutter: 20
       },
+      tablet: {
+        breakpoint: { max: 1024, min: 600 },
+        items: 4,
+        slidesToSlide: 3,
+        partialVisibilityGutter: 15
+      },
       mobile: {
         breakpoint: { max: 600, min: 0 },
-        items: 2,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 10
+        items: 3,
+        slidesToSlide: 2,
+  
       }
     };
   
@@ -293,7 +293,6 @@ function MediaDevices(props) {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -311,12 +310,12 @@ function MediaDevices(props) {
     deviceType={props.deviceType}
     >
 
-   <div className={SelectTabs ===1 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(1); DecoderModelCategory(0)}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/51gC0X25OyL._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/oc8wNpF.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Stream Devices</span>
@@ -324,12 +323,12 @@ function MediaDevices(props) {
     
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2); GetStereoSystems(); DecoderModelCategory(0)}}
   ><div>
-    <img 
-    src='https://5.imimg.com/data5/SELLER/Default/2022/12/SB/OY/IU/181723217/lg-sound-system-5-1-500x500.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/R2vaKUg.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Stereo Systems</span>
@@ -337,24 +336,24 @@ function MediaDevices(props) {
     
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(3); GetBlueRay(); DecoderModelCategory(0)}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/41YGvJFk9EL._AC_UF1000,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/YcIRSIq.png'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Blu-Ray/DVD Players</span>
+    <span>Media Players</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===5 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(5); GetDecoder(); DecoderModelCategory(1)}}
   ><div>
-    <img 
-    src='https://interior.tn/wp-content/uploads/2021/10/Can-I-trade-in-my-DStv-decoder-1.png'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://www.hificorp.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/h/d/hd9s_standalone_ecommerce_4fcf.png'
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Decoders</span>

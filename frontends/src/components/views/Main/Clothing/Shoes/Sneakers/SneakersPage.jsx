@@ -1003,127 +1003,127 @@ const GetDesignerShoes = () => {
     minimumTouchDrag={50}
     deviceType={props.deviceType}
     >
-  <div className={SelectTabs ===1 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(1); ShoeTypeCategory(0)}}
   ><div>
-    <img src="https://www.cleevs.com/cdn/shop/products/product-image-1908242254.jpg?v=1644095497&width=1445"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img src="https://i.imgur.com/eYnmrGZ.png"
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Shoes</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2); ShoeTypeCategory(0); GetNikeShoes()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/71aqRovrexL._AC_UY1000_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img src="https://i.imgur.com/4wV5tvi.png"
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Nike</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(3); ShoeTypeCategory(0); GetAdidasShoes()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/8157VJjXFiL._AC_UY1000_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img src="https://i.imgur.com/nyDnhgw.png"
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Adidas</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===6 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(6); ShoeTypeCategory(0); GetReebokShoes()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/715x-iU0HzL._AC_UY1000_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img src="https://i.imgur.com/AImWnLY.png"
+    className={SelectTabs ===6 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Reebok</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===5 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(5); ShoeTypeCategory(0); GetPumaShoes()}}
   ><div>
     <img 
-    src='https://m.media-amazon.com/images/I/51Q+UbNKbdL._AC_UY1000_.jpg'
+    src='https://i.imgur.com/Il8PVRg.png'
     // src="https://images.stylight.net/image/upload/e_trim/t_web_product_330x440max_nobg/q_auto:eco,f_auto/x6nwvcvrz43xi2srxn0c.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Puma</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===4 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(4); ShoeTypeCategory(); GetNewBalanceShoes()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/71afIMhjDBL._AC_255_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img src="https://i.imgur.com/WRrpHy9.png"
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>New Balance</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===7 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(7); ShoeTypeCategory(); GetAsicsShoes()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/51DGk772hfL._AC_UY780_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img src="https://i.imgur.com/Hh4yyZB.png"
+    className={SelectTabs ===7 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Asics</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===8 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(8); ShoeTypeCategory(); GetSteveMaddenShoes()}}
   ><div>
     <img 
-    src="https://m.media-amazon.com/images/I/71YmxMf0CCL._AC_UY1000_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    src="https://i.imgur.com/9imiN7R.png"
+    className={SelectTabs ===8 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Steve Madden</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===9 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(9); ShoeTypeCategory(); GetSkechersShoes()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/81maij+kVhL._AC_UY1000_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img src="https://i.imgur.com/tA7REFY.png"
+    className={SelectTabs ===9 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Skechers</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===12 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(12); ShoeTypeCategory(); GetDesignerShoes()}}
   ><div>
-    <img src="https://pbs.twimg.com/media/F6fxRmAW4AkvDud?format=jpg&name=large"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img src="https://i.imgur.com/9qGRV2m.png"
+    className={SelectTabs ===12 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Designer Shoes</span>
   </div>
    </div>
 
-   <div className="Select_image_product"
+   <div className='Select_image_product_longer'
   >
     <a href='/sneakers-collections'>
       <div>
     <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F06%2Fadidas-nike-sue-lawsuit-patent-infringement-snkrs-app-info-0.jpeg?w=960&cbr=1&q=90&fit=max"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Adidas & Nike</span>
@@ -1133,12 +1133,12 @@ const GetDesignerShoes = () => {
 
    </div>
 
-   <div className="Select_image_product"
+   <div className='Select_image_product_longer'
   >
     <a href='/explore-sneakers'>
       <div>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7CCEZfmNCKggvkfqT_oKQC69VjUHl5rWZLg&usqp=CAU"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Popular Shoes</span>
@@ -1147,28 +1147,6 @@ const GetDesignerShoes = () => {
     
 
    </div>
-
-   {/* <div className={SelectTabs ===10 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
-  onClick={()=> {ToggleSelectTabs(10); GetLoafers(); ShoeTypeCategory(0)}}
-  ><div>
-    <img src="https://stylesatlife.com/wp-content/uploads/2018/06/Men%E2%80%99s-Mesh-Loafers-and-Moccasin.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
-  </div>
-  <div className="Image_title_box">
-    <span>Loafers</span>
-  </div>
-   </div>
-
-   <div className={SelectTabs ===11 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
-  onClick={()=> {ToggleSelectTabs(11); GetBoatShoes(); ShoeTypeCategory(0)}}
-  ><div>
-    <img src="https://www.rancourtandcompany.com/cdn/shop/products/6024-03_front.jpg?v=1606079857"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
-  </div>
-  <div className="Image_title_box">
-    <span>Boat Shoes</span>
-  </div>
-   </div> */}
 
 </Carousel>
 

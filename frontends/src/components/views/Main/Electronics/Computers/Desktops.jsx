@@ -1175,7 +1175,6 @@ const GetMacMini = () => {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -1193,12 +1192,12 @@ const GetMacMini = () => {
     deviceType={props.deviceType}
     >
 
-  <div className={toggleListedItem ===0 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+<div className='Select_image_product_longer'
   onClick={()=> {ListedItemCategory(0); ToggleSelectTabs(0); MemoryDesktopCategory(1)}}
   ><div>
     <img 
     src='https://i.dell.com/sites/csimages/App-Merchandizing_Images/en/indhs-Inspiron-3020-Small-desktop.png?qlt=90,0&op_usm=1.75,0.3,2,0&resMode=sharp&pscan=auto&fmt=png-alpha&hei=500'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    className={toggleListedItem ===0 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Desktops</span>
@@ -1206,36 +1205,36 @@ const GetMacMini = () => {
     
    </div>
 
-   <div className={toggleListedItem ===1 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ListedItemCategory(1); ToggleSelectTabs(0); MemoryDesktopCategory(1); GetAIO()}}
   ><div>
     <img 
-    src='https://m.media-amazon.com/images/I/61ebAYA-XYL._AC_UF1000,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    src='https://i.imgur.com/i9UxT9Y.png'
+    className={toggleListedItem ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>All in One</span>
   </div>
    </div>
 
-   <div className={toggleListedItem ===2 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ListedItemCategory(2); ToggleSelectTabs(0); MemoryDesktopCategory(); GetiMac()}}
   ><div>
     <img 
-    src='https://m.media-amazon.com/images/I/61AWSyzWrmS._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    src='https://i.imgur.com/wN6myM0.png'
+    className={toggleListedItem ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>iMac</span>
   </div>
    </div>
 
-   <div className={toggleListedItem ===3 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ListedItemCategory(3); ToggleSelectTabs(0); MemoryDesktopCategory(1); GetMiniPc()}}
   ><div>
     <img 
-    src='https://media.bechtle.com/is/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/gallery/935a80be7a604486be59486ecca43b2c?version=0'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    src='https://i.imgur.com/FKXkbnn.png'
+    className={toggleListedItem ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Mini PC</span>
@@ -1243,12 +1242,12 @@ const GetMacMini = () => {
     
    </div>
 
-   <div className={toggleListedItem ===4 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ListedItemCategory(4); ToggleSelectTabs(0); MemoryDesktopCategory(); GetMacMini()}}
   ><div>
     <img 
-    src='https://istore.co.na/cdn/shop/products/MacMini-PF-SpGry-SCREEN_1200x.jpg?v=1598524540'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    src='https://i.imgur.com/wFBfBBr.png'
+    className={toggleListedItem ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Mac Mini & Studio</span>
@@ -1264,7 +1263,7 @@ const GetMacMini = () => {
     >
       <div>
     <img src="https://plecom.imgix.net/bo-643423-header_badges.png?auto=format"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Background_link_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Specify PC</span>
@@ -1277,7 +1276,7 @@ const GetMacMini = () => {
     <a>
       <div>
     <img src="https://m.media-amazon.com/images/I/71fH1bumcBL.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Background_link_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Peripherals</span>
@@ -1290,7 +1289,7 @@ const GetMacMini = () => {
     <a href='/monitors'>
       <div>
     <img src="https://www.hp.com/content/dam/sites/worldwide/personal-computers/consumer/monitors-accessories/computer-monitors-b/HP%20E27%20G5@2x.png"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Background_link_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Monitors</span>
@@ -1303,7 +1302,7 @@ const GetMacMini = () => {
     <a>
       <div>
     <img src="https://m.media-amazon.com/images/I/71nc4XdibXS.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Background_link_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Graphics Cards</span>

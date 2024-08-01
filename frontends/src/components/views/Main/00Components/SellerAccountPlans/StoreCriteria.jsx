@@ -204,9 +204,9 @@ useEffect(() => {
 
 </div>
   <div className="Why_join_right_box">
-  <div>
+  <a href='https://localmall.click/product/656d6d5002a3272290c07fdd'>
       <img style={{ width: '100%',height: '110px', borderRadius: '15px' }} src='https://i.imgur.com/a3A7ho5.jpg'  />
-    </div>
+    </a>
   </div>
 
 </div>

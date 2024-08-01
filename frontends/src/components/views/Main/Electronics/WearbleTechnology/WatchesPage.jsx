@@ -56,27 +56,27 @@ function WatchesPage(props) {
       superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5,
-        slidesToSlide: 3,
-        partialVisibilityGutter: 40
-      },
-      desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 5,
+        items: 6,
         slidesToSlide: 3,
         partialVisibilityGutter: 30
       },
-      tablet: {
-        breakpoint: { max: 1024, min: 600 },
-        items: 3,
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 6,
         slidesToSlide: 3,
         partialVisibilityGutter: 20
       },
+      tablet: {
+        breakpoint: { max: 1024, min: 600 },
+        items: 4,
+        slidesToSlide: 3,
+        partialVisibilityGutter: 15
+      },
       mobile: {
         breakpoint: { max: 600, min: 0 },
-        items: 2,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 10
+        items: 3,
+        slidesToSlide: 2,
+  
       }
     };
   
@@ -529,7 +529,7 @@ const SearchedProducts = Products.map((product, index) => {
     </div>
 
     <div className='Select_tabs_slider'>
-    <Carousel className='Carosal_style_images' 
+    {/* <Carousel className='Carosal_style_images' 
     responsive={responsive}
     partialVisible={true}
     swipeable={true}
@@ -568,8 +568,7 @@ const SearchedProducts = Products.map((product, index) => {
     <a href='/popular-watches'>
       <div>
     <img 
-    src='https://pbs.twimg.com/media/F7XBBdRXoAA-fcj?format=jpg&name=small'
-    // src="https://staticimg.titan.co.in/Helios/Catalog/PL15712JSBL03MW_1.jpg"
+    src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgF32FlR8wvvVO8Y80mfWY7bL5AM0FH7ca8A&usqp=CAU'
    className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
@@ -586,11 +585,7 @@ const SearchedProducts = Products.map((product, index) => {
     <img 
 
     src='https://i.ebayimg.com/images/g/xDgAAOSwrCpiaCIU/s-l1200.jpg'
-    // src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLg7D20KjQgifCprSkWO6xaprGk_Ijz8WZuamS8XXbfpplBLYoEFI6C-XttQc9q21C4VY&usqp=CAU'
-    // src='https://chronexttime.imgix.net/V/4/V46510/V46510_1_det.png?w=570&ar=1:1&auto=format&fm=png&q=55&usm=50&usmrad=1.5&dpr=1&trim=color&fit=fill&auto=compress&bg=FFFFFF&bg-remove=true'
-    // src='https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dw3dd4cfe1/TAG_Heuer_Formula_1/CAZ101AL.FT8052/CAZ101AL.FT8052_0913.png?impolicy=resize&width=1920'
-    // src='https://www.swisswatchexpo.com/images/custom-catalog-content/header/tag-heuer.jpg'
-   
+
    className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
@@ -606,8 +601,6 @@ const SearchedProducts = Products.map((product, index) => {
       <div>
     <img 
     src='https://m.media-amazon.com/images/I/71TIOhVWQ5L.jpg'
-    // src='https://m.media-amazon.com/images/I/51XmJudl4xL._AC_UF894,1000_QL80_.jpg'
-    // src="https://m.media-amazon.com/images/I/61ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg"
    className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
@@ -622,7 +615,117 @@ const SearchedProducts = Products.map((product, index) => {
       <div>
     <img 
       src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj4ZB_vTTtQ8ZWYoiuuV363Yg06fLaneCLcz8BfWrzNmwpyGYYwkFfMIr9x9wU0eOOs3U&usqp=CAU'
-    // src="https://www.krishnawatch.com/cdn/shop/products/DW00100163_66_83348290-4899-43b3-beea-4d76b513e65f.png?v=1668667083"
+   className="Image_Mid_size" alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Women's</span>
+  </div>
+    </a>
+   </div>
+
+   <div className="Select_image_product"
+  >
+    <a >
+      <div>
+    <img 
+    src="https://www.bennettwinch.com/cdn/shop/products/Bennett_Winch_Watch-Roll_Brown_FrontOpen.jpg?v=1632491197"
+   className="Image_Mid_size" alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Watch Accessories</span>
+  </div>
+    </a>
+  
+   </div>
+
+</Carousel> */}
+    <Carousel className='Carosal_style_images' 
+    responsive={responsive}
+    partialVisible={true}
+    swipeable={true}
+    draggable={true}
+    minimumTouchDrag={50}
+    deviceType={props.deviceType}
+    >
+
+<div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(1); ModelOptionCategory(1); WatchTypeCategory(1)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/zd8qlHM.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Watches</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(2); GetFourHundredUpDigital(); ModelOptionCategory(0); WatchTypeCategory()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/Zut08y5.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Digital</span>
+  </div>
+   </div>
+
+
+   <div className="Select_image_product"
+  >
+    <a href='/popular-watches'>
+      <div>
+    <img 
+    src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgF32FlR8wvvVO8Y80mfWY7bL5AM0FH7ca8A&usqp=CAU'
+    className="Image_Mid_size" alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Popular</span>
+  </div>
+    </a>
+  
+   </div>
+
+<div className="Select_image_product"
+  >
+    <a href='/luxury-watches'>
+      <div>
+    <img 
+
+    src='https://i.ebayimg.com/images/g/xDgAAOSwrCpiaCIU/s-l1200.jpg'
+
+   className="Image_Mid_size" alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Luxury</span>
+  </div>
+    </a>
+  
+   </div>
+
+   <div className="Select_image_product"
+  >
+    <a href='/smart-watches'>
+      <div>
+    <img 
+    src='https://m.media-amazon.com/images/I/71TIOhVWQ5L.jpg'
+   className="Image_Mid_size" alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Smart</span>
+  </div>
+    </a>
+   </div>
+
+   <div className="Select_image_product"
+  >
+    <a href='/womens-watches'>
+      <div>
+    <img 
+      src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj4ZB_vTTtQ8ZWYoiuuV363Yg06fLaneCLcz8BfWrzNmwpyGYYwkFfMIr9x9wU0eOOs3U&usqp=CAU'
    className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
@@ -650,49 +753,18 @@ const SearchedProducts = Products.map((product, index) => {
 
     </div>
 
-    <div className={SelectTabs ===1 || SelectTabs ===4 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className={SelectTabs ===1 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
     <div className="Item_option_selected_style">
-        <span>Price Range</span>
+        <span>Main Watches</span>
     </div>
-    </div>
-    <div className={SelectTabs ===1 || SelectTabs ===4 ? 'Select_tabs_organise' : 'Listed_fetched_products-hide'}>
-    <div className={toggleModelOption ===1 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
-        onClick={()=> {ModelOptionCategory(1)}} >
-            <span>Cheap</span>
-          </div>
-          <div className={toggleModelOption ===2 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
-        onClick={()=> {ModelOptionCategory(2); GetNineHundredUp()}} >
-            <span>N$ 900 +</span>
-          </div>
-    <div className={toggleModelOption ===3 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
-        onClick={()=> {ModelOptionCategory(3); GetThousandFiveHundred()}} >
-            <span>N$ 1500 +</span>
-          </div>
-    <div className={toggleModelOption ===4 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
-        onClick={()=> {ModelOptionCategory(4); GetThreeThousandTwoHundred()}} >
-            <span>N$ 3200 +</span>
-          </div>
-          
-          {/* <div className={toggleModelOption ===5 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
-        onClick={()=> {PriceRangeCategory(5); GetFourThousandUp()}} >
-          <span>N$ 6000 +</span>
-          </div> */}
-          {/* <div className={togglePriceRange ===6 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
-        onClick={()=> {PriceRangeCategory(6); GetSevenThousandUp()}} >
-          <span>N$ 7000 +</span>
-          </div>
-          <div className={togglePriceRange ===7 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
-        onClick={()=> {PriceRangeCategory(7); GetElvenThousandUp()}} >
-          <span>N$ 11000 +</span>
-          </div> */}
-
     </div>
 
     <div className={SelectTabs ===2 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
     <div className="Item_option_selected_style">
-        <span>Price Range</span>
+        <span>Digital Watches</span>
     </div>
     </div>
+
     <div className={SelectTabs ===2 ? 'Select_tabs_organise' : 'Listed_fetched_products-hide'}>
     <div className={toggleModelOption ===0 ? 'Phone_option_selected_style active-Ram_option_selected_style' : "Phone_option_selected_style"}
         onClick={()=> {ModelOptionCategory(0)}} >

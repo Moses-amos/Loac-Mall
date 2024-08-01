@@ -43,29 +43,30 @@ function KitchenAppliancesPage(props) {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-      slidesToSlide: 3,
-      partialVisibilityGutter: 40
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 6,
       slidesToSlide: 3,
       partialVisibilityGutter: 30
     },
-    tablet: {
-      breakpoint: { max: 1024, min: 600 },
-      items: 3,
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 6,
       slidesToSlide: 3,
       partialVisibilityGutter: 20
     },
+    tablet: {
+      breakpoint: { max: 1024, min: 600 },
+      items: 4,
+      slidesToSlide: 3,
+      partialVisibilityGutter: 15
+    },
     mobile: {
       breakpoint: { max: 600, min: 0 },
-      items: 2,
-      slidesToSlide: 1,
-      partialVisibilityGutter: 10
+      items: 3,
+      slidesToSlide: 2,
+
     }
   };
+
 
   useEffect(() => {
 
@@ -631,7 +632,6 @@ const GetBundleAppliances = () => {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -641,7 +641,7 @@ const GetBundleAppliances = () => {
     </div>
 
     <div className='Select_tabs_slider'>
-    <Carousel className='Carosal_style_images' 
+    {/* <Carousel className='Carosal_style_images' 
     responsive={responsive}
     partialVisible={true}
     swipeable={true}
@@ -655,7 +655,7 @@ const GetBundleAppliances = () => {
   ><div>
     <img 
     src='https://www.familyhandyman.com/wp-content/uploads/2018/08/kenmore.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Refrigerators</span>
@@ -668,7 +668,7 @@ const GetBundleAppliances = () => {
   ><div>
     <img 
     src='https://i5.walmartimages.com/asr/25ffba08-8d97-47b2-8e23-3bcb10562761.8ddb97f44061664aa6a6d20441ffcbf2.png'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Stoves</span>
@@ -681,7 +681,7 @@ const GetBundleAppliances = () => {
   ><div>
     <img 
     src='https://image.made-in-china.com/202f0j00UkRruFwAbfgb/4-Burners-Stainless-Steel-Easy-Cleaning-Knob-Control-Built-in-Gas-Hob-Gas-Stove.webp'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Cooktops</span>
@@ -692,7 +692,7 @@ const GetBundleAppliances = () => {
   onClick={()=> {ToggleSelectTabs(4); GetWallOvens(); FeaturesCategory()}}
   ><div>
     <img src="https://mobileimages.lowes.com/productimages/873d79f5-8871-4243-824d-2b5f4a4c439d/50147730.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Wall Ovens</span>
@@ -704,7 +704,7 @@ const GetBundleAppliances = () => {
   ><div>
     <img 
     src='https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad/images/000000000001005084_1?1692352536'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Dishwashers</span>
@@ -743,6 +743,114 @@ const GetBundleAppliances = () => {
    className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
+    <span>Sale Bundles</span>
+  </div>
+   </div>
+
+
+</Carousel> */}
+<Carousel className='Carosal_style_images' 
+    responsive={responsive}
+    partialVisible={true}
+    swipeable={true}
+    draggable={true}
+    minimumTouchDrag={50}
+    deviceType={props.deviceType}
+    >
+
+<div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(1); FeaturesCategory(0)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/InOcrhQ.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Refrigerators</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(2); GetRangeStoves(); FeaturesCategory(1)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/qfoynDA.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Stoves</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(3); GetCooktops(); FeaturesCategory(1)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/lL3czY4.png'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Cooktops</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(4); GetWallOvens(); FeaturesCategory()}}
+  ><div>
+    <img  src="https://i.imgur.com/29DU60L.png"
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Wall Ovens</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(5); GetDishwashers(); FeaturesCategory()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/pxO5s04.png'
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Dishwashers</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(6); GetChestFreezers(); FeaturesCategory(1)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/59qpJ66.png'
+    className={SelectTabs ===6 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Freezers</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(7); GetMicrowaves(); FeaturesCategory()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/lGjsKSH.png'
+    className={SelectTabs ===7 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Microwaves</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(8); GetBundleAppliances(); FeaturesCategory()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/PLW3WrK.png'
+    className={SelectTabs ===8 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
     <span>Sale Bundle</span>
   </div>
    </div>
@@ -750,6 +858,54 @@ const GetBundleAppliances = () => {
 
 </Carousel>
 
+    </div>
+
+    <div className={SelectTabs ===1 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Refrigerators</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===2 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Stoves & Ranges</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===3 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Cooktops</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===4 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Oven Appliances</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===5 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Dishwashers</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===6 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Fridges & Freezers</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===7 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Countertop Microwaves</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===8 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Appliance Bundles</span>
+    </div>
     </div>
 
     <div className={SelectTabs ===1 ? 'Select_tabs_organise' : 'Listed_fetched_products-hide'}>

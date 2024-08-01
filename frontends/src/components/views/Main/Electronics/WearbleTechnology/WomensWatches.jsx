@@ -46,27 +46,27 @@ function WomensWatches(props) {
         superLargeDesktop: {
           // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
-          items: 5,
-          slidesToSlide: 3,
-          partialVisibilityGutter: 40
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 5,
+          items: 6,
           slidesToSlide: 3,
           partialVisibilityGutter: 30
         },
-        tablet: {
-          breakpoint: { max: 1024, min: 600 },
-          items: 3,
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 6,
           slidesToSlide: 3,
           partialVisibilityGutter: 20
         },
+        tablet: {
+          breakpoint: { max: 1024, min: 600 },
+          items: 4,
+          slidesToSlide: 3,
+          partialVisibilityGutter: 15
+        },
         mobile: {
           breakpoint: { max: 600, min: 0 },
-          items: 2,
-          slidesToSlide: 1,
-          partialVisibilityGutter: 10
+          items: 3,
+          slidesToSlide: 2,
+    
         }
       };
     
@@ -550,38 +550,38 @@ function WomensWatches(props) {
     deviceType={props.deviceType}
     >
 
-  <div className={SelectTabs ===1 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(1)}}
   ><div>
-    <img 
-    src='https://pbs.twimg.com/media/F7XB6R4WIAAq60Z?format=jpg&name=4096x4096'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img  
+    src='https://i.imgur.com/HEDQmBh.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Tempo</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2); GetFossil()}}
   ><div>
-    <img 
-    src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiq6d8Hw54NemkQWc-KCOspPxbVik2XYe1Islbl4matWDz_szqMm65flh81ixCeTtxtC4&usqp=CAU'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img  
+    src='https://i.imgur.com/kYQqR0i.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Fossil</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(3); GetDanielKlein()}}
   ><div>
-    <img 
-    src='https://i.pinimg.com/1200x/76/ed/b5/76edb5701cb2f9213ac1cd318cba1fe7.jpg'
+    <img  
+    src='https://i.imgur.com/zSiQ6sT.png'
     // src='https://www.swisswatchexpo.com/images/custom-catalog-content/header/tag-heuer.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Daniel Klein</span>
@@ -589,35 +589,35 @@ function WomensWatches(props) {
     
    </div>
 
-   <div className={SelectTabs ===6 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(6); GetSteveMadden()}}
   ><div>
-    <img 
-    src='https://i.pinimg.com/1200x/1d/53/2a/1d532aebb85126d464e67af2a8402180.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/IjL0LFA.png'
+    className={SelectTabs ===6 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Steve Madden</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===4 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(4); GetGuess()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/81wkiAQRYWL._AC_UY1000_.jpg"
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img src="https://i.imgur.com/9COEYzX.png"
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Guess</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===5 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(5); GetSkagen()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/91d3X0UWnTL._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/oWBZZ7n.png'
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Skagen</span>
@@ -625,48 +625,48 @@ function WomensWatches(props) {
    </div>
 
 
-   <div className={SelectTabs ===7 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(7); GetDKNY()}}
   ><div>
-    <img 
-    src='https://www.chic-time.fr/44835/dkny-ny8539-womens-watchbracelet-color-brown-movement-quartz-waterproofing-50-m-dial-color-brown-bracelet-material-stainless-ste.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/dUZYmHw.png'
+    className={SelectTabs ===7 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>DKNY</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===9 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(9); GetAnneKlein()}}
   ><div>
-    <img 
-    src='https://i.pinimg.com/1200x/9e/45/b5/9e45b51b29e19d0f75761a1392be6fdc.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/2QE8WnD.png'
+    className={SelectTabs ===9 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Anne Klein</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===8 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(8); GetNineWest()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/71xoylnc+5S._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/UJuTsNO.png'
+    className={SelectTabs ===8 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Nine West</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===10 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(10); GetMichaelKhors()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/91j9POmdxCL._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/A9HsUr8.png'
+    className={SelectTabs ===10 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Michael Khors</span>

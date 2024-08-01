@@ -2098,7 +2098,7 @@ const onSubmit = (event) => {
 event.preventDefault();
 
 
-if (!TitleValue || !SpecificationValue || !PriceValue || !WarrentyValue || !ImageDetailsOne) {
+if (!TitleValue || !SpecificationValue || !PriceValue || !ImageDetailsOne) {
     return alert('Fill All Necessary Information: Title - Description - Price - Warrenty - ImageDetailsOne')
 }
 
@@ -16311,7 +16311,7 @@ onClick={()=> { TvCategory(2); NoAssemblyRequired()}} >
                                         className='Details-Title_Text_mid_style'>
                                         <span>Screen Size:</span></div>
                                     <div style={{ width: '72%', paddingLeft: '28px'}}><input value={PowerSource}
-                                            onChange={setPowerSource}
+                                            onChange={onPowerSourceChange}
                                             placeholder='include (inches)'
                                             className='Input_two_hundred_Style'
                                             type="text" />

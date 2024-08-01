@@ -37,27 +37,27 @@ function RoomChairs(props) {
       superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5,
-        slidesToSlide: 3,
-        partialVisibilityGutter: 40
-      },
-      desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 5,
+        items: 6,
         slidesToSlide: 3,
         partialVisibilityGutter: 30
       },
-      tablet: {
-        breakpoint: { max: 1024, min: 600 },
-        items: 3,
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 6,
         slidesToSlide: 3,
         partialVisibilityGutter: 20
       },
+      tablet: {
+        breakpoint: { max: 1024, min: 600 },
+        items: 4,
+        slidesToSlide: 3,
+        partialVisibilityGutter: 15
+      },
       mobile: {
         breakpoint: { max: 600, min: 0 },
-        items: 2,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 10
+        items: 3,
+        slidesToSlide: 2,
+  
       }
     };
   
@@ -405,7 +405,6 @@ function RoomChairs(props) {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -423,7 +422,7 @@ function RoomChairs(props) {
     </div>
 
     <div className='Select_tabs_slider'>
-    <Carousel className='Carosal_style_images' 
+    {/* <Carousel className='Carosal_style_images' 
     responsive={responsive}
     partialVisible={true}
     swipeable={true}
@@ -437,7 +436,7 @@ function RoomChairs(props) {
   ><div>
     <img 
     src='https://imageresizer.furnituredealer.net/img/remote/images.furnituredealer.net/img/products%2Fbassett%2Fcolor%2Fmadison%202687%20sofas_2687-12-tan-b3.jpg?width=2500&height=2500&scale=both&trim.threshold=20&trim.percentpadding=0.5'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Chairs</span>
@@ -450,7 +449,7 @@ function RoomChairs(props) {
   ><div>
     <img 
     src='https://i.imgur.com/UiLAAqL.png'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Recliners</span>
@@ -462,7 +461,7 @@ function RoomChairs(props) {
   onClick={()=> {ToggleSelectTabs(3); GetChaiseLounges()}}
   ><div>
     <img src="https://secure.img1-cg.wfcdn.com/im/40937516/resize-h380-w380%5Ecompr-r70/1612/161213876/Foristell+Upholstered+Chaise+Lounge.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Chaise Lounges</span>
@@ -474,7 +473,7 @@ function RoomChairs(props) {
   ><div>
     <img 
     src='https://furnituredeals.com/images/thumbs/0015026_stoneland-fossil-reclining-loveseat_600.jpeg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Lounges Suites</span>
@@ -486,7 +485,7 @@ function RoomChairs(props) {
   ><div>
     <img 
     src='https://img.buzzfeed.com/buzzfeed-static/static/2021-09/24/23/asset/f272a1b6d2e5/sub-buzz-405-1632525412-5.jpg?crop=998:742;0,138&downsize=900:*&output-format=auto&output-quality=auto'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Sectionals</span>
@@ -498,7 +497,7 @@ function RoomChairs(props) {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/81WHJZ5xbML._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Loveseats</span>
@@ -510,7 +509,7 @@ function RoomChairs(props) {
   ><div>
     <img 
     src='https://www.aliss-pr.com/cdn/shop/products/2_9c854455-9d6e-42c1-869a-b4184cf8ffc9.png?v=1674746899'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Couch Beds</span>
@@ -522,7 +521,116 @@ function RoomChairs(props) {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/91JwsDk1q6L._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Futons</span>
+  </div>
+   </div>
+
+
+</Carousel> */}
+
+<Carousel className='Carosal_style_images' 
+    responsive={responsive}
+    partialVisible={true}
+    swipeable={true}
+    draggable={true}
+    minimumTouchDrag={50}
+    deviceType={props.deviceType}
+    >
+
+<div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(1)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/WbAIQG3.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Chairs</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(2); GetRecliners()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/UiLAAqL.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Recliners</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(3); GetChaiseLounges()}}
+  ><div>
+    <img  src="https://i.imgur.com/UBUnWpj.png"
+   className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+   </div>
+  <div className="Image_title_box">
+    <span>Chaise Lounges</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(4); GetSuites()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/X1KFvY8.png'
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Lounges Suites</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(5); GetSectionals()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/0qqFU5d.png'
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Sectionals</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(6); GetLoveSeats()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/fPaWaAL.png'
+    className={SelectTabs ===6 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Loveseats</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(7); GetCouchBeds()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/4Q3jv2x.png'
+    className={SelectTabs ===7 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Couch Beds</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(8); GetFutons()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/JbfI4fB.png'
+    className={SelectTabs ===8 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Futons</span>

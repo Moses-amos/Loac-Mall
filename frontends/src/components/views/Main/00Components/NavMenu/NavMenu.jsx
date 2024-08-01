@@ -294,11 +294,11 @@ return (
         </div>
 
         <div className='Header_close_tag' onClick={() => {setModal(false); setPhoneModal(false)}}>
-        <svg loading='lazy'  stroke="#c25be9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xmlSpace="preserve" aria-hidden="true" role="img" className="lZero-bottom-close-button" height="22" width="22"><path d="M4.75 20c-.19 0-.38-.07-.53-.22a.754.754 0 0 1 0-1.06l14.5-14.5c.29-.29.77-.29 1.06 0s.29.77 0 1.06l-14.5 14.5c-.15.15-.34.22-.53.22z"></path>
+        <svg loading='lazy'  stroke="lightgrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xmlSpace="preserve" aria-hidden="true" role="img" className="lZero-bottom-close-button" height="22" width="22"><path d="M4.75 20c-.19 0-.38-.07-.53-.22a.754.754 0 0 1 0-1.06l14.5-14.5c.29-.29.77-.29 1.06 0s.29.77 0 1.06l-14.5 14.5c-.15.15-.34.22-.53.22z"></path>
         <path d="M19.25 20c-.19 0-.38-.07-.53-.22L4.22 5.28c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l14.5 14.5c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22z"></path></svg>
         </div>
         <div className='Header_close_tag_phone' onClick={() => {setPhoneModal(false); setModal(false)}}>
-        <svg loading='lazy'  stroke="#c25be9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xmlSpace="preserve" aria-hidden="true" role="img" className="lZero-bottom-close-button" height="22" width="22"><path d="M4.75 20c-.19 0-.38-.07-.53-.22a.754.754 0 0 1 0-1.06l14.5-14.5c.29-.29.77-.29 1.06 0s.29.77 0 1.06l-14.5 14.5c-.15.15-.34.22-.53.22z"></path>
+        <svg loading='lazy'  stroke="lightgrey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xmlSpace="preserve" aria-hidden="true" role="img" className="lZero-bottom-close-button" height="22" width="22"><path d="M4.75 20c-.19 0-.38-.07-.53-.22a.754.754 0 0 1 0-1.06l14.5-14.5c.29-.29.77-.29 1.06 0s.29.77 0 1.06l-14.5 14.5c-.15.15-.34.22-.53.22z"></path>
         <path d="M19.25 20c-.19 0-.38-.07-.53-.22L4.22 5.28c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l14.5 14.5c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22z"></path></svg>
         </div>
         </div>
@@ -342,44 +342,44 @@ return (
         </div>   
         }
 
-        <div className='Top_sidebar_categories'>
-          <div className='Top_categories_Select'>
+<div className='Top_sidebar_categories'>
+        <div className='Top_categories_Select'>
           <a className='Top_categories_Select_link_tag'
           href='/portable-speakers'
           ><div className='Top_categories_Select_link'>
             <div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://i5.walmartimages.com/seo/JBL-Flip-4-Waterproof-Portable-Bluetooth-Speaker_5ae2eb48-26b0-4d08-abe7-16737fb35319_1.2bd93a875b18e87efa7535c1ba48fc9a.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF" 
+              <img loading='lazy' src="https://i.imgur.com/eycRl37.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>
             Bluetooth Speakers</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
            href='/iPhones'
           ><div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://powermaccenter.com/cdn/shop/files/iPhone_14_Pro_Deep_Purple_PDP_Image_Position-1b__en-US_33aecbd6-1cfa-4d3b-9a03-b1ae3119551f_823x.jpg?v=1689791496" 
+              <img loading='lazy' src="https://i.imgur.com/WP8EhBm.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>iPhones</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
            href='/living-room'
           ><div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://www.clubfurniture.com/cdn/shop/products/maxinefabricaccent_leander4_1024x1024.jpg?v=1637607987" 
+              <img loading='lazy' src="https://i.imgur.com/h9wesO0.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Furniture</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
            href='/kitchen-appliances'
           ><div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BVIcwXwAE9-NR?format=jpg&name=small" 
+              <img loading='lazy' src="https://i.imgur.com/9derXHd.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Kitchen Appliances</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
            href='/home-decore'
           ><div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BU_MFXgAEUiFQ?format=jpg&name=large" 
+              <img loading='lazy' src="https://i.imgur.com/Hv1r9dG.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Home Decore</div></a></div>
           {/* <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
            href='/special-deals'
@@ -407,46 +407,48 @@ return (
           </div>
           </div>
         </div>
+
         <div className='Top_sidebar_categories'>
           <div className='Top_categories_Select' onClick={() => {SecondCategory(1);FirstCategory()}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BX2J8WwAAo_G5?format=jpg&name=360x360" 
+              <img loading='lazy' src="https://i.imgur.com/kmVmvdB.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Electronics</div></a></div>
           <div className='Top_categories_Select' 
           onClick={() => {SecondCategory(2);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BX2J5XYAAzULe?format=jpg&name=large" 
+              <img loading='lazy' src="https://i.imgur.com/wzuAWJz.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Appliances</div></a></div>
           <div className='Top_categories_Select' 
           onClick={() => {SecondCategory(3);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BX2J5WcAAntdG?format=jpg&name=medium" 
+              <img loading='lazy' src="https://i.imgur.com/Mc7k9WP.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Home, Furniture</div></a></div>
           <div className='Top_categories_Select' 
           onClick={() => {SecondCategory(4);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BX2KCWgAAeJgw?format=jpg&name=small" 
+              <img loading='lazy' src="https://i.imgur.com/fdFRckf.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Clothing & Accessories</div></a></div>
           <div className='Top_categories_Select' 
           onClick={() => {SecondCategory(5);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BYn7BXUAAAILF?format=jpg&name=small" 
+              <img loading='lazy' src="https://i.imgur.com/R4hsPWe.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Video Games</div></a></div>
-         <div className='Top_categories_Select' 
+
+            {/* <div className='Top_categories_Select' 
           onClick={() => {SecondCategory(6);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
@@ -458,7 +460,7 @@ return (
           onClick={() => {SecondCategory(7);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://i5.walmartimages.com/seo/Frigidaire-GCRG3060AF-30-Gallery-Series-Stainless-Steel-Gas-Range-with-5-cu-ft-Oven-Capacity-5-Burners-Air-Fry-and-True-Convection_3bb73b77-f86c-45e3-be8a-c8da573c3a87.4f1f12c54964d1bbfa371b7b84a891af.png" 
+              <img loading='lazy'  src="https://i.imgur.com/vDNYYWP.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Beauty, Personal Care</div></a></div>
@@ -466,7 +468,7 @@ return (
           onClick={() => {SecondCategory(8);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://i5.walmartimages.com/seo/Frigidaire-GCRG3060AF-30-Gallery-Series-Stainless-Steel-Gas-Range-with-5-cu-ft-Oven-Capacity-5-Burners-Air-Fry-and-True-Convection_3bb73b77-f86c-45e3-be8a-c8da573c3a87.4f1f12c54964d1bbfa371b7b84a891af.png" 
+              <img loading='lazy'  src="https://i.imgur.com/6IyMxPe.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Toys, Games</div></a></div>
@@ -474,7 +476,7 @@ return (
           onClick={() => {SecondCategory(9);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://i5.walmartimages.com/seo/Frigidaire-GCRG3060AF-30-Gallery-Series-Stainless-Steel-Gas-Range-with-5-cu-ft-Oven-Capacity-5-Burners-Air-Fry-and-True-Convection_3bb73b77-f86c-45e3-be8a-c8da573c3a87.4f1f12c54964d1bbfa371b7b84a891af.png" 
+              <img loading='lazy'  src="https://i.imgur.com/3UGH7ve.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Bicycles, Skateboords</div></a></div>
@@ -482,7 +484,7 @@ return (
           onClick={() => {SecondCategory(10);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://i5.walmartimages.com/seo/Frigidaire-GCRG3060AF-30-Gallery-Series-Stainless-Steel-Gas-Range-with-5-cu-ft-Oven-Capacity-5-Burners-Air-Fry-and-True-Convection_3bb73b77-f86c-45e3-be8a-c8da573c3a87.4f1f12c54964d1bbfa371b7b84a891af.png" 
+              <img loading='lazy'  src="https://i.imgur.com/5su9qy8.png" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Health Aids</div></a></div>
@@ -490,7 +492,7 @@ return (
           onClick={() => {SecondCategory(11);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://i.imgur.com/VbJATAO.jpg" 
+              <img loading='lazy'  src="https://i.imgur.com/jou48lD.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Fitness</div></a></div>
@@ -499,7 +501,7 @@ return (
           onClick={() => {SecondCategory(12);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://i.imgur.com/6hdUdq4.jpg" 
+              <img loading='lazy'  src="https://i.imgur.com/RmMAdCM.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Sports & Outdoors</div></a></div>
@@ -508,13 +510,15 @@ return (
           onClick={() => {SecondCategory(13);FirstCategory()}}
           ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://i5.walmartimages.com/seo/Frigidaire-GCRG3060AF-30-Gallery-Series-Stainless-Steel-Gas-Range-with-5-cu-ft-Oven-Capacity-5-Burners-Air-Fry-and-True-Convection_3bb73b77-f86c-45e3-be8a-c8da573c3a87.4f1f12c54964d1bbfa371b7b84a891af.png" 
+              <img loading='lazy'  src="https://i.imgur.com/Kuj1fWB.png" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
-            </div>Home Improvements</div></a></div>
+            </div>Home Improvements</div></a></div> */}
 
         </div>
+
         </div>
+
 
         {/* Electronics */}
         <div className={ toggleSecondCategory === 1 ? "Toggle_first_category" : "Toggle_first_category_hide"}>
@@ -533,78 +537,80 @@ return (
           <div className='Top_categories_Select' onClick={() => {ElectronicsCategory(1); 
               SecondCategory()}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BfTY2WYAAY57K?format=jpg&name=small" 
+              <img loading='lazy' src="https://i.imgur.com/06h93CL.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Computers & Accessories</div></a></div>
           <div className='Top_categories_Select' onClick={() => {ElectronicsCategory(2); 
               SecondCategory()}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BfTY6X0AA_AaR?format=jpg&name=medium" 
+              <img loading='lazy' src="https://i.imgur.com/8RdpccE.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Cell Phones, Tablets</div></a></div>
           <div className='Top_categories_Select' 
            onClick={() => {ElectronicsCategory(3); SecondCategory()}}
               ><a>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BgkFwWwAAVh2T?format=jpg&name=medium" 
+              <img loading='lazy' src="https://i.imgur.com/KF0p6ld.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>TVs & Home Theater</div></a></div>
           <div className='Top_categories_Select' 
            onClick={() => {ElectronicsCategory(4); SecondCategory()}}
               ><a>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BfTY0WcAArh1F?format=jpg&name=large" 
+              <img loading='lazy' src="https://i.imgur.com/wh8Ne0v.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Cameras, Camcorders Other</div></a></div>
           <div className='Top_categories_Select' 
            onClick={() => {ElectronicsCategory(5); SecondCategory()}}
               ><a>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BjqkpXUAEgRWB?format=jpg&name=medium" 
+              <img loading='lazy' src="https://i.imgur.com/bgFCKxu.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Headphones & Earbuds</div></a></div>
           <div className='Top_categories_Select' 
            onClick={() => {ElectronicsCategory(6); SecondCategory()}}
               ><a>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BkliZXgAAReMV?format=jpg&name=360x360" 
+              <img loading='lazy' src="https://i.imgur.com/IjXiR0g.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Video Games</div></a></div>
           <div className='Top_categories_Select' 
            onClick={() => {ElectronicsCategory(7); SecondCategory()}}
               ><a>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BjqkrW4AAOr8v?format=jpg&name=large" 
+              <img loading='lazy' src="https://i.imgur.com/YOyQBJ8.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Speakers & Audio Systems</div></a></div>
-          {/* <div className='Top_categories_Select' 
+            <div className='Top_categories_Select' 
            onClick={() => {ElectronicsCategory(8); SecondCategory()}}
               ><a>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BYn7BXUAAAILF?format=jpg&name=small" 
+              <img loading='lazy'  src="https://i.imgur.com/8QnU3Ye.png" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Wearable Technology</div></a></div>
-          <div className='Top_categories_Select' 
+
+            {/* <div className='Top_categories_Select' 
            onClick={() => {ElectronicsCategory(9); SecondCategory()}}
               ><a>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BYn7BXUAAAILF?format=jpg&name=small" 
+              <img loading='lazy'  src="https://i.imgur.com/WkJdR7D.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Wi-Fi & Networking</div></a></div>
+
           <div className='Top_categories_Select' 
            onClick={() => {ElectronicsCategory(10); SecondCategory()}}
               ><a>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BYn7BXUAAAILF?format=jpg&name=small" 
+              <img loading='lazy'  src="https://i.imgur.com/ti6cLUP.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Smart Home, Security</div></a></div>
@@ -612,12 +618,14 @@ return (
            onClick={() => {ElectronicsCategory(11); SecondCategory()}}
               ><a>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BYn7BXUAAAILF?format=jpg&name=small" 
+              <img loading='lazy'  src="https://i.imgur.com/Mo8fzv9.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Auto Electronics</div></a></div> */}
+
         </div>
         </div>
+
 
         {/* Appliances */}
         <div className={ toggleSecondCategory === 2 ? "Toggle_first_category" : "Toggle_first_category_hide"}>
@@ -637,76 +645,76 @@ return (
           href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BxBVPXAAAQ0Nu?format=jpg&name=360x360" 
+              <img loading='lazy' src="https://i.imgur.com/QxDPR8u.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Refrigerators</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BxBTEWAAAGBuh?format=jpg&name=small" 
+              <img loading='lazy' src="https://i.imgur.com/AccU323.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Ranges, Stoves</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8Bw0CDWcAAfyLa?format=jpg&name=360x360" 
+              <img loading='lazy' src="https://i.imgur.com/bKQanOo.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Cooktops</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BxBXMWAAAxKnq?format=jpg&name=900x900" 
+              <img loading='lazy' src="https://i.imgur.com/rXdV7p3.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Wall Ovens</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8Bw0C2XwAEbaTa?format=jpg&name=large" 
+              <img loading='lazy' src="https://i.imgur.com/iVNf0jh.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Dishwashers</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8Bw0C3W8AAiRdz?format=jpg&name=small" 
+              <img loading='lazy' src="https://i.imgur.com/PolM1ee.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Freezers</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8BxBSaXcAAmjCg?format=jpg&name=900x900" 
+              <img loading='lazy' src="https://i.imgur.com/67kFLMA.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Microwaves</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8Bw0B-WIAAe7JN?format=jpg&name=360x360" 
+              <img loading='lazy' src="https://i.imgur.com/sBblbpE.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
+               alt="" />
             </div>Bundle Sale</div></a></div>
           {/* <div className='Top_categories_Select' onClick={() => {AppliancesCategory(1); 
               SecondCategory()}}><a className='Top_categories_Select_link_tag'>
-            <div className='Top_categories_Select_link'>Major kitchen Appliance</div></a></div>
-          <div className='Top_categories_Select' onClick={() => {AppliancesCategory(2); 
+            <div className='Top_categories_Select_link'>Major kitchen Appliance</div></a></div> */}
+          {/* <div className='Top_categories_Select' onClick={() => {AppliancesCategory(2); 
               SecondCategory()}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'>Small kitchen Appliance</div></a></div>
           <div className='Top_categories_Select' onClick={() => {AppliancesCategory(3); 
               SecondCategory()}}><a className='Top_categories_Select_link_tag'>
-            <div className='Top_categories_Select_link'>Washers & Dryers</div></a></div> */}
-          {/* <div className='Top_categories_Select' onClick={() => {AppliancesCategory(4); 
+            <div className='Top_categories_Select_link'>Washers & Dryers</div></a></div> 
+          <div className='Top_categories_Select' onClick={() => {AppliancesCategory(4); 
               SecondCategory()}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'>Cooling, Air Quality</div></a></div>
           <div className='Top_categories_Select' onClick={() => {AppliancesCategory(5); 
@@ -752,14 +760,16 @@ return (
           <div className='Top_categories_Select' onClick={() => {HomeCategory(3); 
               SecondCategory()}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'>Kitchen & Dining</div></a></div> */}
-            <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
+
+            {/* <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/living-room'
           >
             <div className='Top_categories_Select_link'>Furniture</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/home-decore'
           >
-            <div className='Top_categories_Select_link'>Home Decore</div></a></div>
+            <div className='Top_categories_Select_link'>Home Decore</div></a></div> */}
+
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/room-chairs'
           >
@@ -796,12 +806,12 @@ return (
           </div>
         </div>
         <div className='Top_sidebar_categories'>
-          {/* <div className='Top_categories_Select' onClick={() => {ClothesAccessoriesCategory(1); 
+        {/* <div className='Top_categories_Select' onClick={() => {ClothesAccessoriesCategory(1); 
               SecondCategory()}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'>Clothing</div></a></div> */}
-            {/* <div className='Top_categories_Select' onClick={() => {ClothesAccessoriesCategory(5); 
+            <div className='Top_categories_Select' onClick={() => {ClothesAccessoriesCategory(5); 
               SecondCategory()}}><a className='Top_categories_Select_link_tag'>
-            <div className='Top_categories_Select_link'>Top Brands</div></a></div> */}
+            <div className='Top_categories_Select_link'>Top Brands</div></a></div>
           <div className='Top_categories_Select' onClick={() => {ClothesAccessoriesCategory(2); 
               SecondCategory()}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
@@ -809,17 +819,17 @@ return (
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Shoes & Sneakers</div></a></div>
-          {/* <div className='Top_categories_Select' onClick={() => {ClothesAccessoriesCategory(3); 
+            {/* <div className='Top_categories_Select' onClick={() => {ClothesAccessoriesCategory(3); 
               SecondCategory()}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8Bw0B-WIAAe7JN?format=jpg&name=360x360" 
+              <img loading='lazy'  src="https://i.imgur.com/8hV7Qdk.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Jewelry</div></a></div> */}
             <div className='Top_categories_Select' onClick={() => {ClothesAccessoriesCategory(4); 
               SecondCategory()}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8B1wdAWMAAInuQ?format=jpg&name=large" 
+              <img loading='lazy'  src="https://i.imgur.com/WNhIGF3.png" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Watches</div></a></div>
@@ -828,7 +838,7 @@ return (
           // href='/womens-handbags'
           >
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8Bw0B-WIAAe7JN?format=jpg&name=360x360" 
+              <img loading='lazy'  src="https://i.imgur.com/WRLoiqR.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Handbags & Purses</div></a></div>
@@ -836,7 +846,7 @@ return (
           // href='/bags-backpacks'
           >
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8Bw0B-WIAAe7JN?format=jpg&name=360x360" 
+              <img loading='lazy'  src="https://i.imgur.com/rN8DVym.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Bags, Backpacks</div></a></div>
@@ -844,7 +854,7 @@ return (
           // href='/perfumes-Colognes'
           >
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8Bw0B-WIAAe7JN?format=jpg&name=360x360" 
+              <img loading='lazy'  src="https://i.imgur.com/ffGE132.jpg" 
               style={{ width: '100%', height: '100%'}}
              alt="" />
             </div>Perfumes, Colognes</div></a></div>
@@ -852,10 +862,11 @@ return (
           // href='/clothes-accessories'
           >
             <div className='Top_categories_Select_link'><div className='Sidebar_category_image'>
-              <img loading='lazy'  src="https://pbs.twimg.com/media/F8Bw0B-WIAAe7JN?format=jpg&name=360x360" 
+              <img loading='lazy'  src="https://i.imgur.com/4N5ZZy2.jpg" 
               style={{ width: '100%', height: '100%'}}
-             alt="" />
-            </div>Hats, Other</div></a></div> */}
+             alt="" /> 
+            </div>Hats, Other</div></a></div>*/}
+
         </div>
         </div>
 
@@ -947,10 +958,6 @@ return (
           >
             <div className='Top_categories_Select_link'>Baby Playards</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/baby-activity'
-          >
-            <div className='Top_categories_Select_link'>High Chairs & Boosters</div></a></div>
-            {/* <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           // href='/baby-items'
           >
             <div className='Top_categories_Select_link'>Diaper Bags</div></a></div>
@@ -973,7 +980,7 @@ return (
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           // href='/baby-toys'
           >
-            <div className='Top_categories_Select_link'>Baby Toys</div></a></div> */}
+            <div className='Top_categories_Select_link'>Baby Toys</div></a></div>
         </div>
         </div>
 
@@ -1280,11 +1287,11 @@ return (
             <div className='Top_categories_Select_link'>Garden Power Tools</div></a></div>
             <div className='Top_categories_Select'
             // onClick={() => {HomeImprovementsCategory(9); SecondCategory()}}
-            ><a>
+            ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'>Outdoor Tools</div></a></div>
             <div className='Top_categories_Select' 
             // onClick={() => {HomeImprovementsCategory(10); SecondCategory()}}
-              ><a>
+              ><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'>Wood Working</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           // href='/heavy-equipment'
@@ -2060,7 +2067,7 @@ return (
               ClothesAccessoriesCategory()}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'>Men's Shoes</div></a></div> */}
 
-            <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
+        <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/sneakers'
           >
             <div className='Top_categories_Select_link'>Sneakers</div></a></div>
@@ -2074,11 +2081,10 @@ return (
           href='/explore-sneakers'
           >
             <div className='Top_categories_Select_link'>Popular Shoes</div></a></div>
-            {/* <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          href='/soccer-cleats'
+            <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
+          // href='/soccer-cleats'
           >
-            <div className='Top_categories_Select_link'>Soccer Cleats</div></a></div> */}
-            
+            <div className='Top_categories_Select_link'>Soccer Cleats</div></a></div>
         </div>
         </div>
 
@@ -2156,6 +2162,7 @@ return (
            href='/womens-watches'
           >
             <div className='Top_categories_Select_link'>Women's Watches</div></a></div>
+            
         </div>
         </div>
 
@@ -2801,29 +2808,29 @@ return (
         <div className='Top_sidebar_categories'>
 
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/bedding-pillows'
+          href='/living-room'
           >
             <div className='Top_categories_Select_link'>Throw Pillows & Blankets</div></a></div>
 
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/home-decore'
+          href='/living-room'
           >
             <div className='Top_categories_Select_link'>Lights & Lamps</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/home-decore'
+          href='/home-decore'
           >
             <div className='Top_categories_Select_link'>Wall Decore</div></a></div>
 
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/home-decore'
+          href='/living-room'
           >
             <div className='Top_categories_Select_link'>Rugs, Carpets</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/home-decore'
+          href='/mirrors'
           >
             <div className='Top_categories_Select_link'>Mirrors</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/home-decore'
+          href='/clocks'
           >
             <div className='Top_categories_Select_link'>Clocks</div></a></div>
 
@@ -3071,7 +3078,7 @@ return (
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
            href='/living-room'
           >
-            <div className='Top_categories_Select_link'>Wall Unit, Entertaiment Centers</div></a></div>
+            <div className='Top_categories_Select_link'>Wall Unit, TV Centers</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
            href='/living-room'
           >
@@ -3081,35 +3088,35 @@ return (
           >
             <div className='Top_categories_Select_link'>Ottoman Furniture</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/room-pillows'
+          href='/home-decore'
           >
             <div className='Top_categories_Select_link'>Poufs, Floor Pillows</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/living-room'
+           href='/room-chairs'
           >
             <div className='Top_categories_Select_link'>Chairs, Recliners</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/living-room'
+           href='/room-chairs'
           >
             <div className='Top_categories_Select_link'>Chaise Lounges</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/living-room'
+           href='/room-chairs'
           >
-            <div className='Top_categories_Select_link'>Living Room Suites</div></a></div>
+            <div className='Top_categories_Select_link'>Lounge Suites</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/living-room'
+           href='/room-chairs'
           >
             <div className='Top_categories_Select_link'>Sectional Couches</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/living-room'
+           href='/room-chairs'
           >
             <div className='Top_categories_Select_link'>Loveseats</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/living-room'
+           href='/room-chairs'
           >
             <div className='Top_categories_Select_link'>Couch Beds</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/living-room'
+           href='/room-chairs'
           >
             <div className='Top_categories_Select_link'>Futons</div></a></div>
         </div>
@@ -3653,35 +3660,35 @@ return (
         </div>
         <div className='Top_sidebar_categories'>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/kitchen-appliances'
+          href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'>Refrigerators</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/kitchen-appliances'
+          href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'>Ranges, Stoves</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/kitchen-appliances'
+          href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'>Cooktops</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/kitchen-appliances'
+          href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'>Wall Ovens</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/kitchen-appliances'
+          href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'>Dishwashers</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/kitchen-appliances'
+          href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'>Freezers</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/kitchen-appliances'
+          href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'>Microwaves</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-           href='/kitchen-appliances'
+          href='/kitchen-appliances'
           >
             <div className='Top_categories_Select_link'>Bundle Sale</div></a></div>
         </div>
@@ -3999,7 +4006,7 @@ return (
             <div className='Top_categories_Select_link'>Desktops</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'href='/monitors'>
             <div className='Top_categories_Select_link'>Monitors</div></a></div>
-          
+
           {/* <div className='Top_categories_Select' onClick={() => {ElectronicsCategory(); 
               ComputersCategory(1)}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'>Computer Components</div></a></div>
@@ -4025,6 +4032,7 @@ return (
               ComputersCategory(8)}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'>Printers, Scanners</div></a></div> */}
         </div>
+
         </div>
 
         {/* Cell Phones & Tablet Category */}
@@ -4069,12 +4077,12 @@ return (
           // href='/iPads'
           >
             <div className='Top_categories_Select_link'>iPads</div></a></div>
-          {/* <div className='Top_categories_Select' onClick={() => {ElectronicsCategory(); 
+          <div className='Top_categories_Select' onClick={() => {ElectronicsCategory(); 
               PhonesAccessoriesCategory(1)}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'>Phone Accessories</div></a></div>
           <div className='Top_categories_Select' onClick={() => {ElectronicsCategory(); 
               PhonesAccessoriesCategory(2)}}><a className='Top_categories_Select_link_tag'>
-            <div className='Top_categories_Select_link'>Tablet, iPad Accessories</div></a></div> */}
+            <div className='Top_categories_Select_link'>Tablet, iPad Accessories</div></a></div>
         </div>
         </div>
 
@@ -4096,10 +4104,10 @@ return (
            href='/tvs'
           >
             <div className='Top_categories_Select_link'>TVs</div></a></div>
-            {/* <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
+            <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           // href='/sound-bars'
           >
-            <div className='Top_categories_Select_link'>Sound Bars</div></a></div> */}
+            <div className='Top_categories_Select_link'>Sound Bars</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
            href='/media-devices'
           >
@@ -4116,10 +4124,6 @@ return (
           // href='/projectors-screens'
           >
             <div className='Top_categories_Select_link'>Projectors & Screens</div></a></div>
-            {/* <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/wall-mounts'
-          >
-            <div className='Top_categories_Select_link'>Wall Mounts</div></a></div> */}
             
         </div>
         </div>
@@ -4154,7 +4158,7 @@ return (
           href='/cameras'
           >
             <div className='Top_categories_Select_link'>Drones</div></a></div>
-          {/* <div className='Top_categories_Select' onClick={() => {ElectronicsCategory(); 
+          <div className='Top_categories_Select' onClick={() => {ElectronicsCategory(); 
               CameraAccessoriesCategory(1)}}><a className='Top_categories_Select_link_tag'>
             <div className='Top_categories_Select_link'>Camera Accessories</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
@@ -4168,7 +4172,7 @@ return (
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           // href='/editing-software'
           >
-            <div className='Top_categories_Select_link'>Editing Softwares</div></a></div> */}
+            <div className='Top_categories_Select_link'>Editing Softwares</div></a></div>
         </div>
         </div>
 
@@ -4230,7 +4234,7 @@ return (
         <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/playStation-consoles'
           >
-            <div className='Top_categories_Select_link'>PlayStation Consoles</div></a></div>
+            <div className='Top_categories_Select_link'>PlayStations Consoles</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           href='/xbox-consoles'
           >
@@ -4280,7 +4284,7 @@ return (
           href='/media-devices'
           >
             <div className='Top_categories_Select_link'>CD/DVD Players</div></a></div>
-            {/* <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
+            <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           // href='/audio-systems'
           >
             <div className='Top_categories_Select_link'>Boom Boxes</div></a></div>
@@ -4295,7 +4299,7 @@ return (
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
           // href='/audio'
           >
-            <div className='Top_categories_Select_link'>Audio Mixers</div></a></div> */}
+            <div className='Top_categories_Select_link'>Audio Mixers</div></a></div>
         </div>
         </div>
 
@@ -4318,13 +4322,22 @@ return (
           >
             <div className='Top_categories_Select_link'>Watches</div></a></div>
         <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          href='/watches'
+          href='/smart-watches'
           >
             <div className='Top_categories_Select_link'>Smart Watches</div></a></div>
             <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          href='/watches'
+          href='/popular-watches'
           >
-            <div className='Top_categories_Select_link'>Fitness Trackers</div></a></div>
+            <div className='Top_categories_Select_link'>Popular Watches</div></a></div>
+            <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
+          href='/luxury-watches'
+          >
+            <div className='Top_categories_Select_link'>Luxury Watches</div></a></div>
+            <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
+          href='/womens-watches'
+          >
+            <div className='Top_categories_Select_link'>Women's Watches</div></a></div>
+            
         </div>
         </div>
 
@@ -4871,14 +4884,17 @@ return (
           >
             <div className='Top_categories_Select_link'>Microsoft 365/Office & Adobe</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/computer-software'
+          // href='/operating-systems'
           >
             <div className='Top_categories_Select_link'>Operating Systems</div></a></div>
           <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
-          // href='/computer-software'
+          // href='/solid-state-drives'
           >
             <div className='Top_categories_Select_link'>Antivirus & Security</div></a></div>
-
+            <div className='Top_categories_Select'><a className='Top_categories_Select_link_tag'
+            // href='/editing-software'
+            >
+            <div className='Top_categories_Select_link'>Editing Software</div></a></div>
         </div>
         </div>
 
@@ -4991,7 +5007,6 @@ return (
     </div>
     </div>
   </>
-
 )
 }
 

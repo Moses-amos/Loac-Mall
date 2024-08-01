@@ -44,27 +44,27 @@ function XBoxConsoles(props) {
         superLargeDesktop: {
           // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
-          items: 5,
-          slidesToSlide: 3,
-          partialVisibilityGutter: 40
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 5,
+          items: 7,
           slidesToSlide: 3,
           partialVisibilityGutter: 30
         },
-        tablet: {
-          breakpoint: { max: 1024, min: 600 },
-          items: 3,
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 7,
           slidesToSlide: 3,
           partialVisibilityGutter: 20
         },
+        tablet: {
+          breakpoint: { max: 1024, min: 600 },
+          items: 4,
+          slidesToSlide: 3,
+          partialVisibilityGutter: 15
+        },
         mobile: {
           breakpoint: { max: 600, min: 0 },
-          items: 2,
-          slidesToSlide: 1,
-          partialVisibilityGutter: 10
+          items: 3,
+          slidesToSlide: 2,
+    
         }
       };
     
@@ -363,7 +363,7 @@ function XBoxConsoles(props) {
     </div>
 
     <div className='Select_tabs_slider'>
-    <Carousel className='Carosal_style_images' 
+    {/* <Carousel className='Carosal_style_images' 
     responsive={responsive}
     partialVisible={true}
     swipeable={true}
@@ -377,7 +377,7 @@ function XBoxConsoles(props) {
   ><div>
     <img 
     src='https://pbs.twimg.com/media/F56dxeNXcAARkMh?format=png&name=small'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Xbox Series</span>
@@ -390,7 +390,7 @@ function XBoxConsoles(props) {
   ><div>
     <img 
     src='https://m.media-amazon.com/images/I/61RA2sUPu+L._AC_UF1000,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Xbox One</span>
@@ -403,7 +403,56 @@ function XBoxConsoles(props) {
   ><div>
     <img 
     src='https://pbs.twimg.com/media/F56g9AiWIAAcoqY?format=jpg&name=small'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Xbox 360</span>
+  </div>
+   </div>
+
+
+</Carousel> */}
+<Carousel className='Carosal_style_images' 
+    responsive={responsive}
+    partialVisible={true}
+    swipeable={true}
+    draggable={true}
+    minimumTouchDrag={50}
+    deviceType={props.deviceType}
+    >
+
+<div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(1); ConsoleModelCategory(0)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/g0XIOEO.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Xbox Series</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(2); GetXBoxOne(); ConsoleModelCategory(0)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/Q1hhSxt.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Xbox One</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(3); GetXBoxThreeSixty(); ConsoleModelCategory()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/joBquQe.png'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Xbox 360</span>

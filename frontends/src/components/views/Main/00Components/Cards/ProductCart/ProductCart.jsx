@@ -1,6 +1,6 @@
 import React from 'react'
 import ProductImage from '../../../../../assets/ProductImage'
-import CompanyImage from '../../../../../assets/CompanyImage'
+// import CompanyImage from '../../../../../assets/CompanyImage'
 
 function ProductCart(props) {
 
@@ -20,13 +20,13 @@ function ProductCart(props) {
         <div className='Item_value_price_box'><span className='Item_value_price'>N$ {props.product.price}</span></div>
       </div>
 
-      {props.product.retailerImage.length === 1 ? 
+      {/* {props.product.retailerImage.length === 1 ? 
         <div className='Marketer_listing_logo'>
           <CompanyImage retailerImage={props.product.retailerImage} />
         </div>
       :
       <></>
-      }
+      } */}
     
     </div>
     </div>

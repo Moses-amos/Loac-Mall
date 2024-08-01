@@ -62,27 +62,26 @@ function Laptops(props) {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 6,
       slidesToSlide: 3,
       partialVisibilityGutter: 30
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 6,
       slidesToSlide: 3,
       partialVisibilityGutter: 20
     },
     tablet: {
       breakpoint: { max: 1024, min: 600 },
-      items: 3,
+      items: 4,
       slidesToSlide: 3,
-      partialVisibilityGutter: 10
+      partialVisibilityGutter: 15
     },
     mobile: {
       breakpoint: { max: 600, min: 0 },
-      items: 2,
-      slidesToSlide: 1,
-      partialVisibilityGutter: 10
+      items: 3,
+      slidesToSlide: 2,
 
     }
   };
@@ -2448,37 +2447,39 @@ const getProducts = (variables) => {
     minimumTouchDrag={50}
     deviceType={props.deviceType}
     >
-  <div className={SelectTabs ===0 ? 'Select_image_product active_Select_image_product' : 'Select_image_product'}
+  <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(0); RamSelect(0); MemoryLaptopCategory(1)}}
   ><div>
     <img 
-    src='https://t4.ftcdn.net/jpg/02/04/77/17/360_F_204771748_uYPedIV5pHfD4fEYInxh7nepoKPSfveQ.jpg'
-   className="Image_Mid_size" alt="" />
-  </div>
+    src='https://i.imgur.com/wSpBc44.png'
+    className={SelectTabs ===0 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
-    <span>All Laptops</span>
+    <span>All</span>
   </div>
     
    </div>
 
-  <div className={SelectTabs ===1 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(1); RamSelect(0); MemoryLaptopCategory(1); GetAcer()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/91ci4Z+aWOL._AC_UF894,1000_QL80_.jpg"
-   className="Image_Mid_size" alt="" />
-  </div>
+    <img 
+    src='https://i.imgur.com/QaTWjG1.png'
+    // src="https://m.media-amazon.com/images/I/91ci4Z+aWOL._AC_UF894,1000_QL80_.jpg"
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Acer</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2); RamSelect(0); MemoryLaptopCategory(1); GetHP()}}
   ><div>
     <img 
-    src='https://m.media-amazon.com/images/I/91JgTy+n63L._AC_UF894,1000_QL80_.jpg'
-   className="Image_Mid_size" alt="" />
+    src='https://i.imgur.com/VzGZY2g.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>HP</span>
@@ -2486,34 +2487,34 @@ const getProducts = (variables) => {
     
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(3); RamSelect(0); MemoryLaptopCategory(1); GetLenovo()}}
   ><div>
-    <img src="https://cdn11.bigcommerce.com/s-sp9oc95xrw/images/stencil/1280x1280/products/11226/53955/649391_403188_01_front_zoom__09835.1672817971.1280.1280__03801.1677072513.jpg?c=2"
-   className="Image_Mid_size" alt="" />
-  </div>
+    <img src="https://i.imgur.com/M1gfcWR.png"
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Lenovo</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===4 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(4); RamSelect(0); MemoryLaptopCategory(1); GetAsus()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/61+CtxUGH7L._AC_UF894,1000_QL80_.jpg"
-   className="Image_Mid_size" alt="" />
-  </div>
+    <img src="https://i.imgur.com/pk8xHIn.png"
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Asus</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===5 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(5); RamSelect(0); MemoryLaptopCategory(1); GetMacBook()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/717n9H3RSxL._AC_UF894,1000_QL80_.jpg"
-   className="Image_Mid_size" alt="" />
-  </div>
+    <img src="https://i.imgur.com/KbEUN2u.png"
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>MacBook</span>
   </div>
@@ -2530,23 +2531,23 @@ const getProducts = (variables) => {
   </div>
    </div> */}
 
-   <div className={SelectTabs ===8 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(8); RamSelect(0); MemoryLaptopCategory(1); GetSurface()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/71p-M3sPhhL._AC_UF894,1000_QL80_.jpg"
-   className="Image_Mid_size" alt="" />
-  </div>
+    <img src="https://i.imgur.com/2XyWq4X.png"
+    className={SelectTabs ===8 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Surface</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===9 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(9); RamSelect(0); MemoryLaptopCategory(1); GetOther()}}
   ><div>
-    <img src="https://rukminim2.flixcart.com/image/850/1000/kuwzssw0/computer/x/l/a/redmibook-15-pro-thin-and-light-laptop-redmi-original-imag7xhnakyazyma.jpeg?q=90"
-   className="Image_Mid_size" alt="" />
-  </div>
+    <img src="https://i.imgur.com/hTtNDPH.png"
+    className={SelectTabs ===9 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Other Brands</span>
   </div>
@@ -2555,6 +2556,54 @@ const getProducts = (variables) => {
 
 </Carousel>
 
+    </div>
+
+    <div className={SelectTabs ===0 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Laptops</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===1 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Acer Laptops</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===2 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>HP Laptops</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===3 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Lenovo Laptops</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===4 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Asus Laptops</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===5 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>MacBooks</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===8 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>Surface Laptops</span>
+    </div>
+    </div>
+
+    <div className={SelectTabs ===9 ? 'Select_Store_tabs_box' : 'Listed_fetched_products-hide'}>
+    <div className="Item_option_selected_style">
+        <span>More Laptops</span>
+    </div>
     </div>
 
     <div className={SelectTabs !==5 ? 'Select_tabs_organise' : 'Listed_fetched_products-hide'}>

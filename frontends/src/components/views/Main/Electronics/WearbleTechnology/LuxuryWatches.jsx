@@ -44,27 +44,26 @@ function LuxuryWatches(props) {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-      slidesToSlide: 3,
-      partialVisibilityGutter: 40
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 6,
       slidesToSlide: 3,
       partialVisibilityGutter: 30
     },
-    tablet: {
-      breakpoint: { max: 1024, min: 600 },
-      items: 3,
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 6,
       slidesToSlide: 3,
       partialVisibilityGutter: 20
     },
+    tablet: {
+      breakpoint: { max: 1024, min: 600 },
+      items: 4,
+      slidesToSlide: 3,
+      partialVisibilityGutter: 15
+    },
     mobile: {
       breakpoint: { max: 600, min: 0 },
-      items: 2,
-      slidesToSlide: 1,
-      partialVisibilityGutter: 10
+      items: 3,
+      slidesToSlide: 2,
     }
   };
 
@@ -404,7 +403,6 @@ const TagHeuerWatchesPage = TagHeuerWatches.map((product, index) => {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -431,108 +429,110 @@ const TagHeuerWatchesPage = TagHeuerWatches.map((product, index) => {
     deviceType={props.deviceType}
     >
 
-  <div className={SelectTabs ===0 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(0)}}
   ><div>
-    <img 
-    src='https://cdna.lystit.com/400/500/tr/photos/shoppremiumoutlets/a6855e90/omega-designer-blue-Blue-Dial-Watch.jpeg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/7CpsDhJ.png'
+    className={SelectTabs ===0 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Omega</span>
+    <span>Omega Brand</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===1 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(1); GetTagHeuerWatches()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/71T3ruTh0jL._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/7ZdTv7L.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Tag Heuer</span>
+    <span>Tag Heuer Brand</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2); GetRolexWatches()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/61DiSLhxIcS._AC_UY1000_.jpg'
+    <img  
+    src='https://i.imgur.com/iZekFLh.png'
+    // src='https://m.media-amazon.com/images/I/61DiSLhxIcS._AC_UY1000_.jpg'
       // src='https://chronexttime.imgix.net/V/4/V46510/V46510_1_det.png?w=570&ar=1:1&auto=format&fm=png&q=55&usm=50&usmrad=1.5&dpr=1&trim=color&fit=fill&auto=compress&bg=FFFFFF&bg-remove=true'
     // src='https://i.ebayimg.com/images/g/xDgAAOSwrCpiaCIU/s-l1200.jpg'
     // src='https://www.swisswatchexpo.com/images/custom-catalog-content/header/tag-heuer.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Rolex</span>
+    <span>Rolex Brand</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   {/* <div className={SelectTabs ===3 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
   onClick={()=> {ToggleSelectTabs(3); GetAudemarsPiguetWatches()}}
   ><div>
     <img 
+     
     // src='https://watchesoff5th.com/cdn/shop/products/audemars-piguet-royal-oak-selfwinding-18k-rose-gold-black-dial-ref15500oroo1220or01-657485_800x.jpg?v=1679412439'
     src="https://cdn.shopify.com/s/files/1/0070/2732/7039/products/audemars-piguet-royal-oak-chronograph-watch-blue-dial-41mm-26331orood315cr01-871443_300x300.jpg?v=1592904289"
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+   className="Image_Large_size"  alt="" />
   </div>
   <div className="Image_title_box">
     <span>Audemars Piguet</span>
   </div>
-   </div>
+   </div> */}
 
-   <div className={SelectTabs ===4 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(4); GetCartierWatches()}}
   ><div>
-    <img 
-    src='https://i5.walmartimages.com/asr/9d0fa3ed-b187-4bbe-894a-8b2d1c81dace.128ff47d034c48de5da0af5f1110165b.jpeg?odnHeight=432&odnWidth=320&odnBg=FFFFFF'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/D7RJonZ.png'
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Cartier</span>
+    <span>Cartier Brand</span>
   </div>
    </div>
 
 
-   <div className={SelectTabs ===5 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(5); GetBreitlingWatches()}}
   ><div>
-    <img 
-    src='https://www.swissluxury.com/product_images/400/A17326161C1P1.jpg'
+    <img  
+    src='https://i.imgur.com/Pl84vwN.png'
     // src='https://m.media-amazon.com/images/I/61tdbsQmX3L._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Breitling</span>
+    <span>Breitling Brand</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===6 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(6); GetLonginesWatches()}}
   ><div>
-    <img 
-    src='https://images-na.ssl-images-amazon.com/images/I/61YMnSSm6OL._AC_UX522_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/1sqGNRk.png'
+    className={SelectTabs ===6 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Longines</span>
+    <span>Longines Brand</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===7 ? 'Select_image_product_longer active_Select_image_product_longer' : "Select_image_product_longer"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(7); GetMoreLuxuryWatches()}}
   ><div>
     <img 
     // src='https://m.media-amazon.com/images/I/71bPNeYJ6ML._AC_SS130_.jpg'
-    src='https://m.media-amazon.com/images/I/71gnZhQv95L._AC_UY1000_.jpg'
-   style={{ width: '100%', height: '230px', padding: '5px 0px'}} alt="" />
+    src='https://i.imgur.com/AeV87qw.png'
+    className={SelectTabs ===7 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>More</span>
+    <span>More Brands</span>
   </div>
    </div>
 

@@ -5,7 +5,7 @@ import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 
 import '../../00Components/pages.css'
-import SearchBar from '../../00Components/SearchBar/SearchBar'
+// import SearchBar from '../../00Components/SearchBar/SearchBar'
 import {Bars} from "react-loader-spinner";
 import SearchedCart from '../../00Components/Cards/SearchedProductCart/SearchedCart'
 import ProductCart from '../../00Components/Cards/ProductCart/ProductCart'
@@ -409,7 +409,6 @@ function CamerasPage(props) {
     
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -428,12 +427,12 @@ function CamerasPage(props) {
     deviceType={props.deviceType}
     >
 
-   <div className={SelectTabs ===2 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2)}}
   ><div>
-    <img 
-    src='https://www.photographyblog.com/imager/entryimages/2255/nikon_coolpix_p310_review_8c9cd6ffa9b02044a7a3327bc82c5649.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/JhnH7W9.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Compact</span>
@@ -441,84 +440,84 @@ function CamerasPage(props) {
     
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(3); GetDSLRCameras()}}
   ><div>
-    <img 
-    src='https://rukminim2.flixcart.com/image/850/1000/camera/s/4/g/nikon-d3200-dslr-original-imaeyxfayjnxjvg9.jpeg?q=20'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/Onc0dH5.png'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>DSLR</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===4 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(4); GetMirrorlessCameras()}}
   ><div>
-    <img src="https://m.media-amazon.com/images/I/71-tVvNOvML._AC_UF894,1000_QL80_.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
-  </div>
+    <img src="https://i.imgur.com/mKjgUVD.png"
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Mirrorless</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===6 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(6); GetActionCameras()}}
   ><div>
-    <img 
-    src='https://specials-images.forbesimg.com/imageserve/5d5d72622dedcb0008e0bb42/The-GoPro-Hero-7-Black-is-an-industry-standard-for-a-reason-/960x0.jpg?cropX1=125&cropX2=1425&cropY1=257&cropY2=988'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/9350Uzz.png'
+    className={SelectTabs ===6 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Action Cameras</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===7 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(7); GetCamcorders()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/61hOOTIr26L._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/XSnDbYH.png'
+    className={SelectTabs ===7 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Camcorders</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===5 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(5); GetInstantCameras()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/31xkWPXI1dL._AC_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/PK4L4AS.png'
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Instant Cameras</span>
+    <span>Instant Camera</span>
   </div>
    </div>
 
    
-   <div className={SelectTabs ===8 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(8); GetWebcamCameras()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/61yo4swj-PL._AC_UF894,1000_QL80_.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/fTReYoS.png'
+    className={SelectTabs ===8 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Webcams</span>
   </div>
    </div>
 
-   <div className={SelectTabs ===9 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(9); GetDrone()}}
   ><div>
-    <img 
-    src='https://m.media-amazon.com/images/I/511qE6xcTNL.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    <img  
+    src='https://i.imgur.com/919zJ4v.png'
+    className={SelectTabs ===9 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>Drones</span>
@@ -529,6 +528,7 @@ function CamerasPage(props) {
 </Carousel>
 
     </div>
+    
     </div>
   </div>
 

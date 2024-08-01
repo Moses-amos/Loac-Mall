@@ -2,11 +2,15 @@ import React, { useEffect, useState } from 'react'
 import Axios from 'axios'
 import '../00Components/pages.css'
 import './homepage.css'
-// import SearchBar from '../00Components/SearchBar/SearchBar'
-import {Bars} from "react-loader-spinner";
+
 import Carousel from "react-multi-carousel";
+import 'react-multi-carousel/lib/styles.css';
+
+import {Bars} from "react-loader-spinner";
 // import NoAdSlider from './components/ImageSlider/NoAdSlider'
+import MiniDeviceEmpty from '../00Components/Cards/MiniCard/MiniDeviceEmpty'
 import SearchedCart from '../00Components/Cards/SearchedProductCart/SearchedCart';
+
 
 function _Home(props) {
 
@@ -25,27 +29,33 @@ const clickSearch = () => setSearchResults(!searchResults)
 
 const SetLocation = () => setToggleLocation(!ToggleLocation)
 
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 1,
-    slidesToSlide: 1,
+    items: 5,
+    slidesToSlide: 2,
+    partialVisibilityGutter: 15
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 1,
-    slidesToSlide: 1,
+    items: 5,
+    slidesToSlide: 2,
+    partialVisibilityGutter: 15
   },
   tablet: {
     breakpoint: { max: 1024, min: 600 },
-    items: 1,
-    slidesToSlide: 1,
+    items: 3,
+    slidesToSlide: 2,
+    partialVisibilityGutter: 85
   },
   mobile: {
     breakpoint: { max: 600, min: 0 },
-    items: 1,
-    slidesToSlide: 1,
+    items: 2,
+    slidesToSlide: 2,
+    partialVisibilityGutter: 10
+
   }
 };
 
@@ -261,6 +271,32 @@ return (
           </div>
         </div>
 
+        <div className='Apple_product_category'>
+        <span className='Home_page_categories_text'>Apple Tech</span>
+        </div>
+
+        <div className='Apple_items_slider'>
+    <Carousel className='Carosal_style_images' 
+    responsive={responsive}
+    partialVisible={true}
+    swipeable={true}
+    draggable={true}
+    minimumTouchDrag={50}
+    // removeArrowOnDeviceType={["tablet", "mobile"]}
+    deviceType={props.deviceType}
+    >
+      <MiniDeviceEmpty />
+      <MiniDeviceEmpty />
+      <MiniDeviceEmpty />
+      <MiniDeviceEmpty />
+      <MiniDeviceEmpty />
+      <MiniDeviceEmpty />
+      <MiniDeviceEmpty />
+
+</Carousel>
+
+    </div> 
+
         <div className='Popular_product_categories'>
           <h2 className='Home_page_categories_text'>Trending Items</h2></div>
 
@@ -269,8 +305,8 @@ return (
        <div className='Category_box_top'>
                 <a href='/laptops'>
                 <div className='Category_box_top_image'>
-                <img  style={{width: '100%', height: '100%'}} alt=''
-                src='https://i.imgur.com/JX14V8v.png'
+                <img  style={{width: '100%', height: '100%'}} loading='lazy' alt=''
+                src='https://i.imgur.com/BFEWsQM.jpg'
                 />
               </div>
               <div className='Category_box_bottom_section'>
@@ -283,8 +319,8 @@ return (
                 href='/desktops'
                 >
                 <div className='Category_box_top_image'>
-                <img  style={{width: '100%', height: '100%'}} alt=''
-                src='https://i.imgur.com/fySZNH7.png'
+                <img  style={{width: '100%', height: '100%'}} loading='lazy' alt=''
+                src='https://i.imgur.com/fziU7EC.jpg'
            />
               </div>
               <div className='Category_box_bottom_section'>
@@ -297,8 +333,8 @@ return (
                href="/tvs"
               >
                 <div className='Category_box_top_image'>
-                <img  style={{width: '100%', height: '100%'}} alt=''
-              src='https://i.imgur.com/hZMrs46.png'
+                <img  style={{width: '100%', height: '100%'}} loading='lazy' alt=''
+              src='https://i.imgur.com/QUQ4n0F.jpg'
               />
               </div>
               <div className='Category_box_bottom_section'>
@@ -311,8 +347,8 @@ return (
               href='/iphones'
               >
                 <div className='Category_box_top_image'>
-                <img  style={{width: '100%', height: '100%'}} alt=''
-                src='https://i.imgur.com/HFs78ZL.png'
+                <img  style={{width: '100%', height: '100%'}} loading='lazy' alt=''
+                src='https://i.imgur.com/2mlcwyp.jpg'
                 />
               </div>
               <div className='Category_box_bottom_section'>
@@ -325,8 +361,8 @@ return (
                 href='/sneakers'
                 >
                 <div className='Category_box_top_image'>
-                <img  style={{width: '100%', height: '100%'}} alt=''
-                src='https://i.imgur.com/QvECNRR.png'
+                <img  style={{width: '100%', height: '100%'}} loading='lazy' alt=''
+                src='https://i.imgur.com/0km6VTk.jpg'
                 />
               </div>
               <div className='Category_box_bottom_section'>
@@ -339,8 +375,8 @@ return (
               href="/earphones-audio"
               >
                 <div className='Category_box_top_image'>
-                <img  style={{width: '100%', height: '100%'}} alt=''
-              src='https://i.imgur.com/wSyDYeZ.png'
+                <img  style={{width: '100%', height: '100%'}} loading='lazy' alt=''
+              src='https://i.imgur.com/3He9IuV.jpg'
               />
               </div>
               <div className='Category_box_bottom_section'>
@@ -355,8 +391,8 @@ return (
                   href='/living-room'
                 >
                 <div className='Category_box_top_image'>
-                <img  style={{width: '100%', height: '100%'}} alt=''
-                src='https://i.imgur.com/PlrHS1N.png'
+                <img  style={{width: '100%', height: '100%'}} loading='lazy' alt=''
+                src='https://i.imgur.com/gT3j1EK.jpg'
                 />
               </div>
               <div className='Category_box_bottom_section'>
@@ -367,8 +403,8 @@ return (
               <div className='Category_box_top'>
               <a href="/home-decore">
                 <div className='Category_box_top_image'>
-                <img  style={{width: '100%', height: '100%'}} alt=''
-              src='https://i.imgur.com/Dbf2bdH.png'
+                <img  style={{width: '100%', height: '100%'}} loading='lazy' alt=''
+              src='https://i.imgur.com/qyuGdcE.jpg'
               />
               </div>
               <div className='Category_box_bottom_section'>
@@ -379,8 +415,8 @@ return (
               <div className='Category_box_top'>
               <a href='/kitchen-appliances'>
                 <div className='Category_box_top_image'>
-                <img  style={{width: '100%', height: '100%'}} alt=''
-                src='https://i.imgur.com/2jLYlWT.png'
+                <img  style={{width: '100%', height: '100%'}} loading='lazy' alt=''
+                src='https://i.imgur.com/34yYr9E.jpg'
                 />
               </div>
               <div className='Category_box_bottom_section'>
@@ -391,8 +427,8 @@ return (
               <div className='Category_box_top'>
               <a href="/portable-speakers">
                 <div className='Category_box_top_image'>
-                <img  style={{width: '100%', height: '100%'}} alt=''
-              src='https://i.imgur.com/ZPOqRns.png'
+                <img  style={{width: '100%', height: '100%'}} loading='lazy' alt=''
+              src='https://i.imgur.com/M2SgexZ.jpg'
               />
               </div>
               <div className='Category_box_bottom_section'>
@@ -406,7 +442,7 @@ return (
               >
                 <div className='Category_box_top_image'>
                 <img loading='lazy' style={{width: '100%', height: '100%'}} alt=''
-                src='https://i.imgur.com/l1ZJs49.png'
+                src='https://i.imgur.com/h9ir2V1.jpg'
               />
               </div>
               <div className='Category_box_bottom_section'>
@@ -420,7 +456,7 @@ return (
               >
                 <div className='Category_box_top_image'>
                 <img loading='lazy' style={{width: '100%', height: '100%'}} alt=''
-                src='https://i.imgur.com/F4ES6V5.png'
+                src='https://i.imgur.com/WQT54na.jpg'
                 />
               </div>
               <div className='Category_box_bottom_section'>
@@ -435,7 +471,7 @@ return (
               >
                 <div className='Category_box_top_image'>
                 <img loading='lazy' style={{width: '100%', height: '100%'}} alt=''
-                src='https://i.imgur.com/WOap4g9.png'
+                src='https://i.imgur.com/xxgYU85.jpg'
                 />
               </div>
               <div className='Category_box_bottom_section'>
@@ -449,7 +485,7 @@ return (
               >
                 <div className='Category_box_top_image'>
                 <img loading='lazy' style={{width: '100%', height: '100%'}} alt=''
-              src='https://i.imgur.com/CSovSG8.png'
+              src='https://i.imgur.com/rF4r5eM.jpg'
               />
               </div>
               <div className='Category_box_bottom_section'>
@@ -463,7 +499,7 @@ return (
               >
                 <div className='Category_box_top_image'>
                 <img loading='lazy' style={{width: '100%', height: '100%'}} alt=''
-                src='https://i.imgur.com/JvNC0hM.png'
+                src='https://i.imgur.com/HSDalj6.jpg'
                 />
               </div>
               <div className='Category_box_bottom_section'>

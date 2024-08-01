@@ -30,26 +30,27 @@ function SneakerDesigners(props) {
         superLargeDesktop: {
           // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
-          items: 5,
-          slidesToSlide: 3,
-          partialVisibilityGutter: 40
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 5,
+          items: 6,
           slidesToSlide: 3,
           partialVisibilityGutter: 30
         },
-        tablet: {
-          breakpoint: { max: 1024, min: 600 },
-          items: 3,
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 6,
           slidesToSlide: 3,
           partialVisibilityGutter: 20
         },
+        tablet: {
+          breakpoint: { max: 1024, min: 600 },
+          items: 4,
+          slidesToSlide: 3,
+          partialVisibilityGutter: 15
+        },
         mobile: {
           breakpoint: { max: 600, min: 0 },
-          items: 2,
-          slidesToSlide: 1,
+          items: 3,
+          slidesToSlide: 2,
+    
         }
       };
 
@@ -300,7 +301,7 @@ function SneakerDesigners(props) {
     </div>
 
   <div className='Select_tabs_slider'>
-    <Carousel className='Carosal_style_images' 
+    {/* <Carousel className='Carosal_style_images' 
     responsive={responsive}
     partialVisible={true}
     swipeable={true}
@@ -312,7 +313,7 @@ function SneakerDesigners(props) {
   onClick={()=> {ToggleSelectTabs(1)}}
   ><div>
     <img src="https://footwearnews.com/wp-content/uploads/2023/01/JORDAN-MELO-M12-DZ5485_410_E_PREM-e1673279543327.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Air Jordans</span>
@@ -324,7 +325,7 @@ function SneakerDesigners(props) {
   onClick={()=> {ToggleSelectTabs(2)}}
   ><div>
     <img src="https://cdn.shopify.com/s/files/1/2358/2817/products/nike-air-force-1-low-black-blue-lightning-2.png?v=1673276869"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Air Force 1</span>
@@ -336,7 +337,7 @@ function SneakerDesigners(props) {
   onClick={()=> {ToggleSelectTabs(3)}}
   ><div>
     <img src="https://i.ebayimg.com/images/g/l3gAAOSwEU5jYc68/s-l1200.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Air Max</span>
@@ -347,7 +348,7 @@ function SneakerDesigners(props) {
   onClick={()=> {ToggleSelectTabs(4)}}
   ><div>
     <img src="https://www.nikesb.com/assets/imager/uploads/59713/PassPort-Pair-crop2_bd624c85e984eb4b3e5bbc5eb4b33f00.png"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Nike Dunk</span>
@@ -358,8 +359,75 @@ function SneakerDesigners(props) {
   onClick={()=> {ToggleSelectTabs(5); GetAdidasShoes()}}
   ><div>
     <img src="https://cdn.shopify.com/s/files/1/2999/5106/products/True-to-Sole-AdidasYeezyFoamRNNRVermillion-GW3355-03_800x.png"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
+  <div className="Image_title_box">
+    <span>Adidas Yeezy</span>
+  </div>
+   </div>
+
+
+</Carousel> */}
+<Carousel className='Carosal_style_images' 
+    responsive={responsive}
+    partialVisible={true}
+    swipeable={true}
+    draggable={true}
+    minimumTouchDrag={50}
+    deviceType={props.deviceType}
+    >
+  <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(1)}}
+  ><div>
+    <img src="https://i.imgur.com/L2saXg8.png"
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Air Jordans</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(2)}}
+  ><div>
+    <img src="https://i.imgur.com/X6cX5OD.png"
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Air Force 1</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(3)}}
+  ><div>
+    <img src="https://i.imgur.com/sW273LC.png"
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Air Max</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(4)}}
+  ><div>
+    <img src="https://i.imgur.com/L2saXg8.png"
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Nike Dunk</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(5); GetAdidasShoes()}}
+  ><div>
+    <img src="https://cdn.shopify.com/s/files/1/2999/5106/products/True-to-Sole-AdidasYeezyFoamRNNRVermillion-GW3355-03_800x.png"
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
   <div className="Image_title_box">
     <span>Adidas Yeezy</span>
   </div>

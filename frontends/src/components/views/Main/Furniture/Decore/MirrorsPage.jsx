@@ -32,27 +32,27 @@ function MirrorsPage(props) {
       superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5,
-        slidesToSlide: 3,
-        partialVisibilityGutter: 40
-      },
-      desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 5,
+        items: 7,
         slidesToSlide: 3,
         partialVisibilityGutter: 30
       },
-      tablet: {
-        breakpoint: { max: 1024, min: 600 },
-        items: 3,
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 7,
         slidesToSlide: 3,
         partialVisibilityGutter: 20
       },
+      tablet: {
+        breakpoint: { max: 1024, min: 600 },
+        items: 4,
+        slidesToSlide: 3,
+        partialVisibilityGutter: 15
+      },
       mobile: {
         breakpoint: { max: 600, min: 0 },
-        items: 2,
-        slidesToSlide: 1,
-        partialVisibilityGutter: 10
+        items: 3,
+        slidesToSlide: 2,
+  
       }
     };
   
@@ -236,7 +236,6 @@ function MirrorsPage(props) {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -254,7 +253,7 @@ function MirrorsPage(props) {
     </div>
 
     <div className='Select_tabs_slider'>
-    <Carousel className='Carosal_style_images' 
+    {/* <Carousel className='Carosal_style_images' 
     responsive={responsive}
     partialVisible={true}
     swipeable={true}
@@ -268,7 +267,7 @@ function MirrorsPage(props) {
   ><div>
     <img 
     src='https://www.ikea.com/us/en/images/products/ikornnes-table-mirror-ash__0637396_pe698269_s5.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Table Mirrors</span>
@@ -281,7 +280,7 @@ function MirrorsPage(props) {
   ><div>
     <img 
     src='https://i5.walmartimages.com/seo/Better-Homes-Gardens-20-x-30-Arch-Metal-Wall-Mirror-D-cor-in-Gold_c8ab216a-0d5a-4a29-b7de-7ba17947b2a2.08be811d9db2486dba5176332dbb6d96.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Wall Mirrors</span>
@@ -294,10 +293,59 @@ function MirrorsPage(props) {
   ><div>
     <img 
     src='https://mobileimages.lowes.com/productimages/8e1b5c93-eefd-4566-8105-48da2dacb4e2/40869229.jpg?size=mpdhi'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
-    <span>Standing Mirrors</span>
+    <span>Standing Mirror</span>
+  </div>
+   </div>
+
+
+</Carousel> */}
+<Carousel className='Carosal_style_images' 
+    responsive={responsive}
+    partialVisible={true}
+    swipeable={true}
+    draggable={true}
+    minimumTouchDrag={50}
+    deviceType={props.deviceType}
+    >
+
+<div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(1)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/ExpGswM.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Table Mirrors</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(2); GetWallMirrors()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/XSSfHGM.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>Wall Mirrors</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(3); GetFloorMirrors()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/LT8corJ.png'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Standing Mirror</span>
   </div>
    </div>
 

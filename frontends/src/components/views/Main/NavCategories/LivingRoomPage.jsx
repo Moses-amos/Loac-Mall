@@ -306,7 +306,6 @@ function LivingRoomPage(props) {
 
   return (
     <div style={{ display: 'block', background: "#f7f3f6"}}>
-    <SearchBar showResults={clickSearch} refreshFunction={updateSearchTerms} />
     {SearchTerms === "" ?
   <div className='Visited_container-wrapper'>
   <div className='Visited_page-banner'>
@@ -316,7 +315,7 @@ function LivingRoomPage(props) {
     </div>
 
     <div className='Select_tabs_slider'>
-    <Carousel className='Carosal_style_images' 
+    {/* <Carousel className='Carosal_style_images' 
     responsive={responsive}
     partialVisible={true}
     swipeable={true}
@@ -330,7 +329,7 @@ function LivingRoomPage(props) {
   ><div>
     <img 
     src='https://i.etsystatic.com/7124282/r/il/bddfe8/2713120707/il_340x270.2713120707_d00c.jpg'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Tv Centers</span>
@@ -342,8 +341,8 @@ function LivingRoomPage(props) {
   onClick={()=> {ToggleSelectTabs(2); GetCoffeeTables()}}
   ><div>
     <img 
-    src='https://shop.gkwretail.com/cdn/shop/articles/Coffee_Table_Design.jpg?v=1663061265'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    src='https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/816I5DYJNsL._AC_UF894,1000_QL80_.jpg'
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Coffee Tables</span>
@@ -355,8 +354,8 @@ function LivingRoomPage(props) {
   onClick={()=> {ToggleSelectTabs(3); GetConsoleTables()}}
   ><div>
     <img 
-    src='https://media.4rgos.it/i/Argos/9329799_R_Z001A?w=750&h=440&qlt=70'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    src='https://i5.walmartimages.com/seo/Homfa-Console-Table-with-Drawers-and-Storage-Shelf-Narrow-Long-Sofa-Entryway-Table-for-Living-Room-Entryway-Hallway-Foyer-Dark-Brown_db62aebf-bedc-4621-b951-93714a2cecc0.15d3e01c9395ed0c32984a6ee3a406c7.jpeg'
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Console Tables</span>
@@ -367,7 +366,7 @@ function LivingRoomPage(props) {
   onClick={()=> {ToggleSelectTabs(4); GetEndTables()}}
   ><div>
     <img src="https://m.media-amazon.com/images/I/7184T72pJyL.jpg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>End Tables</span>
@@ -378,8 +377,8 @@ function LivingRoomPage(props) {
   onClick={()=> {ToggleSelectTabs(5); GetOttomanFurniture()}}
   ><div>
     <img 
-    src='https://www.polyandbark.com/cdn/shop/products/LR-B1884-210_2_1500x.jpg?v=1688998027'
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+    src='https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81ExM5DgU9L._AC_UF894,1000_QL80_.jpg'
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Ottomans</span>
@@ -391,7 +390,7 @@ function LivingRoomPage(props) {
     <a href='/room-chairs'>
       <div>
     <img src="https://furnituredeals.com/images/thumbs/0015026_stoneland-fossil-reclining-loveseat_600.jpeg"
-   style={{ width: '100%', height: '110px', padding: '5px 0px'}} alt="" />
+   className="Image_Mid_size" alt="" />
   </div>
   <div className="Image_title_box">
     <span>Room Chairs</span>
@@ -402,7 +401,94 @@ function LivingRoomPage(props) {
    </div>
 
 
-</Carousel>
+</Carousel> */}
+<Carousel className='Carosal_style_images' 
+    responsive={responsive}
+    partialVisible={true}
+    swipeable={true}
+    draggable={true}
+    minimumTouchDrag={50}
+    deviceType={props.deviceType}
+    >
+
+<div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(1)}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/jP3g8qY.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Tv Centers</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(2); GetCoffeeTables()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/498Zd1u.png'
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Coffee Tables</span>
+  </div>
+    
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(3); GetConsoleTables()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/xoJwwAb.png'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Console Tables</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(4); GetEndTables()}}
+  ><div>
+    <img  src="https://i.imgur.com/QrCOWcw.png"
+    className={SelectTabs ===4 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+    </div>
+  <div className="Image_title_box">
+    <span>End Tables</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  onClick={()=> {ToggleSelectTabs(5); GetOttomanFurniture()}}
+  ><div>
+    <img  
+    src='https://i.imgur.com/ai74PBc.png'
+    className={SelectTabs ===5 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Ottomans</span>
+  </div>
+   </div>
+
+   <div className='Select_image_product_longer'
+  >
+    <a href='/room-chairs'>
+      <div>
+    <img  src="https://furnituredeals.com/images/thumbs/0015026_stoneland-fossil-reclining-loveseat_600.jpeg"
+   className="Image_Mid_size" alt="" />
+  </div>
+  <div className="Image_title_box">
+    <span>Room Chairs</span>
+  </div>
+    </a>
+    
+
+   </div>
+
+
+</Carousel> 
 
     </div>
     </div>

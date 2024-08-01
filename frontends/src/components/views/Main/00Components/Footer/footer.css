@@ -4,7 +4,7 @@
     /* width: 1349px; */
     width: 100%;
     z-index: 5;
-    height: 230px;
+    height: 200px;
     background-color: #026c90;
     /* background-color: orangered; */
     display: flex;
@@ -139,7 +139,7 @@
 .Footer_text_box {
     width: 100%;
     display: flex;
-    padding-top: 30px;
+    padding-top: 20px;
     justify-content: center;
 }
 
@@ -200,7 +200,12 @@
 .Social_links_rights {
     display: flex;
     width: 100%;
+    margin-top: 30px;
     justify-content: space-between;
+}
+
+.Social_links_rights_mobile {
+    display: none;
 }
 
 .Rights_text_right {
@@ -276,7 +281,7 @@
 
     .Social_links_box {
         display: flex;
-        padding-top: 15px;
+        padding-top: 14px;
     }
 
     .bottom_top_padding {
@@ -304,10 +309,16 @@
     }
 
     .Social_links_rights {
+        display: none;
+    }
+
+    .Social_links_rights_mobile {
         display: flex;
         width: 100%;
         justify-content: space-between;
         padding-top: 25px;
     }
+
+
 
 }

@@ -30,27 +30,27 @@ function Monitors(props) {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-      slidesToSlide: 3,
-      partialVisibilityGutter: 40
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 7,
       slidesToSlide: 3,
       partialVisibilityGutter: 30
     },
-    tablet: {
-      breakpoint: { max: 1024, min: 600 },
-      items: 3,
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 7,
       slidesToSlide: 3,
       partialVisibilityGutter: 20
     },
+    tablet: {
+      breakpoint: { max: 1024, min: 600 },
+      items: 4,
+      slidesToSlide: 3,
+      partialVisibilityGutter: 15
+    },
     mobile: {
       breakpoint: { max: 600, min: 0 },
-      items: 2,
-      slidesToSlide: 1,
-      partialVisibilityGutter: 10
+      items: 3,
+      slidesToSlide: 2,
+
     }
   };
 
@@ -300,38 +300,38 @@ const updateSearchTerms = (newSearchTerm) => {
     deviceType={props.deviceType}
     >
 
-  <div className={SelectTabs ===1 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+<div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(1)}}
   ><div>
     <img 
-    src='https://m.media-amazon.com/images/I/81o-jZFisVL.jpg'
-   style={{ width: '100%', height: '140px', padding: '0p 0px 7px 0px'}} alt="" />
+    src='https://i.imgur.com/XUTgXAH.png'
+    className={SelectTabs ===1 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>All Monitors</span>
+    <span>All</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===2 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(2)}}
   ><div>
     <img 
     src='https://i.imgur.com/iQkQbKj.png'
-   style={{ width: '100%', height: '140px', padding: '0p 0px 7px 0px'}} alt="" />
+    className={SelectTabs ===2 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
-    <span>32 inch & Under</span>
+    <span>32 inch Under</span>
   </div>
     
    </div>
 
-   <div className={SelectTabs ===3 ? 'Select_image_product active_Select_image_product' : "Select_image_product"}
+   <div className='Select_image_product_longer'
   onClick={()=> {ToggleSelectTabs(3)}}
   ><div>
     <img 
-    src='https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/peripherals/output-devices/dell/monitors/u3423we/media-gallery/monitor-u3423we-silver-gallery-2.psd?fmt=pjpg&pscan=auto&scl=1&wid=3906&hei=2333&qlt=100,1&resMode=sharp2&size=3906,2333&chrss=full&imwidth=5000'
-   style={{ width: '100%', height: '140px', padding: '0p 0px 7px 0px'}} alt="" />
+    src='https://i.imgur.com/QCgRGMv.png'
+    className={SelectTabs ===3 ? "Image_Background_size_active" : 'Image_Background_size'} alt="" />
   </div>
   <div className="Image_title_box">
     <span>33 inch & Up</span>

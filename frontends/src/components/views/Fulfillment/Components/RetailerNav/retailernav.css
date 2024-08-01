@@ -118,21 +118,21 @@
   padding: 4px 0px 5px 0px;
   justify-content: center;
   align-items: center;
-  background: #333;
-  border-radius: 15px;
-  /* box-shadow: 1px 1px 1px rgba(164, 162, 162, 0.5); */
+  background: #fff;
+  color: #333;
+  border: 1px solid #656481;
+  border-radius: 10px;  /* box-shadow: 1px 1px 1px rgba(164, 162, 162, 0.5); */
   transition: all 0.2s ease-in-out;
 }
 
-
 .Account-span-box:hover {
-  background: #0285b1;
-  color: #f1eeee;
+  border: 1px solid orange;
 }
 
 .Account-span-box:hover .Account-span_title{
-  color: #f1eeee;
-}
+  color: orange;
+} 
+
 
 .Brand_Navbar_left-menu_items {
   width: 65%;
@@ -304,15 +304,16 @@
 .Account-span_title {
   font-size: 18px;
   font-family: 'Saira', sans-serif;    
-  font-weight: 700;
-  color: #fff;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  color: #333;
 }
 
 .Account-span_title_in {
   font-size: 18px;
   /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Saira', sans-serif;    
-  font-weight: 700;
+  font-weight: 600;
   color: #000;
 }
 
@@ -400,7 +401,7 @@
 .Route-span-style {
   font-size: 18px;
     font-family: 'Saira', sans-serif;    
-    font-weight: 600;
+    font-weight: 500;
     color: #656481;
 }
 

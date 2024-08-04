@@ -2358,10 +2358,10 @@ return (
 
                         <div style={{ width: '140px',marginRight: '16px', height: '40px', marginTop: '5px', position: 'relative'}}>
                         <div className={hoverCategory===5 ? "ProductTabs active-CategoryTabs" :"ProductTabs"}
-                            onClick={()=>
-                            HoverTab(5)}>Book</div>
+                            onClick={()=>{
+                                HoverTab(5); setProductType("Item Category")}}>Book</div>
                             <div className={hoverCategory===5 ? "Book-select_list" : "Electronics-select_list-hide"}>
-                                <CategoryBook setProductType={setProductType} sethoverCategory={sethoverCategory} />
+                                {/* <CategoryBook setProductType={setProductType} sethoverCategory={sethoverCategory} /> */}
                         </div>
                         </div>
 

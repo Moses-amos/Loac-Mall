@@ -344,10 +344,10 @@
     margin-top: 5px;
     margin-left: -879px;
     min-height: 507px;
-    padding: 5px 18px 0px 17px;
+    /* padding: 5px 18px 0px 17px;
     border-radius: 5px;
     box-shadow: 0px 3px 7px rgba(213,217,217,.5) ;
-    background-color: #fff;
+    background-color: #fff; */
 }
 
 .Pending_two-select_list {
